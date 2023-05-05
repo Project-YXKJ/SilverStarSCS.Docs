@@ -1,2 +1,5 @@
 # SilverStar-CSSM-Reference-Book
-A Reference Book of SilverStar's Control System for Sewing Machine
+
+A book powered by [mdBook](https://github.com/rust-lang/mdBook).
+
+## Authors

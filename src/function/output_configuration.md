@@ -23,4 +23,4 @@ follow the steps:
 
 Let's take an example:
 
-For example, if **Output-01** is connected, set the function of **Output-01** to puller, that is, A71 is set to 15 (15 is the code for puller function).
+For example, if **Output-01** is connected, set the function of **Output-01** to puller, that is, **A71** is set to 15 (15 is the code for puller function).

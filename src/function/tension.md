@@ -19,20 +19,18 @@
 | O88 | 1 | 0 | - | NC Solenoid Valve or NO Solenoid Valve, used to additional tension:<br> 0 = power on, the additional tension lifted;<br> 1 = power off, the additional tension lifted |
 | A26 | 1 | 0 | - | Additional thread tension state(read only):<br> 0 = Press on;<br> 1 = Lifted |
 
-面线张力电磁铁（阀）的动作穿插于剪线动作之中，在剪线动作开始之后，于 D13 角 1° 动作，D14 角 1° 释放。
-
-面线张力机构类型：O88 设定面线张力机构是电磁铁还是电磁阀，此 Parameter 值设置与实际机型配置相符，当为电磁阀式时，穿线模式可用，而为电磁铁式请勿使用穿线模式以免烧毁电磁铁。
-
-压脚与缝线张力的关系：对于面线张力机构为电磁铁的机型，反踩压脚时一般通过机械结构控制挺线动作；面线张力机构为电磁阀的机型，反踩压脚与挺线的关系可以通过 A27 Parameter 来控制，默认值为 2。
-
-切换至第二交互量时自动加大面线张力：由正常交互量切换至第二交互量时，依据 A28 设置的选项，缝线张力随之变动。
-
-压脚或者穿线时挺线限时：抬压脚或者输入按键被配置为穿线模式时，系统会自动打开挺线以方便操作工进行穿线操作，但是请注意：**如果挺线机构使用的是电磁阀，那么可以将 O75 设置为 0；如果使用的是电磁铁，请务必不要将 O75 设置为 0 以防止电磁铁烧坏**。
-
-**Sewing foot stroke**
+**During thread cutting:**
 
 The thread tension power on when position is reached with D13 and power off when position is reached with D14 during thread trimming.
 
+**During foot lifting:**
+
 Adjust parameter of the thread tension during active foot lift: the mode for thread tension is determined by parameter A27, the default value is 2.
 
+**During 2nd Sewing foot stroke:**
+
 Adjust parameter of the sewing foot stroke during active the second thread tension: the mode is determined by parameter A28, the default value 1.
+
+**Electromagnetor solenoid valve:**
+
+If tension is controlled by electromagnet not solenoid valve, you need to be careful when setting tha value of **O75**. Over premissible power on time, the electromagnet may burn out, thus a electromagnet with a small value of **O75** is protected form damage.

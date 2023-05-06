@@ -24,5 +24,5 @@ This function prevents unwanted wandering of the needle when machine has stopped
 
 The maximum time the holding force can keep takes effect is determined by parameter **A66**.
 
-- if A66 equal to 0, it take effect always when stopped.
-- A66 is not equal to 0, effective time is the value set by A66
+- If **A66** equal to 0, it take effect always when stopped.
+- If **A66** is not equal to 0, effective time is the value set by **A66**.

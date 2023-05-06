@@ -32,4 +32,4 @@ follow the steps:
 
 Let's take an example:
 
-For example, you want use the sixth key of the keypad to control the puller, you need to set the function of **Keypad-Key06** to puller, that is, A41 is set to 20 (20 is code of function switch the state of puller).
+For example, you want use the sixth key of the keypad to control the puller, you need to set the function of **Keypad-Key06** to puller, that is, **A41** is set to 20 (20 is code of function switch the state of puller).

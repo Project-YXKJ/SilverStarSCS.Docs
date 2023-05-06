@@ -6,7 +6,7 @@
 | S07 | 300 | 150 | spm | Thread cutter speed |
 | D03 | 359 | 0 | 1° | Thread cutter power on angle |
 | D04 | 359 | 0 | 1° | Thread cutter power off angle |
-| O38 | 1 | 0 | - | 剪线保护功能,剪线后必须等待调速器归位:<br>0 = 关闭;<br>1 = 打开 |
+| O38 | 1 | 0 | - | Pedal must be reset before restart sewing after thread cutting procedure<br>0 = Off;<br>1 = On |
 
 **Short thread cutter**
 
@@ -19,3 +19,5 @@
 | D22 | 359 | 0 | 1° | Zero stitch length of short thread trimming power off angle |
 
 **Thread cutting procedure**
+
+Thread cutting singnal is switched on when the angle value **D03** has been reached, the switched off when the angle value **D04**. If the position is not reached because of a mechanical error, the thread cutter signal is switched off after 500ms for protect the magnet from damage.

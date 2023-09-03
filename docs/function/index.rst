@@ -96,3 +96,7 @@ Glossary
   soft_start
   thread_cutter
   turn_back
+  bobbin_monitor
+  eye_protection
+  hook_cover_missing
+  motor

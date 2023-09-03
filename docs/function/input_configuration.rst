@@ -4,7 +4,34 @@
 Input configuration
 ===================
 
-Functions with codes greater than 100 needs an analog port.
+Input Mode Code List:
+
+- 0 = No function
+- 1 = Manual bartack
+- 2 = Forward correction;
+- 3 = Backward correction  
+- 4 = Forward correction at stop, reverse at running
+- 5 = Backward correction at stop, reverse at running
+- 6 = Quick toggle stroke
+- 7 = Enable/unable bartack at seam start/end
+- 8 = Second stitch length
+- 9 = Additional thread tension
+- 10 = Pause
+- 11 = Thread a needle
+- 12 = Toggle seam center guide raise up/down
+- 13 = Tilt switch
+- 14 = Up thread broken sensor
+- 15 = Eye protection sensor
+- 16 = Hook cover missing sensor
+- 17 = Toggle sewing foot lifter raise up/down
+- 18 = lifting sewing foot via the knee switch
+- 19 = Oil Starvation;
+- 20 = Toggle puller raise up/down;
+- 100 = Sewing foot stroke knob potentiometer
+- 101 = Sewing foot height sensor
+
+.. important::
+  Functions with codes greater than 100 needs an analog port.
 
 **How to setup the function of input ports**:
 
@@ -22,35 +49,191 @@ For example, you want use the sixth key of the keypad to control the puller, you
 Parameter List
 ==============
 
-P00
+A04
 ---
 
 .. dropdown:: < > Detail 
    :animate: fade-in-slide-down
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
-   -Description
-     | The description can also start on the next line.
-     | value1: text;
-     | value2: text.
-     
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function Input-01
 
-| A04 | 199 | 0 | - | Function Input-01:<br>0 = No function;<br>1 = Manual bartack;<br>2 = Forward correction;<br>3 = Backward correction;<br>4 = Forward correction at stop, reverse at running;<br>5 = Backward correction at stop, reverse at running;<br>6 = Quick toggle stroke;<br>7 = Enable/unable bartack at seam start/end;<br>8 = Second stitch length;<br>9 = Additional thread tension;<br>10 = Pause;<br>11 = Thread a needle;<br>12 = Toggle seam center guide raise up/down;<br>13 = Tilt switch;<br>14 = Up thread broken sensor;<br>15 = Eye protection sensor;<br>16 = Hook cover missing sensor;<br>17 = Toggle sewing foot lifter raise up/down;<br>18 = lifting sewing foot via the knee switch;<br>19 = Oil Starvation;<br>20 = Toggle puller raise up/down;<br>100 = Sewing foot stroke knob potentiometer;<br>101 = Sewing foot height sensor; |
-| A05 | 199 | 0 | - | Function of input-02, refer to A04 |
-| A36 | 199 | 0 | - | Function of keypad key-01, refer to A04 |
-| A37 | 199 | 0 | - | Function of keypad key-02, refer to A04 |
-| A38 | 199 | 0 | - | Function of keypad key-03, refer to A04 |
-| A39 | 199 | 0 | - | Function of keypad key-04, refer to A04 |
-| A40 | 199 | 0 | - | Function of keypad key-05, refer to A04 |
-| A41 | 199 | 0 | - | Function of keypad key-06, refer to A04 |
-| A68 | 199 | 0 | - | Function of keypad key-07, refer to A04 |
-| A81 | 199 | 0 | - | Function of input-03, refer to A04 |
-| A82 | 199 | 0 | - | Function of input-04, refer to A04 |
-| A83 | 199 | 0 | - | Function of input-05, refer to A04 |
-| A84 | 199 | 0 | - | Function of input-06, refer to A04 |
-| A85 | 199 | 0 | - | Function of input-07, refer to A04 |
-| A86 | 199 | 0 | - | Function of input-08, refer to A04 |
-| A87 | 199 | 0 | - | Function of input-09, refer to A04 |
-| A88 | 199 | 0 | - | Function of input-10, refer to A04 |
+A05
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function Input-02
+
+A36
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function keypad key-01
+
+A37
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function keypad key-01
+
+A38
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function keypad key-01
+
+A39
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function keypad key-01
+
+A40
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function keypad key-01
+
+A41
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function keypad key-01
+
+A68
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function keypad key-07
+
+A81
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function input-03
+
+A82
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function input-03
+
+A83
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function input-03
+
+
+A84
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function input-03
+
+A85
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function input-03
+
+A86
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function input-03   
+
+
+A87
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function input-03
+
+A88
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  199
+   -Min  0
+   -Unit  --
+   -Description  Function input-03

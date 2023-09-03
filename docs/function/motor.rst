@@ -1,37 +1,8 @@
-# Motor
+.. _motor: 
 
-Parameter List
-==============
-
-P00
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
-   -Description
-     | The description can also start on the next line.
-     | value1: text;
-     | value2: text.
-     
-| No. | Max | Min | Unit | Description |
-| --- | --- | --- | --- | --- |
-| S01 | 4500 | 100 | spm | Maximum speed by pressing the pedal to the end position |
-| S02 | 4500 | 100 | spm | Minimum sewing speed, it is also the needle position up-down speed |
-| A54 | 1 | 0 | - | Holding force of the motor:<br>0 = Off;<br>1 = On |
-| A66 | 9999 | 0 | ms | Motor Holding duration:<br>0 = Always;<br>N = After N ms, the holding force is released |
-| D01 | 359 | 0 | 1° | Needle up position |
-| D02 | 359 | 0 | 1° | Needle down position |
-| O04 | 1 | 0 | - | Motor drive type:<br>0 = Belt connection;<br>1 = Direct drive |
-| O67 | 1 | 0 | - | Motor rotation direction:<br>0 = Clockwise;<br/>1 = Anticlockwise |
-| I01 | 500 | 150 | ms | Acceleration, acceleration time from 0 to 4500rpm |
-| I02 | 500 | 150 | ms | Deceleration, deceleration time from 4500 to 0rpm |
-| I04 | 4096 | 1 | - | The number of code disc signals corresponding to one mechanical circle |
-| I37 | 359 | 0 | 1° | Braking advance deceleration distance |
-| I30 | 1 | 0 | - | Brake method:<br>0 = Soft stop;<br>1 = Postion |
+=====
+Motor
+=====
 
 **Holding force of the motor:**
 
@@ -43,3 +14,163 @@ The maximum time the holding force can keep takes effect is determined by parame
 
 - If **A66** equal to 0, it take effect always when stopped.
 - If **A66** is not equal to 0, effective time is the value set by **A66**.
+
+Parameter List
+==============
+
+S01
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  4500
+   -Min  100
+   -Unit  spm
+   -Description  Maximum speed by pressing the pedal to the end position
+     
+S02
+---
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  4500
+   -Min  100
+   -Unit  spm
+   -Description  Minimum sewing speed, it is also the needle position up-down speed
+
+A54
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  
+     | Holding force of the motor:
+     | 0 = Off;
+     | 1 = On
+
+A66
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  
+     | Motor Holding duration:
+     | 0 = Always;
+     | N = After N ms, the holding force is released
+
+D01
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Needle up position
+
+D02
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Needle down position
+
+O04
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  
+     | Motor drive type:
+     | 0 = Belt connection
+     | 1 = Direct drive
+
+O67
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  
+     | Motor rotation direction:
+     | 0 = Clockwise
+     | 1 = Anticlockwise
+
+I01
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  500
+   -Min  150
+   -Unit  ms
+   -Description  Acceleration, acceleration time from 0 to 4500rpm  
+
+I02
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  500
+   -Min  150
+   -Unit  ms
+   -Description  Deceleration, deceleration time from 4500 to 0rpm 
+
+I04
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  4096
+   -Min  1 
+   -Unit  --
+   -Description  The number of code disc signals corresponding to one mechanical circle
+
+I37
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  359
+   -Min  0 
+   -Unit  1°
+   -Description  Braking advance deceleration distance
+
+I30
+---
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+  
+   -Max  1
+   -Min  0 
+   -Unit  --
+   -Description  
+     | Brake method
+     | 0 = Soft stop;
+     | 1 = Postion.

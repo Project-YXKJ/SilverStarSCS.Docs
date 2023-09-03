@@ -127,7 +127,7 @@ T11
    
    -Max  1000
    -Min  1
-   -Unit ms
+   -Unit  ms
    -Description  Stop time for sewing direction change of individual bartack sections in order to reach the specified stitch lengths(forwards/backwards)
 
 O09
@@ -138,7 +138,7 @@ O09
    
    -Max  100
    -Min  1
-   -Unit %
+   -Unit  %
    -Description  Activation duration of the reverse in the time period T1(100% duty)
 
 O10

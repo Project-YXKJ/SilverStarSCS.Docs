@@ -42,4 +42,15 @@ html_theme_options = {
         "color-brand-primary": "#c0d725",
         "color-brand-content": "#c0d725",
     },
+    "source_repository": "https://github.com/Project-YXKJ/SilverStar-CSSM-Reference-Book/",
+    "source_branch": "main",
+    "source_directory": "docs/",
+    # 不显示编辑键
+    "top_of_page_button": "none",
+    # 底部图标
+    "footer_icons": [
+        {
+            "name": "GitHub",
+        },
+    ],
 }

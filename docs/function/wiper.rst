@@ -12,38 +12,38 @@ will switch on, it will switch off after the time set by **T04**.
 Parameter List
 ==============
 
-A08
----
+A 08
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Wiper
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Thread wiper function:
+     | Wiper upper thread:
      | 0: Off;
      | 1: On.
      
-T03
----
+T 03
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Wiper Delay time
    :animate: fade-in-slide-down
    
    -Max  200
    -Min  1
    -Unit  ms
-   -Description  Thread wiper switched on delay time
+   -Description  Lag time, after which, wiper is activaed after trim
 
-T04
----
+T 04
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Wiper Activation Duration
    :animate: fade-in-slide-down
    
    -Max  200
    -Min  1
    -Unit  ms
-   -Description  Thread wiper switched on duration
+   -Description  Time form activation to deactivation of the magnet of wiper.

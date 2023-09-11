@@ -6,40 +6,187 @@ Thread cutter
 
 **Thread cutting procedure**
 
-Thread cutting singnal is switched on when the angle value **D03** has been reached, the switched off when the angle value **D04**. If the position is not reached because of a mechanical error, the thread cutter signal is switched off after 500ms for protect the magnet from damage.
+Thread cutting singnal is switched on when the angle value **D03** has been reached,
+the switched off when the angle value **D04**. If the position is not reached because
+of a mechanical error, the thread cutter signal is switched off after 500ms for protect
+the magnet from damage.
 
 
 Parameter List
 ==============
 
-P00
----
+S 07
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Trimming Speed
    :animate: fade-in-slide-down
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  300
+   -Min  150
+   -Unit  spm
+   -Description  Speed of the machine during trimming
+
+A 06
+----
+
+.. dropdown:: Thread Trim
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
    -Description
-     | The description can also start on the next line.
-     | value1: text;
-     | value2: text.
-     
-| No. | Max | Min | Unit | Description &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
-| --- | --- | --- | --- | --- |
-| A06 | 1 | 0 | - | Thread cutter:<br>0 = Off;<br>1 = On |
-| S07 | 300 | 150 | spm | Thread cutter speed |
-| D03 | 359 | 0 | 1° | Thread cutter power on angle |
-| D04 | 359 | 0 | 1° | Thread cutter power off angle |
-| O38 | 1 | 0 | - | Pedal must be reset before restart sewing after thread cutting procedure<br>0 = Off;<br>1 = On |
+     | Thread trim:
+     | 0 = Off;
+     | 1 = On.
 
-**Short thread cutter**
+A 42
+----
 
-| No. | Max | Min | Unit | Description |
-| --- | --- | --- | --- | --- |
-| A42 | 1 | 0 | - | Short thread cutter:<br> 0 = Off;<br> 1 = On |
-| D19 | 359 | 0 | 1° | Reverse of short thread trimming power on angle |
-| D20 | 359 | 0 | 1° | Reverse of short thread trimming power off angle |
-| D21 | 359 | 0 | 1° | Zero stitch length of short thread trimming power on angle |
-| D22 | 359 | 0 | 1° | Zero stitch length of short thread trimming power off angle |
+.. dropdown:: Short Thread Cutter
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | Feature for specific models:
+     | 0 = Off;
+     | 1 = On.     
+
+A 67
+----
+
+.. dropdown:: Short Thread Cutter Stitches
+   :animate: fade-in-slide-down
+   
+   -Max  10
+   -Min  0
+   -Unit  stitches
+   -Description  When short thread cutter active,number of short length stitches before trim.
+
+D 03
+----
+
+.. dropdown:: Start trim position
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Position when the magnet of thread cutter is activated.
+
+
+D 04
+----
+
+.. dropdown:: Stop trim position
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Position when the magnet of thread cutter is deactivated.
+
+D 17
+----
+
+.. dropdown:: Start Movable Knife Position(STC)
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Position when the magnet of movable knife(short thread cutter) is activated.
+
+D 18
+----
+
+.. dropdown:: Stop Movable Knife Position(STC)
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Position when the magnet of movable knife(short thread cutter) is deactivated.
+
+D 19
+----
+
+.. dropdown:: Start Reverse Position(STC)
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Position when the magnet of the reverse(short thread cutter) is activated.
+
+D 20
+----
+
+.. dropdown:: Stop Reverse Position(STC)
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Position when the magnet of the reverse(short thread cutter) is deactivated.
+
+D 21
+----
+
+.. dropdown:: Start Zero Stitch Length Position(STC)
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Position when the magnet of zero stitch length(short thread cutter) is activated.
+
+D 22
+----
+
+.. dropdown:: Stop Zero Stitch Length Position(STC)
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Position when the magnet of zero stitch length(short thread cutter) is deactivated.
+   
+O 38
+----
+
+.. dropdown:: Pedal Reset After Trim
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | Whether the pedal need to return Position 0 before restart a new seam after trim:
+     | 0 = Off;
+     | 1 = On.
+
+O 95
+----
+
+.. dropdown:: Time(t1)
+   :animate: fade-in-slide-down
+   
+   -Max  999
+   -Min  1
+   -Unit  ms
+   -Description  Short thread zero length:activation duration of in :term:`time period t1`
+                 (100% duty cycle).
+
+O 96
+----
+
+.. dropdown:: Duty cycle(t2)
+   :animate: fade-in-slide-down
+   
+   -Max  100
+   -Min  1
+   -Unit  %
+   -Description  Short thread zero length:duty cycle[%] in :term:`time period t2`.

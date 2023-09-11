@@ -1,63 +1,60 @@
 .. _hand_wheel:
 
-==========
-Hand wheel
-==========
+==================
+Electric Handwheel
+==================
 
 Only works when the machine stops.
 
 Parameter List
 ==============
 
-A23
----
+A 23
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Elec-Handwheel <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Electronic hand wheel:
+     | Electronic handwheel:
      | 0 = Off;
      | 1 = On.
      
-A43
----
+A 43
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Rotation Direction of Elec-Handwheel <...> 
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Direction of rotation of electronic handwheel:     
-     | 0 = Clockwise;
-     | 1 = Anticlockwise
+     | Rotation direction of electronic handwheel:
+     | 0 = Same with main motor;
+     | 1 = Contrary.   
 
-O83
----
+O 83
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Elec-Handwheel Step
    :animate: fade-in-slide-down
    
    -Max  720
    -Min  0
    -Unit  --
-   -Description  One step encoding
-     | Direction of rotation of electronic handwheel:     
-     | 0 = Clockwise;
-     | 1 = Anticlockwise
+   -Description  Step width for electronic handwheel
 
-O84
----
+O 84
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Elec-Handwheel Speed
    :animate: fade-in-slide-down
    
    -Max  200
    -Min  0
    -Unit  spm
-   -Description  Speed of hand wheel
+   -Description  The speed of motor when using electric handwheel

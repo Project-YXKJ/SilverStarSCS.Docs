@@ -1,28 +1,8 @@
-# Service counter
+.. _service_counter: 
 
-Parameter List
-==============
-
-P00
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
-   -Description
-     | The description can also start on the next line.
-     | value1: text;
-     | value2: text.
-     
-| No. | Max | Min | Unit | Description &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
-| --- | --- | --- | --- | --- |
-| A60 | 1 | 0 | - | Service counter:<br>0 = Off;<br>1 = On |
-| A61 | 9999 | 1 | - | Reset value of service counter |
-| A62 | 200 | 1 | stitches | Factor of service counter |
-| A63 | 9999 | 0 | - | Counter value |
+===============
+Service counter
+===============
 
 Using service counter allows users to remind regular mechanical maintenance.
 
@@ -36,3 +16,53 @@ Remaining amount = reset value of the bobbin thread counter(A61) – bobbin thre
 - Set an appropriate value for **A61**, this is a very variable value, which depends on how often you want to maintain.
 - Enable counter.
 - As the sewing, the remaining thread amount(A61-A63) is counted down, when it reaches 0, the machine will stop, and the controller will throw a warning(Code 7). A reset is needed if you want continue.
+
+Parameter List
+==============
+
+A 60
+----
+
+.. dropdown:: Service Stitch Counter
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | Active service stitch counter:
+     | 0 = Off;
+     | 1 = On.
+
+A 61
+----
+
+.. dropdown:: Service Counter Reset Value
+   :animate: fade-in-slide-down
+   
+   -Max  9999
+   -Min  1
+   -Unit  --
+   -Description  Reset value of service stitch counter
+   
+A 62
+----
+
+.. dropdown:: Service Counter Factor
+   :animate: fade-in-slide-down
+   
+   -Max  200
+   -Min  1
+   -Unit  stitches
+   -Description  Every sew over this number of stitches,increment the counter by 1
+
+A 63
+----
+
+.. dropdown:: Service Counter Value
+   :animate: fade-in-slide-down
+   
+   -Max  9999
+   -Min  0
+   -Unit  -- 
+   -Description  The current value of service stitch counter

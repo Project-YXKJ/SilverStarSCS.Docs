@@ -7,26 +7,41 @@ Soft start
 Parameter List
 ==============
 
-P00
----
+When beginning a new seam, speed is determined by the pedal and limited to the soft 
+start speed.
 
-.. dropdown:: < > Detail 
+S 08
+----
+
+.. dropdown:: Soft Start Speed
    :animate: fade-in-slide-down
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  500
+   -Min  200
+   -Unit  spm 
+   -Description  Speed for soft start
+
+A 21
+----
+
+.. dropdown:: Soft start 
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  -- 
    -Description
-     | The description can also start on the next line.
-     | value1: text;
-     | value2: text.
+     | Soft start when a new seam start:
+     | 0 = On;
+     | 1 = Off.
      
-| No. | Max | Min | Unit | Description &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
-| --- | --- | --- | --- | --- |
-| A21 | 1 | 0 | - | Soft start:<br>0 = Off;<br>1 = On |
-| S08 | 500 | 200 | spm | Speed of soft start |
-| O01 | 10 | 1 | stitches | Number of soft start stitches &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+O 01
+----
 
-**Functions:**
-
-- when beginning a new seam, speed is determined by the pedal and limited to the soft start speed.
+.. dropdown:: Number of soft start stitches
+   :animate: fade-in-slide-down
+   
+   -Max  10
+   -Min  1
+   -Unit  stitches 
+   -Description  Number of stitches to be made during a soft start.

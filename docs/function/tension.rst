@@ -4,54 +4,162 @@
 Thread tension
 ==============
 
-Parameter List
-==============
-
-P00
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
-   -Description
-     | The description can also start on the next line.
-     | value1: text;
-     | value2: text.
-     
-| No. | Max | Min | Unit | Description |
-| --- | --- | --- | --- | --- |
-| A27 | 3 | 0 | - | Mode for lifting the needle thread tension during active sewing foot lift:<br>0 = Needle thread tension is not lifted;<br>1 = The thread tension is lifted as the sewing foot are lifted during sewing;<br>2 = The thread tension is lifted after thread trim;<br>3 = The thread tension is lifted as the sewing foot are lifted during sewing and after thread trim |
-| A28 | 3 | 0 | - | Coupling of additional thread tension with quick stroke height adjustment, if the second foot stroke is switched on, the second thread tension is automatically activated<br>0 = Off;<br>1 = On |
-| D13 | 359 | 0 | 1° | Thread tension power on angle |
-| D14 | 359 | 0 | 1° | Thread tension power off angle |
-| O49 | 500 | 1 | ms | Activation duration of the main thread tension in the time period T1(100% duty) |
-| O50 | 100 | 1 | % | Duty cycle in time period T2(PWM) |
-| O75 | 9999 | 0 | ms | Timed release option, thread tension power on time:<br>0 = Can be powered on all the time;<br>N = Automatically release after the time set by O75 |
-
-**Additional thread tension**
-
-| No. | Max | Min | Unit | Description |
-| --- | --- | --- | --- | --- |
-| O86 | 500 | 1 | ms | Activation duration of the addition thread tension in the time period T1(100% duty) |
-| O87 | 100 | 1 | % | Duty cycle in time period T2(PWM) |
-| O88 | 1 | 0 | - | NC Solenoid Valve or NO Solenoid Valve, used to additional tension:<br> 0 = power on, the additional tension lifted;<br> 1 = power off, the additional tension lifted |
-| A26 | 1 | 0 | - | Additional thread tension state(read only):<br> 0 = Press on;<br> 1 = Lifted |
-
 **During thread cutting:**
 
-The thread tension power on when position is reached with D13 and power off when position is reached with D14 during thread trimming.
+The thread tension power on when position is reached with D13 and power off when
+position is reached with D14 during thread trimming.
 
 **During foot lifting:**
 
-Adjust parameter of the thread tension during active foot lift: the mode for thread tension is determined by parameter A27, the default value is 2.
+Adjust parameter of the thread tension during active foot lift: the mode for thread
+tension is determined by parameter A27, the default value is 2.
 
 **During 2nd Sewing foot stroke:**
 
-Adjust parameter of the sewing foot stroke during active the second thread tension: the mode is determined by parameter A28, the default value 1.
+Adjust parameter of the sewing foot stroke during active the second thread tension:
+the mode is determined by parameter A28, the default value 1.
 
 **Electromagnetor solenoid valve:**
 
-If tension is controlled by electromagnet not solenoid valve, you need to be careful when setting tha value of **O75**. Over premissible power on time, the electromagnet may burn out, thus a electromagnet with a small value of **O75** is protected form damage.
+If tension is controlled by electromagnet not solenoid valve, you need to be careful
+when setting tha value of **O75**. Over premissible power on time, the electromagnet
+may burn out, thus a electromagnet with a small value of **O75** is protected form damage.
+
+
+Parameter List
+==============
+
+A 26
+----
+
+.. dropdown:: Status of Additional Thread Tension
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  Status of the additional tension solenoid(read only)
+
+A 27
+----
+
+.. dropdown:: Auto mode for tension at foot lifting
+   :animate: fade-in-slide-down
+   
+   -Max  3
+   -Min  0
+   -Unit  --
+   -Description
+     | Mode for lifting the tension during active sewing foot lift:
+     | 0 = tension is not lifted;
+     | 1 = tension is lifted as the foot is lifted during sewing;
+     | 2 = tension is lifted after trim;
+     | 3 = tension is lifted as the foot is lifted during sewing and after trim.
+     
+A 28
+----
+
+.. dropdown:: Auto Additional Thread Tension
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | If the second stroke active,the additional thread tenson is automatically activated:
+     | 0 = Off;
+     | 1 = On.    
+
+D 13
+----
+
+.. dropdown:: Start Tension Position
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Position when the magnet of tenison is activated during trimming
+
+D 14
+----
+
+.. dropdown:: Stop Tension Position
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Position when the magnet of tension is deactivated during trimming
+
+O 49
+----
+
+.. dropdown:: Time(t1)
+   :animate: fade-in-slide-down
+   
+   -Max  999
+   -Min  1
+   -Unit  ms
+   -Description  Tension:activation duration of in :term:`time period t1` 
+                 (100% duty cycle)
+
+O 50
+----
+
+.. dropdown:: Duty cycle(t2)
+   :animate: fade-in-slide-down
+   
+   -Max  100
+   -Min  1
+   -Unit  %
+   -Description  Tension:duty cycle[%] in :term:`time period t2`.
+
+O 75
+----
+
+.. dropdown:: Tension Max. Lifting Time
+   :animate: fade-in-slide-down
+   
+   -Max  9999
+   -Min  0
+   -Unit  ms
+   -Description 
+     | 0 = Always Lifting;
+     | Not 0 = This parameter sets the power-off time.
+     
+O 86
+----
+
+.. dropdown:: Time(t1)
+   :animate: fade-in-slide-down
+   
+   -Max  500
+   -Min  1
+   -Unit  ms
+   -Description  Additional Tension:activation duration of in :term:`time period t1`
+                 (100% duty cycle)
+
+O 87
+----
+
+.. dropdown:: Duty cycle(t2)
+   :animate: fade-in-slide-down
+   
+   -Max  100
+   -Min  1
+   -Unit  %
+   -Description  Additional Tension:duty cycle[%] in :term:`time period t2`.
+
+O 88
+----
+
+.. dropdown:: Addition tension solenoid work mode
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | 0 = solenoid on,tension off;
+     | 1 = solenoid on,tension on.

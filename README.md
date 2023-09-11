@@ -6,20 +6,6 @@ Documentation for SilverStar-CSSM
 
 Built with [Sphinx](https://www.sphinx-doc.org/), and host on [Read the Docs](https://readthedocs.org/)
 
-## Introduction
-
-This is documentation of SilverStar's Control System for Sewing Machine, it is not written for a certain model product, but to explain the function, so here you can't find how to enter the setting interface or connection diagram of output and input ports.
-
-This is an exploration of using Sphinx with Markdown.
-
-Documentation is in the docs folder. It is published using Github pages, with a [github action](https://github.com/Project-YXKJ/SilverStar-CSSM-Reference-Book/blob/master/.github/workflows/main.yml).
-
-https://serra.github.io/sphinx-with-markdown/
-
-## Who need it?
-
-Professionals who use the system.
-
 ## Build guide
 
 ### Setup
@@ -60,3 +46,7 @@ $ make html
 [多语言](https://docs.readthedocs.io/en/stable/localization.html#projects-with-multiple-translations-sphinx-only)
 
 [reStructuredText 语法参考](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
+
+[sphinx-design](https://sphinx-design.readthedocs.io/en/furo-theme/index.html)
+
+[furo theme](https://pradyunsg.me/furo/quickstart/)

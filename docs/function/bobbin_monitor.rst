@@ -1,7 +1,7 @@
 .. _bobbin_monitor:
 
 ==============
-Bobbin Monitor
+Bobbin Counter
 ==============
 
 Using Lower thread counter allows users to know the remaining thread amount.
@@ -26,63 +26,65 @@ Remaining thread amount = reset value of the bobbin thread counter(O43) - bobbin
 Parameter List
 ==============
 
-A12
----
+A 12
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Bobbin Stitch Counter <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Lower thread counter:
+     | Activate the Bobbin stitch counter:
      | 0: Off;
      | 1: On.
 
-O43
----
+O 19
+----
 
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  9999
-   -Min  1
-   -Unit  --
-   -Description  Reset value of lower thread counter
-
-O44
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  9999
-   -Min  0
-   -Unit  --
-   -Description  Current value of Lower thread counter
-
-O19
----
-
-.. dropdown:: < > Detail 
+.. dropdown:: Factor of bobbin counter <...>
    :animate: fade-in-slide-down
    
    -Max  200
    -Min  1
    -Unit  stitches
-   -Description  Factor of lower thread counter
+   -Description  Every sew over this number of stitches,increment the counter by 1.
 
-O20
----
+O 20
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Timming of Warning(Bobbin Counter) <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  stitches
    -Description  
-     | Choose when to throw warning if the counter reaches 0:
+     | When to throw a warning if bobbin counter reaches 0:
      | 0 = after thread cutting;
      | 1 = immediately
+     
+O 43
+----
+
+.. dropdown:: Bobbin Stitch Counter Reset Value <...>
+   :animate: fade-in-slide-down
+   
+   -Max  9999
+   -Min  1
+   -Unit  --
+   -Description  Bobbin supply capacity. This is a very variable value,which depends
+     on the size of the bobbin and the thickness of the thread
+
+O 44
+----
+
+.. dropdown:: Bobbin Stitch Counter Value <...>
+   :animate: fade-in-slide-down
+   
+   -Max  9999
+   -Min  0
+   -Unit  --
+   -Description  The current value of bobbin stitch counter, the reset value minus 
+     this value is remaining value.

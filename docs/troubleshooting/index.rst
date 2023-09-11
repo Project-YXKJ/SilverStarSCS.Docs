@@ -2,10 +2,15 @@
 Troubleshooting
 ===============
 
+Controlled experiments
+
+Table of Contents
+=================
+
 .. toctree:: 
   :maxdepth: 3
 
-  error
-  warning
+  troubleshooting
+
   
   

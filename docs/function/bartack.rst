@@ -9,216 +9,119 @@ Bartack
 Parameter List
 ==============
 
-P00
----
-
-.. dropdown:: < > Detail 
+S 03
+----
+.. dropdown:: Speed in Start Bartack <...>
    :animate: fade-in-slide-down
    
    -Max  4500
-   -Min  minimum
-   -Unit  unit
+   -Min  100
+   -Unit  spm
+   -Description  Maximum speed in bartack at seam begin.
+
+S 04
+----
+.. dropdown:: Speed in End Bartack <...>
+   :animate: fade-in-slide-down
+   
+   -Max  4500
+   -Min  100
+   -Unit  spm
+   -Description  Maximum speed in bartack at seam end.
+
+T 11
+----
+.. dropdown:: SD Mode Stop Time <...> 
+   :animate: fade-in-slide-down
+   
+   -Max  4500
+   -Min  100
+   -Unit  spm
+   -Description  Motor standby duration at direction change of bartack if SD mode is On.
+
+A 20
+----
+
+.. dropdown:: SD mode for Start Bartack <...> 
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
    -Description
-     | The description can also start on the next line.
-     | value1: text;
-     | value2: text.
+     | Stop at direction change of start tacking in order to the bartack magnet reach the specified position:
+     | 0 = Off;
+     | 1 = On.
 
-S03
----
-.. dropdown:: < > Detail 
+A 22
+----
+
+.. dropdown:: SD mode for End Bartack <...>
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | Stop at direction change of end tacking in order to the bartack magnet reach the specified position:
+     | 0 = Off;
+     | 1 = On.
+
+A 34
+----
+
+.. dropdown:: Maintain Speed after Start Bartack <...>
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  Reverse power on angle
+     | For better performance of start bartack:
+     | 0 = Off;
+     | 1 = On.
+
+O 12
+___
+
+.. dropdown:: Max. Speed of 1 stitch <...> 
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Speed in bartack at seam begin
+   -Description  Maximum Speed of 1 stitch when bartack or W-sewing.
 
-S04
----
-.. dropdown:: < > Detail 
+O 13 
+----
+
+.. dropdown:: Max. Speed of 2 stitch <...>  
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Speed in bartack at seam end
+   -Description  Maximum Speed of 2 stitch when bartack or W-sewing.
 
+O 14
+----
 
-T01
----
-
-.. dropdown:: < > Detail 
+.. dropdown:: Max. Speed of 3 stitch <...> 
    :animate: fade-in-slide-down
    
-   -Max  200
-   -Min  1
-   -Unit  ms
-   -Description  Reverse solenoid action time
-
-T02
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
+   -Max  4500
+   -Min  100
+   -Unit  spm
+   -Description  Maximum Speed of 3 stitch when bartack or W-sewing.
    
-   -Max  200
-   -Min  1
-   -Unit  ms
-   -Description  Reverse solenoid release time
 
-D05
----
+O 41
+----
 
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  359
-   -Min  0
-   -Unit  1°
-   -Description  Reverse power on angle
-     | The description can also start on the next line.
-     | value1: text;
-     | value2: text.
-  
-D06
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  359
-   -Min  0
-   -Unit  1°
-   -Description  Reverse power off angle
-
-A20
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  1
-   -Min  0
-   -Unit  --
-   -Description  Reverse power on angle
-     | Ornamental-stitch bartack at seam start:
-     | 0 = Off;
-     | 1 = On, the motor will stopped at sewing direction change point
-
-A22
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  1
-   -Min  0
-   -Unit  --
-   -Description  Reverse power on angle
-     | Ornamental-stitch bartack at seam end:
-     | 0 = Off;
-     | 1 = On, the motor will stopped at sewing direction change point
- 
-T11
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  1000
-   -Min  1
-   -Unit  ms
-   -Description  Stop time for sewing direction change of individual bartack sections in order to reach the specified stitch lengths(forwards/backwards)
-
-O09
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  100
-   -Min  1
-   -Unit  %
-   -Description  Activation duration of the reverse in the time period T1(100% duty)
-
-O10
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  1
-   -Min  0
-   -Unit  --
-   -Description 
-     | Timeout release:
-     | 0 = Off;
-     | 1 = On
-
-O11
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  30
-   -Min  5
-   -Unit  s
-   -Description  The maximum time the reverse can powered on
-
-O41
----
-
-.. dropdown:: < > Detail 
+.. dropdown:: Stitches of Maintain Speed after Start Bartack <...> 
    :animate: fade-in-slide-down
    
    -Max  10
    -Min  0
    -Unit  stitches
-   -Description  Number of A-stitches which speed holding after sewing start bartck
-
-O42
-___
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  10
-   -Min  0
-   -Unit  stitches
-   -Description  none
-
-O12
-___
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  4500
-   -Min  100
-   -Unit  spm
-   -Description  Speed limt when number of bartack stitches is equal to 1
-
-
-
-O13 
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  4500
-   -Min  100
-   -Unit  spm
-   -Description  Speed limt when number of bartack stitches is equal to 2
-
-O14
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  4500
-   -Min  100
-   -Unit  spm
-   -Description  Speed limt when number of bartack stitches is equal to 3
+   -Description  Number of A-stitches which speed holding after sewing start bartck.

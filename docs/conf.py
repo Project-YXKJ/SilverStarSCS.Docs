@@ -37,8 +37,8 @@ html_theme_options = {
     # logo
     "light_logo": "logo-wide-light.svg",
     "dark_logo": "logo-wide-dark.svg",
-    # 衔接以及左侧目录的颜色
     "light_css_variables": {
+        # 衔接以及左侧目录的颜色
         "color-brand-primary": "#c0d725",
         "color-brand-content": "#c0d725",
     },

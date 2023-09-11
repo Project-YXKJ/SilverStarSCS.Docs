@@ -1,11 +1,13 @@
 .. _devguide:
 
-==================================
-Helping with the Developer's Guide
-==================================
+..
+  ==================================
+  Helping with the Developer's Guide
+  ==================================
 
-Developer's Guide workflow
-==============================
+  Developer's Guide workflow
+  ==============================
+
 
 Contributions 
 ==============

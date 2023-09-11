@@ -4,28 +4,56 @@
 Turn back
 =========
 
+The turning back function runs after the cutting procedure. After the delay
+time set by **T12**, then it turns back at speed set by **S16**. When position
+is reached the angle set by **O35**, the motor stops.
+
 Parameter List
 ==============
 
-P00
----
+S 16
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Turn Back Speed
    :animate: fade-in-slide-down
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
-   -Description
-     | The description can also start on the next line.
-     | value1: text;
-     | value2: text.
-     
-| No. | Max | Min | Unit | Description &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
-| --- | --- | --- | --- | --- |
-| A13 | 1 | 0 | - | Turning back:<br>0 = Off;<br>1 = On |
-| O35 | 359 | 0 | 1° | Angle of target position |
-| S16 | 500 | 50 | spm | Speed of turning back |
-| T12 | 1000 | 1 | ms | Waiting time up to the turning back |
+   -Max  500
+   -Min  50
+   -Unit  spm
+   -Description  Turn back speed for lifting needlebar after trim.
 
-The turning back function runs after the cutting procedure. After the delay time set by **T12**, then it turns back at speed set by **S16**. When position is reached the angle set by **O35**, the motor stops.
+T 12
+----
+
+.. dropdown:: Turn Back Delay
+   :animate: fade-in-slide-down
+   
+   -Max  1000
+   -Min  1
+   -Unit  ms
+   -Description  Lag time, after which,needle reverse after trim.
+   
+A 13
+----
+
+.. dropdown:: Turn Back
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | Reversal after trim:
+     | 0 = Off;
+     | 1 = On.
+
+O 35
+----
+
+.. dropdown:: Needle position after turn back
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Reversal position of the needle after trim.

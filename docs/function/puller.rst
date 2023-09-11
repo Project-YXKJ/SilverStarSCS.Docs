@@ -1,28 +1,10 @@
 .. _puller:
 
-Parameter List
-==============
-
-P00
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
-   -Description
-     | The description can also start on the next line.
-     | value1: text;
-     | value2: text.
-     
-====== 
-Puller 
+======
+Puller
 ======
 
-How it works
-============
+**How it works**:
 
 - During lifting, raising of puller when lifting the sewing foot.
 - During bartack, raising of puller when sewing the start/end bartack.
@@ -32,66 +14,61 @@ How it works
 # Parameter List
 ================
 
-A89
----
+A 64
+----
 
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-
-   -Max  1
-   -Min  0
-   -Unit  --
-   -Description
-     | puller function enable:
-     | 0 = Off;
-     | 1 = On.
-
-A90
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-
-   -Max  1
-   -Min  0
-   -Unit  --
-   -Description
-     | puller state(read only)
-     | 0 = down;
-     | 1 = raise up
-
-O97
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-
-   -Max  999
-   -Min  1
-   -Unit  ms
-   -Description  Full activation duration.
-
-O98
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-
-   -Max  100
-   -Min  1
-   -Unit  --
-   -Description  Duty cycle in time period when PWM activation.
-
-A64
----
-
-.. dropdown:: < > Detail 
+.. dropdown:: Delay stitch
    :animate: fade-in-slide-down
 
    -Max  255
    -Min  0
    -Unit  stitch
+   -Description  Number of stitches until the puller is lowered after seam begin,
+                 depens on stitch length and application.
+
+A 89
+----
+
+.. dropdown:: Puller
+   :animate: fade-in-slide-down
+
+   -Max  1
+   -Min  0
+   -Unit  --
    -Description
-    | Delay stitches after foot down
-    | 0 = foot lifter goes down, the puller goes down immediately;
-    | N = At seam start, the puller goes down after sew N stitches; in the seam, puller go up/down with sewing foot lifter.
+     | Upper puller:
+     | 0 = Off;
+     | 1 = On.
+
+A 90
+----
+
+.. dropdown:: Upper Puller Status
+   :animate: fade-in-slide-down
+
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  Upper puller status,up or down(read only).
+
+O 97
+----
+
+.. dropdown:: Time(t1)
+   :animate: fade-in-slide-down
+
+   -Max  999
+   -Min  1
+   -Unit  ms
+   -Description  Puller lifter:activation duration of in :term:`time period t1` (100% duty cycle).
+
+O 98
+----
+
+.. dropdown:: Duty cycle(t2)
+   :animate: fade-in-slide-down
+
+   -Max  100
+   -Min  1
+   -Unit  --
+   -Description  Puller lifter:duty cycle[%] in :term:`time period t2`.

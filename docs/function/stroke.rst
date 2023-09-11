@@ -19,153 +19,197 @@ set by **A32**, the second sewing foot stroke is automatically deactivated.
 Parameter List
 ==============
 
-S09
----
+S 09
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Max. Speed Stroke Whell Mark 1
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  The stroke knob type is switch: limit speed for 1st sewing foot stroke
+   -Description  The stroke height knob type is switch: Limit speed when turn adjusting 
+                 wheel to mark 1 position
 
-S10
----
+S 10
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Max. Speed for Small Stroke
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  The stroke knob type is switch: limit speed for 2nd sewing foot stroke
+   -Description  The stroke height knob type is potentiometer: Limit speed for the small
+                 stork height
 
-S11
----
+S 11
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Max. Speed Stroke Whell Mark 2
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  The stroke height knob type is potentiometer: limit speed for low stroke height
+   -Description  The stroke height knob type is switch: Limit speed when turun adjusting
+                 wheel to mark 2 position
 
-S12
----
+S 12
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Max. Speed Stroke Whell Mark 3
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  The stroke knob type is switch: limit speed for 3rd sewing foot stroke
+   -Description  The stroke height knob type is switch:Limit speed when turun adjusting
+                 wheel to mark 3 position
 
-S13
----
+S 13
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Max. Speed Stroke Whell Mark 4
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  The stroke knob type is switch: limit speed for 4th sewing foot stroke
+   -Description  The stroke height knob type is switch: Limit speed when turun adjusting
+                 wheel to mark 4 position
 
-S13
----
+S 14
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Max. Speed for High Stroke
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  The stroke knob type is switch: limit speed for 4th sewing foot stroke
+   -Description  The stroke height knob type is potentiometer:Limit speed for the high
+                 stork height
 
+S 15
+----
 
-S14
----
-
-.. dropdown:: < > Detail 
+.. dropdown:: Max. Speed for Elevated Stroke
    :animate: fade-in-slide-down
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  The stroke height knob type is potentiometer: limit speed for high stroke height
+   -Description  Limit speed for the elevated sewing foot storke
 
-S15
----
+A 24
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Status of Stroke
    :animate: fade-in-slide-down
    
-   -Max  4500
-   -Min  100
-   -Unit  spm
-   -Description  Limit speed for the maximum sewing foot stroke
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  Status of stroke height solenoid(read only)
 
-A32
----
+A 32
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Number of Stitches 2nd Stroke Off
    :animate: fade-in-slide-down
    
    -Max  99
    -Min  0
    -Unit  stitches
-   -Description  Number of stitches after which the second sewing foot stroke is automatically deactivated
+   -Description  
+     | 0 = Manually switch;
+     | Not 0 = Number of stitches after which the second stroke height is automatically deactivated.
 
-A35
----
+A 35
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Auto Speed Limit 
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  stitches
    -Description
-     | Speed limitation sewing foot stroke:
+     | If the second stroke is activated, speed reduced down to Parameter S15:
      | 0 = Off
      | 1 = On
 
-085
----
+A 45
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Stroke
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  stitches
+   -Description
+     | Stroke height function:
+     | 0 = Off
+     | 1 = On
+
+O 21
+----
+
+.. dropdown:: Min. Stroke Border
+   :animate: fade-in-slide-down
+   
+   -Max  4095
+   -Min  0
+   -Unit  stitches
+   -Description  The sensor value at the boundary position of the minimum stroke,
+                 the speed is reduced down as continue to increase stroke height.
+
+O 22
+----
+
+.. dropdown:: Max. Stroke Point
+   :animate: fade-in-slide-down
+   
+   -Max  4095
+   -Min  0
+   -Unit  stitches
+   -Description  Sensor value at position of maximum stroke.
+
+0 76
+----
+
+.. dropdown::Time(t1)
+   :animate: fade-in-slide-down
+   
+   -Max  999
+   -Min  1
+   -Unit  ms
+   -Description  Stroke height:activation duration of in :term:`time period t1`
+                 (100% duty cycle)
+
+0 77
+----
+
+.. dropdown:: Duty cycle(t2)
+   :animate: fade-in-slide-down
+   
+   -Max  100
+   -Min  1
+   -Unit  %
+   -Description  Stroke height:duty cycle[%] in :term:`time period t2`.
+
+0 85
+----
+
+.. dropdown:: The Stroke Height Sensor Type
    :animate: fade-in-slide-down
    
    -Max  2
    -Min  0
    -Unit  stitches
    -Description
-     | Sensor type of stroke height knob:
-     | 0 = No;
+     | 0 = Off;
      | 1 = Switch;
-     | 2 = Potentiometer
-
-076
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  500
-   -Min  1
-   -Unit  ms
-   -Description  Activation duration of the foot stroke in the time period T1(100% duty)
-
-077
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  100
-   -Min  1
-   -Unit  %
-   -Description  Duty cycle in time period T2(PWM)
+     | 2 = Potentiometer.

@@ -7,49 +7,49 @@ Daily piece counter
 Parameter List
 ==============
 
-A11
----
+A 11
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Piece Counter <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description
-     | Daily piece counter:
+     | Activate the Piece Counter:
      | 0 = Off;
      | 1 = On.
 
-O45
----
+O 45
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Stitches(Piece Counter) <...> 
    :animate: fade-in-slide-down
    
    -Max  999
    -Min  1
    -Unit  stitches
-   -Description  Min number of stitches for counter plus 1
+   -Description  Minimum number of stitches for Piece Counter plus 1
 
-O46
----
+O 46
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Trimming Times(Piece Counter) <...>
    :animate: fade-in-slide-down
    
    -Max  99
    -Min  1
    -Unit  stitches
-   -Description  Min number of thread trim times for counter plus 1
+   -Description  Minimum times of trim for Piece Counter plus 1
 
-O47
----
+O 47
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Piece Counter Value <...> 
    :animate: fade-in-slide-down
    
    -Max  9999
    -Min  0
    -Unit  stitches
-   -Description  Value of daily piece counter
+   -Description  The current value of Piece Counter.

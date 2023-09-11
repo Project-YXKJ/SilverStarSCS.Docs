@@ -1,37 +1,8 @@
-# Seam
+.. _seam:
 
-Parameter List
-==============
-
-P00
----
-
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
-   -Description
-     | The description can also start on the next line.
-     | value1: text;
-     | value2: text.
-     
-| No. | Max | Min | Unit | Description |
-| --- | --- | --- | --- | --- |
-| S05 | 4500 | 100 | spm | Speed of W sewing |
-| S06 | 4500 | 100 | spm | Speed of fixed stitches program |
-| A01 | 1 | 0 | - | Needle position, postion of the needle when sewing stops<br>0 = Lower needle position, needle in the material<br>1 = Upper needle position |
-| A03 | 1 | 0 | - | Correction position mode:<br>0 = Half stitch;<br>1 = One stitch |
-| A30 | 1 | 0 | - | Correction mode:<br>0 = Single correction;<br>1 = Continuous correction |
-| D15 | 359 | 0 | 1° | Angle of switch needle position up |
-| D16 | 359 | 0 | 1° | Angle of switch needle position down |
-| O69 | 1 | 0 | - | Correction mode:<br>0 = Correction function is not available after trimming;<br>1 = Correction function is available when the motor is stopped |
-| A02 | 1 | 0 | - | Automatic sewing middle section in fixed stitches program:<br>0 = Off, the middle speed of the sewing is controlled by the pedal;<br>1 = On, the sewing is automatically |
-| A16 | 1 | 0 | - | Automatic start sewing middle section after start bartack is finished in fixed stitches program:<br>0 = Off;<br>1 = On |
-| A17 | 1 | 0 | - | Automatic sewing end bartack in fixed stitches program:<br>0 = Off;<br>1 = On |
-| A19 | 2 | 1 | - | Action at pedal position -1:<br>1 = Sewing foot lift;<br>2 = Thread cutter |
-| O37 | 1 | 0 | - | No-position mode, stop at random position:<br>0 = Off;<br>1 = On |
+====
+Seam
+====
 
 **Program and seam**
 
@@ -72,3 +43,211 @@ When press the key, the needle moves form the current position to the position s
 If **A03** is equal to 1:
 
 when you press the button, two cases: if you set stop at upper position, the needle moves form the current position to the position set by parameter **D01**. if you set stop at lower position, the needle moves form the current position to the position set by parameter **D02**:
+
+Parameter List
+==============
+
+S 05
+----
+
+.. dropdown:: Speed in W-Sewing
+   :animate: fade-in-slide-down
+   
+   -Max  4500
+   -Min  100
+   -Unit  spm
+   -Description  Maximum speed in W-Sewing
+
+S 06
+----
+
+.. dropdown:: Speed in Program Sewing
+   :animate: fade-in-slide-down
+   
+   -Max  4500
+   -Min  100
+   -Unit  spm
+   -Description  Maximum speed in programmed stitches sewing
+
+A 01
+----
+
+.. dropdown:: Needle Position
+   :animate: fade-in-slide-down
+
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | Postion of the needle when sewing stop:     
+     | 0 = in the material;
+     | 1 = upper needle position.
+
+A 02
+----
+
+.. dropdown:: Auto Sewing for Program Sewing
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | 0 = The middle speed of the sewing is controlled by the pedal;
+     | 1 = The sewing is performed automatically.  
+
+A 03
+----
+
+.. dropdown:: Correction mode
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | 0 = Half stitch;
+     | 1 = One stitch
+
+A 16
+----
+
+.. dropdown:: Mode After Start Bartack in Programmed Sewing 
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | After start tacking is finished in programmed sewing:
+     | 0 = machine stops and must restart with the pedal;
+     | 1 = sewing continues after end.
+
+A 17
+----
+
+.. dropdown:: Auto End bartack and Trim when Programmed Sewing is finished
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  
+     | Whether end tacking and trim is automatically activated at seam end im programmed seam:
+     | 0 = continue by pedal;
+     | 1 = automatic.
+
+A 30
+----
+
+.. dropdown:: Correction Mode
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | 0 = single correction;
+     | 1 = continuous correction.
+
+A 31
+----
+
+.. dropdown:: Manual Revserse SW.
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | 0 = Normal;
+     | 1 = Reverse at stop.
+
+D 11
+----
+
+.. dropdown:: The minimum angle of Off reverse key function
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  If the needle position is greater than this angle, the manual reverse
+                 sewing button will not work.
+
+D 11
+----
+
+.. dropdown:: The maximum angle of Off reverse key function
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  If the needle position is greater than this angle, the manual reverse
+                 sewing button will not work.
+
+D 15
+----
+
+.. dropdown:: Correction:Upper Position
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Upper needle position in correction mode.
+
+D 16
+----
+
+.. dropdown:: Correction:Lower Position
+   :animate: fade-in-slide-down
+   
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Lower needle position in correction mode.
+
+D 18
+----
+
+.. dropdown:: Sewing mode
+   :animate: fade-in-slide-down
+   
+   -Max  3
+   -Min  1
+   -Unit  --
+   -Description  Sewing mode(read only).
+
+O 69
+----
+
+.. dropdown:: Correction Timming
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  
+     | Choose when you can correction:
+     | 0 = Unavailable after trim;
+     | 1 = Available during machine stop.
+
+
+
+
+
+O 37
+----
+
+.. dropdown:: < > Detail 
+   :animate: fade-in-slide-down
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  
+     | No-position mode, stop at random position:
+     | 0 = Off;
+     | 1 = On.

@@ -9,10 +9,20 @@ This book is a comprehensive resource for SilverStar's Control System for Sewing
 
 It is not written for a certain model product, but to explain the function,
 so here you can't find how to enter the setting interface or connection diagram 
-of output and input ports. 
+of output and input ports.
+
+The Content is organized into three *parts*:
+
+COMMON
+  Explain the function, applicable to all products.  
+
+PRODUCT
+  Essentials of each product.
+
+CONTACT
+  Dev
 
 It is :ref:`maintained <devguide>` by SilverStar's devs. We welcome your corrections!
-
 
 Full Table of Contents
 ======================
@@ -24,7 +34,7 @@ Full Table of Contents
 
 .. toctree::
   :caption: COMMON
-  :maxdepth: 5
+  :maxdepth: 3
 
   function/index
   troubleshooting/index.rst
@@ -37,12 +47,6 @@ Full Table of Contents
 
 .. toctree::
   :caption: CONTACT
-  :maxdepth: 5
+  :maxdepth: 3
 
   kitchen-sink/devguide
-
-  
-Reference
-======================
-
-:ref:`Syntax <syntax_ref>`

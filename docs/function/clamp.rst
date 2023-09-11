@@ -21,10 +21,21 @@ Switch on during foot lifting, the Max. permissible time is set by **T15** to pr
 Parameter List
 ==============
 
-A10
----
+T 15
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Action Time of Clamp <...>
+   :animate: fade-in-slide-down
+   
+   -Max  2000
+   -Min  1
+   -Unit  ms
+   -Description  Action time of clamp when lifting the foot or lifting the needlebar after trim.
+
+A 10
+----
+
+.. dropdown:: Thread clamp <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -35,76 +46,65 @@ A10
      | 0: Off;
      | 1: On.
 
-A29
----
+A 29
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Auto Mode for Clamp <...> 
    :animate: fade-in-slide-down
    
    -Max  3
    -Min  0
    -Unit  --
    -Description
-     | Thread clamp option:
-     | 0: Thread clamp only at start of seam;
-     | 1: Thread clamp at start of seam and at turning back;
-     | 2: Thread clamp at start of seam and with foot lifting
-     | 3: Thread clamp at start seam, at turning back and with foot lifting
+     | 0 = actions when start sewing;
+     | 1 = actions when start sewing and lifting the needle after trim;
+     | 2 = actions when start sewing and lifting the foot;
+     | 3 = both 1&2.
 
-T15
----
 
-.. dropdown:: < > Detail 
-   :animate: fade-in-slide-down
-   
-   -Max  2000
-   -Min  1
-   -Unit  ms
-   -Description  The maximum time the thread clamp can keep switch on
+D 07
+----
 
-D07
----
-
-.. dropdown:: < > Detail 
+.. dropdown:: Start Clamp Position <...> 
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position for activating the thread clamp
+   -Description  Position when the magnet of clamp is activated.
 
-D08
----
+D 08
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Stop Clamp Position <...>
    :animate: fade-in-slide-down
    
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  Position for deactivating the thread clamp
+   -Description  Position when the magnet of clamp is deactivated.
 
-O42
----
+O 42
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: PrePressure duiring Clamp <...>
    :animate: fade-in-slide-down
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  
-     | Reduce sewing foot lifter pressure during the clamping cycle:
+     | Reduce the sewing foot pressure during the clamping cycle:
      | 0: Off;
      | 1: On.  
 
-O48
----
+O 48
+----
 
-.. dropdown:: < > Detail 
+.. dropdown:: Duty cycle(t2) <...>
    :animate: fade-in-slide-down
    
    -Max  100
    -Min  0
    -Unit  %
-   -Description  Duty cycle in time period T2(PWM)   
+   -Description  Clamp:duty cycle[%] in :term:`time period t2`.

@@ -4,10 +4,10 @@
 Thread wiper
 ============
 
-The thread wiper function runs after the cutting procedure.
+Set `A 08`_` to 1 to enable the thread wiper function.
 
-When thread cutter is completed and the time set by **T03** is delayed, the wiper 
-will switch on, it will switch off after the time set by **T04**.
+When thread cutter is completed and the time set by `T 03`_ is delayed, the wiper 
+will switch on, it will switch off after the time set by `T 04`_.
 
 Parameter List
 ==============
@@ -23,8 +23,8 @@ A 08
    -Unit  --
    -Description
      | Wiper upper thread:
-     | 0: Off;
-     | 1: On.
+     | 0 = Off;
+     | 1 = On.
      
 T 03
 ----

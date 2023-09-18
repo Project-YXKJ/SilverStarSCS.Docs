@@ -151,8 +151,8 @@ O 70
    -Unit  --
    -Description 
      | Whether to throw a error if bus voltage is too high:
-     | 0: Off;
-     | 1: On.
+     | 0 = Off;
+     | 1 = On.
    
 O 71
 ----
@@ -165,9 +165,8 @@ O 71
    -Unit  --
    -Description
      | Whether to throw a error if AC 220 voltage is too high:
-     | 0: Off;
-     | 1: On.
-
+     | 0 = Off;
+     | 1 = On.
 
 I 44
 ----

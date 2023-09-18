@@ -4,12 +4,10 @@
 Second stitch length
 ====================
 
+**Speed limit when long stitch length activated:**
 
-**Speed limit when second stitch length activated:**
-
-If parameter **O33** set to 1, the speed is reduced down to parameter **S17** when 
-2nd stitch length activated.
-
+If parameter `O 33`_ set to 1, the speed is reduced down to parameter `S 17`_ when 
+long stitch length activated.
 
 Parameter List
 ==============

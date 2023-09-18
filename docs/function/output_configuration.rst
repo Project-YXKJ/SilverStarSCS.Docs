@@ -4,7 +4,8 @@
 Output configuration
 ====================
 
-Output Mode Code List:
+Output Mode Code List
+=====================
 
   - 0 = No function;
   - 1 = Thread cutter;
@@ -21,22 +22,30 @@ Output Mode Code List:
   - 12 = Seam center guide;
   - 13 = Zero stitch length for short thread cutter machine;
   - 14 = Auto corner for 2-needle machine;
+  
+  .. _15:
+  
   - 15 = Puller
 
-**How to setup the function of output ports**:
+**How to setup the function of output ports?**:
 
-follow the steps:
+Follow the steps:
 
-- Confirm which output port is connected to the solenoid valve, like output-07 or output-06. 
-  In this step, you need to know the specific model of the system you are using, then refer to its wiring diagram.
-
-- Refer to the table at the beginning of this chapter, get the parameter value you need.
-
-- Restart the system
+1. Confirm which output port is connected to the solenoid valve, like output-07 or output-06. 
+   In this step, you need to know the specific model of the system you are using, then refer
+   to its wiring diagram. Refer to the `Parameter List`_ section of this chapter to find 
+   the parameter number that controls the function of this port.
+2. Refer to the table at the beginning of this chapter `Output Mode Code List`_, 
+   get the parameter value you need.
+3. Modify the parameter obtained in step 1 to the function code obtained in step 2,
+   then restart the system.
 
 Let's take an example:
 
-For example, if **Output-01** is connected, set the function of **Output-01** to puller, that is, **A71** is set to 15 (15 is the code for puller function).
+
+You want set the function of **Output-01** to the puller. In the parameter list
+you will find `A 71`_, which controls the function of **Output-01**. In the input model
+code List, 15_ is code of puller function, then change A71 to 15.
 
 
 Parameter List

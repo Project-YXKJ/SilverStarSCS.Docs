@@ -6,8 +6,8 @@ Thread cutter
 
 **Thread cutting procedure**
 
-Thread cutting singnal is switched on when the angle value **D03** has been reached,
-the switched off when the angle value **D04**. If the position is not reached because
+Thread cutting singnal is switched on when the angle value `D 03`_ has been reached,
+the switched off when the angle value `D 04`_. If the position is not reached because
 of a mechanical error, the thread cutter signal is switched off after 500ms for protect
 the magnet from damage.
 

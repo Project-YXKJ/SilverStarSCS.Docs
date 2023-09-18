@@ -4,19 +4,26 @@
 Seam center guide
 =================
 
-**When to lift automatically**
+**How automatic mode works?**
 
-Automatic lifting seam center guide is associated with three situations: footlifter, bartack(start or end tack) or reverse, and stroke. Mode is seted by **A51**.
+Automatic lifting seam center guide is associated with three situations: 
+
+a) footlifter
+b) bartack(start or end tack) or reverse
+c) and stroke. 
+
+Mode is seted by `A 51`_:
 
 - 0 = Toggle seam center guide raise up/down via a manual button;
-
 - 1 = Raising of seam center guide when lifting the sewing foot;
 - 2 = Raising of seam center guide when sewing the bartack/reverse;
-- 3 = Raising of seam center guide when sewing the bartack/reverse and lifting the sewing foot;
+- 3 = Raising of seam center guide when sewing the bartack/reverse and 
+      lifting the sewing foot;
 - 4 = Raising of seam center guide when high stroke;
 - 5 = Raising of seam center guide when lifting the sewing foot and high stroke;
-- 6 = Raising of seam center guide when sewing the bartack/reverse and high stroke；
-- 7 = Raising of seam center guide when lifting the sewing foot, sewing the bartack/reverse and high stroke.
+- 6 = Raising of seam center guide when sewing the bartack/reverse and high stroke;
+- 7 = Raising of seam center guide when lifting the sewing foot, sewing 
+      the bartack/reverse and high stroke.
 
 
 Parameter List

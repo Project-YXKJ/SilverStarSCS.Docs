@@ -4,16 +4,17 @@
 Motor
 =====
 
-**Holding force of the motor:**
+**Holding force of the motor**
 
-Enable this function by set **A54** to 1.
+Enable this function by set `A 54`_ to 1.
 
-This function prevents unwanted wandering of the needle when machine has stopped. The effect can be checked by turning the hand wheel.
+This function prevents unwanted wandering of the needle when machine has stopped. 
+The effect can be checked by turning the hand wheel.
 
-The maximum time the holding force can keep takes effect is determined by parameter **A66**.
+The maximum time the holding force can keep takes effect is determined by parameter `A 66`_.
 
-- If **A66** equal to 0, it take effect always when stopped.
-- If **A66** is not equal to 0, effective time is the value set by **A66**.
+- If `A 66`_ equal to 0, it take effect always when stopped.
+- If `A 66`_ is not equal to 0, effective time is the value set by `A 66`_.
 
 Parameter List
 ==============
@@ -50,8 +51,11 @@ A 18
    -Unit  spm
    -Description  
      | Needle position is automatically moved to upper position after power-on:
-     | 0:Off;
-     | 1:On.
+     | 0 = Off;
+     | 1 = On.
+     
+.. danger:: 
+   Please set A18 parameters carefully, it may cause personal danger.
 
 A 54
 ----

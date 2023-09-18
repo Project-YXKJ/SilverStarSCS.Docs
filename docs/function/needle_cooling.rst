@@ -4,16 +4,16 @@
 Needle cooling
 ==============
 
-When the machine is running, the needle cooling is to be activated.
+Needle cooling can assist in cooling the needle to avoid damage to the sewing material and breakage of the upper thread.
 
-**How it works**:
+**How it works?**:
 
-Above the speed set by **S18**, the needle cooling start;
+Above the speed set by `S 18`_, the needle cooling start;
 
-Below the speed set by **S18**, the needle cooling does not stop immediately, needle cooling
-to continue until the set time(**T16**) has elapsed.
+Below the speed set by `S 18`_, the needle cooling does not stop immediately, needle cooling
+to continue until the set time(`T 16`_) has elapsed.
 
-During the follow-up time, if the speed exceeds **S18** again, the needle cooling start again.
+During the follow-up time, if the speed exceeds `S 18`_ again, the needle cooling start again.
 
 
 Parameter List

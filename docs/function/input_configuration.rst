@@ -4,47 +4,63 @@
 Input configuration
 ===================
 
-Input Mode Code List:
+Input Mode Code List
+=====================
 
-- 0 = No function
-- 1 = Manual bartack
+- 0 = No function;
+- 1 = Manual bartack;
 - 2 = Forward correction;
-- 3 = Backward correction  
-- 4 = Forward correction at stop, reverse at running
-- 5 = Backward correction at stop, reverse at running
-- 6 = Quick toggle stroke
-- 7 = Enable/unable bartack at seam start/end
-- 8 = Second stitch length
-- 9 = Additional thread tension
-- 10 = Pause
-- 11 = Thread a needle
-- 12 = Toggle seam center guide raise up/down
-- 13 = Tilt switch
-- 14 = Up thread broken sensor
-- 15 = Eye protection sensor
-- 16 = Hook cover missing sensor
-- 17 = Toggle sewing foot lifter raise up/down
-- 18 = lifting sewing foot via the knee switch
+- 3 = Backward correction;
+- 4 = Forward correction at stop, reverse at running;
+- 5 = Backward correction at stop, reverse at running;
+- 6 = Quick toggle stroke;
+- 7 = Enable/unable bartack at seam start/end;
+- 8 = Second stitch length;
+- 9 = Additional thread tension;
+- 10 = Pause [#]_;
+- 11 = Thread a needle [#]_;
+- 12 = Toggle seam center guide raise up/down;
+- 13 = Tilt switch;
+- 14 = Up thread broken sensor;
+- 15 = Eye protection sensor;
+- 16 = Hook cover missing sensor;
+- 17 = Toggle sewing foot lifter raise up/down;
+- 18 = lifting sewing foot via the knee switch;
 - 19 = Oil Starvation;
+  
+  .. _20:
+
 - 20 = Toggle puller raise up/down;
 - 100 = Sewing foot stroke knob potentiometer
 - 101 = Sewing foot height sensor
 
+.. [#] Pause mode, the machine can not run by step the pedal.
+
+.. [#] Threading mode, the machine can not run by step the pedal, and the tension
+       is activated.
+
 .. important::
   Functions with codes greater than 100 needs an analog port.
 
-**How to setup the function of input ports**:
+**How to setup the function of input ports?**:
 
 follow the steps:
 
-- Confirm which input port is connected to the switch, keypad, sensor etc, like input-07 or input-06. In this step, you need to know the specific model of the system you are using, then refer to its wiring diagram.
-- Refer to the table at the beginning of this chapter, get the parameter value you need.
-- Restart the system
+1. Confirm which port you need to modify, such as Input-01 or Input-02.
+   In this step, you need to know the specific model of the system you are using,
+   then refer to its wiring diagram. Refer to the `Parameter List`_ section 
+   of this chapter to find the parameter number that controls the function of 
+   this port.
+2. Refer to the table at the beginning of this chapter `Input Mode Code List`_, 
+   get the parameter value you need.
+3. Modify the parameter obtained in step 1 to the function code obtained in step 2,
+   then restart the system.
 
 Let's take an example:
 
-For example, you want use the sixth key of the keypad to control the puller, you need to set the function of **Keypad-Key06** to puller, that is, **A41** is set to 20 (20 is code of function switch the state of puller).
-
+You want use the sixth key of the keypad to control the puller. In the parameter list
+you will find `A 41`_, which controls the function of **Keypad-Key06**. In the input model
+code List, 20_ is code of puller function, then change A41 to 20.
 
 Parameter List
 ==============

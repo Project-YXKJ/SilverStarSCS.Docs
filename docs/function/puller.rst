@@ -4,14 +4,15 @@
 Puller
 ======
 
-**How it works**:
+**How automatic mode works?**:
 
 - During lifting, raising of puller when lifting the sewing foot.
 - During bartack, raising of puller when sewing the start/end bartack.
 - During backwards, raising of puller when reverse button pressed.
-- The puller is to be switched on via a button, if the puller is switched off, it is always up, if the button is pressed, the puller goes down.
+- The puller is to be switched on via a button, if the puller is switched off, 
+  it is always up, if the button is pressed, the puller goes down.
 
-# Parameter List
+Parameter List
 ================
 
 A 64

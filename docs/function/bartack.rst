@@ -6,6 +6,12 @@ Bartack
 
 **Stitch in stitch**
 
+todo 
+
+**SD Mode**
+
+todo 
+
 Parameter List
 ==============
 

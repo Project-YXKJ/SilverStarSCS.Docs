@@ -7,8 +7,8 @@ Soft start
 Parameter List
 ==============
 
-When beginning a new seam, speed is determined by the pedal and limited to the soft 
-start speed.
+When beginning a new seam, within the number of soft start stitches `O 01`_, 
+speed is determined by the pedal and limited to the soft start speed `S 08`_.
 
 S 08
 ----
@@ -32,8 +32,8 @@ A 21
    -Unit  -- 
    -Description
      | Soft start when a new seam start:
-     | 0 = On;
-     | 1 = Off.
+     | 0 = Off;
+     | 1 = On.
      
 O 01
 ----

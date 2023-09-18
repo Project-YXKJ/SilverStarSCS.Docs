@@ -4,32 +4,38 @@
 Sewing foot lifter
 ==================
 
-**Foot is raised:**
+**Foot is raised**
 
-- on the seam:
+- on the seam
+  
+  by pedal back(:term:`POSITION -1`) or automatically with A14 setted to 1
 
-by pedal back(position -1) or automatically with A14 setted to 1
+- after thread has been cut: 
+  
+  by pedal back(:term:`POSITION -1` or :term:`POSITION -2`) or automatically 
+  with `A 15`_ setted to 1
 
-- after thread has been cut
+**Holding force of the raised foot**
 
-  by pedal back(position -1 or position -2) or automatically with A15 setted to 1
+the foot lifting is raised by full activation, then it switches automatically
+to partial activation to reduce the load on the controller and the connected 
+magnets.
 
-**Holding force of the raised foot:**
+The full activation period is set with `T 07`_ and holding force during partial 
+activation is set with `O 05`_.
 
-the foot lifting is raised by full activation, then it switches automatically to 
-partial activation to reduce the load on the controller and the connected magnets.
-The full activation period is set with T07 and holding force during partial activation
-is set with O05.
+**Timeout release**
 
-**Timeout release:**
+In order to reduce heat generation, timed release can be set. 
 
-In order to reduce heat generation, timed release can be set. if parameter O06 is set
-to 1, the maximum time the foot lifter can keep raised is determined by parameter O07.
+if parameter `O 06`_ is set to 1, the maximum time the foot lifter can keep 
+raised is determined by parameter `O 07`_.
 
-**Delay time:**
+**Delay time**
 
-When pushing the pedal forward, with a raised sewing foot the start up delay, which can
-be set with parameter T06.
+When the sewing foot is the raised, in order to ensure that the sewing material is 
+pressed tightly before the machine starts running, a tiem lag will be inserted after
+step the pedal forward, which is controlled by parameter `T 06`_.
 
 Parameter List
 ==============

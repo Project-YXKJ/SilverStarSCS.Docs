@@ -10,7 +10,6 @@ Tilt safaty switch
 Parameter List
 --------------
 
-
 T 09
 ^^^^
 
@@ -49,8 +48,6 @@ O 32
    -Description
      | 0 = Normal close;
      | 1 = Normal open.
-
-
 
 Eye Guard
 =========

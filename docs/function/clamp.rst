@@ -6,17 +6,17 @@ Thread clamp
 
 **Thread clamp at seam start**:
 
-Switch on at position set by **D07**, switch off at position set by **D08**.
+Switch on at position set by `D 07`_, switch off at position set by `D 08`_.
 
 Action only during the first stitch, reset after thread trim.
 
 **Thread clamp at turning back**:
 
-Switch on during turning back, the Max. permissible time is set by **T15** to protect from damage.
+Switch on during turning back, the Max. permissible time is set by `T 15`_ to protect from damage.
 
 **Thread clamp at sewing foot lifting**:
 
-Switch on during foot lifting, the Max. permissible time is set by **T15** to protect from damage.
+Switch on during foot lifting, the Max. permissible time is set by `T 15`_ to protect from damage.
 
 Parameter List
 ==============
@@ -43,8 +43,8 @@ A 10
    -Unit  --
    -Description
      | Thread clamp:
-     | 0: Off;
-     | 1: On.
+     | 0 = Off;
+     | 1 = On.
 
 A 29
 ----
@@ -95,8 +95,8 @@ O 42
    -Unit  --
    -Description  
      | Reduce the sewing foot pressure during the clamping cycle:
-     | 0: Off;
-     | 1: On.  
+     | 0 = Off;
+     | 1 = On.  
 
 O 48
 ----

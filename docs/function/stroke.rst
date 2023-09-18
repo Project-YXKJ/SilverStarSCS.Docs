@@ -4,16 +4,28 @@
 Sewing foot stroke
 ==================
 
+**Speed limit during quick stroke adjustment**
 
-**Speed limitation sewing foot stroke**
+If parameter `A 35`_ set to 1, when 2nd sewing foot stroke is activated, the speed is 
+reduced down to the desired value of 2nd sewing foot stroke which set by `S 15`_.
 
-if parameter **A35** set to 1, when 2nd sewing foot stroke is activated, the speed is 
-reduced down to the desired value of 2nd sewing foot stroke which set by **S15**.
+**交互量轮盘限速**
+
+如果交互量调节轮盘内安装了传感器, 在调节交互量高度时, 系统会自动进行限速, 依据
+传感器类型限速有两种策略:
+
+- 开关式
+  
+  挡位式限速, 如果安装有2个开关, 则就是四个挡位.
+
+- 电位器
+  
+  无极变速, 在一个交互量高度之前不限速, 之后随着交互量高度继续增大, 限制速度随之线性越来越小.
 
 **Number of stitches 2nd stroke off**
 
-if **A32** is not 0, when switching to 2nd sewing foot stroke, after sewing N stitches 
-set by **A32**, the second sewing foot stroke is automatically deactivated.
+if `A 32`_ is not 0, when switching to 2nd sewing foot stroke, after sewing N stitches 
+set by `A 32`_, the second sewing foot stroke is automatically deactivated.
 
 
 Parameter List

@@ -6,22 +6,25 @@ Bobbin Counter
 
 Using Lower thread counter allows users to know the remaining thread amount.
 
-
 **Here is a formula**:
 
-Remaining thread amount = reset value of the bobbin thread counter(O43) - bobbin thread counter value(O44).
+.. math::
+   :name: Bobbin Remaining Amount
+
+   N_{\text{Remaining thread amount}} 
+   = O43_{\text{reset value of the bobbin thread counter}} - O44_{\text{bobbin thread counter value}}
 
 **Setup steps**:
 
-- Set an appropriate value for O19, every time N stitches are sewn which set by parameter O19, the counter(O44) increases by 1.
-
-- Set an appropriate value for O43, this is a very variable value, which depends on the size of the bobbin and the thickness of the thread.
-
-- Choose when to throw a warning by setting O20, immediately or after thread cutting.
-
-- Enable counter.
-- As the sewing, the remaining thread amount(O43-O44) is counted down, when it reaches 0, the machine will stop, and the controller will throw a warning(Code 5). A reset is needed if you want continue.
-
+1. Set an appropriate value for `O 19`_, every time N stitches are sewn which set by
+   this parameter, the counter value `O 44`_ increases by 1.
+2. Set an appropriate value for `O 43`_, this is a very variable value, which depends
+   on the size of the bobbin and the thickness of the thread.
+3. Choose when to throw a warning by setting `O 20`_, immediately or after thread cutting.
+4. Set `A 12`_ to 1, enable the counter.
+5. Refer to the beginning of this chapter `Bobbin Remaining Amount`_, as the sewing,
+   the remaining amount is counted down, when it reaches 0, the machine will stop, 
+   and the controller will throw a warning. A reset is needed if you want continue.
 
 Parameter List
 ==============
@@ -37,8 +40,8 @@ A 12
    -Unit  --
    -Description
      | Activate the Bobbin stitch counter:
-     | 0: Off;
-     | 1: On.
+     | 0 = Off;
+     | 1 = On.
 
 O 19
 ----

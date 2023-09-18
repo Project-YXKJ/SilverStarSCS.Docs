@@ -67,7 +67,7 @@ Motion
     :link-type: doc 
 
   .. grid-item-card:: HandWheel
-    :link: hand_wheel
+    :link: elec_hand_wheel
     :link-type: doc 
 
   .. grid-item-card:: Seam Center Guide
@@ -206,7 +206,7 @@ Table of Contents
   wiper
   control_other
   daily_piece_counter
-  hand_wheel
+  elec_hand_wheel
   input_configuration
   output_configuration
   stroke

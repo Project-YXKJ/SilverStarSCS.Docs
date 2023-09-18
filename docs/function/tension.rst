@@ -6,13 +6,13 @@ Thread tension
 
 **During thread cutting:**
 
-The thread tension power on when position is reached with D13 and power off when
-position is reached with D14 during thread trimming.
+The thread tension power on when position is reached with `D 13`_ and power off 
+when position is reached with `D 14`_ during thread trimming.
 
 **During foot lifting:**
 
 Adjust parameter of the thread tension during active foot lift: the mode for thread
-tension is determined by parameter A27, the default value is 2.
+tension is determined by parameter `A 27`_, the default value is 2.
 
 **During 2nd Sewing foot stroke:**
 
@@ -22,8 +22,8 @@ the mode is determined by parameter A28, the default value 1.
 **Electromagnetor solenoid valve:**
 
 If tension is controlled by electromagnet not solenoid valve, you need to be careful
-when setting tha value of **O75**. Over premissible power on time, the electromagnet
-may burn out, thus a electromagnet with a small value of **O75** is protected form damage.
+when setting tha value of `O 75`_. Over premissible power on time, the electromagnet
+may burn out, thus a electromagnet with a small value of `O 75`_ is protected form damage.
 
 
 Parameter List

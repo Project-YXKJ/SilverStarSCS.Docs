@@ -4,9 +4,12 @@
 Turn back
 =========
 
+Set `A 13`_` to 1 to enable the turn back function, this function helps remove 
+the materials and prevent the needle from scratching the fabric.
+
 The turning back function runs after the cutting procedure. After the delay
-time set by **T12**, then it turns back at speed set by **S16**. When position
-is reached the angle set by **O35**, the motor stops.
+time set by `T 12`_, then it turns back at speed set by `S 16`_. When position
+is reached the angle set by `O 35`_, the motor stops.
 
 Parameter List
 ==============

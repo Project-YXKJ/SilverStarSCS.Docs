@@ -5,7 +5,7 @@ Multitest
 =========
 
 When the endurance test starts, the machine will run automatically until the test time 
-which set by **O25** is reached.
+which set by `O 25`_ is reached.
 
 
 Parameter List

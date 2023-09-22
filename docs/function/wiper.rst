@@ -15,7 +15,7 @@ Parameter List
 A 08
 ----
 
-.. dropdown:: Wiper
+.. dropdown:: Wiper <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -29,7 +29,7 @@ A 08
 T 03
 ----
 
-.. dropdown:: Wiper Delay time
+.. dropdown:: Wiper Delay time <...>
    :animate: fade-in-slide-down
    
    -Max  200
@@ -40,7 +40,7 @@ T 03
 T 04
 ----
 
-.. dropdown:: Wiper Activation Duration
+.. dropdown:: Wiper Activation Duration <...>
    :animate: fade-in-slide-down
    
    -Max  200

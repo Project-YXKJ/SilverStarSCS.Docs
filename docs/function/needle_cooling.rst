@@ -22,7 +22,7 @@ Parameter List
 S 18
 ----
 
-.. dropdown:: Cool Speed
+.. dropdown:: Cool Speed <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -33,7 +33,7 @@ S 18
 T 16
 ----
 
-.. dropdown:: Needle Cooling Follow Up Time
+.. dropdown:: Needle Cooling Follow Up Time <...>
    :animate: fade-in-slide-down
    
    -Max  10
@@ -45,7 +45,7 @@ T 16
 A 48
 ----
 
-.. dropdown:: Needle Cooling 
+.. dropdown:: Needle Cooling <...> 
    :animate: fade-in-slide-down
    
    -Max  1
@@ -59,7 +59,7 @@ A 48
 O 93
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: Time(t1) <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -70,7 +70,7 @@ O 93
 O 94
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: Duty cycle(t2) <...>
    :animate: fade-in-slide-down
    
    -Max  100

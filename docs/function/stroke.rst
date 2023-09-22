@@ -34,7 +34,7 @@ Parameter List
 S 09
 ----
 
-.. dropdown:: Max. Speed Stroke Whell Mark 1
+.. dropdown:: Max. Speed Stroke Whell Mark 1 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -46,7 +46,7 @@ S 09
 S 10
 ----
 
-.. dropdown:: Max. Speed for Small Stroke
+.. dropdown:: Max. Speed for Small Stroke <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -58,7 +58,7 @@ S 10
 S 11
 ----
 
-.. dropdown:: Max. Speed Stroke Whell Mark 2
+.. dropdown:: Max. Speed Stroke Whell Mark 2 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -70,7 +70,7 @@ S 11
 S 12
 ----
 
-.. dropdown:: Max. Speed Stroke Whell Mark 3
+.. dropdown:: Max. Speed Stroke Whell Mark 3 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -82,7 +82,7 @@ S 12
 S 13
 ----
 
-.. dropdown:: Max. Speed Stroke Whell Mark 4
+.. dropdown:: Max. Speed Stroke Whell Mark 4 <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -94,7 +94,7 @@ S 13
 S 14
 ----
 
-.. dropdown:: Max. Speed for High Stroke
+.. dropdown:: Max. Speed for High Stroke <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -106,7 +106,7 @@ S 14
 S 15
 ----
 
-.. dropdown:: Max. Speed for Elevated Stroke
+.. dropdown:: Max. Speed for Elevated Stroke <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -117,7 +117,7 @@ S 15
 A 24
 ----
 
-.. dropdown:: Status of Stroke
+.. dropdown:: Status of Stroke <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -128,7 +128,7 @@ A 24
 A 32
 ----
 
-.. dropdown:: Number of Stitches 2nd Stroke Off
+.. dropdown:: Number of Stitches 2nd Stroke Off <...>
    :animate: fade-in-slide-down
    
    -Max  99
@@ -141,7 +141,7 @@ A 32
 A 35
 ----
 
-.. dropdown:: Auto Speed Limit 
+.. dropdown:: Auto Speed Limit  <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -155,7 +155,7 @@ A 35
 A 45
 ----
 
-.. dropdown:: Stroke
+.. dropdown:: Stroke <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -169,7 +169,7 @@ A 45
 O 21
 ----
 
-.. dropdown:: Min. Stroke Border
+.. dropdown:: Min. Stroke Border <...>
    :animate: fade-in-slide-down
    
    -Max  4095
@@ -181,7 +181,7 @@ O 21
 O 22
 ----
 
-.. dropdown:: Max. Stroke Point
+.. dropdown:: Max. Stroke Point <...>
    :animate: fade-in-slide-down
    
    -Max  4095
@@ -192,7 +192,7 @@ O 22
 0 76
 ----
 
-.. dropdown::Time(t1)
+.. dropdown::Time(t1) <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -204,7 +204,7 @@ O 22
 0 77
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: Duty cycle(t2) <...>
    :animate: fade-in-slide-down
    
    -Max  100
@@ -215,7 +215,7 @@ O 22
 0 85
 ----
 
-.. dropdown:: The Stroke Height Sensor Type
+.. dropdown:: The Stroke Height Sensor Type <...>
    :animate: fade-in-slide-down
    
    -Max  2

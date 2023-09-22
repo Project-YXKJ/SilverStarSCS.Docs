@@ -35,7 +35,7 @@ A 49
 A 52
 ----
 
-.. dropdown:: Lock Panel
+.. dropdown:: Lock Panel <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -132,7 +132,7 @@ O 52
 O 66
 ----
 
-.. dropdown:: Factory reset 
+.. dropdown:: Factory reset <...>
    :animate: fade-in-slide-down
    
    -Max  1

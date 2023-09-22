@@ -10,7 +10,7 @@ Parameter List
 T 01
 ----
 
-.. dropdown:: Reverse Action In Place Time
+.. dropdown:: Reverse Action In Place Time <...>
    :animate: fade-in-slide-down
    
    -Max  200
@@ -21,7 +21,7 @@ T 01
 T 02
 ----
 
-.. dropdown:: Reverse Release In Place Time
+.. dropdown:: Reverse Release In Place Time <...>
    :animate: fade-in-slide-down
    
    -Max  200
@@ -32,7 +32,7 @@ T 02
 D 05
 ----
 
-.. dropdown:: Start Reverse Position
+.. dropdown:: Start Reverse Position <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -43,7 +43,7 @@ D 05
 D 06
 ----
 
-.. dropdown:: Stop Reverse Position
+.. dropdown:: Stop Reverse Position <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -54,7 +54,7 @@ D 06
 T 08
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: Time(t1) <...>
    :animate: fade-in-slide-down
    
    -Max  200
@@ -66,7 +66,7 @@ T 08
 O 09
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: Duty cycle(t2) <...>
    :animate: fade-in-slide-down
    
    -Max  100
@@ -77,7 +77,7 @@ O 09
 O 10
 ----
 
-.. dropdown:: Auto Power-off Reverse
+.. dropdown:: Auto Power-off Reverse <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -92,7 +92,7 @@ O 10
 O 11
 ----
 
-.. dropdown:: Reverse Max. Holding Time
+.. dropdown:: Reverse Max. Holding Time <...>
    :animate: fade-in-slide-down
    
    -Max  30

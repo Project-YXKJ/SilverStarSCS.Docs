@@ -42,8 +42,11 @@ Full Table of Contents
 
 .. toctree:: 
   :caption: PRODUCT
+  :maxdepth: 3
 
-  product/90a0
+  product/controller
+  product/hmi
+  product/motor
 
 .. toctree::
   :caption: CONTACT

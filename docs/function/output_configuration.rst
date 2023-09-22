@@ -54,7 +54,7 @@ Parameter List
 A 71
 ----
 
-.. dropdown:: Mode Output-01 
+.. dropdown:: Mode Output-01 <...> 
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -65,7 +65,7 @@ A 71
 A 72
 ----
 
-.. dropdown:: Mode Output-02 
+.. dropdown:: Mode Output-02 <...> 
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -76,7 +76,7 @@ A 72
 A 73
 ----
 
-.. dropdown:: Mode Output-03
+.. dropdown:: Mode Output-03 <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -87,7 +87,7 @@ A 73
 A 74
 ----
 
-.. dropdown:: Mode Output-4 
+.. dropdown:: Mode Output-4 <...> 
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -98,7 +98,7 @@ A 74
 A 75
 ----
 
-.. dropdown:: Mode Output-05 
+.. dropdown:: Mode Output-05 <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -110,7 +110,7 @@ A 75
 A 76
 ----
 
-.. dropdown:: Mode Output-06
+.. dropdown:: Mode Output-06 <...>
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -121,7 +121,7 @@ A 76
 A 77
 ----
 
-.. dropdown:: Mode Output-07 
+.. dropdown:: Mode Output-07 <...> 
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -132,7 +132,7 @@ A 77
 A 78
 ----
 
-.. dropdown:: Mode Output-08 
+.. dropdown:: Mode Output-08 <...> 
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -143,7 +143,7 @@ A 78
 A 79
 ----
 
-.. dropdown:: Mode Output-09 
+.. dropdown:: Mode Output-09 <...> 
    :animate: fade-in-slide-down
    
    -Max  maximum
@@ -154,7 +154,7 @@ A 79
 A 80
 ----
 
-.. dropdown:: Mode Output-10 
+.. dropdown:: Mode Output-10 <...> 
    :animate: fade-in-slide-down
    
    -Max  maximum

@@ -15,7 +15,7 @@ Parameter List
 S 17
 ----
 
-.. dropdown:: Max. Speed Long Stitch Length
+.. dropdown:: Max. Speed Long Stitch Length <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -26,7 +26,7 @@ S 17
 A 25
 ----
 
-.. dropdown:: Status of Second Stitch Length
+.. dropdown:: Status of Second Stitch Length <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -37,7 +37,7 @@ A 25
 A 46
 ----
 
-.. dropdown:: Stitch Length
+.. dropdown:: Stitch Length <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -51,7 +51,7 @@ A 46
 A 50
 ----
 
-.. dropdown:: Stitch length during bartack
+.. dropdown:: Stitch length during bartack <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -65,7 +65,7 @@ A 50
 O 33
 ----
 
-.. dropdown:: Speed limitation stitch length
+.. dropdown:: Speed limitation stitch length <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -79,7 +79,7 @@ O 33
 O 78
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: Time(t1) <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -91,7 +91,7 @@ O 78
 O 79
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: Duty cycle(t2) <...>
    :animate: fade-in-slide-down
    
    -Max  100

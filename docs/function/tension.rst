@@ -32,7 +32,7 @@ Parameter List
 A 26
 ----
 
-.. dropdown:: Status of Additional Thread Tension
+.. dropdown:: Status of Additional Thread Tension <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -43,7 +43,7 @@ A 26
 A 27
 ----
 
-.. dropdown:: Auto mode for tension at foot lifting
+.. dropdown:: Auto mode for tension at foot lifting <...>
    :animate: fade-in-slide-down
    
    -Max  3
@@ -59,7 +59,7 @@ A 27
 A 28
 ----
 
-.. dropdown:: Auto Additional Thread Tension
+.. dropdown:: Auto Additional Thread Tension <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -73,7 +73,7 @@ A 28
 D 13
 ----
 
-.. dropdown:: Start Tension Position
+.. dropdown:: Start Tension Position <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -84,7 +84,7 @@ D 13
 D 14
 ----
 
-.. dropdown:: Stop Tension Position
+.. dropdown:: Stop Tension Position <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -95,7 +95,7 @@ D 14
 O 49
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: Time(t1) <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -107,7 +107,7 @@ O 49
 O 50
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: Duty cycle(t2) <...>
    :animate: fade-in-slide-down
    
    -Max  100
@@ -118,7 +118,7 @@ O 50
 O 75
 ----
 
-.. dropdown:: Tension Max. Lifting Time
+.. dropdown:: Tension Max. Lifting Time <...>
    :animate: fade-in-slide-down
    
    -Max  9999
@@ -131,7 +131,7 @@ O 75
 O 86
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: Time(t1) <...>
    :animate: fade-in-slide-down
    
    -Max  500
@@ -143,7 +143,7 @@ O 86
 O 87
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: Duty cycle(t2) <...>
    :animate: fade-in-slide-down
    
    -Max  100
@@ -154,7 +154,7 @@ O 87
 O 88
 ----
 
-.. dropdown:: Addition tension solenoid work mode
+.. dropdown:: Addition tension solenoid work mode <...>
    :animate: fade-in-slide-down
    
    -Max  1

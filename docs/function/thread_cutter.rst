@@ -18,7 +18,7 @@ Parameter List
 S 07
 ----
 
-.. dropdown:: Trimming Speed
+.. dropdown:: Trimming Speed <...>
    :animate: fade-in-slide-down
    
    -Max  300
@@ -29,7 +29,7 @@ S 07
 A 06
 ----
 
-.. dropdown:: Thread Trim
+.. dropdown:: Thread Trim <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -43,7 +43,7 @@ A 06
 A 42
 ----
 
-.. dropdown:: Short Thread Cutter
+.. dropdown:: Short Thread Cutter <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -57,7 +57,7 @@ A 42
 A 67
 ----
 
-.. dropdown:: Short Thread Cutter Stitches
+.. dropdown:: Short Thread Cutter Stitches <...>
    :animate: fade-in-slide-down
    
    -Max  10
@@ -68,7 +68,7 @@ A 67
 D 03
 ----
 
-.. dropdown:: Start trim position
+.. dropdown:: Start trim position <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -80,7 +80,7 @@ D 03
 D 04
 ----
 
-.. dropdown:: Stop trim position
+.. dropdown:: Stop trim position <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -91,7 +91,7 @@ D 04
 D 17
 ----
 
-.. dropdown:: Start Movable Knife Position(STC)
+.. dropdown:: Start Movable Knife Position(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -102,7 +102,7 @@ D 17
 D 18
 ----
 
-.. dropdown:: Stop Movable Knife Position(STC)
+.. dropdown:: Stop Movable Knife Position(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -113,7 +113,7 @@ D 18
 D 19
 ----
 
-.. dropdown:: Start Reverse Position(STC)
+.. dropdown:: Start Reverse Position(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -124,7 +124,7 @@ D 19
 D 20
 ----
 
-.. dropdown:: Stop Reverse Position(STC)
+.. dropdown:: Stop Reverse Position(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -135,7 +135,7 @@ D 20
 D 21
 ----
 
-.. dropdown:: Start Zero Stitch Length Position(STC)
+.. dropdown:: Start Zero Stitch Length Position(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -146,7 +146,7 @@ D 21
 D 22
 ----
 
-.. dropdown:: Stop Zero Stitch Length Position(STC)
+.. dropdown:: Stop Zero Stitch Length Position(STC) <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -157,7 +157,7 @@ D 22
 O 38
 ----
 
-.. dropdown:: Pedal Reset After Trim
+.. dropdown:: Pedal Reset After Trim <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -171,7 +171,7 @@ O 38
 O 95
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: Time(t1) <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -183,7 +183,7 @@ O 95
 O 96
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: Duty cycle(t2) <...>
    :animate: fade-in-slide-down
    
    -Max  100

@@ -43,7 +43,7 @@ Parameter List
 T 05
 ----
 
-.. dropdown:: Debouncing of Lifting Foot 
+.. dropdown:: Debouncing of Lifting Foot <...>
    :animate: fade-in-slide-down
    
    -Max  500
@@ -55,7 +55,7 @@ T 05
 T 06
 ----
 
-.. dropdown:: Foot Drop Time
+.. dropdown:: Foot Drop Time <...>
    :animate: fade-in-slide-down
    
    -Max  500
@@ -67,7 +67,7 @@ T 06
 T 07
 ----
 
-.. dropdown:: Time(t1) 
+.. dropdown:: Time(t1) <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -79,7 +79,7 @@ T 07
 T 10
 ----
 
-.. dropdown:: Delay Time Before Auto Foot
+.. dropdown:: Delay Time Before Auto Foot <...>
    :animate: fade-in-slide-down
    
    -Max  200
@@ -91,7 +91,7 @@ T 10
 A 09
 ----
 
-.. dropdown:: Sewing foot lift 
+.. dropdown:: Sewing foot lift <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -105,7 +105,7 @@ A 09
 A 14
 ----
 
-.. dropdown:: Sewing Foot Lift at Sewing Stop
+.. dropdown:: Sewing Foot Lift at Sewing Stop <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -119,7 +119,7 @@ A 14
 A 15
 ----
 
-.. dropdown:: Sewing Foot Lift after Trim/at Seam End
+.. dropdown:: Sewing Foot Lift after Trim/at Seam End <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -133,7 +133,7 @@ A 15
 O 05
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: Duty cycle(t2) <...>
    :animate: fade-in-slide-down
    
    -Max  100
@@ -144,7 +144,7 @@ O 05
 O 06
 ----
 
-.. dropdown:: Auto Power-off Foot
+.. dropdown:: Auto Power-off Foot <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -158,7 +158,7 @@ O 06
 O 07
 ----
 
-.. dropdown:: Foot Max. Lifting Time
+.. dropdown:: Foot Max. Lifting Time <...>
    :animate: fade-in-slide-down
    
    -Max  30
@@ -169,7 +169,7 @@ O 07
 O 39
 ----
 
-.. dropdown:: Soft Foot Falling
+.. dropdown:: Soft Foot Falling <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -183,7 +183,7 @@ O 39
 O 40
 ----
 
-.. dropdown:: Effect of Soft Foot Falling
+.. dropdown:: Effect of Soft Foot Falling <...>
    :animate: fade-in-slide-down
    
    -Max  9
@@ -194,7 +194,7 @@ O 40
 O 53
 ----
 
-.. dropdown:: Effect of PrePressure duiring Clamping(Without Start Bartack)
+.. dropdown:: Effect of PrePressure duiring Clamping(Without Start Bartack) <...>
    :animate: fade-in-slide-down
    
    -Max  10
@@ -205,7 +205,7 @@ O 53
 O 54
 ----
 
-.. dropdown:: Effect of PrePressure duiring Clamping(Soft Start)
+.. dropdown:: Effect of PrePressure duiring Clamping(Soft Start) <...>
    :animate: fade-in-slide-down
    
    -Max  10
@@ -217,7 +217,7 @@ O 54
 O 55
 ----
 
-.. dropdown:: Effect of PrePressure duiring Clamping
+.. dropdown:: Effect of PrePressure duiring Clamping <...>
    :animate: fade-in-slide-down
    
    -Max  10

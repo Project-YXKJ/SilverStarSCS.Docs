@@ -13,7 +13,7 @@ speed is determined by the pedal and limited to the soft start speed `S 08`_.
 S 08
 ----
 
-.. dropdown:: Soft Start Speed
+.. dropdown:: Soft Start Speed <...>
    :animate: fade-in-slide-down
    
    -Max  500
@@ -24,7 +24,7 @@ S 08
 A 21
 ----
 
-.. dropdown:: Soft start 
+.. dropdown:: Soft start <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -38,7 +38,7 @@ A 21
 O 01
 ----
 
-.. dropdown:: Number of soft start stitches
+.. dropdown:: Number of soft start stitches <...>
    :animate: fade-in-slide-down
    
    -Max  10

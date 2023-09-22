@@ -68,7 +68,7 @@ Parameter List
 A 04
 ----
 
-.. dropdown:: Mode Input-01 
+.. dropdown:: Mode Input-01 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -79,7 +79,7 @@ A 04
 A 05
 ----
 
-.. dropdown:: Mode Input-02
+.. dropdown:: Mode Input-02 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -90,7 +90,7 @@ A 05
 A 36
 ----
 
-.. dropdown:: Mode Keypad-Key1 
+.. dropdown:: Mode Keypad-Key1 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -101,7 +101,7 @@ A 36
 A 37
 ----
 
-.. dropdown:: Mode Keypad-Key2 
+.. dropdown:: Mode Keypad-Key2 <...> 
    :animate: fade-in-slide-down
    
    -Max  199
@@ -112,7 +112,7 @@ A 37
 A 38
 ----
 
-.. dropdown:: Mode Keypad-Key3 
+.. dropdown:: Mode Keypad-Key3 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -123,7 +123,7 @@ A 38
 A 39
 ----
 
-.. dropdown:: Mode Keypad-Key4
+.. dropdown:: Mode Keypad-Key4 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -134,7 +134,7 @@ A 39
 A 40
 ----
 
-.. dropdown:: Mode Keypad-Key5
+.. dropdown:: Mode Keypad-Key5 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -145,7 +145,7 @@ A 40
 A 41
 ----
 
-.. dropdown:: Mode Keypad-Key6
+.. dropdown:: Mode Keypad-Key6 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -156,7 +156,7 @@ A 41
 A 68
 ----
 
-.. dropdown:: Mode Keypad-Key7
+.. dropdown:: Mode Keypad-Key7 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -167,7 +167,7 @@ A 68
 A 81
 ----
 
-.. dropdown:: Mode Input-03
+.. dropdown:: Mode Input-03 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -178,7 +178,7 @@ A 81
 A 82
 ----
 
-.. dropdown:: Mode Input-04 
+.. dropdown:: Mode Input-04 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -189,7 +189,7 @@ A 82
 A 83
 ----
 
-.. dropdown:: Mode Input-05 
+.. dropdown:: Mode Input-05 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -201,7 +201,7 @@ A 83
 A 84
 ----
 
-.. dropdown:: Mode Input-06 
+.. dropdown:: Mode Input-06 <...> 
    :animate: fade-in-slide-down
    
    -Max  199
@@ -212,7 +212,7 @@ A 84
 A 85
 ----
 
-.. dropdown:: Mode Input-07
+.. dropdown:: Mode Input-07 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -223,7 +223,7 @@ A 85
 A 86
 ----
 
-.. dropdown:: Mode Input-08 
+.. dropdown:: Mode Input-08 <...> 
    :animate: fade-in-slide-down
    
    -Max  199
@@ -235,7 +235,7 @@ A 86
 A 87
 ----
 
-.. dropdown:: Mode Input-09
+.. dropdown:: Mode Input-09 <...>
    :animate: fade-in-slide-down
    
    -Max  199
@@ -246,7 +246,7 @@ A 87
 A 88
 ----
 
-.. dropdown:: Mode Input-10
+.. dropdown:: Mode Input-10 <...>
    :animate: fade-in-slide-down
    
    -Max  199

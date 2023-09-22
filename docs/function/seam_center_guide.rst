@@ -32,7 +32,7 @@ Parameter List
 A 33
 ----
 
-.. dropdown:: Status of Seam Center Guide
+.. dropdown:: Status of Seam Center Guide <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -43,7 +43,7 @@ A 33
 A 47
 ----
 
-.. dropdown:: Seam Center Guide
+.. dropdown:: Seam Center Guide <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -57,7 +57,7 @@ A 47
 A 51
 ----
 
-.. dropdown:: Auto Mode for Seam Center Guide
+.. dropdown:: Auto Mode for Seam Center Guide <...>
    :animate: fade-in-slide-down
    
    -Max  7
@@ -76,7 +76,7 @@ A 51
 O 89
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: Time(t1) <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -88,7 +88,7 @@ O 89
 O 90
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: Duty cycle(t2) <...>
    :animate: fade-in-slide-down
    
    -Max  100

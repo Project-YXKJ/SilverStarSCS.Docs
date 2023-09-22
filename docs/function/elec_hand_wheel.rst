@@ -40,7 +40,7 @@ A 43
 O 83
 ----
 
-.. dropdown:: Elec-Handwheel Step
+.. dropdown:: Elec-Handwheel Step <...>
    :animate: fade-in-slide-down
    
    -Max  720
@@ -51,7 +51,7 @@ O 83
 O 84
 ----
 
-.. dropdown:: Elec-Handwheel Speed
+.. dropdown:: Elec-Handwheel Speed <...>
    :animate: fade-in-slide-down
    
    -Max  200

@@ -32,7 +32,7 @@ Parameter List
 A 60
 ----
 
-.. dropdown:: Service Stitch Counter
+.. dropdown:: Service Stitch Counter <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -46,7 +46,7 @@ A 60
 A 61
 ----
 
-.. dropdown:: Service Counter Reset Value
+.. dropdown:: Service Counter Reset Value <...>
    :animate: fade-in-slide-down
    
    -Max  9999
@@ -57,7 +57,7 @@ A 61
 A 62
 ----
 
-.. dropdown:: Service Counter Factor
+.. dropdown:: Service Counter Factor <...>
    :animate: fade-in-slide-down
    
    -Max  200
@@ -68,7 +68,7 @@ A 62
 A 63
 ----
 
-.. dropdown:: Service Counter Value
+.. dropdown:: Service Counter Value <...>
    :animate: fade-in-slide-down
    
    -Max  9999

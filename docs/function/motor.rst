@@ -22,7 +22,7 @@ Parameter List
 S 01
 ----
 
-.. dropdown:: Max. Speed
+.. dropdown:: Max. Speed <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -32,7 +32,7 @@ S 01
      
 S 02
 ----
-.. dropdown:: Min. Speed
+.. dropdown:: Min. Speed <...>
    :animate: fade-in-slide-down
   
    -Max  4500
@@ -43,7 +43,7 @@ S 02
      
 A 18
 ----
-.. dropdown:: Auto Upper Position When Power-on
+.. dropdown:: Auto Upper Position When Power-on <...>
    :animate: fade-in-slide-down
   
    -Max  4500
@@ -60,7 +60,7 @@ A 18
 A 54
 ----
 
-.. dropdown:: Holding Force
+.. dropdown:: Holding Force <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -74,7 +74,7 @@ A 54
 A 55
 ----
 
-.. dropdown:: Lock Shaft Slot Angle
+.. dropdown:: Lock Shaft Slot Angle <...>
    :animate: fade-in-slide-down
   
    -Max  720
@@ -85,7 +85,7 @@ A 55
 A 56
 ----
 
-.. dropdown:: Position Error Threshold of Lock Shaft Function takes effect
+.. dropdown:: Position Error Threshold of Lock Shaft Function takes effect <...>
    :animate: fade-in-slide-down
   
    -Max  720
@@ -97,7 +97,7 @@ A 56
 A 57
 ----
 
-.. dropdown:: Position Error Threshold of Lock Shaft Function does not take effect
+.. dropdown:: Position Error Threshold of Lock Shaft Function does not take effect <...>
    :animate: fade-in-slide-down
   
    -Max  720
@@ -109,7 +109,7 @@ A 57
 A 66
 ----
 
-.. dropdown:: Holding Force Mode
+.. dropdown:: Holding Force Mode <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -119,32 +119,10 @@ A 66
      | 0 = The motor holds always;
      | Not 0 = The holding force turns off after the time set by this parameter.
 
-D 01
-----
-
-.. dropdown:: Upper Needle Position
-   :animate: fade-in-slide-down
-  
-   -Max  359
-   -Min  0
-   -Unit  1°
-   -Description  Needle in the upper position.
-
-D 02
-----
-
-.. dropdown:: Lower Needle Position
-   :animate: fade-in-slide-down
-  
-   -Max  359
-   -Min  0
-   -Unit  1°
-   -Description  Needle in the lower position.
-
 O 04
 ----
 
-.. dropdown:: Machine Sync Signal Source 
+.. dropdown:: Machine Sync Signal Source <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -157,7 +135,7 @@ O 04
 O 36
 ----
 
-.. dropdown:: Input Speed Scaling
+.. dropdown:: Input Speed Scaling <...>
    :animate: fade-in-slide-down
   
    -Max  5
@@ -168,7 +146,7 @@ O 36
 O 37
 ----
 
-.. dropdown:: Input Speed Scaling
+.. dropdown:: Input Speed Scaling <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -182,7 +160,7 @@ O 37
 O 67
 ----
 
-.. dropdown:: Directions of Motor Rotation
+.. dropdown:: Directions of Motor Rotation <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -195,7 +173,7 @@ O 67
 I 01
 ----
 
-.. dropdown:: Acceleration
+.. dropdown:: Acceleration <...>
    :animate: fade-in-slide-down
   
    -Max  500
@@ -206,7 +184,7 @@ I 01
 I 02
 ----
 
-.. dropdown:: Deacceleration
+.. dropdown:: Deacceleration <...>
    :animate: fade-in-slide-down
   
    -Max  500
@@ -217,7 +195,7 @@ I 02
 I 03
 ----
 
-.. dropdown:: Electrical Angle
+.. dropdown:: Electrical Angle <...>
    :animate: fade-in-slide-down
   
    -Max  4096
@@ -228,7 +206,7 @@ I 03
 I 04
 ----
 
-.. dropdown:: Transmission Ratio
+.. dropdown:: Transmission Ratio <...>
    :animate: fade-in-slide-down
   
    -Max  4096
@@ -241,7 +219,7 @@ I 04
 I 05
 ----
 
-.. dropdown:: Kp(CSC-t)
+.. dropdown:: Kp(CSC-t) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -252,7 +230,7 @@ I 05
 I 06
 ----
 
-.. dropdown:: Divisor of Kp(CSC-t)
+.. dropdown:: Divisor of Kp(CSC-t) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -263,7 +241,7 @@ I 06
 I 07
 ----
 
-.. dropdown:: Ki(CSC-t) 
+.. dropdown:: Ki(CSC-t) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -274,7 +252,7 @@ I 07
 I 08
 ----
 
-.. dropdown:: Divisor of Ki(CSC-t)
+.. dropdown:: Divisor of Ki(CSC-t) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -285,7 +263,7 @@ I 08
 I 09
 ----
 
-.. dropdown:: Kp(CSC)
+.. dropdown:: Kp(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -296,7 +274,7 @@ I 09
 I 10
 ----
 
-.. dropdown:: Divisor of Kp(CSC)
+.. dropdown:: Divisor of Kp(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -307,7 +285,7 @@ I 10
 I 11
 ----
 
-.. dropdown:: Ki(CSC)
+.. dropdown:: Ki(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -318,7 +296,7 @@ I 11
 I 12
 ----
 
-.. dropdown:: Divisor of Ki(CSC)
+.. dropdown:: Divisor of Ki(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -326,11 +304,10 @@ I 12
    -Unit  --
    -Description  Divisor of Ki in Closed-loop Speed Control
 
-
 I 13
 ----
 
-.. dropdown:: Upper Output limit(CSC)
+.. dropdown:: Upper Output limit(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  20
@@ -338,11 +315,10 @@ I 13
    -Unit  --
    -Description  Upper Output limit in Closed-loop Speed Control
 
-
 I 14
 ----
 
-.. dropdown:: Feedforward(CSC)
+.. dropdown:: Feedforward(CSC) <...>
    :animate: fade-in-slide-down
   
    -Max  500
@@ -353,7 +329,7 @@ I 14
 I 15
 ----
 
-.. dropdown:: Kp(CCC-d)
+.. dropdown:: Kp(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -364,7 +340,7 @@ I 15
 I 16
 ----
 
-.. dropdown:: Divisor of Kp(CCC-d)
+.. dropdown:: Divisor of Kp(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -375,7 +351,7 @@ I 16
 I 17
 ----
 
-.. dropdown:: Ki(CCC-d)
+.. dropdown:: Ki(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -386,7 +362,7 @@ I 17
 I 18
 ----
 
-.. dropdown:: Divisor of Ki(CCC-d)
+.. dropdown:: Divisor of Ki(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -397,7 +373,7 @@ I 18
 I 19
 ----
 
-.. dropdown:: Upper Output limit(CCC-d)
+.. dropdown:: Upper Output limit(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  3276
@@ -408,7 +384,7 @@ I 19
 I 20
 ----
 
-.. dropdown:: Lower Output limit(CCC-d)
+.. dropdown:: Lower Output limit(CCC-d) <...>
    :animate: fade-in-slide-down
   
    -Max  3276
@@ -419,7 +395,7 @@ I 20
 I 21
 ----
 
-.. dropdown:: Kp(CCC-q)
+.. dropdown:: Kp(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -430,7 +406,7 @@ I 21
 I 22
 ----
 
-.. dropdown:: Divisor of Kp(CCC-q)
+.. dropdown:: Divisor of Kp(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -441,7 +417,7 @@ I 22
 I 23
 ----
 
-.. dropdown:: Ki(CCC-q)
+.. dropdown:: Ki(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -452,7 +428,7 @@ I 23
 I 24
 ----
 
-.. dropdown:: Divisor of Ki(CCC-q)
+.. dropdown:: Divisor of Ki(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -463,7 +439,7 @@ I 24
 I 25
 ----
 
-.. dropdown:: Upper Output limit(CCC-q)
+.. dropdown:: Upper Output limit(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  3276
@@ -474,7 +450,7 @@ I 25
 I 26
 ----
 
-.. dropdown:: Lower Output limit(CCC-q)
+.. dropdown:: Lower Output limit(CCC-q) <...>
    :animate: fade-in-slide-down
   
    -Max  3276
@@ -485,7 +461,7 @@ I 26
 I 27
 ----
 
-.. dropdown:: Encoder Resolution
+.. dropdown:: Encoder Resolution <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -496,7 +472,7 @@ I 27
 I 28
 ----
 
-.. dropdown:: Stop Routine Max. Time
+.. dropdown:: Stop Routine Max. Time <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -507,7 +483,7 @@ I 28
 I 30
 ----
 
-.. dropdown:: Stop mode
+.. dropdown:: Stop mode <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -518,11 +494,10 @@ I 30
      | 0 = Speed mode;
      | 1 = Position mode.  
 
-
 I 33
 ----
 
-.. dropdown:: MACHINE ZERO Offset
+.. dropdown:: MACHINE ZERO Offset <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -533,7 +508,7 @@ I 33
 I 37
 ----
 
-.. dropdown:: Distance(Brake P-S process)
+.. dropdown:: Distance(Brake P-S process) <...>
    :animate: fade-in-slide-down
   
    -Max  359
@@ -544,7 +519,7 @@ I 37
 I 38
 ----
 
-.. dropdown:: Initial Speed(Brake P-S process)
+.. dropdown:: Initial Speed(Brake P-S process) <...>
    :animate: fade-in-slide-down
   
    -Max  500
@@ -555,7 +530,7 @@ I 38
 I 39
 ----
 
-.. dropdown:: Terminal speed(Brake P-S process)
+.. dropdown:: Terminal speed(Brake P-S process) <...>
    :animate: fade-in-slide-down
   
    -Max  100
@@ -567,7 +542,7 @@ I 39
 I 40
 ----
 
-.. dropdown:: Kp(CPC-s)
+.. dropdown:: Kp(CPC-s) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -578,7 +553,7 @@ I 40
 I 41
 ----
 
-.. dropdown:: Divisor of Kp(CPC-s)
+.. dropdown:: Divisor of Kp(CPC-s) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -589,7 +564,7 @@ I 41
 I 42
 ----
 
-.. dropdown:: Kd(CPC-s)
+.. dropdown:: Kd(CPC-s) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -600,7 +575,7 @@ I 42
 I 43
 ----
 
-.. dropdown:: Divisor of Kd(CPC-s)
+.. dropdown:: Divisor of Kd(CPC-s) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -611,7 +586,7 @@ I 43
 I 46
 ----
 
-.. dropdown:: Max. Hold Force Current
+.. dropdown:: Max. Hold Force Current <...>
    :animate: fade-in-slide-down
   
    -Max  40
@@ -622,7 +597,7 @@ I 46
 I 47
 ----
 
-.. dropdown:: Field Weaken
+.. dropdown:: Field Weaken <...>
    :animate: fade-in-slide-down
   
    -Max  1
@@ -636,7 +611,7 @@ I 47
 I 48
 ----
 
-.. dropdown:: Field Weakening Effective Speed
+.. dropdown:: Field Weakening Effective Speed <...>
    :animate: fade-in-slide-down
   
    -Max  3500
@@ -647,7 +622,7 @@ I 48
 I 49
 ----
 
-.. dropdown:: Max. Id current
+.. dropdown:: Max. Id current <...>
    :animate: fade-in-slide-down
   
    -Max  40
@@ -658,7 +633,7 @@ I 49
 I 50
 ----
 
-.. dropdown:: Upper Output limit(CPC-h)
+.. dropdown:: Upper Output limit(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  500
@@ -669,7 +644,7 @@ I 50
 I 51
 ----
 
-.. dropdown:: Lower Output limit(CPC-h)
+.. dropdown:: Lower Output limit(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  100
@@ -680,7 +655,7 @@ I 51
 I 52
 ----
 
-.. dropdown:: Kp(CPC-h)
+.. dropdown:: Kp(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -691,7 +666,7 @@ I 52
 I 53
 ----
 
-.. dropdown:: Divisor of Kp(CPC-h)
+.. dropdown:: Divisor of Kp(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  99
@@ -702,7 +677,7 @@ I 53
 I 54
 ----
 
-.. dropdown:: Kd(CPC-h)
+.. dropdown:: Kd(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  9999
@@ -713,7 +688,7 @@ I 54
 I 55
 ----
 
-.. dropdown:: Divisor of Kd(CPC-h)
+.. dropdown:: Divisor of Kd(CPC-h) <...>
    :animate: fade-in-slide-down
   
    -Max  99

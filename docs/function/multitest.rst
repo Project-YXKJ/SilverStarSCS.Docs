@@ -14,7 +14,7 @@ Parameter List
 O 23
 ----
 
-.. dropdown:: Running Time(EC) 
+.. dropdown:: Running Time(EC) <...>
    :animate: fade-in-slide-down
    
    -Max  60
@@ -25,7 +25,7 @@ O 23
 O 24
 ----
 
-.. dropdown:: Standby Time(EC)
+.. dropdown:: Standby Time(EC) <...>
    :animate: fade-in-slide-down
    
    -Max  60
@@ -36,7 +36,7 @@ O 24
 O 25
 ----
 
-.. dropdown:: Total Time(EC)
+.. dropdown:: Total Time(EC) <...>
    :animate: fade-in-slide-down
    
    -Max  720
@@ -47,7 +47,7 @@ O 25
 O 26
 ----
 
-.. dropdown:: Endurance Running
+.. dropdown:: Endurance Running <...>
    :animate: fade-in-slide-down
    
    -Max  1

@@ -50,19 +50,28 @@ otherwise program will be directly returned to the first section.
 
 **Correction(Needle up/down)**
 
-If **A03** is equal to 0:
+If `A 03`_ is equal to 0:
 
 When press the key, the needle moves form the current position to the position 
-set by parameter **D15** or **D16**, which one is the closest, the target position
-is that one. E.g, current position is 40 degrees, **D15** is 70, **D16** is 200, 
-when you press the button, the motion trace is "40->70->200->70->200...".
+set by parameter `D 15`_ or `D 16`_, which one is the closest, the target position
+is that one. 
 
-If **A03** is equal to 1:
+E.g, current position is 40 degrees, `D 15`_ is 70, `D 16`_ is 200, 
+when you press the button, the motion trace is 
+``Position 40 => 70 => 200 => 70 => 200 ...`` .
+
+If `A 03`_ is equal to 1:
 
 when you press the button, two cases: if you set stop at upper position, 
-the needle moves form the current position to the position set by parameter **D01**. 
+the needle moves form the current position to the position set by parameter `D 01`_. 
 if you set stop at lower position, the needle moves form the current position to the 
-position set by parameter **D02**:
+position set by parameter `D 02`_:
+
+E.g, current position is 40 degrees, `D 01`_ is 70, `D 02`_ is 200, 
+if `A 01`_ is 0, when you press the button, the motion trace is 
+``Position 40 => 200 => 200 => 200 ...`` ;
+if `A 01`_ is 1, when you press the button, the motion trace is 
+``Position 40 => 70 => 70 => 70 ...`` ;
 
 Parameter List
 ==============
@@ -70,7 +79,7 @@ Parameter List
 S 05
 ----
 
-.. dropdown:: Speed in W-Sewing
+.. dropdown:: Speed in W-Sewing <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -81,7 +90,7 @@ S 05
 S 06
 ----
 
-.. dropdown:: Speed in Program Sewing
+.. dropdown:: Speed in Program Sewing <...>
    :animate: fade-in-slide-down
    
    -Max  4500
@@ -92,7 +101,7 @@ S 06
 A 01
 ----
 
-.. dropdown:: Needle Position
+.. dropdown:: Needle Position <...>
    :animate: fade-in-slide-down
 
    -Max  1
@@ -106,7 +115,7 @@ A 01
 A 02
 ----
 
-.. dropdown:: Auto Sewing for Program Sewing
+.. dropdown:: Auto Sewing for Program Sewing <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -119,7 +128,7 @@ A 02
 A 03
 ----
 
-.. dropdown:: Correction mode
+.. dropdown:: Correction mode <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -132,7 +141,7 @@ A 03
 A 16
 ----
 
-.. dropdown:: Mode After Start Bartack in Programmed Sewing 
+.. dropdown:: Mode After Start Bartack in Programmed Sewing  <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -146,7 +155,7 @@ A 16
 A 17
 ----
 
-.. dropdown:: Auto End bartack and Trim when Programmed Sewing is finished
+.. dropdown:: Auto End bartack and Trim when Programmed Sewing is finished <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -160,7 +169,7 @@ A 17
 A 30
 ----
 
-.. dropdown:: Correction Mode
+.. dropdown:: Correction Mode <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -173,7 +182,7 @@ A 30
 A 31
 ----
 
-.. dropdown:: Manual Revserse SW.
+.. dropdown:: Manual Revserse SW. <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -183,10 +192,33 @@ A 31
      | 0 = Normal;
      | 1 = Reverse at stop.
 
+
+D 01
+----
+
+.. dropdown:: Upper Needle Position <...>
+   :animate: fade-in-slide-down
+  
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Needle in the upper position.
+
+D 02
+----
+
+.. dropdown:: Lower Needle Position <...>
+   :animate: fade-in-slide-down
+  
+   -Max  359
+   -Min  0
+   -Unit  1°
+   -Description  Needle in the lower position.
+
 D 11
 ----
 
-.. dropdown:: The minimum angle of Off reverse key function
+.. dropdown:: The minimum angle of Off reverse key function <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -195,10 +227,10 @@ D 11
    -Description  If the needle position is greater than this angle, the manual reverse
                  sewing button will not work.
 
-D 11
+D 12
 ----
 
-.. dropdown:: The maximum angle of Off reverse key function
+.. dropdown:: The maximum angle of Off reverse key function <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -210,7 +242,7 @@ D 11
 D 15
 ----
 
-.. dropdown:: Correction:Upper Position
+.. dropdown:: Correction:Upper Position <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -221,7 +253,7 @@ D 15
 D 16
 ----
 
-.. dropdown:: Correction:Lower Position
+.. dropdown:: Correction:Lower Position <...>
    :animate: fade-in-slide-down
    
    -Max  359
@@ -232,7 +264,7 @@ D 16
 D 18
 ----
 
-.. dropdown:: Sewing mode
+.. dropdown:: Sewing mode <...>
    :animate: fade-in-slide-down
    
    -Max  3
@@ -243,7 +275,7 @@ D 18
 O 69
 ----
 
-.. dropdown:: Correction Timming
+.. dropdown:: Correction Timming <...>
    :animate: fade-in-slide-down
    
    -Max  1

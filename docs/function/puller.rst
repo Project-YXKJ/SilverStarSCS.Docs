@@ -18,7 +18,7 @@ Parameter List
 A 64
 ----
 
-.. dropdown:: Delay stitch
+.. dropdown:: Delay stitch <...>
    :animate: fade-in-slide-down
 
    -Max  255
@@ -30,7 +30,7 @@ A 64
 A 89
 ----
 
-.. dropdown:: Puller
+.. dropdown:: Puller <...>
    :animate: fade-in-slide-down
 
    -Max  1
@@ -44,7 +44,7 @@ A 89
 A 90
 ----
 
-.. dropdown:: Upper Puller Status
+.. dropdown:: Upper Puller Status <...>
    :animate: fade-in-slide-down
 
    -Max  1
@@ -55,7 +55,7 @@ A 90
 O 97
 ----
 
-.. dropdown:: Time(t1)
+.. dropdown:: Time(t1) <...>
    :animate: fade-in-slide-down
 
    -Max  999
@@ -66,7 +66,7 @@ O 97
 O 98
 ----
 
-.. dropdown:: Duty cycle(t2)
+.. dropdown:: Duty cycle(t2) <...>
    :animate: fade-in-slide-down
 
    -Max  100

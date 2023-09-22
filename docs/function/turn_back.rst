@@ -17,7 +17,7 @@ Parameter List
 S 16
 ----
 
-.. dropdown:: Turn Back Speed
+.. dropdown:: Turn Back Speed <...>
    :animate: fade-in-slide-down
    
    -Max  500
@@ -28,7 +28,7 @@ S 16
 T 12
 ----
 
-.. dropdown:: Turn Back Delay
+.. dropdown:: Turn Back Delay <...>
    :animate: fade-in-slide-down
    
    -Max  1000
@@ -39,7 +39,7 @@ T 12
 A 13
 ----
 
-.. dropdown:: Turn Back
+.. dropdown:: Turn Back <...>
    :animate: fade-in-slide-down
    
    -Max  1
@@ -53,7 +53,7 @@ A 13
 O 35
 ----
 
-.. dropdown:: Needle position after turn back
+.. dropdown:: Needle position after turn back <...>
    :animate: fade-in-slide-down
    
    -Max  359

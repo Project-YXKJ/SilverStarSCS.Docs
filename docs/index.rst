@@ -11,7 +11,7 @@ It is not written for a certain model product, but to explain the function,
 so here you can't find how to enter the setting interface or connection diagram 
 of output and input ports.
 
-The Content is organized into three *parts*:
+The content is organized into three *parts*:
 
 COMMON
   Explain the function, applicable to all products.  

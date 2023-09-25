@@ -42,10 +42,6 @@ Motion
   :margin: 4 4 0 0
   :gutter: 1
 
-  .. grid-item-card:: Reverse 
-    :link: reverse
-    :link-type: doc
-
   .. grid-item-card:: Trim 
     :link: thread_cutter
     :link-type: doc
@@ -201,28 +197,27 @@ Table of Contents
   :maxdepth: 4
 
   bartack
-  assemble
   clamp
-  wiper
-  control_other
-  daily_piece_counter
+  thread_cutter
+  sewing_foot_lift
+  second_stitch_length
+  soft_start
+  bobbin_monitor
+  service_counter
+  seam
+  motor
+  tension
+  stroke
+  safety-sensor
+  turn_back
+  needle_cooling
+  seam_center_guide
+  puller
   elec_hand_wheel
+  wiper
+  daily_piece_counter
+  control_other
   input_configuration
   output_configuration
-  stroke
-  tension
-  seam_center_guide
-  soft_start
-  thread_cutter
-  turn_back
-  bobbin_monitor
-  motor
   multitest
-  needle_cooling
-  puller
-  seam
-  second_stitch_length
-  service_counter
-  sewing_foot_lift
-  reverse
-  safety-sensor
+  assemble

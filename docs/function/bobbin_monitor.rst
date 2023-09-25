@@ -1,8 +1,8 @@
 .. _bobbin_monitor:
 
-==============
-Bobbin Counter
-==============
+====================================
+Bobbin stitch counter/bobbin Counter
+====================================
 
 Using Lower thread counter allows users to know the remaining thread amount.
 

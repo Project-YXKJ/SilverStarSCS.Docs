@@ -1,8 +1,8 @@
 .. _stroke:
 
-==================
-Sewing foot stroke
-==================
+=================
+Stroke adjustment
+=================
 
 **Speed limit during quick stroke adjustment**
 

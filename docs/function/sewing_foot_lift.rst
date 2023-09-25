@@ -1,8 +1,8 @@
 .. _sewing_foot_lift:
 
-==================
-Sewing foot lifter
-==================
+================
+Sewing foot lift
+================
 
 **Foot is raised**
 

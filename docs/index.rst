@@ -5,7 +5,7 @@ SilverStar's CSSM Reference Book
 .. highlight:: bash
 
 This book is a comprehensive resource for SilverStar's Control System for Sewing Machine 
--- for both new and experienced users. 
+-- for both operators and specialists.
 
 It is not written for a certain model product, but to explain the function,
 so here you can't find how to enter the setting interface or connection diagram 
@@ -22,7 +22,10 @@ PRODUCT
 CONTACT
   Dev
 
-It is :ref:`maintained <devguide>` by SilverStar's devs. We welcome your corrections!
+The book is :ref:`maintained <devguide>` by SilverStar's devs. It contains information 
+and notes intended to ensure long-term and reliable operation. Should you notice any 
+discrepancies or if you have improvement requests, then we would be glad to receive 
+your feedback.
 
 Full Table of Contents
 ======================

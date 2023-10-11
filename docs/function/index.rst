@@ -100,7 +100,7 @@ Mics
     :link: control_other
     :link-type: doc
   
-  .. grid-item-card:: Intput
+  .. grid-item-card:: Input
     :link: input_configuration
     :link-type: doc
 

@@ -15,7 +15,7 @@ Output Mode Code List
   - 5 = Sewing foot lifter;
   - 6 = Stroke;
   - 7 = Additional thread tension;
-  - 8 = Thread wiper;
+  - 8 = Thread wiper(upper);
   - 9 = Second stitch length;
   - 10 = Needle cooling;
   - 11 = Additional cutter for short thread cutter machine;
@@ -25,7 +25,8 @@ Output Mode Code List
   
   .. _15:
   
-  - 15 = Puller
+  - 15 = Puller；
+  - 16 = Thread wiper(lower).
 
 **How to setup the function of output ports?**:
 

@@ -4,10 +4,18 @@
 Thread wiper
 ============
 
-Set `A 08`_` to 1 to enable the thread wiper function.
+
+Thread wiper has two different action modes：
+
+- Set `A 08`_ to 1 to enable the upper thread wiper function:
 
 When thread cutter is completed and the time set by `T 03`_ is delayed, the wiper 
 will switch on, it will switch off after the time set by `T 04`_.
+
+- Set `A 08`_ to 1 to enable the lower thread wiper function:
+
+When thread cutter is completed, while lifting the foot for the first time, the wiper
+will switch on, it will switch off after the time set by `T 04`_
 
 Parameter List
 ==============
@@ -22,9 +30,10 @@ A 08
    -Min  0
    -Unit  --
    -Description
-     | Wiper upper thread:
+     | Wiper thread:
      | 0 = Off;
-     | 1 = On.
+     | 1 = Upper thread;
+     | 2 = Lower thread;
      
 T 03
 ----

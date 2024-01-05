@@ -31,9 +31,14 @@ Input Mode Code List
   .. _20:
 
 - 20 = Toggle puller raise up/down;
-- 100 = Sewing foot stroke knob potentiometer
+- 21 = Reset bobbin counter;
+- 22 = Simulate electronic handwheel rotation(forward);
+- 23 = Simulate electronic handwheel rotation(backward);
+- 100 = Sewing foot stroke knob potentiometer;
 - 101 = Sewing foot height sensor
-
+- 102 = Orthogonal encoder CHA for electronic handwheel;
+- 103 = Orthogonal encoder CHB for electronic handwheel.
+  
 .. [#] Pause mode, the machine can not run by step the pedal.
 
 .. [#] Threading mode, the machine can not run by step the pedal, and the tension

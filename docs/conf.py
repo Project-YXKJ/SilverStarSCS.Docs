@@ -42,9 +42,9 @@ html_static_path = ["_static"]
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
-html_css_files = [
-    "css/custom.css",
-]
+# html_css_files = [
+#     "css/custom.css",
+# ]
 
 html_theme_options = {
     # logo
@@ -54,8 +54,8 @@ html_theme_options = {
         # 衔接以及左侧目录的颜色
         "color-brand-primary": "#c0d725",
         "color-brand-content": "#c0d725",
-        "font-stack": "LXGWBright, sans-serif",
-        "font-stack--monospace": "Mononoki, monospace",
+        # "font-stack": "Arial, sans-serif",
+        # "font-stack--monospace": "Courier, monospace",
     },
     "source_repository": "https://github.com/Project-YXKJ/SilverStar-CSSM-Reference-Book/",
     "source_branch": "main",

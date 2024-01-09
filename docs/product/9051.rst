@@ -3,3 +3,9 @@
 ========
 YSC-9051
 ========
+
+Specifications summary
+======================
+
+- Built-in control box;
+- AC 220v±10%;

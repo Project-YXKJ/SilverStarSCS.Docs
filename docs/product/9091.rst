@@ -3,3 +3,9 @@
 ========
 YSC-9091
 ========
+
+Specifications summary
+======================
+
+- Independent control box;
+- AC 220v±10%;

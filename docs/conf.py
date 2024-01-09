@@ -57,6 +57,10 @@ html_theme_options = {
         # "font-stack": "Arial, sans-serif",
         # "font-stack--monospace": "Courier, monospace",
     },
+    "dark_css_variables": {
+        "color-brand-primary": "#c0d725",
+        "color-brand-content": "#c0d725",
+    },
     "source_repository": "https://github.com/Project-YXKJ/SilverStar-CSSM-Reference-Book/",
     "source_branch": "main",
     "source_directory": "docs/",

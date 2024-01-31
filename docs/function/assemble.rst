@@ -85,7 +85,7 @@ O 56
     -Max  4095  
     -Min  0
     -Unit  --
-    -Description  ADC value by step forward the pedal to the end position, value > O57
+    -Description  ADC value by step forwards the pedal to the end position, value > O57
 
 O 57
 ----
@@ -136,7 +136,7 @@ O 61
     -Max  4095  
     -Min  0
     -Unit  --
-    -Description  ADC value by step forward the pedal to the end position,value < O60. 
+    -Description  ADC value by step forwards the pedal to the end position,value < O60. 
 
 O 62
 ----

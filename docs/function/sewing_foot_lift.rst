@@ -35,7 +35,7 @@ raised is determined by parameter `O 07`_.
 
 When the sewing foot is the raised, in order to ensure that the sewing material is 
 pressed tightly before the machine starts running, a tiem lag will be inserted after
-step the pedal forward, which is controlled by parameter `T 06`_.
+step the pedal forwards, which is controlled by parameter `T 06`_.
 
 Parameter List
 ==============
@@ -49,7 +49,7 @@ T 05
    -Max  500
    -Min  1
    -Unit  ms
-   -Description  To avoid unexpected foot lifting when step backward for trim, the tim
+   -Description  To avoid unexpected foot lifting when step backwards for trim, the tim
                  is less and the sensitivity is higher.
 
 T 06

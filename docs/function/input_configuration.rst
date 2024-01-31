@@ -24,16 +24,14 @@ Input Mode Code List
 - 14 = Up thread broken sensor;
 - 15 = Eye protection sensor;
 - 16 = Hook cover missing sensor;
-- 17 = Toggle sewing foot lifter raise up/down;
+- 17 = Toggle sewing foot lifter raise up/down [#]_;
 - 18 = lifting sewing foot via the knee switch;
 - 19 = Oil Starvation;
-  
-  .. _20:
-
 - 20 = Toggle puller raise up/down;
 - 21 = Reset bobbin counter;
-- 22 = Simulate electronic handwheel rotation(forward);
-- 23 = Simulate electronic handwheel rotation(backward);
+- 22 = Simulate electronic handwheel rotation(forwards);
+- 23 = Simulate electronic handwheel rotation(backwards);
+- 24 = Toggle sewing direction [#]_;
 - 100 = Sewing foot stroke knob potentiometer;
 - 101 = Sewing foot height sensor
 - 102 = Orthogonal encoder CHA for electronic handwheel;
@@ -44,12 +42,28 @@ Input Mode Code List
 .. [#] Threading mode, the machine can not run by step the pedal, and the tension
        is activated.
 
+.. [#] The function of code 17 is when you press the button, the sewing feet are lifted,
+       at this time, you release the button, sewing feet are still lifted, then press the button again,
+       sewing feet are lowered onto the sewing materrial;
+       
+       The function of code 18 is when you press the button, the sewing feet are lifted,
+       at this time, you release the button, sewing feet are immediately lowered onto the sewing materrial.
+
+.. [#] The function of code 1 is when you press the button, the machine sews backwards,
+       at this time, you release the button, it sews forwards.
+
+       The function of code 24 is when you press the button, the machine sews backwards, 
+       at this time, you release the button, it still sews backwards, the press the button again,
+       it sews forwards.
+
+       
+
 .. important::
-  Functions with codes greater than 100 needs an analog port.
+  Functions with codes greater than 100 needs special input ports, such as analog.
 
 **How to setup the function of input ports?**:
 
-follow the steps:
+Follow the steps:
 
 1. Confirm which port you need to modify, such as Input-01 or Input-02.
    In this step, you need to know the specific model of the system you are using,
@@ -63,9 +77,17 @@ follow the steps:
 
 Let's take an example:
 
-You want use the sixth key of the keypad to control the puller. In the parameter list
-you will find `A 41`_, which controls the function of **Keypad-Key06**. In the input model
-code List, 20_ is code of puller function, then change A41 to 20.
+Step1: You want use the sixth key of the keypad to control the puller;
+
+Step2: In parameter list, you find *A41*, which controls the function;
+
+   A41: Mode Keypad-Key6
+
+Step3: In the input model code List, *20* is code of puller function;
+
+   20 = Toggle puller raise up/down
+
+Then change A41 to 20.
 
 Parameter List
 ==============

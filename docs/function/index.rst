@@ -128,8 +128,8 @@ Glossary
  
 .. glossary::
   MACHINE ZERO
-    The highest point of the needle bar, the angle of the magnet action/release,
-    where the motor stops, etc. positions mentioned in this book are based on this.
+    The highest point of the needle bar, positions mentioned in this book are based on this,
+    such as the angle of the magnet action/release, where the motor stops, etc. 
     
     .. warning:: 
        It's very important to make sure you set it correctly.
@@ -141,19 +141,19 @@ Glossary
        It's very important to make sure you set it correctly.
     
   POSITION 2
-    Pedal forward harder
+    Press the pedal fully forwards, also called highspeed position
 
   POSITION 1
-    Pedal forward little 
+    Press the pedal halfway forwards, also called lowspeed position
   
   POSITION 0
-    No pedal 
+    Pedal in reset position
   
   POSITION -1
-    Pedal backward little 
+    Press the pedal halfway back, also called feet position
     
   POSITION -2
-    Pedal backward harder 
+    Press the pedal fully back, also called trim position
   
   time period t1
     The duration of 100% duty cycle of the output port 

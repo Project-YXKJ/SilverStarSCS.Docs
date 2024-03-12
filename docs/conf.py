@@ -7,12 +7,13 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 import os
-import os.path
+import sys
+import time
 
 yxkj_docs_dir = os.path.abspath(os.path.dirname(__file__))
 
 project = "SilverStar's CSSM Reference Book"
-copyright = "2023, vayoger"
+copyright = f'2011-{time.strftime("%Y")}, SilverStar Technology'
 author = "vayoger"
 
 # -- General configuration ---------------------------------------------------
@@ -26,6 +27,9 @@ extensions = [
 ]
 
 templates_path = ["_templates"]
+
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 language = "en"

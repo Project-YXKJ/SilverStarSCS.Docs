@@ -210,7 +210,7 @@ O 11
    -Description  If Auto Power-off Reverse is turned on,this parameter sets the power-off time.
 
 O 12
-____
+----
 
 .. dropdown:: Max. Speed of 1 stitch <...> 
    :animate: fade-in-slide-down

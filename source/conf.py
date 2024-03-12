@@ -19,19 +19,28 @@ author = "vayoger"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+root_doc = "index"
+
 extensions = [
+    "sphinx.ext.extlinks",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.todo",
+    "sphinx_inline_tabs",
     "sphinx_copybutton",
-    "myst_parser",
+    "sphinx_toolbox.collapse",
     "sphinx_design",
-    "sphinxcontrib.cairosvgconverter",
 ]
 
 templates_path = ["_templates"]
 
+
+default_role = "any"
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
+# -- Options for internationalization --------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-internationalization
 language = "en"
 
 # The name of the Pygments (syntax highlighting) style to use.
@@ -43,12 +52,8 @@ html_theme = "furo"
 html_title = "SilverStar's CSSM Reference Book"
 html_favicon = "_static/logo-square.svg"
 html_static_path = ["_static"]
+html_last_updated_fmt = ""
 
-# These paths are either relative to html_static_path
-# or fully qualified paths (eg. https://...)
-# html_css_files = [
-#     "css/custom.css",
-# ]
 
 html_theme_options = {
     # logo
@@ -85,29 +90,55 @@ html_theme_options = {
     ],
 }
 
-# -- Options for latex output ----------------------------
-latex_template_dir = os.path.join(yxkj_docs_dir, "latex_templates")
+# -- Options for LaTeX output ----------------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output
 
-preamble = ""
-with open(os.path.join(latex_template_dir, "preamble.tex")) as f:
-    preamble = f.read()
+latex_elements = {}
+latex_documents = [
+    (
+        root_doc,
+        "silverstarcssmreferencebook.tex",
+        "SilverStar's CSSM Reference Book",
+        "vayoger",
+        "manual",
+    ),
+]
 
-titlepage = ""
-with open(os.path.join(latex_template_dir, "titlepage.tex")) as f:
-    titlepage = f.read()
+# -- Options for manual page output ----------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-manual-page-output
 
-latex_elements = {
-    "papersize": "a4paper",
-    "figure_align": "htbp",
-    "pointsize": "10pt",
-    "preamble": preamble,
-    "maketitle": titlepage,
-    "fncychap": r"\usepackage[Sonny]{fncychap}",
-    "printindex": r"\footnotesize\raggedright\printindex",
-}
+man_pages = [
+    (
+        root_doc,
+        "silverstarcssmreferencebook",
+        "SilverStar's CSSM Reference Book",
+        [author],
+        1,
+    )
+]
 
-# The name of an image file (relative to this directory) to place at the bottom of
-# the title page.
-latex_logo = os.path.join(yxkj_docs_dir, "_static", "logo-square.pdf")
-latex_engine = "xelatex"
-latex_use_xindy = False
+# -- Options for Texinfo output --------------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-texinfo-output
+
+texinfo_documents = [
+    (
+        root_doc,
+        "silverstarcssmreferencebook",
+        "SilverStar's CSSM Reference Book",
+        author,
+        "silverstarcssmreferencebook",
+        "One line description of project.",
+        "Miscellaneous",
+    ),
+]
+
+# -- Options for todo extension --------------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/extensions/todo.html#configuration
+
+todo_include_todos = True
+
+# -- Options for sphinx-copybutton -----------------------------------------------------
+# https://sphinx-copybutton.readthedocs.io/en/latest/use.html
+
+copybutton_prompt_text = r">>> |\.\.\. |\$ |> "
+copybutton_prompt_is_regexp = True

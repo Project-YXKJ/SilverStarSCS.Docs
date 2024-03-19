@@ -1,56 +1,18 @@
-# SilverStar-CSSM-Reference-Book
+# SilverStar Sewing Control System Docs
 
-Documentation for SilverStar-CSSM
+This repository contains en Translation of the SilverStar Sewing Control System documentation.
 
-Built with [Sphinx](https://www.sphinx-doc.org/), and host on [Read the Docs](https://readthedocs.org/)
+https://silverstarscsdocs.readthedocs.io/en/latest/
 
-## Build guide
+## 关于
 
-### Setup
+The "SilverStar SCS Docs"(SS-SCS-Docs) aims to be the authoritative resource on how to use and set a SilverStar Sewing control System.
 
-- 安装 Python
-- 安装 Git
+## License
 
-**Step 1.** 克隆本仓库, 创建虚拟环境(非必须, 但是建议)
+SilverStar SCS Docs is licensed under [Apache License 2.0](LICENSE).
 
-[Installing packages using pip and virtual environments](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment)
+## Contributing
 
-```bash
-$ cd SilverStar-CSSM-Reference-Book
-$ py -m venv env
-```
-
-### Activate virtual environment
-
-**Step 2.** 激活虚拟环境, 并安装必要的包.
-
-```bash
-$ .\env\Scripts\activate
-$ py -m pip install -r requirements.txt
-```
-
-### Render the documentation as HTML
-
-**Step 3.** 输出本地 html, 打开 `docs/build/html/index.html` 查看
-
-```bash
-$ cd docs
-$ make clean // 不是必须
-$ make html
-```
-
-## Q&A
-
-### CairoSVG 安装？
-
-LaTeX 不支持 SVG，[sphinxcontrib-svg2pdfconverter](https://pypi.org/project/sphinxcontrib-svg2pdfconverter/) 可以帮你转换 SVG 到 PDF，但是此插件并不具体提供转换功能，需要自行安装[CairoSVG](https://cairosvg.org/)，当然你可以选择其他转换器。CairoSVG 又依赖一些其他工具，可以参考[这里](https://cairosvg.org/documentation/#installation)。
-
-## Reference
-
-[多语言](https://docs.readthedocs.io/en/stable/localization.html#projects-with-multiple-translations-sphinx-only)
-
-[reStructuredText 语法参考](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
-
-[sphinx-design](https://sphinx-design.readthedocs.io/en/furo-theme/index.html)
-
-[furo theme](https://pradyunsg.me/furo/quickstart/)
+Contributions are welcome! Please see the[contributing guide](https://silverstarscsdocs.readthedocs.io/en/latest/contribute) for details on our writing style guide and how to build
+the docs locally to test your changes.

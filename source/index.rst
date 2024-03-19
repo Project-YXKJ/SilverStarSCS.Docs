@@ -1,58 +1,64 @@
-================================
-SilverStar's CSSM Reference Book
-================================
-
-.. highlight:: bash
-
-This book is a comprehensive resource for SilverStar's Control System for Sewing Machine 
--- for both operators and specialists.
-
-It is not written for a certain model product, but to explain the function,
-so here you can't find how to enter the setting interface or connection diagram 
-of output and input ports.
-
-The content is organized into three *parts*:
-
-COMMON
-  Explain the function, applicable to all products.  
-
-PRODUCT
-  Essentials of each product.
-
-CONTACT
-  Dev
-
-The book is :ref:`maintained <devguide>` by SilverStar's devs. It contains information 
-and notes intended to ensure long-term and reliable operation. Should you notice any 
-discrepancies or if you have improvement requests, then we would be glad to receive 
-your feedback.
-
-Full Table of Contents
-======================
-
-.. toctree:: 
-  :hidden:
-
-  guide/get_started
+============================
+SilverStar SCS Documentation
+============================
 
 .. toctree::
-  :caption: COMMON
-  :maxdepth: 3
+   :maxdepth: 2 
+   :hidden:
 
-  function/index
-  troubleshooting/index.rst
+   overview
+   tutorials/index
+   function/index
+   troubleshooting/index
+   specifications/index
+   glossary
+   contribute
 
+Welcome to the *SilverStar SCS Documentation*, a collection of docs for 
+SilverStar Sewing Control System intended for operators and specialists,
+to find quickstarts and guides, review key references, and get help with common issues.
 
-.. toctree:: 
-  :caption: PRODUCT
-  :maxdepth: 3
+The book is maintained by :ref:`SilverStar Devs Term <contributors>`. 
+It contains information and notes intended to ensure long-term and reliable operation. 
+Should you notice any discrepancies or if you have improvement requests,
+We happily accept :doc:`contributions and feedback <contribute>`. 😊
 
-  product/controller
-  product/hmi
-  product/motor
+Overview
+========
 
-.. toctree::
-  :caption: CONTACT
-  :maxdepth: 3
+.. note::
 
-  kitchen-sink/devguide
+   Although it is our goal to make this document universal for all products, 
+   it is not currently possible to do this. If in the actual situation you encounter
+   If it does not match the description in the document, please consult us.
+
+The sewing control system is a special equipment. :doc:`overview` focuses on reminding
+you of some safety matters, including installation, daily use and maintenance.
+
+Tutorials
+=========
+
+Tutorials walk through the steps needed to help you start for the first time, such as:
+
+* A :doc:`tutorial on how to interact with Docs <tutorials/how-to-interact-docs>`
+
+Explanations 
+============
+
+The Explanations section for in-depth explanations and discussion about topics, such as:
+
+* :doc:`function/index`
+* :doc:`troubleshooting/index`
+
+Reference
+=========
+
+* the :doc:`specifications/index` section for SilverStar CSC specifications.
+* The :doc:`glossary` for definitions of terms used in this docs.
+
+Guides
+======
+
+Guides provide steps to perform a specific task, suck as:
+
+* If you would like to contribute to this project, please refer to :doc:`contribute`

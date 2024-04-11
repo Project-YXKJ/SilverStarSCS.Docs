@@ -4,10 +4,12 @@
 Bartack
 =======
 
-**Stitch in stitch**
+Stitch in stitch
+================
 
-Before adjustment, make sure that forward stitch length is the same with backward 
-stitch length use the reverse lever.
+.. important::
+   Before adjustment, make sure that forward stitch length is the same with backward 
+   stitch length use the reverse lever.
 
 The time it takes for reverse actuator actions, adjust parameter T01 as the guide
 of following figure:
@@ -31,67 +33,78 @@ of following figure:
 |                                          |                                          |
 +------------------------------------------+------------------------------------------+
 
-**SD Mode**
+SD Mode
+=======
 
 SD mode is a special mode of start/end bartack, used to ensure the seam looks better.
 
 When the SD mode is enabled, the motor will pause at the collagen turning point and 
-wait for the time set by `T 11`_ to ensure that the reverse action in place, 
+wait for the time set by :option:`T 11` to ensure that the reverse action in place, 
 then the motor continue running.
 
 SD mode can be activated for start bartack or end bartack respectively, 
-controlled by `A 20`_ and `A 22`_ .
+controlled by :option:`A 20` and :option:`A 22`.
+
+Quick reference
+===============
+
+This table summarizes which parameter should be used for bartack:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Speed in Start Bartack                               Technician :option:`S 03`
+Speed in End Bartack                                 Technician :option:`S 04`
+Reverse Action In Place Time                         Technician :option:`T 01`
+Reverse Release In Place Time                        Technician :option:`T 02`
+SD Mode Stop Time                                    Technician :option:`T 11` 
+SD mode for Start Bartack                            Operator   :option:`A 20`
+SD mode for End Bartack                              Operator   :option:`A 22`
+Maintain Speed after Start Bartack                   Technician :option:`A 34`
+Start Reverse Position                               Technician :option:`D 05`
+Stop Reverse Position                                Technician :option:`D 06`
+Auto Power-off Reverse                               Technician :option:`O 10`
+Reverse Max. Holding Time                            Technician :option:`O 11`
+Max. Speed of 1 stitch                               Technician :option:`O 12` 
+Max. Speed of 2 stitch                               Technician :option:`O 13`   
+Max. Speed of 3 stitch                               Technician :option:`O 14` 
+Stitches of Maintain Speed after Start Bartack       Technician :option:`O 41` 
+Time(t1)                                             Developer  :option:`T 08`
+Duty cycle(t2)                                       Developer  :option:`O 09`
+==================================================== ========== ==============
 
 Parameter List
 ==============
 
-S 03
-----
-.. dropdown:: Speed in Start Bartack <...>
-   :animate: fade-in-slide-down
+.. option:: S 03
    
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  Maximum speed in bartack at seam begin.
 
-S 04
-----
-.. dropdown:: Speed in End Bartack <...>
-   :animate: fade-in-slide-down
+.. option:: S 04
    
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  Maximum speed in bartack at seam end.
 
-T 01
-----
-
-.. dropdown:: Reverse Action In Place Time <...>
-   :animate: fade-in-slide-down
+.. option:: T 01
    
    -Max  200
    -Min  1
    -Unit  ms
    -Description  The time for the reverse solenoid finish the action,unit ms
 
-T 02
-----
-
-.. dropdown:: Reverse Release In Place Time <...>
-   :animate: fade-in-slide-down
+.. option:: T 02
    
    -Max  200
    -Min  1
    -Unit  ms
    -Description  The time for reverse solenoid finish the releasing,unit ms
 
-T 08
-----
-
-.. dropdown:: Time(t1) <...>
-   :animate: fade-in-slide-down
+.. option:: T 08
    
    -Max  200
    -Min  1
@@ -99,21 +112,14 @@ T 08
    -Description  Reverse:activation duration of in :term:`time period t1`
                  (100% duty cycle),unit ms
                  
-T 11
-----
-.. dropdown:: SD Mode Stop Time <...> 
-   :animate: fade-in-slide-down
+.. option:: T 11
    
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  Motor standby duration at direction change of bartack if SD mode is On.
 
-A 20
-----
-
-.. dropdown:: SD mode for Start Bartack <...> 
-   :animate: fade-in-slide-down
+.. option:: A 20
    
    -Max  1
    -Min  0
@@ -123,11 +129,7 @@ A 20
      | 0 = Off;
      | 1 = On.
 
-A 22
-----
-
-.. dropdown:: SD mode for End Bartack <...>
-   :animate: fade-in-slide-down
+.. option:: A 22
    
    -Max  1
    -Min  0
@@ -137,11 +139,7 @@ A 22
      | 0 = Off;
      | 1 = On.
 
-A 34
-----
-
-.. dropdown:: Maintain Speed after Start Bartack <...>
-   :animate: fade-in-slide-down
+.. option:: A 34
    
    -Max  1
    -Min  0
@@ -151,44 +149,28 @@ A 34
      | 0 = Off;
      | 1 = On.
 
-D 05
-----
-
-.. dropdown:: Start Reverse Position <...>
-   :animate: fade-in-slide-down
+.. option:: D 05
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  Position when the magnet of reverse is activated.
   
-D 06
-----
-
-.. dropdown:: Stop Reverse Position <...>
-   :animate: fade-in-slide-down
+.. option:: D 06
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  Position when the magnet of reverse is deactivated.
 
-O 09
-----
-
-.. dropdown:: Duty cycle(t2) <...>
-   :animate: fade-in-slide-down
+.. option:: O 09
    
    -Max  100
    -Min  1
    -Unit  %
    -Description  Reverse:duty cycle[%] in :term:`time period t2`.
 
-O 10
-----
-
-.. dropdown:: Auto Power-off Reverse <...>
-   :animate: fade-in-slide-down
+.. option:: O 10
    
    -Max  1
    -Min  0
@@ -198,55 +180,35 @@ O 10
      | 0 = Off;
      | 1 = On
 
-O 11
-----
+.. option:: O 11
 
-.. dropdown:: Reverse Max. Holding Time <...>
-   :animate: fade-in-slide-down
-   
    -Max  30
    -Min  5
    -Unit  s
    -Description  If Auto Power-off Reverse is turned on,this parameter sets the power-off time.
 
-O 12
-----
-
-.. dropdown:: Max. Speed of 1 stitch <...> 
-   :animate: fade-in-slide-down
+.. option:: O 12
    
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  Maximum Speed of 1 stitch when bartack or W-sewing.
 
-O 13 
-----
-
-.. dropdown:: Max. Speed of 2 stitch <...>  
-   :animate: fade-in-slide-down
+.. option:: O 13 
    
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  Maximum Speed of 2 stitch when bartack or W-sewing.
 
-O 14
-----
-
-.. dropdown:: Max. Speed of 3 stitch <...> 
-   :animate: fade-in-slide-down
+.. option:: O 14
    
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  Maximum Speed of 3 stitch when bartack or W-sewing.
 
-O 41
-----
-
-.. dropdown:: Stitches of Maintain Speed after Start Bartack <...> 
-   :animate: fade-in-slide-down
+.. option:: O 41
    
    -Max  10
    -Min  0

@@ -4,27 +4,37 @@
 Thread wiper
 ============
 
+*Thread wiper has two different action modes:*
 
-Thread wiper has two different action modes：
+Upper thread wiper function
+   Set :option:`A 08` to 1 to enable this function.
+   
+   When thread cutter is completed and the time set by :option:`T 03` is delayed, the wiper 
+   will switch on, it will switch off after the time set by :option:`T 04`.
 
-- Set `A 08`_ to 1 to enable the upper thread wiper function:
+lower thread wiper function
+   Set :option:`A 08` to 2 to enable this function.
 
-When thread cutter is completed and the time set by `T 03`_ is delayed, the wiper 
-will switch on, it will switch off after the time set by `T 04`_.
+   When thread cutter is completed, while lifting the foot for the first time, the wiper
+   will switch on, it will switch off after the time set by :option:`T 04`
 
-- Set `A 08`_ to 1 to enable the lower thread wiper function:
+Quick reference
+===============
 
-When thread cutter is completed, while lifting the foot for the first time, the wiper
-will switch on, it will switch off after the time set by `T 04`_
+This table summarizes which parameter should be used for wiper:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Wiper                                                Operator   :option:`A 08`
+Wiper Delay time                                     Technician :option:`T 03`
+Wiper Activation Duration                            Technician :option:`T 04`
+==================================================== ========== ==============
 
 Parameter List
 ==============
 
-A 08
-----
-
-.. dropdown:: Wiper <...>
-   :animate: fade-in-slide-down
+.. option:: A 08
    
    -Max  1
    -Min  0
@@ -35,22 +45,14 @@ A 08
      | 1 = Upper thread;
      | 2 = Lower thread;
      
-T 03
-----
-
-.. dropdown:: Wiper Delay time <...>
-   :animate: fade-in-slide-down
+.. option:: T 03
    
    -Max  200
    -Min  1
    -Unit  ms
    -Description  Lag time, after which, wiper is activaed after trim
 
-T 04
-----
-
-.. dropdown:: Wiper Activation Duration <...>
-   :animate: fade-in-slide-down
+.. option:: T 04
    
    -Max  200
    -Min  1

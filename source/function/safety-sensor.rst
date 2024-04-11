@@ -7,27 +7,89 @@ Safety Sensor
 Tilt safaty switch
 ==================
 
+Quick reference
+---------------
+
+This table summarizes which parameter should be used for tilt safaty switch:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Debouncing of Tilt safaty Switch                     Technician :option:`T 09`
+Warning: Tilt safety switch                          Technician :option:`O 31`
+Sensor Polarity(Tilt Safety)                         Technician :option:`O 32`
+==================================================== ========== ==============
+
+Eye Guard
+=========
+
+Quick reference
+---------------
+
+This table summarizes which parameter should be used for eye guard:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Warning: Eye Guard                                   Technician :option:`O 28`
+==================================================== ========== ==============
+
+Hook cover missing
+==================
+
+Quick reference
+---------------
+
+This table summarizes which parameter should be used for hook cover missing:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Warning: Hook Cover                                  Technician :option:`O 29`
+==================================================== ========== ==============
+
+Oil Level
+=========
+
+Quick reference
+---------------
+
+This table summarizes which parameter should be used for oil level:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Warning:Oil Level                                    Technician :option:`O 34`
+==================================================== ========== ==============
+
+Upper Thread Breaking
+=====================
+
+Quick reference
+---------------
+
+This table summarizes which parameter should be used for upper thread breaking:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Debouncing of Upper Thread Break                     Technician :option:`T 13` 
+Sensor Polarity(Upper Thread Breaking)               Technician :option:`O 92`
+==================================================== ========== ==============
+
 Parameter List
---------------
+==============
 
-T 09
-^^^^
-
-.. dropdown:: Debouncing of Tilt safaty Switch <...>
-   :animate: fade-in-slide-down
+.. option:: T 09
    
    -Max  1000
    -Min  1
    -Unit  ms
-   -Description  The time is less and the sensitivity is higher,perfect debounce
-     time can prevent false alarm
+   -Description  The time is less and the sensitivity is higher,perfect debounce 
+                 time can prevent false alarm
 
-O 31
-^^^^
+.. option:: O 31
 
-.. dropdown:: Warning: Tilt safety switch <...>
-   :animate: fade-in-slide-down
-   
    -Max  1
    -Min  0
    -Unit  --
@@ -36,11 +98,7 @@ O 31
      | 0 = Off;
      | 1 = On.
      
-O 32
-^^^^
-
-.. dropdown:: Sensor Polarity(Tilt Safety) <...>
-   :animate: fade-in-slide-down
+.. option:: O 32
    
    -Max  1
    -Min  0
@@ -49,17 +107,7 @@ O 32
      | 0 = Normal close;
      | 1 = Normal open.
 
-Eye Guard
-=========
-
-Parameter List
---------------
-
-O 28
-^^^^
-
-.. dropdown:: Warning: Eye Guard <...>
-   :animate: fade-in-slide-down
+.. option:: O 28
    
    -Max  1
    -Min  0
@@ -70,17 +118,7 @@ O 28
      | 0 = Off;
      | 1 = On.
 
-Hook cover missing
-==================
-
-Parameter List
---------------
-
-O 29
-^^^^
-
-.. dropdown:: Warning: Hook Cover <...> 
-   :animate: fade-in-slide-down
+.. option:: O 29
    
    -Max  1
    -Min  0
@@ -89,19 +127,8 @@ O 29
      | Optional features,whether to throw a warning when the hook cover is removed:
      | 0 = Off;
      | 1 = On.
-     
 
-Oil Level
-=========
-
-Parameter List
---------------
-
-O 34
-^^^^
-
-.. dropdown:: Warning:Oil Level <...> 
-   :animate: fade-in-slide-down
+.. option:: O 34
    
    -Max  1
    -Min  0
@@ -112,30 +139,15 @@ O 34
      | 0 = Off;
      | 1 = On.
 
+.. option:: T 13
 
-Upper Thread Breaking
-=====================
-
-Parameter List
---------------
-
-T 13
-^^^^
-
-.. dropdown:: Debouncing of Upper Thread Break <...> 
-   :animate: fade-in-slide-down
-   
    -Max  1
    -Min  0
    -Unit  --
    -Description  The time is less and the sensitivity is higher, perfect debounce
      time can prevent false alarm.
 
-O 92
-^^^^
-
-.. dropdown:: Sensor Polarity(Upper Thread Breaking) <...> 
-   :animate: fade-in-slide-down
+.. option:: O 92
    
    -Max  1
    -Min  0

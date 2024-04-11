@@ -4,47 +4,75 @@
 Sewing foot lift
 ================
 
-**Foot is raised**
+Features
+========
 
-- on the seam
+Foot is raised
+--------------
+
+* on the seam
   
   by pedal back(:term:`POSITION -1`) or automatically with A14 setted to 1
 
-- after thread has been cut: 
+* after thread has been cut: 
   
   by pedal back(:term:`POSITION -1` or :term:`POSITION -2`) or automatically 
-  with `A 15`_ setted to 1
+  with :option:`A 15` setted to 1
 
-**Holding force of the raised foot**
+Holding force of the raised foot
+--------------------------------
 
-the foot lifting is raised by full activation, then it switches automatically
+The foot lifting is raised by full activation, then it switches automatically
 to partial activation to reduce the load on the controller and the connected 
 magnets.
 
-The full activation period is set with `T 07`_ and holding force during partial 
-activation is set with `O 05`_.
+The full activation period is set with :option:`T 07` and holding force during partial 
+activation is set with :option:`O 05`.
 
-**Timeout release**
+Timeout release
+---------------
 
 In order to reduce heat generation, timed release can be set. 
 
-if parameter `O 06`_ is set to 1, the maximum time the foot lifter can keep 
-raised is determined by parameter `O 07`_.
+if parameter :option:`O 06` is set to 1, the maximum time the foot lifter can keep 
+raised is determined by parameter :option:`O 07`.
 
-**Delay time**
+Delay time
+----------
 
 When the sewing foot is the raised, in order to ensure that the sewing material is 
 pressed tightly before the machine starts running, a tiem lag will be inserted after
-step the pedal forwards, which is controlled by parameter `T 06`_.
+step the pedal forwards, which is controlled by parameter :option:`T 06`.
+
+Quick reference
+===============
+
+This table summarizes which parameter should be used for sewing foot:
+
+============================================================= ========== ==============
+Parameter                                                     Authority  See also
+============================================================= ========== ==============
+Sewing foot lift                                              Operator   :option:`A 09`
+Debouncing of Lifting Foot                                    Technician :option:`T 05`
+Foot Drop Time                                                Technician :option:`T 06`
+Delay Time Before Auto Foot                                   Technician :option:`T 10`
+Sewing Foot Lift at Sewing Stop                               Technician :option:`A 14`
+Sewing Foot Lift after Trim/at Seam End                       Technician :option:`A 15`
+Auto Power-off Foot                                           Technician :option:`O 06`
+Foot Max. Lifting Time                                        Technician :option:`O 07`
+Soft Foot Falling                                             Technician :option:`O 39`
+Time(t1)                                                      Developer  :option:`T 07`
+Duty cycle(t2)                                                Developer  :option:`O 05`
+Effect of Soft Foot Falling                                   Technician :option:`O 40`
+Effect of PrePressure duiring Clamping(Without Start Bartack) Technician :option:`O 53`
+Effect of PrePressure duiring Clamping(Soft Start)            Technician :option:`O 54`
+Effect of PrePressure duiring Clamping                        Technician :option:`O 55`
+============================================================= ========== ==============
 
 Parameter List
 ==============
 
-T 05
-----
-
-.. dropdown:: Debouncing of Lifting Foot <...>
-   :animate: fade-in-slide-down
+.. option:: T 05
    
    -Max  500
    -Min  1
@@ -52,22 +80,17 @@ T 05
    -Description  To avoid unexpected foot lifting when step backwards for trim, the tim
                  is less and the sensitivity is higher.
 
-T 06
-----
+.. option:: T 06
 
-.. dropdown:: Foot Drop Time <...>
-   :animate: fade-in-slide-down
-   
    -Max  500
    -Min  1
    -Unit  ms
    -Description  Lag time,make sure the foot has pressed the material, after which, sewing
                  can start.
 
-T 07
-----
+.. option:: T 07
 
-.. dropdown:: Time(t1) <...>
+.. dropdown::  <...>
    :animate: fade-in-slide-down
    
    -Max  999
@@ -76,11 +99,7 @@ T 07
    -Description  Foot lifter:activation duration of in :term:`time period t1`
                  (100% duty cycle).
 
-T 10
-----
-
-.. dropdown:: Delay Time Before Auto Foot <...>
-   :animate: fade-in-slide-down
+.. option:: T 10
    
    -Max  200
    -Min  1
@@ -88,11 +107,7 @@ T 10
    -Description  Lag time,after which,sewing foot is automatically activated 
                  if the function is On
 
-A 09
-----
-
-.. dropdown:: Sewing foot lift <...>
-   :animate: fade-in-slide-down
+.. option:: A 09
    
    -Max  1
    -Min  0
@@ -102,11 +117,7 @@ A 09
      | 0 = Off;
      | 1 = On.
 
-A 14
-----
-
-.. dropdown:: Sewing Foot Lift at Sewing Stop <...>
-   :animate: fade-in-slide-down
+.. option:: A 14
    
    -Max  1
    -Min  0
@@ -116,11 +127,7 @@ A 14
      | 0 = Off;
      | 1 = On.
 
-A 15
-----
-
-.. dropdown:: Sewing Foot Lift after Trim/at Seam End <...>
-   :animate: fade-in-slide-down
+.. option:: A 15
    
    -Max  1
    -Min  0
@@ -130,22 +137,14 @@ A 15
      | 0 = Off;
      | 1 = On.
 
-O 05
-----
+.. option:: O 05
 
-.. dropdown:: Duty cycle(t2) <...>
-   :animate: fade-in-slide-down
-   
    -Max  100
    -Min  1
    -Unit  %
    -Description  Foot: duty cycle[%] in :term:`time period t2`
    
-O 06
-----
-
-.. dropdown:: Auto Power-off Foot <...>
-   :animate: fade-in-slide-down
+.. option:: O 06
    
    -Max  1
    -Min  0
@@ -155,22 +154,14 @@ O 06
      | 0 = Off;
      | 1 = On.
 
-O 07
-----
-
-.. dropdown:: Foot Max. Lifting Time <...>
-   :animate: fade-in-slide-down
+.. option:: O 07
    
    -Max  30
    -Min  5
    -Unit  s
    -Description  If Auto Power-off Foot is turned on, this parameter sets the power-off time.
 
-O 39
-----
-
-.. dropdown:: Soft Foot Falling <...>
-   :animate: fade-in-slide-down
+.. option:: O 39
    
    -Max  1
    -Min  0
@@ -180,33 +171,21 @@ O 39
      | 0 = Off;
      | 1 = On.
 
-O 40
-----
-
-.. dropdown:: Effect of Soft Foot Falling <...>
-   :animate: fade-in-slide-down
+.. option:: O 40
    
    -Max  9
    -Min  1
    -Unit  --
    -Description  The larger value, the slower foot falls.
 
-O 53
-----
-
-.. dropdown:: Effect of PrePressure duiring Clamping(Without Start Bartack) <...>
-   :animate: fade-in-slide-down
+.. option:: O 53
    
    -Max  10
    -Min  1
    -Unit  --
    -Description  Duty cycle of foot during clamping without start bartack
 
-O 54
-----
-
-.. dropdown:: Effect of PrePressure duiring Clamping(Soft Start) <...>
-   :animate: fade-in-slide-down
+.. option:: O 54
    
    -Max  10
    -Min  1
@@ -214,11 +193,7 @@ O 54
    -Description  Duty cycle of foot during clamping with soft start
 
 
-O 55
-----
-
-.. dropdown:: Effect of PrePressure duiring Clamping <...>
-   :animate: fade-in-slide-down
+.. option:: O 55
    
    -Max  10
    -Min  1

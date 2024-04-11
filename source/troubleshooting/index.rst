@@ -2,15 +2,13 @@
 Troubleshooting
 ===============
 
-Controlled experiments
+**Troubleshooting** are focused on discuss warning and error messages that prevent
+you from using the system.
 
 Table of Contents
 =================
 
 .. toctree:: 
-    :maxdepth: 3
+    :maxdepth: 2
 
-    troubleshooting
-
-  
-  
+    err_wrn_msg

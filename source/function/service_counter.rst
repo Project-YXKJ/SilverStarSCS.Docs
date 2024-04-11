@@ -6,7 +6,21 @@ Service counter
 
 Using service counter allows users to remind regular mechanical maintenance.
 
-**Here is a formula**:
+Quick start
+===========
+
+1. Set an appropriate value for :option:`A 62`, every time N stitches are sewn which
+   set by this parameter, the counter value :option:`A 63` increases by 1.
+2. Set an appropriate value for :option:`A 61`, this is a very variable value, which 
+   depends on how often you want to maintain.
+3. Set :option:`A 60` to 1, enable the counter.
+4. Refer to the beginning of this chapter `Service Remaining Amount`_, 
+   as the sewing, the remaining amount is counted down, when it reaches 0, 
+   the machine will stop, and the controller will throw a warning. A reset 
+   is needed if you want continue.
+
+How it works?
+-------------
 
 .. math::
    :name: Service Remaining Amount
@@ -14,26 +28,24 @@ Using service counter allows users to remind regular mechanical maintenance.
    N_{\text{Remaining amount}} = A61_{\text{reset value of the service counter}} - 
    A63_{\text{service counter value}}
 
-**Setup steps**:
+Quick reference
+===============
 
-1. Set an appropriate value for `A 62`_, every time N stitches are sewn which
-   set by this parameter, the counter value `A 63`_ increases by 1.
-2. Set an appropriate value for `A 61`_, this is a very variable value, which 
-   depends on how often you want to maintain.
-3. Set `A 60`_ to 1, enable the counter.
-4. Refer to the beginning of this chapter `Service Remaining Amount`_, 
-   as the sewing, the remaining amount is counted down, when it reaches 0, 
-   the machine will stop, and the controller will throw a warning. A reset 
-   is needed if you want continue.
+This table summarizes which parameter should be used for service counter:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Service Stitch Counter                               Operator   :option:`A 60`
+Service Counter Reset Value                          Technician :option:`A 61`
+Service Counter Factor                               Technician :option:`A 62`
+Service Counter Value                                Technician :option:`A 63`
+==================================================== ========== ==============
 
 Parameter List
 ==============
 
-A 60
-----
-
-.. dropdown:: Service Stitch Counter <...>
-   :animate: fade-in-slide-down
+.. option:: A 60
    
    -Max  1
    -Min  0
@@ -43,33 +55,21 @@ A 60
      | 0 = Off;
      | 1 = On.
 
-A 61
-----
-
-.. dropdown:: Service Counter Reset Value <...>
-   :animate: fade-in-slide-down
+.. option:: A 61
    
    -Max  9999
    -Min  1
    -Unit  --
    -Description  Reset value of service stitch counter
    
-A 62
-----
-
-.. dropdown:: Service Counter Factor <...>
-   :animate: fade-in-slide-down
+.. option:: A 62
    
    -Max  200
    -Min  1
    -Unit  stitches
    -Description  Every sew over this number of stitches,increment the counter by 1
 
-A 63
-----
-
-.. dropdown:: Service Counter Value <...>
-   :animate: fade-in-slide-down
+.. option:: A 63
    
    -Max  9999
    -Min  0

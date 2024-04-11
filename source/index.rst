@@ -8,11 +8,13 @@ SilverStar SCS Documentation
 
    overview
    tutorials/index
+   guides/index
    function/index
    troubleshooting/index
    specifications/index
    glossary
    contribute
+   
 
 Welcome to the *SilverStar SCS Documentation*, a collection of docs for 
 SilverStar Sewing Control System intended for operators and specialists,

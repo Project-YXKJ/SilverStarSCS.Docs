@@ -4,48 +4,70 @@
 Thread tension
 ==============
 
-**During thread cutting:**
+*Thread tension procedure:*
 
-The thread tension power on when position is reached with `D 13`_ and power off 
-when position is reached with `D 14`_ during thread trimming.
+The thread tension power on when position is reached with :option:`D 13` and power off 
+when position is reached with :option:`D 14` during thread cutting.
 
-**During foot lifting:**
-
-Adjust parameter of the thread tension during active foot lift: the mode for thread
-tension is determined by parameter `A 27`_, the default value is 2.
-
-**During 2nd Sewing foot stroke:**
-
-Adjust parameter of the sewing foot stroke during active the second thread tension:
-the mode is determined by parameter A28, the default value 1.
-
-**Electromagnetor solenoid valve:**
+Solenoid valve or electromagnet?
+================================
 
 If tension is controlled by electromagnet not solenoid valve, you need to be careful
-when setting tha value of `O 75`_. Over premissible power on time, the electromagnet
-may burn out, thus a electromagnet with a small value of `O 75`_ is protected form damage.
+when setting tha value of :option:`O 75`. Over premissible power on time, the electromagnet
+may burn out, thus a electromagnet with a small value of :option:`O 75` is protected form damage.
 
+Automation rules
+================
+
+Automation rules allow tenison to automate actions under certain working conditions.
+
+How automation rules work:
+
+During foot lifting
+-------------------
+
+Adjust parameter of the thread tension during active foot lift: the mode for thread
+tension is determined by parameter :option:`A 27`, the default value is 2.
+
+During 2nd Sewing foot stroke
+-----------------------------
+
+Adjust parameter of the sewing foot stroke during active the second thread tension:
+the mode is determined by parameter :option:`A 28`, the default value 1.
+
+Quick reference
+===============
+
+This table summarizes which parameter should be used for tension:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Status of Additional Thread Tension                  Operator   :option:`A 26`
+Auto mode for tension at foot lifting                Operator   :option:`A 27`
+Auto Additional Thread Tension                       Operator   :option:`A 28`
+Start Tension Position                               Technician :option:`D 13`
+Stop Tension Position                                Technician :option:`D 14`
+Time(t1)                                             Developer  :option:`O 49`
+Duty cycle(t2)                                       Developer  :option:`O 50`
+Tension Max. Lifting Time                            Developer  :option:`O 75`
+Time(t1)                                             Developer  :option:`O 86`
+Duty cycle(t2)                                       Developer  :option:`O 87`
+Addition tension solenoid work mode                  Developer  :option:`O 88`
+==================================================== ========== ==============
 
 Parameter List
 ==============
 
-A 26
-----
-
-.. dropdown:: Status of Additional Thread Tension <...>
-   :animate: fade-in-slide-down
+.. option:: A 26
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  Status of the additional tension solenoid(read only)
 
-A 27
-----
+.. option:: A 27
 
-.. dropdown:: Auto mode for tension at foot lifting <...>
-   :animate: fade-in-slide-down
-   
    -Max  3
    -Min  0
    -Unit  --
@@ -56,11 +78,7 @@ A 27
      | 2 = tension is lifted after trim;
      | 3 = tension is lifted as the foot is lifted during sewing and after trim.
      
-A 28
-----
-
-.. dropdown:: Auto Additional Thread Tension <...>
-   :animate: fade-in-slide-down
+.. option:: A 28
    
    -Max  1
    -Min  0
@@ -70,33 +88,21 @@ A 28
      | 0 = Off;
      | 1 = On.    
 
-D 13
-----
-
-.. dropdown:: Start Tension Position <...>
-   :animate: fade-in-slide-down
+.. option:: D 13
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  Position when the magnet of tenison is activated during trimming
 
-D 14
-----
-
-.. dropdown:: Stop Tension Position <...>
-   :animate: fade-in-slide-down
+.. option:: D 14
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  Position when the magnet of tension is deactivated during trimming
 
-O 49
-----
-
-.. dropdown:: Time(t1) <...>
-   :animate: fade-in-slide-down
+.. option:: O 49
    
    -Max  999
    -Min  1
@@ -104,22 +110,14 @@ O 49
    -Description  Tension:activation duration of in :term:`time period t1` 
                  (100% duty cycle)
 
-O 50
-----
+.. option:: O 50
 
-.. dropdown:: Duty cycle(t2) <...>
-   :animate: fade-in-slide-down
-   
    -Max  100
    -Min  1
    -Unit  %
    -Description  Tension:duty cycle[%] in :term:`time period t2`.
 
-O 75
-----
-
-.. dropdown:: Tension Max. Lifting Time <...>
-   :animate: fade-in-slide-down
+.. option:: O 75
    
    -Max  9999
    -Min  0
@@ -128,11 +126,7 @@ O 75
      | 0 = Always Lifting;
      | Not 0 = This parameter sets the power-off time.
      
-O 86
-----
-
-.. dropdown:: Time(t1) <...>
-   :animate: fade-in-slide-down
+.. option:: O 86
    
    -Max  500
    -Min  1
@@ -140,22 +134,14 @@ O 86
    -Description  Additional Tension:activation duration of in :term:`time period t1`
                  (100% duty cycle)
 
-O 87
-----
-
-.. dropdown:: Duty cycle(t2) <...>
-   :animate: fade-in-slide-down
+.. option:: O 87
    
    -Max  100
    -Min  1
    -Unit  %
    -Description  Additional Tension:duty cycle[%] in :term:`time period t2`.
 
-O 88
-----
-
-.. dropdown:: Addition tension solenoid work mode <...>
-   :animate: fade-in-slide-down
+.. option:: O 88
    
    -Max  1
    -Min  0

@@ -4,15 +4,19 @@
 Seam center guide
 =================
 
-**How automatic mode works?**
+Automation rules
+================
 
 Automatic lifting seam center guide is associated with three situations: 
 
-a) footlifter
-b) bartack(start or end tack) or reverse
-c) and stroke. 
+* footlifter
+* bartack(start or end tack) or reverse
+* and stroke. 
 
-Mode is seted by `A 51`_:
+How automation rules work
+-------------------------
+
+Rule is seted by :option:`A 51`:
 
 - 0 = Toggle seam center guide raise up/down via a manual button;
 - 1 = Raising of seam center guide when lifting the sewing foot;
@@ -25,26 +29,32 @@ Mode is seted by `A 51`_:
 - 7 = Raising of seam center guide when lifting the sewing foot, sewing 
       the bartack/reverse and high stroke.
 
+Quick reference
+===============
+
+This table summarizes which parameter should be used for wiper:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Seam Center Guide                                    Operator   :option:`A 47`
+Auto Mode for Seam Center Guide                      Technician :option:`A 51`
+Status of Seam Center Guide                          Developer  :option:`A 33`
+Time(t1)                                             Developer  :option:`O 89`
+Duty cycle(t2)                                       Developer  :option:`O 90`
+==================================================== ========== ==============
 
 Parameter List
 ==============
 
-A 33
-----
-
-.. dropdown:: Status of Seam Center Guide <...>
-   :animate: fade-in-slide-down
+.. option:: A 33
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  Status of the seam center guide solenoid(read only)
 
-A 47
-----
-
-.. dropdown:: Seam Center Guide <...>
-   :animate: fade-in-slide-down
+.. option:: A 47
    
    -Max  1
    -Min  0
@@ -54,12 +64,8 @@ A 47
      | 0 = Off;
      | 1 = On.
 
-A 51
-----
+.. option:: A 51
 
-.. dropdown:: Auto Mode for Seam Center Guide <...>
-   :animate: fade-in-slide-down
-   
    -Max  7
    -Min  0
    -Unit  --
@@ -73,11 +79,7 @@ A 51
      | 6 = Both 2&4;
      | 7 = Both 1&2&4.
 
-O 89
-----
-
-.. dropdown:: Time(t1) <...>
-   :animate: fade-in-slide-down
+.. option:: O 89
    
    -Max  999
    -Min  1
@@ -85,11 +87,7 @@ O 89
    -Description  Seam Center Guide:activation duration of in :term:`time period t1`
                  (100% duty cycle).
 
-O 90
-----
-
-.. dropdown:: Duty cycle(t2) <...>
-   :animate: fade-in-slide-down
+.. option:: O 90
    
    -Max  100
    -Min  1

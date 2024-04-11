@@ -6,14 +6,24 @@ Electric Handwheel
 
 Only works when the machine stops.
 
+Quick reference
+===============
+
+This table summarizes which parameter should be used for electric handwheel:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Elec-Handwheel                                       Operator   :option:`A 23`
+Rotation Direction of Elec-Handwheel                 Technician :option:`A 43` 
+Elec-Handwheel Step                                  Technician :option:`O 83`
+Elec-Handwheel Speed                                 Technician :option:`O 84`
+==================================================== ========== ==============
+
 Parameter List
 ==============
 
-A 23
-----
-
-.. dropdown:: Elec-Handwheel <...>
-   :animate: fade-in-slide-down
+.. option:: A 23
    
    -Max  1
    -Min  0
@@ -23,11 +33,7 @@ A 23
      | 0 = Off;
      | 1 = On.
      
-A 43
-----
-
-.. dropdown:: Rotation Direction of Elec-Handwheel <...> 
-   :animate: fade-in-slide-down
+.. option:: A 43
    
    -Max  1
    -Min  0
@@ -37,22 +43,14 @@ A 43
      | 0 = Same with main motor;
      | 1 = Contrary.   
 
-O 83
-----
-
-.. dropdown:: Elec-Handwheel Step <...>
-   :animate: fade-in-slide-down
+.. option:: O 83
    
    -Max  720
    -Min  0
    -Unit  --
    -Description  Step width for electronic handwheel
 
-O 84
-----
-
-.. dropdown:: Elec-Handwheel Speed <...>
-   :animate: fade-in-slide-down
+.. option:: O 84
    
    -Max  200
    -Min  0

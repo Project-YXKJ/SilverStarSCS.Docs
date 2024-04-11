@@ -4,37 +4,46 @@
 Needle cooling
 ==============
 
-Needle cooling can assist in cooling the needle to avoid damage to the sewing material and breakage of the upper thread.
+Needle cooling can assist in cooling the needle to avoid damage to 
+the sewing material and breakage of the upper thread.
 
-**How it works?**:
+How it works?
+=============
 
-Above the speed set by `S 18`_, the needle cooling start;
+Above the speed set by :option:`S 18`, the needle cooling start;
 
-Below the speed set by `S 18`_, the needle cooling does not stop immediately, needle cooling
-to continue until the set time(`T 16`_) has elapsed.
+Below the speed set by :option:`S 18`, the needle cooling does not stop immediately,
+needle cooling to continue until the set time(:option:`T 16`) has elapsed.
 
-During the follow-up time, if the speed exceeds `S 18`_ again, the needle cooling start again.
+During the follow-up time, if the speed exceeds :option:`S 18` again,
+the needle cooling start again.
 
+Quick reference
+===============
+
+This table summarizes which parameter should be used for needle cooling:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Needle Cooling                                       Operator   :option:`A 48`
+Cool Speed                                           Technician :option:`S 18`
+Needle Cooling Follow Up Time                        Technician :option:`T 16`
+Time(t1)                                             Developer  :option:`O 93`
+Duty cycle(t2)                                       Developer  :option:`O 94`
+==================================================== ========== ==============
 
 Parameter List
 ==============
 
-S 18
-----
-
-.. dropdown:: Cool Speed <...>
-   :animate: fade-in-slide-down
+.. option:: S 18
    
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  Above this speed,the needle cooling is activated
 
-T 16
-----
-
-.. dropdown:: Needle Cooling Follow Up Time <...>
-   :animate: fade-in-slide-down
+.. option:: T 16
    
    -Max  10
    -Min  0
@@ -42,11 +51,7 @@ T 16
    -Description  Lag time, after which,needle cooling is deactivaed when speed
                  lower than cool speed
    
-A 48
-----
-
-.. dropdown:: Needle Cooling <...> 
-   :animate: fade-in-slide-down
+.. option:: A 48
    
    -Max  1
    -Min  0
@@ -56,22 +61,14 @@ A 48
      | 0 =Off;
      | 1 = On.
      
-O 93
-----
-
-.. dropdown:: Time(t1) <...>
-   :animate: fade-in-slide-down
+.. option:: O 93
    
    -Max  999
    -Min  1
    -Unit  ms
    -Description  Needle cooling:activation duration of in :term:`time period t1` (100% duty cycle).
 
-O 94
-----
-
-.. dropdown:: Duty cycle(t2) <...>
-   :animate: fade-in-slide-down
+.. option:: O 94
    
    -Max  100
    -Min  1

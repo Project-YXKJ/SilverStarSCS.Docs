@@ -4,19 +4,23 @@
 Seam
 ====
 
-**Seam and Program**
+Basic concepts
+==============
 
-A **seam** is the basic concept, usually a seam is divided into three parts: 
-start bartack, middle sewing, end bartack and thread cutting. 
+Seam
+   A *seam*, usually is divided into three parts: start bartack, middle sewing,
+   end bartack and thread cutting. 
 
-A seam starts from stepping on pedal :term:`POSITION 1` for the first time, 
-and ends when stepping on :term:`POSITION -2`.
+   A seam starts from stepping on pedal :term:`POSITION 1` for the first time, 
+   and ends when stepping on :term:`POSITION -2`.
 
-A *sewing program* contains at least one seam. Let's call it Seam-01, 
-Seam-02 ... Seam-n, program controls them sewing automatically, 
-when Seam-n is finished, program end.
+Program
+   A *sewing program*, contains at least one seam. Let's call it Seam-01, 
+   Seam-02 ... Seam-n, program controls them sewing automatically, 
+   when Seam-n is finished, program end.
 
-**Fixed stitches program**
+Fixed stitches program
+======================
 
 Fixed stitch sewing is a sewing program that allows users to freely program. 
 Up to 25 seam segments can be programmed, each with a maximum of 99 stitches.
@@ -48,61 +52,77 @@ the whole program will be ended. If the thread trimming has not been executed
 at this time, the thread trimming will be executed and return to the first section,
 otherwise program will be directly returned to the first section.
 
-**Correction(Needle up/down)**
+Correction(Needle up/down)
+==========================
 
-If `A 03`_ is equal to 0:
+If :option:`A 03` is equal to 0:
 
 When press the key, the needle moves form the current position to the position 
-set by parameter `D 15`_ or `D 16`_, which one is the closest, the target position
-is that one. 
+set by parameter :option:`D 15` or :option:`D 16`, which one is the closest, 
+the target position is that one. 
 
-E.g, current position is 40 degrees, `D 15`_ is 70, `D 16`_ is 200, 
+E.g, current position is 40 degrees, :option:`D 15` is 70, :option:`D 16` is 200, 
 when you press the button, the motion trace is 
 ``Position 40 => 70 => 200 => 70 => 200 ...`` .
 
-If `A 03`_ is equal to 1:
+If :option:`A 03` is equal to 1:
 
 when you press the button, two cases: if you set stop at upper position, 
-the needle moves form the current position to the position set by parameter `D 01`_. 
+the needle moves form the current position to the position set by parameter :option:`D 01`. 
 if you set stop at lower position, the needle moves form the current position to the 
-position set by parameter `D 02`_:
+position set by parameter :option:`D 02`:
 
-E.g, current position is 40 degrees, `D 01`_ is 70, `D 02`_ is 200, 
-if `A 01`_ is 0, when you press the button, the motion trace is 
+E.g, current position is 40 degrees, :option:`D 01` is 70, :option:`D 02` is 200, 
+if :option:`A 01` is 0, when you press the button, the motion trace is 
 ``Position 40 => 200 => 200 => 200 ...`` ;
-if `A 01`_ is 1, when you press the button, the motion trace is 
+if :option:`A 01` is 1, when you press the button, the motion trace is 
 ``Position 40 => 70 => 70 => 70 ...`` ;
+
+Quick reference
+===============
+
+This table summarizes which parameter should be used for seam:
+
+============================================================ ========== ==============
+Parameter                                                    Authority  See also
+============================================================ ========== ==============
+Speed in W-Sewing                                            Operator   :option:`S 05`
+Speed in Program Sewing                                      Operator   :option:`S 06`
+Needle Position                                              Operator   :option:`A 01`
+Auto Sewing for Program Sewing                               Operator   :option:`A 02`
+Correction mode                                              Operator   :option:`A 03`
+Mode After Start Bartack in Programmed Sewing                Operator   :option:`A 16`
+Auto End bartack and Trim when Programmed Sewing is finished Operator   :option:`A 17`
+Correction Mode                                              Operator   :option:`A 30`
+Manual Revserse SW.                                          Operator   :option:`A 31`
+Upper Needle Position                                        Technician :option:`D 01`
+Lower Needle Position                                        Technician :option:`D 02`
+The minimum angle of Off reverse key function                Operator   :option:`D 11`
+The maximum angle of Off reverse key function                Operator   :option:`D 12`
+Correction:Upper Position                                    Operator   :option:`D 15`
+Correction:Lower Position                                    Operator   :option:`D 16`
+Sewing mode                                                  Operator   :option:`D 18`
+Correction Timming                                           Operator   :option:`O 69`
+============================================================ ========== ==============
 
 Parameter List
 ==============
 
-S 05
-----
-
-.. dropdown:: Speed in W-Sewing <...>
-   :animate: fade-in-slide-down
+.. option:: S 05
    
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  Maximum speed in W-Sewing
 
-S 06
-----
-
-.. dropdown:: Speed in Program Sewing <...>
-   :animate: fade-in-slide-down
+.. option:: S 06
    
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  Maximum speed in programmed stitches sewing
 
-A 01
-----
-
-.. dropdown:: Needle Position <...>
-   :animate: fade-in-slide-down
+.. option:: A 01
 
    -Max  1
    -Min  0
@@ -112,11 +132,7 @@ A 01
      | 0 = in the material;
      | 1 = upper needle position.
 
-A 02
-----
-
-.. dropdown:: Auto Sewing for Program Sewing <...>
-   :animate: fade-in-slide-down
+.. option:: A 02
    
    -Max  1
    -Min  0
@@ -125,11 +141,7 @@ A 02
      | 0 = The middle speed of the sewing is controlled by the pedal;
      | 1 = The sewing is performed automatically.  
 
-A 03
-----
-
-.. dropdown:: Correction mode <...>
-   :animate: fade-in-slide-down
+.. option:: A 03
    
    -Max  1
    -Min  0
@@ -138,11 +150,7 @@ A 03
      | 0 = Half stitch;
      | 1 = One stitch
 
-A 16
-----
-
-.. dropdown:: Mode After Start Bartack in Programmed Sewing  <...>
-   :animate: fade-in-slide-down
+.. option:: A 16
    
    -Max  1
    -Min  0
@@ -152,11 +160,7 @@ A 16
      | 0 = machine stops and must restart with the pedal;
      | 1 = sewing continues after end.
 
-A 17
-----
-
-.. dropdown:: Auto End bartack and Trim when Programmed Sewing is finished <...>
-   :animate: fade-in-slide-down
+.. option:: A 17
    
    -Max  1
    -Min  0
@@ -166,12 +170,8 @@ A 17
      | 0 = continue by pedal;
      | 1 = automatic.
 
-A 30
-----
+.. option:: A 30
 
-.. dropdown:: Correction Mode <...>
-   :animate: fade-in-slide-down
-   
    -Max  1
    -Min  0
    -Unit  --
@@ -179,11 +179,7 @@ A 30
      | 0 = single correction;
      | 1 = continuous correction.
 
-A 31
-----
-
-.. dropdown:: Manual Revserse SW. <...>
-   :animate: fade-in-slide-down
+.. option:: A 31
    
    -Max  1
    -Min  0
@@ -193,33 +189,21 @@ A 31
      | 1 = Reverse at stop.
 
 
-D 01
-----
-
-.. dropdown:: Upper Needle Position <...>
-   :animate: fade-in-slide-down
+.. option:: D 01
   
    -Max  359
    -Min  0
    -Unit  1°
    -Description  Needle in the upper position.
 
-D 02
-----
-
-.. dropdown:: Lower Needle Position <...>
-   :animate: fade-in-slide-down
+.. option:: D 02
   
    -Max  359
    -Min  0
    -Unit  1°
    -Description  Needle in the lower position.
 
-D 11
-----
-
-.. dropdown:: The minimum angle of Off reverse key function <...>
-   :animate: fade-in-slide-down
+.. option:: D 11
    
    -Max  359
    -Min  0
@@ -227,56 +211,36 @@ D 11
    -Description  If the needle position is greater than this angle, the manual reverse
                  sewing button will not work.
 
-D 12
-----
+.. option:: D 12
 
-.. dropdown:: The maximum angle of Off reverse key function <...>
-   :animate: fade-in-slide-down
-   
    -Max  359
    -Min  0
    -Unit  1°
    -Description  If the needle position is greater than this angle, the manual reverse
                  sewing button will not work.
 
-D 15
-----
-
-.. dropdown:: Correction:Upper Position <...>
-   :animate: fade-in-slide-down
+.. option:: D 15
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  Upper needle position in correction mode.
 
-D 16
-----
-
-.. dropdown:: Correction:Lower Position <...>
-   :animate: fade-in-slide-down
+.. option:: D 16
    
    -Max  359
    -Min  0
    -Unit  1°
    -Description  Lower needle position in correction mode.
 
-D 18
-----
-
-.. dropdown:: Sewing mode <...>
-   :animate: fade-in-slide-down
+.. option:: D 18
    
    -Max  3
    -Min  1
    -Unit  --
    -Description  Sewing mode(read only).
 
-O 69
-----
-
-.. dropdown:: Correction Timming <...>
-   :animate: fade-in-slide-down
+.. option:: O 69
    
    -Max  1
    -Min  0

@@ -4,38 +4,74 @@
 Stroke adjustment
 =================
 
-**Speed limit during quick stroke adjustment**
+Depending on the equipment, the machine has can be used to sew two different
+storke heights, and it can be activated with a press of button.
 
-If parameter `A 35`_ set to 1, when 2nd sewing foot stroke is activated, the speed is 
-reduced down to the desired value of 2nd sewing foot stroke which set by `S 15`_.
+Features
+========
 
-**交互量轮盘限速**
+Speed limit using stroke adjustment wheel
+------------------------------------------
 
-如果交互量调节轮盘内安装了传感器, 在调节交互量高度时, 系统会自动进行限速, 依据
-传感器类型限速有两种策略:
+If a sensor is installed in the stroke adjustment wheel, the system will automatically
+limit the speed when adjusting the wheel. There are two sensor type for
+speed limiting:
 
-- 开关式
-  
-  挡位式限速, 如果安装有2个开关, 则就是四个挡位.
+Switch type  
+   Gear speed limiter, if 2 switches are installed, it will have four gears.
 
-- 电位器
-  
-  无极变速, 在一个交互量高度之前不限速, 之后随着交互量高度继续增大, 限制速度随之线性越来越小.
+Potentiometer type
+   The speed can be adjusted continuously, there is no speed limit before a certain
+   height, and then as the stroke height continues to increase, the speed limit
+   becomes linearly smaller and smaller.
 
-**Number of stitches 2nd stroke off**
+Automation rules
+================
 
-if `A 32`_ is not 0, when switching to 2nd sewing foot stroke, after sewing N stitches 
-set by `A 32`_, the second sewing foot stroke is automatically deactivated.
+Speed limit during quick stroke adjustment
+------------------------------------------
 
+If parameter :option:`A 35` set to 1, when 2nd sewing foot stroke is activated,
+the speed is reduced down to the desired value of 2nd sewing foot stroke which 
+set by :option:`S 15`.
+
+Number of stitches 2nd stroke off
+---------------------------------
+
+if :option:`A 32` is not 0, when switching to 2nd sewing foot stroke, after sewing
+N stitches set by :option:`A 32` , the second sewing foot stroke is automatically 
+deactivated.
+
+Quick reference
+===============
+
+This table summarizes which parameter should be used for stroke:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Stroke                                               Operator   :option:`A 45`
+Max. Speed Stroke Whell Mark 1                       Technician :option:`S 09`
+Max. Speed for Small Stroke                          Technician :option:`S 10`
+Max. Speed Stroke Whell Mark 2                       Technician :option:`S 11`
+Max. Speed Stroke Whell Mark 3                       Technician :option:`S 12`
+Max. Speed Stroke Whell Mark 4                       Technician :option:`S 13`
+Max. Speed for High Stroke                           Technician :option:`S 14`
+Max. Speed for Elevated Stroke                       Technician :option:`S 15`
+Number of Stitches 2nd Stroke Off                    Technician :option:`A 32`
+Status of Stroke                                     Developer  :option:`A 24`
+Auto Speed Limit                                     Operator   :option:`A 35`
+Min. Stroke Border                                   Technician :option:`O 21`
+Max. Stroke Point                                    Technician :option:`O 22`
+Time(t1)                                             Technician :option:`O 76`
+Duty cycle(t2)                                       Developer  :option:`O 77`
+The Stroke Height Sensor Type                        Developer  :option:`O 85`
+==================================================== ========== ==============
 
 Parameter List
 ==============
 
-S 09
-----
-
-.. dropdown:: Max. Speed Stroke Whell Mark 1 <...>
-   :animate: fade-in-slide-down
+.. option:: S 09
    
    -Max  4500
    -Min  100
@@ -43,35 +79,23 @@ S 09
    -Description  The stroke height knob type is switch: Limit speed when turn adjusting 
                  wheel to mark 1 position
 
-S 10
-----
+.. option:: S 10
 
-.. dropdown:: Max. Speed for Small Stroke <...>
-   :animate: fade-in-slide-down
-   
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  The stroke height knob type is potentiometer: Limit speed for the small
                  stork height
 
-S 11
-----
+.. option:: S 11
 
-.. dropdown:: Max. Speed Stroke Whell Mark 2 <...>
-   :animate: fade-in-slide-down
-   
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  The stroke height knob type is switch: Limit speed when turun adjusting
                  wheel to mark 2 position
 
-S 12
-----
-
-.. dropdown:: Max. Speed Stroke Whell Mark 3 <...>
-   :animate: fade-in-slide-down
+.. option:: S 12
    
    -Max  4500
    -Min  100
@@ -79,11 +103,7 @@ S 12
    -Description  The stroke height knob type is switch:Limit speed when turun adjusting
                  wheel to mark 3 position
 
-S 13
-----
-
-.. dropdown:: Max. Speed Stroke Whell Mark 4 <...>
-   :animate: fade-in-slide-down
+.. option:: S 13
    
    -Max  4500
    -Min  100
@@ -91,11 +111,7 @@ S 13
    -Description  The stroke height knob type is switch: Limit speed when turun adjusting
                  wheel to mark 4 position
 
-S 14
-----
-
-.. dropdown:: Max. Speed for High Stroke <...>
-   :animate: fade-in-slide-down
+.. option:: S 14
    
    -Max  4500
    -Min  100
@@ -103,34 +119,22 @@ S 14
    -Description  The stroke height knob type is potentiometer:Limit speed for the high
                  stork height
 
-S 15
-----
-
-.. dropdown:: Max. Speed for Elevated Stroke <...>
-   :animate: fade-in-slide-down
+.. option:: S 15
    
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  Limit speed for the elevated sewing foot storke
 
-A 24
-----
-
-.. dropdown:: Status of Stroke <...>
-   :animate: fade-in-slide-down
+.. option:: A 24
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  Status of stroke height solenoid(read only)
 
-A 32
-----
+.. option:: A 32
 
-.. dropdown:: Number of Stitches 2nd Stroke Off <...>
-   :animate: fade-in-slide-down
-   
    -Max  99
    -Min  0
    -Unit  stitches
@@ -138,11 +142,7 @@ A 32
      | 0 = Manually switch;
      | Not 0 = Number of stitches after which the second stroke height is automatically deactivated.
 
-A 35
-----
-
-.. dropdown:: Auto Speed Limit  <...>
-   :animate: fade-in-slide-down
+.. option:: A 35
    
    -Max  1
    -Min  0
@@ -152,11 +152,7 @@ A 35
      | 0 = Off
      | 1 = On
 
-A 45
-----
-
-.. dropdown:: Stroke <...>
-   :animate: fade-in-slide-down
+.. option:: A 45
    
    -Max  1
    -Min  0
@@ -166,11 +162,7 @@ A 45
      | 0 = Off
      | 1 = On
 
-O 21
-----
-
-.. dropdown:: Min. Stroke Border <...>
-   :animate: fade-in-slide-down
+.. option:: O 21
    
    -Max  4095
    -Min  0
@@ -178,50 +170,34 @@ O 21
    -Description  The sensor value at the boundary position of the minimum stroke,
                  the speed is reduced down as continue to increase stroke height.
 
-O 22
-----
-
-.. dropdown:: Max. Stroke Point <...>
-   :animate: fade-in-slide-down
+.. option:: O 22
    
    -Max  4095
    -Min  0
    -Unit  stitches
    -Description  Sensor value at position of maximum stroke.
 
-0 76
-----
+.. option:: O 76
 
-.. dropdown::Time(t1) <...>
-   :animate: fade-in-slide-down
-   
    -Max  999
    -Min  1
    -Unit  ms
    -Description  Stroke height:activation duration of in :term:`time period t1`
                  (100% duty cycle)
 
-0 77
-----
+.. option:: O 77
 
-.. dropdown:: Duty cycle(t2) <...>
-   :animate: fade-in-slide-down
-   
    -Max  100
    -Min  1
    -Unit  %
    -Description  Stroke height:duty cycle[%] in :term:`time period t2`.
 
-0 85
-----
-
-.. dropdown:: The Stroke Height Sensor Type <...>
-   :animate: fade-in-slide-down
+.. option:: O 85
    
    -Max  2
    -Min  0
    -Unit  stitches
    -Description
-     | 0 = Off;
-     | 1 = Switch;
-     | 2 = Potentiometer.
+      | 0 = Off;
+      | 1 = Switch;
+      | 2 = Potentiometer.

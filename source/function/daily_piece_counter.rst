@@ -4,14 +4,24 @@
 Daily piece counter
 ===================
 
+Quick reference
+===============
+
+This table summarizes which parameter should be used for daily piece counter:
+
+==================================================== ========== ==============
+Parameter                                            Authority  See also
+==================================================== ========== ==============
+Piece Counter                                        Operator   :option:`A 11`
+Stitches(Piece Counter)                              Technician :option:`O 45` 
+Trimming Times(Piece Counter)                        Technician :option:`O 46`
+Piece Counter Value                                  Technician :option:`O 47`
+==================================================== ========== ==============
+
 Parameter List
 ==============
 
-A 11
-----
-
-.. dropdown:: Piece Counter <...>
-   :animate: fade-in-slide-down
+.. option:: A 11
    
    -Max  1
    -Min  0
@@ -21,33 +31,21 @@ A 11
      | 0 = Off;
      | 1 = On.
 
-O 45
-----
+.. option:: O 45
 
-.. dropdown:: Stitches(Piece Counter) <...> 
-   :animate: fade-in-slide-down
-   
    -Max  999
    -Min  1
    -Unit  stitches
    -Description  Minimum number of stitches for Piece Counter plus 1
 
-O 46
-----
+.. option:: O 46
 
-.. dropdown:: Trimming Times(Piece Counter) <...>
-   :animate: fade-in-slide-down
-   
    -Max  99
    -Min  1
    -Unit  stitches
    -Description  Minimum times of trim for Piece Counter plus 1
 
-O 47
-----
-
-.. dropdown:: Piece Counter Value <...> 
-   :animate: fade-in-slide-down
+.. option:: O 47
    
    -Max  9999
    -Min  0

@@ -4,12 +4,12 @@
 Turn back
 =========
 
-Set :option:`A 13` to 1 to enable the turn back function, this function helps remove 
+Set :option:`A13` to 1 to enable the turn back function, this function helps remove 
 the materials and prevent the needle from scratching the fabric.
 
 The turning back function runs after the cutting procedure. After the delay
-time set by :option:`T 12` , then it turns back at speed set by :option:`S 16` .
-When position is reached the angle set by :option:`O 35` , the motor stops.
+time set by :option:`T12` , then it turns back at speed set by :option:`S16` .
+When position is reached the angle set by :option:`O35` , the motor stops.
 
 
 Quick reference
@@ -20,30 +20,16 @@ This table summarizes which parameter should be used for turn back:
 ==================================================== ========== ==============
 Parameter                                            Authority  See also
 ==================================================== ========== ==============
-Turn Back                                            Operator   :option:`A 13`
-Turn Back Speed                                      Technician :option:`S 16`
-Turn Back Delay                                      Technician :option:`T 12`
-Needle postion after turn back                       Technician :option:`O 35`
+Turn Back                                            Operator   :option:`A13`
+Turn Back Speed                                      Technician :option:`S16`
+Turn Back Delay                                      Technician :option:`T12`
+Needle postion after turn back                       Technician :option:`O35`
 ==================================================== ========== ==============
 
 Parameter List
 ==============
 
-.. option:: S 16
-   
-   -Max  500
-   -Min  50
-   -Unit  spm
-   -Description  Turn back speed for lifting needlebar after trim.
-
-.. option:: T 12
-
-   -Max  1000
-   -Min  1
-   -Unit  ms
-   -Description  Lag time, after which,needle reverse after trim.
-   
-.. option:: A 13
+.. option:: A13
 
    -Max  1
    -Min  0
@@ -53,7 +39,21 @@ Parameter List
      | 0 = Off;
      | 1 = On.
 
-.. option:: O 35
+.. option:: S16
+   
+   -Max  500
+   -Min  50
+   -Unit  spm
+   -Description  Turn back speed for lifting needlebar after trim.
+
+.. option:: T12
+
+   -Max  1000
+   -Min  1
+   -Unit  ms
+   -Description  Lag time, after which,needle reverse after trim.
+
+.. option:: O35
 
    -Max  359
    -Min  0

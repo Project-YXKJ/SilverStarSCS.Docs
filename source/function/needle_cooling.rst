@@ -10,12 +10,12 @@ the sewing material and breakage of the upper thread.
 How it works?
 =============
 
-Above the speed set by :option:`S 18`, the needle cooling start;
+Above the speed set by :option:`S18`, the needle cooling start;
 
-Below the speed set by :option:`S 18`, the needle cooling does not stop immediately,
-needle cooling to continue until the set time(:option:`T 16`) has elapsed.
+Below the speed set by :option:`S18`, the needle cooling does not stop immediately,
+needle cooling to continue until the time setted by :option:`T16` has elapsed.
 
-During the follow-up time, if the speed exceeds :option:`S 18` again,
+During the follow-up time, if the speed exceeds :option:`S18` again,
 the needle cooling start again.
 
 Quick reference
@@ -26,32 +26,32 @@ This table summarizes which parameter should be used for needle cooling:
 ==================================================== ========== ==============
 Parameter                                            Authority  See also
 ==================================================== ========== ==============
-Needle Cooling                                       Operator   :option:`A 48`
-Cool Speed                                           Technician :option:`S 18`
-Needle Cooling Follow Up Time                        Technician :option:`T 16`
-Time(t1)                                             Developer  :option:`O 93`
-Duty cycle(t2)                                       Developer  :option:`O 94`
+Needle Cooling                                       Operator   :option:`A48`
+Cool Speed                                           Technician :option:`S18`
+Needle Cooling Follow Up Time                        Technician :option:`T16`
+Time(t1)                                             Developer  :option:`O93`
+Duty cycle(t2)                                       Developer  :option:`O94`
 ==================================================== ========== ==============
 
 Parameter List
 ==============
 
-.. option:: S 18
+.. option:: S18
    
    -Max  4500
    -Min  100
    -Unit  spm
-   -Description  Above this speed,the needle cooling is activated
+   -Description  Above this speed,the needle cooling is activated.
 
-.. option:: T 16
+.. option:: T16
    
    -Max  10
    -Min  0
    -Unit  s
    -Description  Lag time, after which,needle cooling is deactivaed when speed
-                 lower than cool speed
+                 lower than cool speed.
    
-.. option:: A 48
+.. option:: A48
    
    -Max  1
    -Min  0
@@ -61,16 +61,16 @@ Parameter List
      | 0 =Off;
      | 1 = On.
      
-.. option:: O 93
+.. option:: O93
    
    -Max  999
    -Min  1
    -Unit  ms
-   -Description  Needle cooling:activation duration of in :term:`time period t1` (100% duty cycle).
+   -Description  Needle cooling: activation duration of in :term:`time period t1` (100% duty cycle).
 
-.. option:: O 94
+.. option:: O94
    
    -Max  100
    -Min  1
    -Unit  %
-   -Description  Needle cooling:duty cycle[%] in :term:`time period t2`.
+   -Description  Needle cooling: duty cycle[%] in :term:`time period t2`.

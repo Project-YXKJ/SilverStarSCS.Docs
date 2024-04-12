@@ -7,15 +7,19 @@ Motor
 Holding force of the motor
 ==========================
 
-Enable this function by set :option:`A 54` to 1.
+Enable this function by set :option:`A54` to 1.
 
 This function prevents unwanted wandering of the needle when machine has stopped. 
 The effect can be checked by turning the hand wheel.
 
-The maximum time the holding force can keep takes effect is determined by parameter :option:`A 66`.
+The maximum time the holding force can keep takes effect is determined by parameter :option:`A66` :
 
-- If :option:`A 66` equal to 0, it take effect always when stopped.
-- If :option:`A 66` is not equal to 0, effective time is the value set by :option:`A 66`.
+Equal to 0
+   Holding force take effect always when stopped.
+
+Not equal to 0
+   holding force only take effect for a certain period of time when stop, and then the motor is released. 
+   At this time, the parameter value represents the effective time.
 
 Quick reference
 ===============
@@ -25,78 +29,78 @@ This table summarizes which parameter should be used for motor:
 ==================================================================== ========== ==============
 Parameter                                                            Authority  See also
 ==================================================================== ========== ==============
-Max. Speed                                                           Technician :option:`S 01`
-Min. Speed                                                           Technician :option:`S 02`
-Auto Upper Position When Power-on                                    Technician :option:`A 18`
-Holding Force                                                        Technician :option:`A 54`
-Lock Shaft Slot Angle                                                Technician :option:`A 55`
-Position Error Threshold of Lock Shaft Function takes effect         Technician :option:`A 56`
-Position Error Threshold of Lock Shaft Function does not take effect Technician :option:`A 57`
-Holding Force Mode                                                   Technician :option:`A 66`
-Machine Sync Signal Source                                           Technician :option:`O 04`
-Input Speed Scaling                                                  Technician :option:`O 36`
-Input Speed Scaling                                                  Technician :option:`O 37`
-Directions of Motor Rotation                                         Technician :option:`O 67`
-Acceleration                                                         Technician :option:`I 01`
-Deacceleration                                                       Technician :option:`I 02`
-Electrical Angle                                                     Developer  :option:`I 03`
-Transmission Ratio                                                   Developer  :option:`I 04`
-Kp(CSC-t)                                                            Developer  :option:`I 05`
-Divisor of Kp(CSC-t)                                                 Developer  :option:`I 06`
-Ki(CSC-t)                                                            Developer  :option:`I 07`
-Divisor of Ki(CSC-t)                                                 Developer  :option:`I 08`
-Kp(CSC)                                                              Developer  :option:`I 09`
-Divisor of Kp(CSC)                                                   Developer  :option:`I 10`
-Ki(CSC)                                                              Developer  :option:`I 11`
-Divisor of Ki(CSC)                                                   Developer  :option:`I 12`
-Upper Output limit(CSC)                                              Developer  :option:`I 13`
-Feedforward(CSC)                                                     Developer  :option:`I 14`
-Kp(CCC-d)                                                            Developer  :option:`I 15`
-Divisor of Kp(CCC-d)                                                 Developer  :option:`I 16`
-Ki(CCC-d)                                                            Developer  :option:`I 17`
-Divisor of Ki(CCC-d)                                                 Developer  :option:`I 18`
-Upper Output limit(CCC-d)                                            Developer  :option:`I 19`
-Lower Output limit(CCC-d)                                            Developer  :option:`I 20`
-Kp(CCC-q)                                                            Developer  :option:`I 21`
-Divisor of Kp(CCC-q)                                                 Developer  :option:`I 22`
-Ki(CCC-q)                                                            Developer  :option:`I 23`
-Divisor of Ki(CCC-q)                                                 Developer  :option:`I 24`
-Upper Output limit(CCC-q)                                            Developer  :option:`I 25`
-Lower Output limit(CCC-q)                                            Developer  :option:`I 26`
-Encoder Resolution                                                   Developer  :option:`I 27`
-Stop Routine Max. Time                                               Developer  :option:`I 28`
-Stop mode                                                            Developer  :option:`I 30`
-MACHINE ZERO Offset                                                  Developer  :option:`I 33`
-Distance(Brake P-S process)                                          Developer  :option:`I 37`
-Initial Speed(Brake P-S process)                                     Developer  :option:`I 38`
-Terminal speed(Brake P-S process)                                    Developer  :option:`I 39`
-Kp(CPC-s)                                                            Developer  :option:`I 40`
-Divisor of Kp(CPC-s)                                                 Developer  :option:`I 41`
-Kd(CPC-s)                                                            Developer  :option:`I 42`
-Divisor of Kd(CPC-s)                                                 Developer  :option:`I 43`
-Max. Hold Force Current                                              Developer  :option:`I 46`
-Field Weaken                                                         Developer  :option:`I 47`
-Field Weakening Effective Speed                                      Developer  :option:`I 48`
-Max. Id current                                                      Developer  :option:`I 49`
-Upper Output limit(CPC-h)                                            Developer  :option:`I 50`
-Lower Output limit(CPC-h)                                            Developer  :option:`I 51`
-Kp(CPC-h)                                                            Developer  :option:`I 52`
-Divisor of Kp(CPC-h)                                                 Developer  :option:`I 53`
-Kd(CPC-h)                                                            Developer  :option:`I 54`
-Divisor of Kd(CPC-h)                                                 Developer  :option:`I 55`
+Max. Speed                                                           Technician :option:`S01`
+Min. Speed                                                           Technician :option:`S02`
+Auto Upper Position When Power-on                                    Technician :option:`A18`
+Holding Force                                                        Technician :option:`A54`
+Step Angle(CPC-h)                                                    Developer  :option:`A55`
+Position Error Threshold takes effect(CPC-h)                         Developer  :option:`A56`
+Position Error Threshold does not take effect(CPC-h)                 Developer  :option:`A57`
+Holding Force Mode                                                   Technician :option:`A66`
+Machine Sync Signal Source                                           Technician :option:`O04`
+Input Speed Scaling                                                  Technician :option:`O36`
+Input Speed Scaling                                                  Technician :option:`O37`
+Directions of Motor Rotation                                         Developer  :option:`O67`
+Acceleration                                                         Technician :option:`I01`
+Deacceleration                                                       Technician :option:`I02`
+Electrical Angle                                                     Developer  :option:`I03`
+Transmission Ratio                                                   Developer  :option:`I04`
+Kp(CSC-t)                                                            Developer  :option:`I05`
+Divisor of Kp(CSC-t)                                                 Developer  :option:`I06`
+Ki(CSC-t)                                                            Developer  :option:`I07`
+Divisor of Ki(CSC-t)                                                 Developer  :option:`I08`
+Kp(CSC)                                                              Developer  :option:`I09`
+Divisor of Kp(CSC)                                                   Developer  :option:`I10`
+Ki(CSC)                                                              Developer  :option:`I11`
+Divisor of Ki(CSC)                                                   Developer  :option:`I12`
+Upper Output limit(CSC)                                              Developer  :option:`I13`
+Feedforward(CSC)                                                     Developer  :option:`I14`
+Kp(CCC-d)                                                            Developer  :option:`I15`
+Divisor of Kp(CCC-d)                                                 Developer  :option:`I16`
+Ki(CCC-d)                                                            Developer  :option:`I17`
+Divisor of Ki(CCC-d)                                                 Developer  :option:`I18`
+Upper Output limit(CCC-d)                                            Developer  :option:`I19`
+Lower Output limit(CCC-d)                                            Developer  :option:`I20`
+Kp(CCC-q)                                                            Developer  :option:`I21`
+Divisor of Kp(CCC-q)                                                 Developer  :option:`I22`
+Ki(CCC-q)                                                            Developer  :option:`I23`
+Divisor of Ki(CCC-q)                                                 Developer  :option:`I24`
+Upper Output limit(CCC-q)                                            Developer  :option:`I25`
+Lower Output limit(CCC-q)                                            Developer  :option:`I26`
+Encoder Resolution                                                   Developer  :option:`I27`
+Stop Routine Max. Time                                               Developer  :option:`I28`
+Stop mode                                                            Developer  :option:`I30`
+MACHINE ZERO Offset                                                  Developer  :option:`I33`
+Distance(Brake P-S process)                                          Developer  :option:`I37`
+Initial Speed(Brake P-S process)                                     Developer  :option:`I38`
+Terminal speed(Brake P-S process)                                    Developer  :option:`I39`
+Kp(CPC-s)                                                            Developer  :option:`I40`
+Divisor of Kp(CPC-s)                                                 Developer  :option:`I41`
+Kd(CPC-s)                                                            Developer  :option:`I42`
+Divisor of Kd(CPC-s)                                                 Developer  :option:`I43`
+Max. Hold Force Current                                              Developer  :option:`I46`
+Field Weaken                                                         Developer  :option:`I47`
+Field Weakening Effective Speed                                      Developer  :option:`I48`
+Max. Id current                                                      Developer  :option:`I49`
+Upper Output limit(CPC-h)                                            Developer  :option:`I50`
+Lower Output limit(CPC-h)                                            Developer  :option:`I51`
+Kp(CPC-h)                                                            Developer  :option:`I52`
+Divisor of Kp(CPC-h)                                                 Developer  :option:`I53`
+Kd(CPC-h)                                                            Developer  :option:`I54`
+Divisor of Kd(CPC-h)                                                 Developer  :option:`I55`
 ==================================================================== ========== ==============
 
 Parameter List
 ==============
 
-.. option:: S 01
+.. option:: S01
    
    -Max  4500
    -Min  100
    -Unit  spm
    -Description  Maximum speed by press the pedal to the end position.
      
-.. option:: S 02
+.. option:: S02
 
    -Max  4500
    -Min  100
@@ -104,7 +108,7 @@ Parameter List
    -Description  Minimum sewing speed, it is also the needle position up-down speed
 
      
-.. option:: A 18
+.. option:: A18
 
    -Max  4500
    -Min  100
@@ -117,7 +121,7 @@ Parameter List
 .. danger:: 
    Please set A18 parameters carefully, it may cause personal danger.
 
-.. option:: A 54
+.. option:: A54
 
    -Max  1
    -Min  0
@@ -127,14 +131,14 @@ Parameter List
      | 0 = Off;
      | 1 = On.
 
-.. option:: A 55
+.. option:: A55
 
    -Max  720
    -Min  1
    -Unit  --
    -Description  The shaft is locked a range within this angle.
 
-.. option:: A 56
+.. option:: A56
 
    -Max  720
    -Min  1
@@ -142,7 +146,7 @@ Parameter List
    -Description  When the position error is large than the parameters, the motor will 
                  start to adjust the position.
 
-.. option:: A 57
+.. option:: A57
 
    -Max  720
    -Min  1
@@ -150,7 +154,7 @@ Parameter List
    -Description  When the position error is small than the parameters,the motor will 
                  standby. 
 
-.. option:: A 66
+.. option:: A66
 
    -Max  1
    -Min  0
@@ -159,7 +163,7 @@ Parameter List
      | 0 = The motor holds always;
      | Not 0 = The holding force turns off after the time set by this parameter.
 
-.. option:: O 04
+.. option:: O04
 
    -Max  1
    -Min  0
@@ -168,14 +172,14 @@ Parameter List
      | 0 = Extern;
      | 1 = Motor.
 
-.. option:: O 36
+.. option:: O36
 
    -Max  5
    -Min  0
    -Unit  --
    -Description  Speed scaling allows the machine to run at lower speed than the set.
 
-.. option:: O 37
+.. option:: O37
 
    -Max  1
    -Min  0
@@ -185,7 +189,7 @@ Parameter List
      | 0 = Off;
      | 1 = On.
 
-.. option:: O 67
+.. option:: O67
 
    -Max  1
    -Min  0
@@ -194,28 +198,28 @@ Parameter List
      | 0 = Counterclockwise;
      | 1 = Clockwise, viewing the motor from handwheel  
 
-.. option:: I 01
+.. option:: I01
 
    -Max  500
    -Min  150
    -Unit  ms
    -Description  The time for accelerating from 0rpm to 4500rpm
 
-.. option:: I 02
+.. option:: I02
 
    -Max  500
    -Min  150
    -Unit  ms
    -Description  The time for deaccelerating from 4500rpm to 0rpm
 
-.. option:: I 03
+.. option:: I03
 
    -Max  4096
    -Min  0
    -Unit  --
    -Description  The offset of electrical angle
 
-.. option:: I 04
+.. option:: I04
 
    -Max  4096
    -Min  1 
@@ -224,175 +228,175 @@ Parameter List
                  rotation of the machine
 
 
-.. option:: I 05
+.. option:: I05
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Kp in Closed-loop Speed Control-trimming 
 
-.. option:: I 06
+.. option:: I06
 
    -Max  99
    -Min  0
    -Unit  --
    -Description  Divisor of Kp in Closed-loop Speed Control-trimming
 
-.. option:: I 07
+.. option:: I07
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Ki in Closed-loop Speed Control-trimming
 
-.. option:: I 08
+.. option:: I08
 
    -Max  99
    -Min  0
    -Unit  --
    -Description  Divisor of Ki in Closed-loop Speed Control-trimming
 
-.. option:: I 09
+.. option:: I09
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Kp in Closed-loop Speed Control
 
-.. option:: I 10
+.. option:: I10
 
    -Max  99
    -Min  0
    -Unit  --
    -Description  Divisor of Kp in Closed-loop Speed Control
 
-.. option:: I 11
+.. option:: I11
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Ki in Closed-loop Speed Control
 
-.. option:: I 12
+.. option:: I12
 
    -Max  99
    -Min  0
    -Unit  --
    -Description  Divisor of Ki in Closed-loop Speed Control
 
-.. option:: I 13
+.. option:: I13
 
    -Max  20
    -Min  1
    -Unit  --
    -Description  Upper Output limit in Closed-loop Speed Control
 
-.. option:: I 14
+.. option:: I14
 
    -Max  500
    -Min  0
    -Unit  --
    -Description  Feedforward in Closed-loop Speed Control
 
-.. option:: I 15
+.. option:: I15
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Kp in Closed-loop Current Control-d axis
 
-.. option:: I 16
+.. option:: I16
 
    -Max  99
    -Min  0
    -Unit  --
    -Description  Divisor of Kp in Closed-loop Current Control-d axis
 
-.. option:: I 17
+.. option:: I17
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Ki in Closed-loop Current Control-d axis
 
-.. option:: I 18
+.. option:: I18
 
    -Max  99
    -Min  0
    -Unit  --
    -Description  Divisor of Ki in Closed-loop Current Control-d axis
 
-.. option:: I 19
+.. option:: I19
 
    -Max  3276
    -Min  0
    -Unit  --
    -Description  Upper Output limit in Closed-loop Current Control-d axis
 
-.. option:: I 20
+.. option:: I20
 
    -Max  3276
    -Min  0
    -Unit  --
    -Description  Lower Output limit in Closed-loop Current Control-d axis
 
-.. option:: I 21
+.. option:: I21
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Kp in Closed-loop Current Control-q axis
 
-.. option:: I 22
+.. option:: I22
 
    -Max  99
    -Min  0
    -Unit  --
    -Description  Divisor of Kp in Closed-loop Current Control-q axis
 
-.. option:: I 23
+.. option:: I23
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Ki in Closed-loop Current Control-q axis
 
-.. option:: I 24
+.. option:: I24
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Divisor of Ki in Closed-loop Current Control-q axis
 
-.. option:: I 25
+.. option:: I25
 
    -Max  3276
    -Min  0
    -Unit  --
    -Description  Upper Output limit in Closed-loop Current Control-q axis
 
-.. option:: I 26
+.. option:: I26
 
    -Max  3276
    -Min  0
    -Unit  --
    -Description  Lower Output limit in Closed-loop Current Control-q axis
 
-.. option:: I 27
+.. option:: I27
 
    -Max  9999
    -Min  1
    -Unit  --
    -Description  Lines Per Revolution of the motor encoder
 
-.. option:: I 28
+.. option:: I28
 
    -Max  9999
    -Min  0
    -Unit  ms
    -Description  The maxmum time of stop routine
 
-.. option:: I 30
+.. option:: I30
 
    -Max  1
    -Min  0 
@@ -402,28 +406,28 @@ Parameter List
      | 0 = Speed mode;
      | 1 = Position mode.  
 
-.. option:: I 33
+.. option:: I33
 
    -Max  1
    -Min  0 
    -Unit  --
    -Description  The offset of between MACHINE ZERO and motor synchronization point.
 
-.. option:: I 37
+.. option:: I37
 
    -Max  359
    -Min  0 
    -Unit  1°
    -Description  The distance of brake Position-Speed process
 
-.. option:: I 38
+.. option:: I38
 
    -Max  500
    -Min  100 
    -Unit  spm
    -Description  The initial speed of brake Position-Speed process
 
-.. option:: I 39
+.. option:: I39
 
    -Max  100
    -Min  20 
@@ -431,42 +435,42 @@ Parameter List
    -Description  The terminal speed of brake Position-Speed process
 
 
-.. option:: I 40
+.. option:: I40
 
    -Max  9999
    -Min  0 
    -Unit  --
    -Description  Kp in Closed-loop Position Control-stop
 
-.. option:: I 41
+.. option:: I41
 
    -Max  99
    -Min  1
    -Unit  --
    -Description  Divisor of Kp in Closed-loop Position Control-stop
 
-.. option:: I 42
+.. option:: I42
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Kd in Closed-loop Position Control-stop
 
-.. option:: I 43
+.. option:: I43
 
    -Max  99
    -Min  1
    -Unit  --
    -Description  Divisor of Kd in Closed-loop Position Control-stop
 
-.. option:: I 46
+.. option:: I46
 
    -Max  40
    -Min  1
    -Unit  0.1A
    -Description  Maximum current during the motor holding
 
-.. option:: I 47
+.. option:: I47
 
    -Max  1
    -Min  0
@@ -476,56 +480,56 @@ Parameter List
      | 0 = Off;
      | 1 = On.
 
-.. option:: I 48
+.. option:: I48
 
    -Max  3500
    -Min  2000
    -Unit  rpm  
    -Description  Above this speed, field weakening takes effect.
 
-.. option:: I 49
+.. option:: I49
 
    -Max  40
    -Min  1
    -Unit  0.1A
    -Description  Maximum Id current during field weakening.
 
-.. option:: I 50
+.. option:: I50
 
    -Max  500
    -Min  0
    -Unit  --
    -Description  Upper Output limit in Closed-loop Position Control-holding
 
-.. option:: I 51
+.. option:: I51
 
    -Max  100
    -Min  0
    -Unit  --
    -Description  Lower Output limit in Closed-loop Position Control-holding
 
-.. option:: I 52
+.. option:: I52
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Kp in Closed-loop Position Control-holding
 
-.. option:: I 53
+.. option:: I53
 
    -Max  99
    -Min  1
    -Unit  --
    -Description  Divisor of Kp in Closed-loop Position Control-holidng
 
-.. option:: I 54
+.. option:: I54
 
    -Max  9999
    -Min  0
    -Unit  --
    -Description  Kd in Closed-loop Position Control-holding
 
-.. option:: I 55
+.. option:: I55
 
    -Max  99
    -Min  1

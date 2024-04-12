@@ -12,34 +12,34 @@ This table summarizes which parameter should be used for control and other:
 ==================================================== ========== ==============
 Parameter                                            Authority  See also
 ==================================================== ========== ==============
-Data Sending Interval                                Technician :option:`T 14`
-IoT                                                  Technician :option:`A 49`
-Lock Panel                                           Technician :option:`A 52`
-Debug                                                Technician :option:`A 58`
-Reset statisc data                                   Technician :option:`A 59`
-Password Required                                    Technician :option:`O 15`
-Clear error log                                      Technician :option:`O 17`
-Password                                             Technician :option:`O 27`
-Reset parameter                                      Technician :option:`O 51`
-Reset the MACHINE ZERO                               Technician :option:`O 52`
-Factory reset                                        Technician :option:`O 66`
-Bus Voltage Error Reporting                          Technician :option:`O 70`
-AC Voltage Error Reporting                           Technician :option:`O 71`
-Max. Bus Voltage                                     Technician :option:`I 44`
-Max. AC Voltage                                      Technician :option:`I 45`
+Data Sending Interval                                Technician :option:`T14`
+IoT                                                  Technician :option:`A49`
+Lock Panel                                           Technician :option:`A52`
+Debug                                                Developer  :option:`A58`
+Reset statisc data                                   Technician :option:`A59`
+Password Required                                    Technician :option:`O15`
+Clear error log                                      Technician :option:`O17`
+Password                                             Technician :option:`O27`
+Reset parameter                                      Technician :option:`O51`
+Reset the MACHINE ZERO                               Technician :option:`O52`
+Factory reset                                        Technician :option:`O66`
+Bus Voltage Error Reporting                          Technician :option:`O70`
+AC Voltage Error Reporting                           Technician :option:`O71`
+Max. Bus Voltage                                     Technician :option:`I44`
+Max. AC Voltage                                      Technician :option:`I45`
 ==================================================== ========== ==============
 
 Parameter List
 ==============
 
-.. option:: T 14
+.. option:: T14
 
    -Max  9999
    -Min  1
    -Unit  ms
    -Description  Interval time for sending IoT data
 
-.. option:: A 49
+.. option:: A49
 
    -Max  1
    -Min  0
@@ -49,7 +49,7 @@ Parameter List
      | 0 = Off;
      | 1 = On.
 
-.. option:: A 52
+.. option:: A52
    
    -Max  1
    -Min  0
@@ -59,7 +59,7 @@ Parameter List
      | 0 = Not allowed;
      | 1 = Allowed.
 
-.. option:: A 58
+.. option:: A58
 
    -Max  1
    -Min  0
@@ -69,14 +69,14 @@ Parameter List
      | 0 = Off;
      | 1 = On.
 
-.. option:: A 59
+.. option:: A59
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  Set to 1, statisc data will be restored to default values after power cycle.
 
-.. option:: O 15
+.. option:: O15
    
    -Max  1
    -Min  0
@@ -86,42 +86,42 @@ Parameter List
      | 0 = Off;
      | 1 = On.
 
-.. option:: O 17
+.. option:: O17
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  Set to 1,error log clead after power cycle.
 
-.. option:: O 27
+.. option:: O27
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  Password required to adjust parameters.
 
-.. option:: O 51
+.. option:: O51
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  Set to 1, parameters will be restored to default values after power cycle.
 
-.. option:: O 52
+.. option:: O52
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  Set to 1,the :term:`MACHINE ZERO` will be reset after power cycle
 
-.. option:: O 66
+.. option:: O66
    
    -Max  1
    -Min  0
    -Unit  --
    -Description  Set to 1,reset all parameters to default value,clear the error log and stastics information,reset MACHINE ZERO after power cycle.
 
-.. option:: O 70
+.. option:: O70
    
    -Max  1
    -Min  0
@@ -131,7 +131,7 @@ Parameter List
      | 0 = Off;
      | 1 = On.
    
-.. option:: O 71
+.. option:: O71
    
    -Max  1
    -Min  0
@@ -141,14 +141,14 @@ Parameter List
      | 0 = Off;
      | 1 = On.
 
-.. option:: I 44
+.. option:: I44
    
    -Max  460
    -Min  400
    -Unit  --
    -Description  Maximum bus voltage
 
-.. option:: I 45
+.. option:: I45
 
    -Max  300
    -Min  260

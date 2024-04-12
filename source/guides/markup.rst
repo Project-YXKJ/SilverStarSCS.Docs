@@ -94,7 +94,7 @@ Lists and Quote-like blocks
 ---------------------------
 
 List markup is natural: just place an asterisk at the start of a paragraph and
-indent properly.  The same goes for numbered lists; they can also be
+indent properly. The same goes for numbered lists; they can also be
 automatically numbered using a ``#`` sign.
 
 .. tab:: reStructuredText
@@ -149,7 +149,6 @@ list items by blank lines:
       * and some subitems
 
    * and here the parent list continues
-
 
 Definition lists are created as follows, Note that the term cannot have more 
 than one line of text:
@@ -324,8 +323,6 @@ Python documentation, here is a suggested convention:
 * ``^``, for subsubsections
 * ``"``, for paragraphs
 
-
-
 Field Lists
 -----------
 
@@ -375,6 +372,80 @@ Docutils supports the following directives:
 * Images: image, figure.
 * Special tables: table, csv-table, list-table.
 
+Admonitions:
+
+.. tab:: reStructuredText
+   
+   .. code-block:: restructuredtext
+
+      .. attention::
+         attention
+
+      .. caution::
+         caution
+
+      .. danger::
+         danger
+
+      .. error::
+         error
+
+      .. Hint::
+         Hint
+
+      .. important::
+         important
+
+      .. note::
+         note
+
+      .. seealso::
+         seealso
+
+      .. tip::
+         tip
+         
+      .. todo::
+         todo
+
+      .. warning::
+         warning
+
+.. tab:: Rendered
+
+   .. attention::
+      attention
+
+   .. caution::
+      caution
+
+   .. danger::
+      danger
+
+   .. error::
+      error
+
+   .. Hint::
+      Hint
+
+   .. important::
+      important
+
+   .. note::
+      note
+
+   .. seealso::
+      seealso
+
+   .. tip::
+      tip
+      
+   .. todo::
+      todo
+
+   .. warning::
+      warning
+      
 Directives added by Sphinx are described in :ref:`Directives <directives>`.
 
 A directive is a generic block of explicit markup. Along with roles, it is one of

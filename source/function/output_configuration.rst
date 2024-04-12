@@ -8,7 +8,7 @@ Output ports allow the controller to to drive components on the machine.
 These components mainly include various types of electromagnets and 
 solenoid valves.
 
-The mode of each output is flexible. In most cases, you can freely configure 
+Each output port is flexible. In most cases, you can freely configure 
 the mode of each port according to your actual wiring.
 
 .. attention::
@@ -48,7 +48,7 @@ Follow the steps:
 
 1. Confirm which output port is connected to the solenoid valve, like *Output-07* 
    or *Output-06*. In this step, you need to know the specific model of the system
-   you are using, then refer to its wiring diagram. Refer to the `Quick reference`_ 
+   you are using, then refer to its wiring diagram. Refer to the :ref:`output_params_quick_reference` 
    section of this chapter to find the parameter number that controls the function
    of this port.
 2. Refer to the section at the beginning of this chapter :ref:`output_mode_code_list`, 
@@ -58,16 +58,18 @@ Follow the steps:
 
 Let's take an example:
 
-1. You want set the function of *Output-01* to the puller;
-2. In the parameter list you will find :option:`A 71`, which controls the function
-   of *Output-01*::
+1. You want set the mode of Output-01 to the puller;
+2. In the parameter list you will find :option:`A71`, which controls the mode
+   of Output-01:
 
-      A71: Mode Output-01
+      Mode Output-01 -- A 71
 
-3. See the section :ref:`output_mode_code_list`, 15 is code of puller function,
-   then change :option:`A 71` to 15::
+3. See the section :ref:`output_mode_code_list`, *15* is code of puller,
+   then change :option:`A71` to 15:
    
-      15 = Puller;
+      15 = Puller
+
+.. _output_params_quick_reference:
 
 Quick reference
 ===============
@@ -77,50 +79,50 @@ This table summarizes which parameter should be used for output configuration:
 ==================================================== ========== ==============
 Parameter                                            Authority  See also
 ==================================================== ========== ==============
-Mode Output-01                                       Technician :option:`A 71`
-Mode Output-02                                       Technician :option:`A 72` 
-Mode Output-03                                       Technician :option:`A 73`
-Mode Output-04                                       Technician :option:`A 74`
-Mode Output-05                                       Technician :option:`A 75`
-Mode Output-06                                       Technician :option:`A 76`
-Mode Output-07                                       Technician :option:`A 77`
-Mode Output-08                                       Technician :option:`A 78`
-Mode Output-09                                       Technician :option:`A 79`
-Mode Output-10                                       Technician :option:`A 80` 
+Mode Output-01                                       Technician :option:`A71`
+Mode Output-02                                       Technician :option:`A72` 
+Mode Output-03                                       Technician :option:`A73`
+Mode Output-04                                       Technician :option:`A74`
+Mode Output-05                                       Technician :option:`A75`
+Mode Output-06                                       Technician :option:`A76`
+Mode Output-07                                       Technician :option:`A77`
+Mode Output-08                                       Technician :option:`A78`
+Mode Output-09                                       Technician :option:`A79`
+Mode Output-10                                       Technician :option:`A80` 
 ==================================================== ========== ==============
 
 Parameter List
 ==============
 
-.. option:: A 71
+.. option:: A71
    
    -Max  maximum
    -Min  minimum
    -Unit  unit
    -Description  Function definition of Output-01
 
-.. option:: A 72
+.. option:: A72
    
    -Max  maximum
    -Min  minimum
    -Unit  unit
    -Description  Function definition of Output-02    
 
-.. option:: A 73
+.. option:: A73
 
    -Max  maximum
    -Min  minimum
    -Unit  unit
    -Description  Function definition of Output-03
 
-.. option:: A 74
+.. option:: A74
    
    -Max  maximum
    -Min  minimum
    -Unit  unit
    -Description  Function definition of Output-04
 
-.. option:: A 75
+.. option:: A75
    
    -Max  maximum
    -Min  minimum
@@ -128,35 +130,35 @@ Parameter List
    -Description  Function definition of Output-05
 
 
-.. option:: A 76
+.. option:: A76
    
    -Max  maximum
    -Min  minimum
    -Unit  unit
    -Description  Function definition of Output-06
 
-.. option:: A 77
+.. option:: A77
    
    -Max  maximum
    -Min  minimum
    -Unit  unit
    -Description  Function definition of Output-07
 
-.. option:: A 78
+.. option:: A78
    
    -Max  maximum
    -Min  minimum
    -Unit  unit
    -Description  Function definition of Output-08
 
-.. option:: A 79
+.. option:: A79
    
    -Max  maximum
    -Min  minimum
    -Unit  unit
    -Description  Function definition of Output-09
 
-.. option:: A 80
+.. option:: A80
    
    -Max  maximum
    -Min  minimum

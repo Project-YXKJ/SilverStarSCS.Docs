@@ -4,8 +4,8 @@
 Soft start
 ==========
 
-When beginning a new seam, within the number of soft start stitches :option:`O 01`, 
-speed is determined by the pedal and limited to the soft start speed :option:`S 08`.
+When beginning a new seam, within the number of soft start stitches :option:`O01`, 
+speed is determined by the pedal and limited to the soft start speed :option:`S08`.
 
 Quick reference
 ===============
@@ -15,22 +15,15 @@ This table summarizes which parameter should be used for soft start:
 ==================================================== ========== ==============
 Parameter                                            Authority  See also
 ==================================================== ========== ==============
-Soft start                                           Operator   :option:`A 21`
-Soft Start Speed                                     Technician :option:`S 08`
-Number of soft start stitches                        Technician :option:`O 01`
+Soft start                                           Operator   :option:`A21`
+Soft Start Speed                                     Technician :option:`S08`
+Number of soft start stitches                        Technician :option:`O01`
 ==================================================== ========== ==============
 
 Parameter List
 ==============
 
-.. option:: S 08
-   
-   -Max  500
-   -Min  200
-   -Unit  spm 
-   -Description  Speed for soft start
-
-.. option:: A 21
+.. option:: A21
    
    -Max  1
    -Min  0
@@ -39,8 +32,15 @@ Parameter List
      | Soft start when a new seam start:
      | 0 = Off;
      | 1 = On.
-     
-.. option:: O 01
+
+.. option:: S08
+   
+   -Max  500
+   -Min  200
+   -Unit  spm 
+   -Description  Speed for soft start.
+
+.. option:: O01
    
    -Max  10
    -Min  1

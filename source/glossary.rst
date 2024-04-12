@@ -8,13 +8,13 @@ Glossary
       The highest point of the needle bar, positions mentioned in this book are based on this,
       such as the angle of the magnet action/release, where the motor stops, etc. 
     
-      .. warning::
+      .. attention::
           It's very important to make sure you set it correctly.
 
     MACHINE ID
       Code used to indicate the machine model.
 
-      .. warning:: 
+      .. attention:: 
         It's very important to make sure you set it correctly.
     
     POSITION 2

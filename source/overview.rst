@@ -35,11 +35,9 @@ Notice of safety
 * All connector shouldn’t be plug and unplug when power on.
 * The connector should be plug and unplug in the correct method.
 
-.. attention::
+.. danger::
    The power supply is AC 220V!!!
-    
+
    The yellow-green earth cable must be connected to the earth properly.
    Otherwise there are risks of human electric shock and the controller 
    doesn’t work properly sometimes.
-
-   

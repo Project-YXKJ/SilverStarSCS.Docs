@@ -4,22 +4,23 @@
 Error and warning
 =================
 
-The SilverStar Sewing Control System has got three groups of messages. 
-In the following table this three groups are described.
+The exception messages of *SilverStar Sewing Control System* is divided 
+into three groups, as shown in the following table:
 
-+---------+---------+-------------------------------------------------------+
-| Level   | Acronym | Description                                           |      
-+=========+=========+=======================================================+
-| Warning | Wrn     | Eliminate the state that caused to the warning.       |
-|         |         | The control will normally worked.                     |
-+---------+---------+-------------------------------------------------------+
-| Error   | Err     | Switch off the control and eliminate the problem      |
-+---------+---------+-------------------------------------------------------+
+=========== ======== ==================================================================================
+Level       Acronym  Description
+=========== ======== ==================================================================================
+Warning     Wrn      Eliminate the state that caused to the warning, the control will normally worked. 
+Error       Err      Switch off the control and eliminate the problem
+=========== ======== ==================================================================================
 
 Exception quick reference
 =========================
 
-Warning:
+Warning messages
+----------------
+
+The code of the warning message is always less than 100.
 
 ================= ============================= =============================
 Code              Messages                      Remedial action
@@ -36,7 +37,8 @@ Code              Messages                      Remedial action
 :exc:`ExcCode10`  oil level                     :meth:`ExcCode10.solution()`
 ================= ============================= =============================
 
-Error:
+Error messages
+--------------
 
 ================= ============================= =============================
 Code              Messages                      Remedial action
@@ -57,15 +59,15 @@ Code              Messages                      Remedial action
 :exc:`ExcCode128` data checksum error           :meth:`ExcCode128.solution()`
 :exc:`ExcCode129` stepper connection error      :meth:`ExcCode129.solution()`
 :exc:`ExcCode130` data checksum error           :meth:`ExcCode130.solution()`
-:exc:`ExcCode191` controller upgrade            :meth:`ExcCode191.solution()`
-:exc:`ExcCode192` controller upgrade            :meth:`ExcCode192.solution()`
-:exc:`ExcCode193` controller upgrade            :meth:`ExcCode193.solution()`
-:exc:`ExcCode194` controller upgrade            :meth:`ExcCode194.solution()`
-:exc:`ExcCode195` controller upgrade            :meth:`ExcCode195.solution()`
-:exc:`ExcCode196` controller upgrade            :meth:`ExcCode196.solution()`
-:exc:`ExcCode197` controller upgrade            :meth:`ExcCode197.solution()`
-:exc:`ExcCode198` controller upgrade            :meth:`ExcCode198.solution()`
-:exc:`ExcCode199` controller upgrade            :meth:`ExcCode199.solution()`
+:exc:`ExcCode191` Controller: upgrade           :meth:`ExcCode191.solution()`
+:exc:`ExcCode192` Controller: upgrade           :meth:`ExcCode192.solution()`
+:exc:`ExcCode193` Controller: upgrade           :meth:`ExcCode193.solution()`
+:exc:`ExcCode194` Controller: upgrade           :meth:`ExcCode194.solution()`
+:exc:`ExcCode195` Controller: upgrade           :meth:`ExcCode195.solution()`
+:exc:`ExcCode196` Controller: upgrade           :meth:`ExcCode196.solution()`
+:exc:`ExcCode197` Controller: upgrade           :meth:`ExcCode197.solution()`
+:exc:`ExcCode198` Controller: upgrade           :meth:`ExcCode198.solution()`
+:exc:`ExcCode199` Controller: upgrade           :meth:`ExcCode199.solution()`
 :exc:`ExcCode181` HMI: upgrade                  :meth:`ExcCode181.solution()`
 :exc:`ExcCode182` HMI: upgrade                  :meth:`ExcCode182.solution()`
 :exc:`ExcCode183` HMI: upgrade                  :meth:`ExcCode183.solution()`
@@ -80,18 +82,15 @@ Code              Messages                      Remedial action
 Warning message list
 ====================
 
-.. warning:: 
-   Eliminate the problem that caused the warning, the control will normally work.
-
 .. exception:: ExcCode1
 
    Pedal warning
 
    .. method:: solution()
 
-      | The pedal must be released when switching on;
-      | The pedal type must be set correctly when using standing pedal;
-      | Replace the pedal.
+      The pedal must be released when switching on;
+      The pedal type must be set correctly when using standing pedal;
+      Replace the pedal.
 
 .. exception:: ExcCode2
 
@@ -99,8 +98,8 @@ Warning message list
    
    .. method:: solution()  
 
-      | The warning will be cleared when the machine is back to the normal position;
-      | Check the tipping sensor on the machine  
+      The warning will be cleared when the machine is back to the normal position;
+      Check the tipping sensor on the machine  
 
 .. exception:: ExcCode3 
    
@@ -132,8 +131,8 @@ Warning message list
    
    .. method:: solution()
 
-      | The upper thread is broken;
-      | Check the sensor of upper thread.
+      The upper thread is broken;
+      Check the sensor of upper thread.
 
 .. exception:: ExcCode7 
    
@@ -149,8 +148,8 @@ Warning message list
    
    .. method:: solution()
 
-      | Put eye guard cover back in place;
-      | Check the sensor of eye guard.
+      Put eye guard cover back in place;
+      Check the sensor of eye guard.
 
 .. exception:: ExcCode9 
    
@@ -158,8 +157,8 @@ Warning message list
 
    .. method:: solution()
 
-      | Close the bobbin cover;
-      | Check the sensor of bobbin cover;  
+      Close the bobbin cover;
+      Check the sensor of bobbin cover;  
 
 .. exception:: ExcCode10 
    
@@ -172,17 +171,14 @@ Warning message list
 Error message list
 ==================
 
-.. error:: 
-   Switch off the control and eliminate the problem.
-
 .. exception:: ExcCode101 
    
    AC power supply voltage is too high
    
    .. method:: solution()
 
-      | Check the ac voltage;
-      | Replace the controller.
+      Check the ac voltage;
+      Replace the controller.
 
 .. exception:: ExcCode103 
    
@@ -190,8 +186,8 @@ Error message list
    
    .. method:: solution()
 
-      | Check the brake circuit, replace the brake resistor;
-      | Replace the controller.
+      Check the brake circuit, replace the brake resistor;
+      Replace the controller.
 
 .. exception:: ExcCode106 
    
@@ -199,9 +195,9 @@ Error message list
    
    .. method:: solution()
 
-      | Check the motor encoder connection;
-      | Check if the right :term:`MACHINE ID` is seted;
-      | Replace the controller;
+      Check the motor encoder connection;
+      Check if the right :term:`MACHINE ID` is seted;
+      Replace the controller;
 
 .. exception:: ExcCode107 
    
@@ -209,8 +205,8 @@ Error message list
 
    .. method:: solution()
 
-      | The shaft is blocked;
-      | The material is too thick.
+      The shaft is blocked;
+      The material is too thick.
 
 .. exception:: ExcCode108 
    
@@ -218,8 +214,8 @@ Error message list
 
    .. method:: solution()
 
-      | The shaft is blocked;
-      | The material is too thick.
+      The shaft is blocked;
+      The material is too thick.
 
 .. exception:: ExcCode109 
    
@@ -227,9 +223,9 @@ Error message list
 
    .. method:: solution()
 
-      | Restart the machine from where the sewing material is thinner;
-      | The shaft is blocked;
-      | The material is too thick.
+      Restart the machine from where the sewing material is thinner;
+      The shaft is blocked;
+      The material is too thick.
 
 .. exception:: ExcCode110
    
@@ -237,9 +233,9 @@ Error message list
    
    .. method:: solution()
 
-      | Check the synchronizaer signal;
-      | The shaft is blocked;
-      | The material is too thick.
+      Check the synchronizaer signal;
+      The shaft is blocked;
+      The material is too thick.
 
 .. exception:: ExcCode111
    
@@ -247,8 +243,8 @@ Error message list
 
    .. method:: solution()
 
-      | Check the UVW signal;
-      | Replace motor encoder
+      Check the UVW signal;
+      Replace motor encoder
 
 .. exception:: ExcCode112
    
@@ -257,8 +253,8 @@ Error message list
    
    .. method:: solution()
 
-      | Check the synchronizaer signal;
-      | Replace motor encoder.
+      Check the synchronizaer signal;
+      Replace motor encoder.
 
 .. exception:: ExcCode113
    
@@ -266,8 +262,8 @@ Error message list
 
    .. method:: solution()
 
-      | Check the solenoid;
-      | Replace the controller or solenoid;
+      Check the solenoid;
+      Replace the controller or solenoid;
 
 .. exception:: ExcCode114
    
@@ -275,8 +271,8 @@ Error message list
    
    .. method:: solution()
 
-      | Check the motor encoder connection;
-      | Check the hall sensor;
+      Check the motor encoder connection;
+      Check the hall sensor;
 
 .. exception:: ExcCode126
    
@@ -284,8 +280,8 @@ Error message list
 
    .. method:: solution()
 
-      | Check the panel connection;
-      | Restart the control box
+      Check the panel connection;
+      Restart the control box
 
 .. exception:: ExcCode127
    
@@ -301,8 +297,8 @@ Error message list
 
    .. method:: solution()
 
-      | Restart the controlbox;
-      | Update software.
+      Restart the controlbox;
+      Update software.
 
 .. exception:: ExcCode129
    
@@ -310,8 +306,8 @@ Error message list
 
    .. method:: solution()
 
-      | Restart the controlbox;
-      | Check the communication cable.
+      Restart the controlbox;
+      Check the communication cable.
 
 .. exception:: ExcCode130
    

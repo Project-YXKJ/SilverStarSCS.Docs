@@ -32,8 +32,8 @@ Code              Messages                      Remedial action
 :exc:`ExcCode5`   bobbin counter/monitor        :meth:`ExcCode5.solution()`
 :exc:`ExcCode6`   upper thread breaking         :meth:`ExcCode6.solution()`
 :exc:`ExcCode7`   service counter               :meth:`ExcCode7.solution()`
-:exc:`ExcCode8`   eye guard cover               :meth:`ExcCode8.solution()`
-:exc:`ExcCode9`   bobbin cover                  :meth:`ExcCode9.solution()`
+:exc:`ExcCode8`   eye protection                :meth:`ExcCode8.solution()`
+:exc:`ExcCode9`   slide monitoring              :meth:`ExcCode9.solution()`
 :exc:`ExcCode10`  oil level                     :meth:`ExcCode10.solution()`
 ================= ============================= =============================
 
@@ -144,21 +144,21 @@ Warning message list
 
 .. exception:: ExcCode8 
    
-   Eye guard cover warning 
+   Eye protection monitoring
    
    .. method:: solution()
 
-      Put eye guard cover back in place;
-      Check the sensor of eye guard.
+      Put eye protection cover plate back in place;
+      Check the sensor of eye protection.
 
 .. exception:: ExcCode9 
    
-   Bobbin cover warning
+   Slide monitoring
 
    .. method:: solution()
 
-      Close the bobbin cover;
-      Check the sensor of bobbin cover;  
+      Close the hook cover plate;
+      Check the sensor of slide monitoring;  
 
 .. exception:: ExcCode10 
    

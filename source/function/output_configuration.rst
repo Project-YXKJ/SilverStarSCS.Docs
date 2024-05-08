@@ -23,23 +23,23 @@ Output Mode Code List
 
 Here is the output mode code list:
 
-- 0 = No function;
-- 1 = Thread cutter;
-- 2 = Thread tension;
-- 3 = Thread clamp;
-- 4 = Reverse;
-- 5 = Sewing foot lifter;
-- 6 = Stroke;
-- 7 = Additional thread tension;
-- 8 = Thread wiper(upper);
-- 9 = Second stitch length;
-- 10 = Needle cooling;
-- 11 = Additional cutter for short thread cutter machine;
-- 12 = Seam center guide;
-- 13 = Zero stitch length for short thread cutter machine;
-- 14 = Auto corner for 2-needle machine;
-- 15 = Puller；
-- 16 = Thread wiper(lower).
+* 0 = No function;
+* 1 = Thread cutter;
+* 2 = Thread tension;
+* 3 = Thread clamp;
+* 4 = Reverse;
+* 5 = Sewing foot lifter;
+* 6 = Stroke;
+* 7 = Additional thread tension;
+* 8 = Thread wiper(upper);
+* 9 = Second stitch length;
+* 10 = Needle cooling;
+* 11 = Additional cutter for short thread cutter machine;
+* 12 = Seam center guide;
+* 13 = Zero stitch length for short thread cutter machine;
+* 14 = Auto corner for 2-needle machine;
+* 15 = Puller；
+* 16 = Thread wiper(lower).
 
 How to setup the function of output ports?
 ==========================================

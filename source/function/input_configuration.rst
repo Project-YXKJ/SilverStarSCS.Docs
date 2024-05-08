@@ -23,35 +23,36 @@ Input Mode Code List
 
 Here is the input mode code list:
 
-- 0 = No function;
-- 1 = Manual bartack;
-- 2 = Forward correction;
-- 3 = Backward correction;
-- 4 = Forward correction at stop, reverse at running;
-- 5 = Backward correction at stop, reverse at running;
-- 6 = Quick toggle stroke;
-- 7 = Enable/unable bartack at seam start/end;
-- 8 = Second stitch length;
-- 9 = Additional thread tension;
-- 10 = Pause [#]_;
-- 11 = Thread a needle [#]_;
-- 12 = Toggle seam center guide raise up/down;
-- 13 = Tilt switch;
-- 14 = Up thread broken sensor;
-- 15 = Eye protection sensor;
-- 16 = Hook cover missing sensor;
-- 17 = Toggle sewing foot lifter raise up/down [#]_;
-- 18 = lifting sewing foot via the knee switch;
-- 19 = Oil Starvation;
-- 20 = Toggle puller raise up/down;
-- 21 = Reset bobbin counter;
-- 22 = Simulate electronic handwheel rotation(forwards);
-- 23 = Simulate electronic handwheel rotation(backwards);
-- 24 = Toggle sewing direction [#]_;
-- 100 = Sewing foot stroke knob potentiometer;
-- 101 = Sewing foot height sensor
-- 102 = Orthogonal encoder CHA for electronic handwheel;
-- 103 = Orthogonal encoder CHB for electronic handwheel.
+* 0 = No function;
+* 1 = Manual bartack;
+* 2 = Forward correction;
+* 3 = Backward correction;
+* 4 = Forward correction at stop, reverse at running;
+* 5 = Backward correction at stop, reverse at running;
+* 6 = Quick toggle stroke;
+* 7 = Enable/unable bartack at seam start/end;
+* 8 = Second stitch length;
+* 9 = Additional thread tension;
+* 10 = Pause [#]_;
+* 11 = Thread a needle [#]_;
+* 12 = Toggle seam center guide raise up/down;
+* 13 = Tilt switch;
+* 14 = Up thread broken sensor;
+* 15 = Eye protection sensor;
+* 16 = Slide monitoring sensor;
+* 17 = Toggle sewing foot lifter raise up/down [#]_;
+* 18 = lifting sewing foot via the knee switch;
+* 19 = Oil Starvation;
+* 20 = Toggle puller raise up/down;
+* 21 = Reset bobbin counter;
+* 22 = Simulate electronic handwheel rotation(forwards);
+* 23 = Simulate electronic handwheel rotation(backwards);
+* 24 = Toggle sewing direction [#]_;
+* 25 = Toggle the clamp function on and off;
+* 100 = Sewing foot stroke knob potentiometer;
+* 101 = Sewing foot height sensor
+* 102 = Orthogonal encoder CHA for electronic handwheel;
+* 103 = Orthogonal encoder CHB for electronic handwheel.
   
 .. [#] Pause mode, the machine can not run by step the pedal.
 

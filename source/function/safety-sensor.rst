@@ -20,32 +20,32 @@ Warning: Tilt safety switch                          Technician :option:`O31`
 Sensor Polarity(Tilt Safety)                         Technician :option:`O32`
 ==================================================== ========== ==============
 
-Eye Guard
-=========
+Eye protection
+==============
 
 Quick reference
 ---------------
 
-This table summarizes which parameter should be used for eye guard:
+This table summarizes which parameter should be used for eye protection:
 
 ==================================================== ========== ==============
 Parameter                                            Authority  See also
 ==================================================== ========== ==============
-Warning: Eye Guard                                   Technician :option:`O28`
+Warning: Eye protection                              Technician :option:`O28`
 ==================================================== ========== ==============
 
-Hook cover missing
+Slide monitoring
 ==================
 
 Quick reference
 ---------------
 
-This table summarizes which parameter should be used for hook cover missing:
+This table summarizes which parameter should be used for slide monitoring:
 
 ==================================================== ========== ==============
 Parameter                                            Authority  See also
 ==================================================== ========== ==============
-Warning: Hook Cover                                  Technician :option:`O29`
+Warning: Slide monitoring                            Technician :option:`O29`
 ==================================================== ========== ==============
 
 Oil Level
@@ -115,7 +115,7 @@ Parameter List
    -Min  0
    -Unit  --
    -Description  
-     | Optional features,whether to throw a warning when the eye guard isn't in the right place:
+     | Optional features,whether to throw a warning when the eye protection isn't in the right place:
      | 0 = Off;
      | 1 = On.
 
@@ -125,7 +125,7 @@ Parameter List
    -Min  0
    -Unit  --
    -Description
-     | Optional features,whether to throw a warning when the hook cover is removed:
+     | Optional features,whether to throw a warning when the hook cover plate is removed:
      | 0 = Off;
      | 1 = On.
 

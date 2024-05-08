@@ -453,7 +453,7 @@ Common Use: lamp, safety sensor(Tilt).
 J4
 ****
 
-Common Use: safety sensor(eye guard).
+Common Use: safety sensor(eye protection).
 
 +------------------------------------------+-----+-------------------+
 | Interface                                | Pin | Define            |
@@ -468,7 +468,7 @@ Common Use: safety sensor(eye guard).
 J7
 ****
 
-Common Use: safety sensor(Hook cover missing).
+Common Use: safety sensor(Slide monitoring).
 
 +------------------------------------------+-----+-------------------+
 | Interface                                | Pin | Define            |

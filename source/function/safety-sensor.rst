@@ -151,9 +151,9 @@ Parameter List
 
 .. option:: T13
 
-   -Max  1
-   -Min  0
-   -Unit  --
+   -Max  1000
+   -Min  1
+   -Unit  ms
    -Description  The time is less and the sensitivity is higher, a perfect debounce
      time can prevent false alarm.
 

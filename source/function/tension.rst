@@ -4,17 +4,20 @@
 Thread tension
 ==============
 
-*Thread tension procedure:*
-
-The thread tension power on when position is reached with :option:`D13` and power off 
-when position is reached with :option:`D14` during thread cutting.
-
 Solenoid valve or electromagnet?
 ================================
 
 If tension is controlled by electromagnet not solenoid valve, you need to be careful
 when setting tha value of :option:`O75`. Over premissible power on time, the electromagnet
 may burn out, thus a electromagnet with a small value of :option:`O75` is protected form damage.
+
+How it works?
+=============
+
+Thread tension procedure:
+
+The thread tension power on when position is reached with :option:`D13` and power off 
+when position is reached with :option:`D14` during thread cutting.
 
 Automation rules
 ================
@@ -127,7 +130,7 @@ Parameter List
      
 .. option:: O86
    
-   -Max  500
+   -Max  999
    -Min  1
    -Unit  ms
    -Description  Additional Tension:activation duration of in :term:`time period t1` (100% duty cycle).

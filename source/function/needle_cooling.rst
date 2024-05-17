@@ -36,10 +36,20 @@ Duty cycle(t2)                                       Developer  :option:`O94`
 Parameter List
 ==============
 
+.. option:: A48
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description
+     | Needle cooling function:
+     | 0 = Off;
+     | 1 = On.
+
 .. option:: S18
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  Above this speed,the needle cooling is activated.
 
@@ -50,17 +60,7 @@ Parameter List
    -Unit  s
    -Description  Lag time, after which,needle cooling is deactivaed when speed
                  lower than cool speed.
-   
-.. option:: A48
-   
-   -Max  1
-   -Min  0
-   -Unit  --
-   -Description
-     | Needle cooling function:
-     | 0 =Off;
-     | 1 = On.
-     
+
 .. option:: O93
    
    -Max  999

@@ -95,7 +95,7 @@ Parameter List
 
 .. option:: T10
    
-   -Max  200
+   -Max  500
    -Min  1
    -Unit  ms
    -Description  Lag time,after which,sewing foot is automatically activated 
@@ -162,8 +162,6 @@ Parameter List
    -Min  1
    -Unit  %
    -Description  Foot: duty cycle[%] in :term:`time period t2`
-   
-
 
 .. option:: O40
    
@@ -185,7 +183,6 @@ Parameter List
    -Min  1
    -Unit  --
    -Description  Duty cycle of foot during clamping with soft start
-
 
 .. option:: O55
    

@@ -145,7 +145,7 @@ Parameter List
    
    -Max  460
    -Min  400
-   -Unit  --
+   -Unit  V
    -Description  Maximum bus voltage
 
 .. option:: I45

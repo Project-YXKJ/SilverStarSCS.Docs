@@ -52,7 +52,7 @@ Parameter List
 .. option:: S17
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  Limiting speed if long stitch length is activated
 

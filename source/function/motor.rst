@@ -96,23 +96,22 @@ Parameter List
 .. option:: S01
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  Maximum speed by press the pedal to the end position.
-     
+
 .. option:: S02
 
-   -Max  4500
-   -Min  100
+   -Max  1000
+   -Min  50
    -Unit  spm
    -Description  Minimum sewing speed, it is also the needle position up-down speed
 
-     
 .. option:: A18
 
-   -Max  4500
-   -Min  100
-   -Unit  spm
+   -Max  1
+   -Min  0
+   -Unit  --
    -Description  
      | Needle position is automatically moved to upper position after power-on:
      | 0 = Off;
@@ -178,6 +177,7 @@ Parameter List
    -Min  0
    -Unit  --
    -Description  Speed scaling allows the machine to run at lower speed than the set.
+                 For every 1 increase in the parameter value, it decreases by 1/10
 
 .. option:: O37
 
@@ -226,7 +226,6 @@ Parameter List
    -Unit  --
    -Description  The number of pulses output by motor encoder corresponding to one
                  rotation of the machine
-
 
 .. option:: I05
 
@@ -423,17 +422,16 @@ Parameter List
 .. option:: I38
 
    -Max  500
-   -Min  100 
+   -Min  1
    -Unit  spm
    -Description  The initial speed of brake Position-Speed process
 
 .. option:: I39
 
    -Max  100
-   -Min  20 
+   -Min  0 
    -Unit  spm
    -Description  The terminal speed of brake Position-Speed process
-
 
 .. option:: I40
 
@@ -482,8 +480,8 @@ Parameter List
 
 .. option:: I48
 
-   -Max  3500
-   -Min  2000
+   -Max  4500
+   -Min  50
    -Unit  rpm  
    -Description  Above this speed, field weakening takes effect.
 

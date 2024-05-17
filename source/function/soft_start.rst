@@ -35,8 +35,8 @@ Parameter List
 
 .. option:: S08
    
-   -Max  500
-   -Min  200
+   -Max  1000
+   -Min  50
    -Unit  spm 
    -Description  Speed for soft start.
 

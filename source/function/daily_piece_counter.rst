@@ -42,12 +42,12 @@ Parameter List
 
    -Max  99
    -Min  1
-   -Unit  stitches
+   -Unit  --
    -Description  Minimum times of trim for piece counter plus 1.
 
 .. option:: O47
    
    -Max  9999
    -Min  0
-   -Unit  stitches
+   -Unit  --
    -Description  The current value of piece counter.

@@ -58,15 +58,15 @@ Parameter List
 
 .. option:: O03
    
-   -Max  2
-   -Min  1
+   -Max  9999
+   -Min  0
    -Unit  --
    -Description  :term:`MACHINE ID`
 
 .. option:: O08
    
-   -Max  2
-   -Min  1
+   -Max  1
+   -Min  0
    -Unit  --
    -Description
      | Choice between an native and standing operation pedal:
@@ -75,8 +75,8 @@ Parameter List
 
 .. option:: O30
    
-   -Max  9999
-   -Min  0
+   -Max  2
+   -Min  1
    -Unit  --
    -Description  
      | Choose where :term:`MACHINE ID` 
@@ -135,7 +135,7 @@ Parameter List
 
 .. option:: O63
 
-   -Max  4095  
+   -Max  5  
    -Min  0
    -Unit  --
    -Description
@@ -149,10 +149,11 @@ Parameter List
 .. option:: O80
 
    -Max  3  
-   -Min  1
+   -Min  0
    -Unit  --
    -Description
      | Type of the keypad:
+     | 0 = none；
      | 1 = 6 keys;
      | 2 = 7 keys;
      | 3 = 12 keys.

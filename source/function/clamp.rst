@@ -58,7 +58,7 @@ Parameter List
 
 .. option:: T15
    
-   -Max  2000
+   -Max  1000
    -Min  1
    -Unit  ms
    -Description  Action time of clamp when lifting the foot or lifting the needlebar after trim.

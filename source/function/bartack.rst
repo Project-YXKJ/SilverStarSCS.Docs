@@ -79,14 +79,14 @@ Parameter List
 .. option:: S03
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  Maximum speed in bartack at seam begin.
 
 .. option:: S04
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  Maximum speed in bartack at seam end.
 
@@ -126,9 +126,9 @@ Parameter List
 
 .. option:: T11
    
-   -Max  4500
-   -Min  100
-   -Unit  spm
+   -Max  1000
+   -Min  1
+   -Unit  ms
    -Description  Motor standby duration at direction change of bartack if SD mode is On.
 
 .. option:: A34
@@ -175,21 +175,21 @@ Parameter List
 .. option:: O12
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  Maximum Speed of 1 stitch when bartack or W-sewing.
 
 .. option:: O13 
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  Maximum Speed of 2 stitch when bartack or W-sewing.
 
 .. option:: O14
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  Maximum Speed of 3 stitch when bartack or W-sewing.
 
@@ -202,11 +202,10 @@ Parameter List
 
 .. option:: T08
    
-   -Max  200
+   -Max  999
    -Min  1
    -Unit  ms
-   -Description  Reverse:activation duration of in :term:`time period t1`
-                 (100% duty cycle),unit ms
+   -Description  Reverse:activation duration of in :term:`time period t1` (100% duty cycle),unit ms
 
 .. option:: O09
    

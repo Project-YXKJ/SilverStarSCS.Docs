@@ -53,7 +53,7 @@ Here is the input mode code list:
 * 101 = Sewing foot height sensor
 * 102 = Orthogonal encoder CHA for electronic handwheel;
 * 103 = Orthogonal encoder CHB for electronic handwheel.
-  
+
 .. [#] Pause mode, the machine can not run by step the pedal.
 
 .. [#] Threading mode, the machine can not run by step the pedal, and the tension
@@ -74,7 +74,7 @@ Here is the input mode code list:
        it sews forwards.
 
 .. important::
-  Functions with codes greater than 100 needs special input ports, such as analog.
+   Functions with codes greater than 100 needs special input ports, such as analog.
 
 How to setup the function of input ports?
 =========================================

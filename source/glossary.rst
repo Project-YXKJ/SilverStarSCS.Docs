@@ -37,9 +37,15 @@ Glossary
     
     time period t2
       The duration of the non-100% duty cycle of the output port
-      
+
+    stitches
+      The sewing machine makes one complete revolution to form one stitch.
+
     spm
-      Stitches per minute
+      Stitches per minute, it is used to indicate machine speed
+
+    rpm
+      Revolutions per minute, it is used to indicate motor speed
 
     ms
       Microsecond

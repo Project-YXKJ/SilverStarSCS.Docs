@@ -41,7 +41,7 @@ Parameter List
 
 .. option:: S16
    
-   -Max  500
+   -Max  1000
    -Min  50
    -Unit  spm
    -Description  Turn back speed for lifting needlebar after trim.

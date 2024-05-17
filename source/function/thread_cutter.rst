@@ -4,7 +4,10 @@
 Thread cutter
 =============
 
-*Thread cutting procedure:*
+How it works?
+=============
+
+Thread cutting procedure:
 
 Thread cutting singnal is switched on when the angle value :option:`D03` has been reached,
 the switched off when the angle value :option:`D04` . If the position is not reached because
@@ -39,13 +42,6 @@ Duty cycle(t2)                                       Developer  :option:`O96`
 Parameter List
 ==============
 
-.. option:: S07
-
-   -Max  300
-   -Min  150
-   -Unit  spm
-   -Description  Speed of the machine during trimming.
-
 .. option:: A06
    
    -Max  1
@@ -55,6 +51,13 @@ Parameter List
      | Thread trim:
      | 0 = Off;
      | 1 = On.
+
+.. option:: S07
+
+   -Max  1000
+   -Min  50
+   -Unit  spm
+   -Description  Speed of the machine during trimming.
 
 .. option:: A42
    
@@ -79,7 +82,6 @@ Parameter List
    -Min  0
    -Unit  1°
    -Description  Position when the magnet of thread cutter is activated.
-
 
 .. option:: D04
    

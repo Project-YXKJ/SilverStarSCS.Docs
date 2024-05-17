@@ -96,71 +96,70 @@ Parameter List
 
 .. option:: A71
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  Function definition of Output-01
 
 .. option:: A72
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  Function definition of Output-02    
 
 .. option:: A73
 
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  Function definition of Output-03
 
 .. option:: A74
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  Function definition of Output-04
 
 .. option:: A75
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  Function definition of Output-05
-
 
 .. option:: A76
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  Function definition of Output-06
 
 .. option:: A77
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  Function definition of Output-07
 
 .. option:: A78
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  Function definition of Output-08
 
 .. option:: A79
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  Function definition of Output-09
 
 .. option:: A80
    
-   -Max  maximum
-   -Min  minimum
-   -Unit  unit
+   -Max  99
+   -Min  0
+   -Unit  --
    -Description  Function definition of Output-10

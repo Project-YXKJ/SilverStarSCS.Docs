@@ -77,7 +77,7 @@ Parameter List
    
    -Max  1
    -Min  0
-   -Unit  stitches
+   -Unit  --
    -Description
      | Stroke height function:
      | 0 = Off
@@ -86,7 +86,7 @@ Parameter List
 .. option:: S09
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  The stroke height knob type is switch: Limit speed when turn adjusting 
                  wheel to mark 1 position.
@@ -94,7 +94,7 @@ Parameter List
 .. option:: S10
 
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  The stroke height knob type is potentiometer: Limit speed for the small
                  stork height.
@@ -102,7 +102,7 @@ Parameter List
 .. option:: S11
 
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  The stroke height knob type is switch: Limit speed when turun adjusting
                  wheel to mark 2 position.
@@ -110,7 +110,7 @@ Parameter List
 .. option:: S12
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  The stroke height knob type is switch:Limit speed when turun adjusting
                  wheel to mark 3 position.
@@ -118,7 +118,7 @@ Parameter List
 .. option:: S13
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  The stroke height knob type is switch: Limit speed when turun adjusting
                  wheel to mark 4 position.
@@ -126,7 +126,7 @@ Parameter List
 .. option:: S14
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  The stroke height knob type is potentiometer:Limit speed for the high
                  stork height.
@@ -134,7 +134,7 @@ Parameter List
 .. option:: S15
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  Limit speed for the elevated sewing foot storke.
 
@@ -158,7 +158,7 @@ Parameter List
    
    -Max  1
    -Min  0
-   -Unit  stitches
+   -Unit  --
    -Description
      | If the second stroke is activated, speed reduced down to Parameter S15:
      | 0 = Off
@@ -168,7 +168,7 @@ Parameter List
    
    -Max  4095
    -Min  0
-   -Unit  stitches
+   -Unit  --
    -Description  The sensor value at the boundary position of the minimum stroke,
                  the speed is reduced down as continue to increase stroke height.
 
@@ -176,7 +176,7 @@ Parameter List
    
    -Max  4095
    -Min  0
-   -Unit  stitches
+   -Unit  --
    -Description  Sensor value at position of maximum stroke.
 
 .. option:: O76
@@ -197,7 +197,7 @@ Parameter List
    
    -Max  2
    -Min  0
-   -Unit  stitches
+   -Unit  --
    -Description
       | 0 = Off;
       | 1 = Switch;

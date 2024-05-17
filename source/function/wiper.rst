@@ -4,7 +4,7 @@
 Thread wiper
 ============
 
-*Thread wiper has two different action modes:*
+Thread wiper has two different action modes:
 
 Upper thread wiper function
    Set :option:`A08` to 1 to enable this function.
@@ -16,7 +16,7 @@ lower thread wiper function
    Set :option:`A08` to 2 to enable this function.
 
    When thread cutter is completed, while lifting the foot for the first time, the wiper
-   will switch on, it will switch off after the time set by :option:`T04`
+   will switch on, it will switch off after the time set by :option:`T04`.
 
 Quick reference
 ===============
@@ -44,7 +44,7 @@ Parameter List
      | 0 = Off;
      | 1 = Upper thread;
      | 2 = Lower thread.
-     
+
 .. option:: T03
    
    -Max  200

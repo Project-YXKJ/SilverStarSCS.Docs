@@ -111,14 +111,14 @@ Parameter List
 .. option:: S05
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  Maximum speed in W-Sewing
 
 .. option:: S06
    
    -Max  4500
-   -Min  100
+   -Min  50
    -Unit  spm
    -Description  Maximum speed in programmed stitches sewing
 
@@ -188,16 +188,15 @@ Parameter List
      | 0 = Normal;
      | 1 = Reverse at stop.
 
-
 .. option:: D01
-  
+
    -Max  359
    -Min  0
    -Unit  1°
    -Description  Needle in the upper position.
 
 .. option:: D02
-  
+
    -Max  359
    -Min  0
    -Unit  1°

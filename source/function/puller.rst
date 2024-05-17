@@ -71,5 +71,5 @@ Parameter List
 
    -Max  100
    -Min  1
-   -Unit  --
+   -Unit  %
    -Description  Puller lifter: duty cycle[%] in :term:`time period t2`.

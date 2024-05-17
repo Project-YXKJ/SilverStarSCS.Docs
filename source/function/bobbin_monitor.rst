@@ -60,30 +60,30 @@ Parameter List
      | 0 = Off;
      | 1 = On.
 
-.. option:: O19
-   
-   -Max  200
-   -Min  1
-   -Unit  stitches
-   -Description  Every sew over this number of stitches,increment the counter by 1.
-
-.. option:: O20
-   
-   -Max  1
-   -Min  0
-   -Unit  stitches
-   -Description  
-     | When to throw a warning if bobbin counter reaches 0:
-     | 0 = after thread cutting;
-     | 1 = immediately.
-     
 .. option:: O43
    
    -Max  9999
    -Min  1
    -Unit  --
-   -Description  Bobbin supply capacity. This is a very variable value,which depends
-     on the size of the bobbin and the thickness of the thread.
+   -Description  Bobbin supply capacity. This is a very variable value, which depends
+                 on the size of the bobbin and the thickness of the thread.
+
+.. option:: O19
+   
+   -Max  200
+   -Min  1
+   -Unit  stitches
+   -Description  Every sew over this number of stitches, increment the counter by 1.
+
+.. option:: O20
+   
+   -Max  1
+   -Min  0
+   -Unit  --
+   -Description  
+     | When to throw a warning if bobbin counter reaches 0:
+     | 0 = after thread cutting;
+     | 1 = immediately.
 
 .. option:: O44
    
@@ -91,4 +91,4 @@ Parameter List
    -Min  0
    -Unit  --
    -Description  The current value of bobbin stitch counter, the reset value minus 
-     this value is remaining value.
+                 this value is remaining value.

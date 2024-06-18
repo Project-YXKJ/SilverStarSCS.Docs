@@ -78,6 +78,15 @@ if :option:`A01` is 0, when you press the button, the motion trace is
 if :option:`A01` is 1, when you press the button, the motion trace is 
 ``Position 40 => 70 => 70 => 70 ...`` .
 
+Working angle range of manual reverse button
+============================================
+
+For some machine types, if the machine sews in reverse suddenly at certain position, the needle may 
+break, parameters :option:`D11` and :option:`D12` are to avoid this situation.
+
+If the needle position is greater than :option:`D11` and less than :option:`D12`, the manual reverse
+button is working.
+
 Quick reference
 ===============
 
@@ -207,8 +216,8 @@ Parameter List
    -Max  359
    -Min  0
    -Unit  1°
-   -Description  If the needle position is greater than this angle, the manual reverse
-                 sewing button will not work.
+   -Description  If the needle position is less than this angle, the manual reverse
+                 sewing button isn't working.
 
 .. option:: D12
 
@@ -216,7 +225,7 @@ Parameter List
    -Min  0
    -Unit  1°
    -Description  If the needle position is greater than this angle, the manual reverse
-                 sewing button will not work.
+                 sewing button isn't working.
 
 .. option:: D15
    

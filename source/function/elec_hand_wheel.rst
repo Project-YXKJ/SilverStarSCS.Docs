@@ -4,7 +4,7 @@
 Electric Handwheel
 ==================
 
-Only works when the machine stops.
+This function is only effective when the machine stops.
 
 Quick reference
 ===============

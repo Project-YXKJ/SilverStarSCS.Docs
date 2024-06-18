@@ -53,8 +53,8 @@ Follow the steps:
    of this port.
 2. Refer to the section at the beginning of this chapter :ref:`output_mode_code_list`, 
    get the parameter value you need.
-3. Modify the parameter obtained in step 1 to the function code obtained in step 2,
-   then restart the system.
+3. Modify the parameter obtained in step 1 to the function code obtained in step 2;
+4. Restart the machine to adopt the settings.
 
 Let's take an example:
 
@@ -68,6 +68,8 @@ Let's take an example:
    then change :option:`A71` to 15:
    
       15 = Puller
+
+4. Restart the machine.
 
 .. _output_params_quick_reference:
 

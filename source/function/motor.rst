@@ -4,19 +4,23 @@
 Motor
 =====
 
-Holding force of the motor
+Holding force when idle
 ==========================
 
 Enable this function by set :option:`A54` to 1.
 
-When the holding function is enabled, the motor will maintain a certain force to lock in 
-the current position when parking. However, the *lock* here does not mean *standing still*, 
-if the parameters are set improperly, or the motor is in a position where the external force
-is too large/small, the needle bar may vibrate up and down. 
-
-This function is helpful to avoid the unwanted drop of the needle bar when parking.
+This function prevents unwanted wandering of the needle when the machine has stopped.
 The effect can be checked by turning the hand wheel.
 
+While the function is in effect, the motor will maintain a certain force to *lock* in 
+the current position. However, the *lock* here does not mean *standing still*, if the 
+parameters are set improperly, or the motor is in a position where the external force 
+is too large/small, the needle bar may vibrate up and down. 
+
+Holding force takes effect when idle:
+
+* for a stop in the seam
+* after the end of the seam
 
 The maximum time the holding force can keep takes effect is determined by parameter :option:`A66` :
 
@@ -26,6 +30,8 @@ Equal to 0
 Not equal to 0
    holding force only take effect for a certain period of time when stop, and then the motor is released. 
    At this time, the parameter value represents the effective time.
+
+The effect can be set by parameter :option:`I46`, the higher the value set the stronger the holding force.
 
 Quick reference
 ===============

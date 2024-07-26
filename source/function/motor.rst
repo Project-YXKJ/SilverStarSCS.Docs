@@ -9,8 +9,14 @@ Holding force of the motor
 
 Enable this function by set :option:`A54` to 1.
 
-This function prevents unwanted wandering of the needle when machine has stopped. 
+When the holding function is enabled, the motor will maintain a certain force to lock in 
+the current position when parking. However, the *lock* here does not mean *standing still*, 
+if the parameters are set improperly, or the motor is in a position where the external force
+is too large/small, the needle bar may vibrate up and down. 
+
+This function is helpful to avoid the unwanted drop of the needle bar when parking.
 The effect can be checked by turning the hand wheel.
+
 
 The maximum time the holding force can keep takes effect is determined by parameter :option:`A66` :
 

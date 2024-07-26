@@ -106,8 +106,8 @@ Correction Mode                                              Operator   :option:
 Manual Revserse SW.                                          Operator   :option:`A31`
 Upper Needle Position                                        Technician :option:`D01`
 Lower Needle Position                                        Technician :option:`D02`
-The minimum angle of Off reverse key function                Operator   :option:`D11`
-The maximum angle of Off reverse key function                Operator   :option:`D12`
+Lower Limit of Manual Revserse SW. Working angle range       Operator   :option:`D11`
+Upper Limit of Manual Revserse SW. Working angle range       Operator   :option:`D12`
 Correction:Upper Position                                    Operator   :option:`D15`
 Correction:Lower Position                                    Operator   :option:`D16`
 Sewing mode                                                  Operator   :option:`D18`

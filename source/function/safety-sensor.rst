@@ -59,7 +59,8 @@ This table summarizes which parameter should be used for oil level:
 ==================================================== ========== ==============
 Parameter                                            Authority  See also
 ==================================================== ========== ==============
-Warning: Oil Level                                   Technician :option:`O34`
+Information: Oil Level                               Technician :option:`O34`
+Oil Level Sample                                     Technician :option:`O68`
 ==================================================== ========== ==============
 
 Upper Thread Breaking
@@ -135,9 +136,17 @@ Parameter List
    -Min  0
    -Unit  --
    -Description
-     | Optional features, whether to throw a warning when the lubricating oil level is too low:
+     | Optional features, whether to throw a information when the lubricating oil level is too low:
      | 0 = Off;
      | 1 = On.
+
+.. option:: O68
+   
+   -Max  4095
+   -Min  0
+   -Unit  --
+   -Description  If lubricating oil level sensor signal is analog, and the actual sampling value 
+                 is lower than this parameter value, a low oil level exception will be thrown.
 
 .. option:: A53
    

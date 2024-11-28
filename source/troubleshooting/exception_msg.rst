@@ -1,41 +1,22 @@
-.. _err_wrn_msg:
+.. _exception_msg:
 
-=================
-Error and warning
-=================
+========================================
+Warnings, error and information messages
+========================================
 
 The exception messages of *SilverStar Sewing Control System* is divided 
 into three groups, as shown in the following table:
 
 =========== ======== ==================================================================================
-Level       Acronym  Description
+Level       Code     Description
 =========== ======== ==================================================================================
-Warning     Wrn      Eliminate the state that caused to the warning, the control will normally worked. 
 Error       Err      Switch off the control and eliminate the problem
+Warning     Wrn      Eliminate the state that caused to the warning, the control will normally worked
+Information Inf      Work can be continued, only exception message needs to be confirmed
 =========== ======== ==================================================================================
 
 Exception quick reference
 =========================
-
-Warning messages
-----------------
-
-The code of the warning message is always less than 100.
-
-================= ============================= =============================
-Code              Messages                      Remedial action
-================= ============================= =============================
-:exc:`ExcCode1`   pedal                         :meth:`ExcCode1.solution()`
-:exc:`ExcCode2`   tilt switch                   :meth:`ExcCode2.solution()`
-:exc:`ExcCode3`   shortkeys                     :meth:`ExcCode3.solution()`
-:exc:`ExcCode4`   shortkeys                     :meth:`ExcCode4.solution()`
-:exc:`ExcCode5`   bobbin counter/monitor        :meth:`ExcCode5.solution()`
-:exc:`ExcCode6`   upper thread breaking         :meth:`ExcCode6.solution()`
-:exc:`ExcCode7`   service counter               :meth:`ExcCode7.solution()`
-:exc:`ExcCode8`   eye protection                :meth:`ExcCode8.solution()`
-:exc:`ExcCode9`   slide monitoring              :meth:`ExcCode9.solution()`
-:exc:`ExcCode10`  oil level                     :meth:`ExcCode10.solution()`
-================= ============================= =============================
 
 Error messages
 --------------
@@ -79,94 +60,35 @@ Code              Messages                      Remedial action
 :exc:`ExcCode189` HMI: upgrade                  :meth:`ExcCode189.solution()`
 ================= ============================= =============================
 
-Warning message list
-====================
+Warning messages
+----------------
 
-.. exception:: ExcCode1
+The code of the warning message is always less than 100.
 
-   Pedal warning
+================= ============================= =============================
+Code              Messages                      Remedial action
+================= ============================= =============================
+:exc:`ExcCode1`   pedal                         :meth:`ExcCode1.solution()`
+:exc:`ExcCode2`   tilt switch                   :meth:`ExcCode2.solution()`
+:exc:`ExcCode3`   shortkeys                     :meth:`ExcCode3.solution()`
+:exc:`ExcCode4`   shortkeys                     :meth:`ExcCode4.solution()`
+:exc:`ExcCode5`   bobbin counter/monitor        :meth:`ExcCode5.solution()`
+:exc:`ExcCode6`   upper thread breaking         :meth:`ExcCode6.solution()`
+:exc:`ExcCode7`   service counter               :meth:`ExcCode7.solution()`
+:exc:`ExcCode8`   eye protection                :meth:`ExcCode8.solution()`
+:exc:`ExcCode9`   slide monitoring              :meth:`ExcCode9.solution()`
+================= ============================= =============================
 
-   .. method:: solution()
+Information messages
+--------------------
 
-      The pedal must be released when switching on;
-      The pedal type must be set correctly when using standing pedal;
-      Replace the pedal.
+The code of the information message is always less than 100.
 
-.. exception:: ExcCode2
-
-   Tilt switch warning
-   
-   .. method:: solution()  
-
-      The warning will be cleared when the machine is back to the normal position;
-      Check the tipping sensor on the machine  
-
-.. exception:: ExcCode3 
-   
-   Shortkey warning
-   
-   .. method:: solution()
-
-      The short key must be released when switching on
-
-.. exception:: ExcCode4 
-   
-   Shortkey warning
-   
-   .. method:: solution()
-
-      The short key must be released when switching on
-
-.. exception:: ExcCode5 
-   
-   Bobbin counter warning
-   
-   .. method:: solution()
-
-      Replace the bobbin, press back key to clear warning
-
-.. exception:: ExcCode6 
-   
-   Upper thread breaking warning
-   
-   .. method:: solution()
-
-      The upper thread is broken;
-      Check the sensor of upper thread.
-
-.. exception:: ExcCode7 
-   
-   Service counter warning
-   
-   .. method:: solution()
-
-      Make a service maintenance, press back key to clear warning
-
-.. exception:: ExcCode8 
-   
-   Eye protection monitoring
-   
-   .. method:: solution()
-
-      Put eye protection cover plate back in place;
-      Check the sensor of eye protection.
-
-.. exception:: ExcCode9 
-   
-   Slide monitoring
-
-   .. method:: solution()
-
-      Close the hook cover plate;
-      Check the sensor of slide monitoring;  
-
-.. exception:: ExcCode10 
-   
-   Oil level warning
-
-   .. method:: solution()
-
-      Check oil
+================= ============================= =============================
+Code              Messages                      Remedial action
+================= ============================= =============================
+:exc:`ExcCode50`  oil level                     :meth:`ExcCode50.solution()`
+================= ============================= =============================
 
 Error message list
 ==================
@@ -460,3 +382,100 @@ Error message list
    .. method:: solution()
 
       Copy the upgrade files and update again
+
+Warning message list
+====================
+
+.. exception:: ExcCode1
+
+   Pedal warning
+
+   .. method:: solution()
+
+      The pedal must be released when switching on;
+      The pedal type must be set correctly when using standing pedal;
+      Replace the pedal.
+
+.. exception:: ExcCode2
+
+   Tilt switch warning
+   
+   .. method:: solution()  
+
+      The warning will be cleared when the machine is back to the normal position;
+      Check the tipping sensor on the machine  
+
+.. exception:: ExcCode3 
+   
+   Shortkey warning
+   
+   .. method:: solution()
+
+      The short key must be released when switching on
+
+.. exception:: ExcCode4 
+   
+   Shortkey warning
+   
+   .. method:: solution()
+
+      The short key must be released when switching on
+
+.. exception:: ExcCode5 
+   
+   Bobbin counter warning
+   
+   .. method:: solution()
+
+      Replace the bobbin, press back key to clear warning
+
+.. exception:: ExcCode6 
+   
+   Upper thread breaking warning
+   
+   .. method:: solution()
+
+      The upper thread is broken;
+      Check the sensor of upper thread.
+
+.. exception:: ExcCode7 
+   
+   Service counter warning
+   
+   .. method:: solution()
+
+      Make a service maintenance, press back key to clear warning
+
+.. exception:: ExcCode8 
+   
+   Eye protection monitoring
+   
+   .. method:: solution()
+
+      Put eye protection cover plate back in place;
+      Check the sensor of eye protection.
+
+.. exception:: ExcCode9 
+   
+   Slide monitoring
+
+   .. method:: solution()
+
+      Close the hook cover plate;
+      Check the sensor of slide monitoring;  
+
+
+Information message list
+========================
+
+.. exception:: ExcCode50 
+
+   Oil level is below the minimum level marking
+
+   .. method:: solution()
+
+      Maintenance necessary, see the service instructions for the machine to lubricating the machine
+
+   .. versionchanged:: 90A0-v1.08.05
+
+      Previously, the code of this exception was *10* and belonged to *warning* group.

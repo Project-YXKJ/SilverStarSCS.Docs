@@ -11,4 +11,4 @@ Table of Contents
 .. toctree:: 
    :maxdepth: 2
    
-   err_wrn_msg
+   exception_msg

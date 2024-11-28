@@ -42,7 +42,7 @@ Here is the input mode code list:
 * 16 = Slide monitoring sensor;
 * 17 = Toggle sewing foot lifter raise up/down [#]_;
 * 18 = lifting sewing foot via the knee switch;
-* 19 = Oil Starvation;
+* 19 = Lubricating oil level sensor(Digital type);
 * 20 = Toggle puller raise up/down;
 * 21 = Reset bobbin counter;
 * 22 = Simulate electronic handwheel rotation(forwards);
@@ -52,7 +52,8 @@ Here is the input mode code list:
 * 100 = Sewing foot stroke knob potentiometer;
 * 101 = Sewing foot height sensor
 * 102 = Orthogonal encoder CHA for electronic handwheel;
-* 103 = Orthogonal encoder CHB for electronic handwheel.
+* 103 = Orthogonal encoder CHB for electronic handwheel;
+* 104 = Lubricating oil level sensor(Analog type).
 
 .. [#] Pause mode, the machine can not run by step the pedal.
 

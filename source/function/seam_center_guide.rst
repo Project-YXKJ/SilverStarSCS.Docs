@@ -16,18 +16,30 @@ Automatic lifting seam center guide is associated with three situations:
 How automation rules work
 -------------------------
 
-Rule is seted by :option:`A51`:
+If the second sewing foot stroke is switched on, the seam center guide is automatically raise up, 
+when the stroke has returned to the normal position, the seam center guide has also returned to normal settings.
 
-* 0 = Toggle seam center guide raise up/down via a manual button;
-* 1 = Raising of seam center guide when lifting the sewing foot;
-* 2 = Raising of seam center guide when sewing the bartack/reverse;
-* 3 = Raising of seam center guide when sewing the bartack/reverse and 
-      lifting the sewing foot;
-* 4 = Raising of seam center guide when high stroke;
-* 5 = Raising of seam center guide when lifting the sewing foot and high stroke;
-* 6 = Raising of seam center guide when sewing the bartack/reverse and high stroke;
-* 7 = Raising of seam center guide when lifting the sewing foot, sewing 
-      the bartack/reverse and high stroke.
+During the sewing of the bartack/reverse, the seam center guide is automatically raised up, 
+when the bartack/reverse completes, the seam center guide has also returned to normal settings.
+
+If the second sewing foot stroke is switched on, the seam center guide is automatically raised up, 
+when the stroke has returned to the normal position, the seam center guide has also returned to normal settings.
+
+The mode is set by parameter :option:`A51`, you can use the following table to quickly
+check the parameter values ​​you need to set:
+
+====== ====== ===================== =================== 
+Value  Foot   Bartack/reverse       Stroke
+====== ====== ===================== ===================
+0      Off    Off                   Off
+1      On     Off                   Off
+2      Off    On                    Off
+3      On     On                    Off
+4      Off    Off                   On
+5      On     Off                   On
+6      Off    On                    On
+7      On     On                    On
+====== ====== ===================== ===================
 
 Quick reference
 ===============
@@ -63,11 +75,12 @@ Parameter List
    -Min  0
    -Unit  --
    -Description
+     | Auto mode for seam center guide:
      | 0 = Manual;
-     | 1 = Automatically up when foot lifting;
-     | 2 = Automatically up when bartacking and reverse;
+     | 1 = Automatically raise when foot lifting;
+     | 2 = Automatically raise when bartack/reverse;
      | 3 = Both 1&2;
-     | 4 = Automatically up when high stroke;
+     | 4 = Automatically raise when 2nd stroke;
      | 5 = Both 1&4;
      | 6 = Both 2&4;
      | 7 = Both 1&2&4.

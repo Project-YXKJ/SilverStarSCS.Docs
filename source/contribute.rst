@@ -105,41 +105,28 @@ Though not required to contribute, it may be useful to build this docs locally
 in order to test your changes. In order to build this docs locally, you'll
 need:
 
-1. :doc:`Nox <nox:index>`. You can install or upgrade nox using ``pip``:
+1. `uv`_ is used for Python package and project manager.
+2. `Nox`_ is used for automating development tasks.
+   
+   .. code-block:: bash
 
-    .. code-block:: bash
+      uv tool install nox
 
-      python -m pip install nox
-
-2. Python 3.11. Our build scripts are usually tested with Python 3.11 only.
-   Download the `Python 3.11`_ to install it on your operating system.
-
-.. _Python 3.11: https://www.python.org/downloads/
-
-
-To build the docs, run the following shell command in the project's root folder:
+To build the docs, run the following ``nox`` command in the project’s root folder:
 
 .. code-block:: bash
-
-   nox -s build
+   
+   nox -rs docs
 
 After the process has completed you can find the HTML output in the
-``./build/html`` directory. You can open the ``index.html`` file to view the
-docs in web browser, but it's recommended to serve the docs using an HTTP
-server.
+``./build`` directory. You can open the ``index.html`` file to view the
+docs in web browser.
 
-You can build the docs and serve it via an HTTP server using the following
-command:
-
-.. code-block:: bash
-
-   nox -s preview
-
-The docs will be browsable via http://localhost:8000.
+.. _uv: https://docs.astral.sh/uv/
+.. _Nox: https://nox.readthedocs.io/en/stable/
 
 Style guide
 ===========
-
 
 Audience
 --------

@@ -493,7 +493,7 @@ reST supports an image directive, used like so::
 When used within Sphinx, the file name given (here gnu.png) must either be relative 
 to the source file, or absolute which means that they are relative to the top source 
 directory. For example, the file sketch/spam.rst could refer to the image``images/spam.png``
-as ``../images/spam.png`` or ``/images/spam.png``。
+as ``../images/spam.png`` or ``/images/spam.png``.
 
 Footnotes
 ---------

@@ -8,4 +8,4 @@ Specifications summary
 ======================
 
 - Built-in control box;
-- AC 220v±10%;
+- AC 220v ± 10%;

@@ -61,9 +61,9 @@ When press the key, the needle moves form the current position to the position
 set by parameter :option:`D15` or :option:`D16`, which one is the closest, 
 the target position is that one. 
 
-E.g, current position is 40 degrees, :option:`D15` is 70, :option:`D16` is 200, 
+E.g, current position is 40°, :option:`D15` is 70°, :option:`D16` is 200°, 
 when you press the button, the motion trace is 
-``Position 40 => 70 => 200 => 70 => 200 ...`` .
+``Position 40° => 70° => 200° => 70° => 200° ...`` .
 
 If :option:`A03` is equal to 1:
 
@@ -72,11 +72,11 @@ the needle moves form the current position to the position set by parameter :opt
 if you set stop at lower position, the needle moves form the current position to the 
 position set by parameter :option:`D02`:
 
-E.g, current position is 40 degrees, :option:`D01` is 70, :option:`D02` is 200, 
+E.g, current position is 40°, :option:`D01` is 70°, :option:`D02` is 200°, 
 if :option:`A01` is 0, when you press the button, the motion trace is 
-``Position 40 => 200 => 200 => 200 ...`` ;
+``Position 40° => 200° => 200° => 200° ...`` ;
 if :option:`A01` is 1, when you press the button, the motion trace is 
-``Position 40 => 70 => 70 => 70 ...`` .
+``Position 40° => 70° => 70° => 70° ...`` .
 
 Working angle range of manual reverse button
 ============================================
@@ -108,8 +108,8 @@ Upper Needle Position                                        Technician :option:
 Lower Needle Position                                        Technician :option:`D02`
 Lower Limit of Manual Revserse SW. Working angle range       Operator   :option:`D11`
 Upper Limit of Manual Revserse SW. Working angle range       Operator   :option:`D12`
-Correction:Upper Position                                    Operator   :option:`D15`
-Correction:Lower Position                                    Operator   :option:`D16`
+Correction: Upper Position                                   Operator   :option:`D15`
+Correction: Lower Position                                   Operator   :option:`D16`
 Sewing mode                                                  Operator   :option:`D18`
 Correction Timming                                           Operator   :option:`O69`
 ============================================================ ========== ==============

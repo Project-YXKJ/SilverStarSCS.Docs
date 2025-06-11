@@ -53,7 +53,7 @@ Here is the input mode code list:
 * 101 = Sewing foot height sensor
 * 102 = Orthogonal encoder CHA for electronic handwheel;
 * 103 = Orthogonal encoder CHB for electronic handwheel;
-* 104 = Lubricating oil level sensor(Analog type).
+* 104 = Lubricating oil level sensor(Analog type);
 
 .. [#] Pause mode, the machine can not run by step the pedal.
 

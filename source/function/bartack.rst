@@ -170,7 +170,7 @@ Parameter List
    -Max  30
    -Min  5
    -Unit  s
-   -Description  If Auto Power-off Reverse is turned on,this parameter sets the power-off time.
+   -Description  If Auto Power-off Reverse is turned on, this parameter sets the power-off time.
 
 .. option:: O12
    

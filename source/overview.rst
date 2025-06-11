@@ -5,7 +5,7 @@ Overview of SilverStar SCS
 Work environment
 ================
 
-* Use 220v AC in ±10% ranges.
+* Use 220V AC in ±10% ranges.
 * Please keep the product away from the high electromagnetic interference.
 * Please operate in the area which temperature is 5℃~45℃.
 * Please operate in the area which humidity is 80% or less.
@@ -36,7 +36,7 @@ Notice of safety
 * The connector should be plug and unplug in the correct method.
 
 .. danger::
-   The power supply is AC 220V!!!
+   The power supply is AC 220V !
 
    The yellow-green earth cable must be connected to the earth properly.
    Otherwise there are risks of human electric shock and the controller 

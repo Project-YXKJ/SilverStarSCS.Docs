@@ -39,7 +39,7 @@ Here is the output mode code list:
 * 13 = Zero stitch length for short thread cutter machine;
 * 14 = Auto corner for 2-needle machine;
 * 15 = Puller；
-* 16 = Thread wiper(lower).
+* 16 = Thread wiper(lower);
 
 How to setup the function of output ports?
 ==========================================

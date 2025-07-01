@@ -16,11 +16,10 @@ This table summarizes which parameter should be used for assemble:
 ========================================================================= ========== ==============
 Parameter                                                                 Authority  See also
 ========================================================================= ========== ==============
-Lock the Shortkeys                                                        Developer  :option:`A07`
 Function :term:`POSITION -1`                                              Developer  :option:`A19` 
-MACHINE ID                                                                Developer  :option:`O03` 
+:term:`MACHINE ID`                                                        Developer  :option:`O03` 
 Pedal Type                                                                Developer  :option:`O08` 
-Machine ID Storage Location                                               Developer  :option:`O30` 
+:term:`MACHINE ID` Storage Location                                       Developer  :option:`O30` 
 Pedal Calibration: POSITION END(Forward)                                  Developer  :option:`O56`
 Pedal Calibration: :term:`POSITION 2` and :term:`POSITION 1` threshold    Developer  :option:`O57`
 Pedal Calibration: :term:`POSITION 1` and :term:`POSITION 0` threshold    Developer  :option:`O58`
@@ -29,30 +28,20 @@ Pedal Calibration: :term:`POSITION -1` and :term:`POSITION -2` threshold  Develo
 Pedal Calibration: POSITION END(Backward)                                 Developer  :option:`O61`
 Pedal Calibration: Schmitt Loop value                                     Developer  :option:`O62`
 Speed Curve Pedal                                                         Developer  :option:`O63`
-Keypad Type                                                               Developer  :option:`O80`
+Type of :term:`Keypad`                                                    Developer  :option:`O80`
 ========================================================================= ========== ==============
 
 Parameter List
 ==============
-
-.. option:: A07
-
-   -Max  1  
-   -Min  0
-   -Unit  --
-   -Description
-     | To avoid the very thick material from triggering the shortkeys:
-     | 0 = Off;
-     | 1 = On.
 
 .. option:: A19
    
    -Max  2
    -Min  1
    -Unit  --
-   -Description  
-     | When pedal at :term:`POSITION -1` 
-       which funcition is activared:
+   -Description
+     | When pedal at :term:`POSITION -1`
+       which function is activated:
      | 1 = Sewing foot lift;
      | 2 = Thread trim.
 

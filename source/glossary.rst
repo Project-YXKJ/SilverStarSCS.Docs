@@ -37,7 +37,13 @@ Glossary
     
     time period t2
       The duration of the non-100% duty cycle of the output port
+    
+    Quick Keys
+      Generally refers to the separate thumb button, near the needle
 
+    Keypad
+      A special input device, strip key box usually with six or seven buttons and leds
+  
     stitches
       The sewing machine makes one complete revolution to form one stitch.
 

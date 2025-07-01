@@ -18,6 +18,14 @@ the mode of each port according to your actual wiring.
 
 .. _input_mode_code_list:
 
+Keypad
+======
+
+A :term:`Keypad` is a special input device, although each button on the Keypad can be configured to 
+perform a specific operation, they are different from traditional input ports. 
+It is neither analog nor digital. Usually, it can only be configured as those "Switch" functions, 
+and the sensor function cannot be connected to the Keypad.
+
 Input Mode Code List
 =====================
 
@@ -49,6 +57,8 @@ Here is the input mode code list:
 * 23 = Simulate electronic handwheel rotation(backwards);
 * 24 = Toggle sewing direction [#]_;
 * 25 = Toggle the clamp function on and off;
+* 26 = Block Quick Keys;
+* 27 = Remaining thread monitor sensor(Digital type);
 * 100 = Sewing foot stroke knob potentiometer;
 * 101 = Sewing foot height sensor
 * 102 = Orthogonal encoder CHA for electronic handwheel;

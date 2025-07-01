@@ -100,6 +100,7 @@ Speed in Program Sewing                                      Operator   :option:
 Needle Position                                              Operator   :option:`A01`
 Auto Sewing for Program Sewing                               Operator   :option:`A02`
 Correction mode                                              Operator   :option:`A03`
+Block the :term:`Quick Keys`                                 Developer  :option:`A07`
 Mode After Start Bartack in Programmed Sewing                Operator   :option:`A16`
 Auto End bartack and Trim when Programmed Sewing is finished Operator   :option:`A17`
 Correction Mode                                              Operator   :option:`A30`
@@ -158,6 +159,17 @@ Parameter List
    -Description
      | 0 = Half stitch;
      | 1 = One stitch
+
+.. option:: A07
+
+   -Max  1  
+   -Min  0
+   -Unit  --
+   -Description
+     | Whether to block the :term:`Quick Keys`. It is used to prevent unwanted triggering when the 
+       sewing material is too thick. The unit digit of the parameter value indicates the block status:
+     | 0 = Not Blocked;
+     | 1 = Blocked.
 
 .. option:: A16
    

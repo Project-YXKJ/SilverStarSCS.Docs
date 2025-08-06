@@ -14,5 +14,4 @@ SilverStar SCS Docs is licensed under [Apache License 2.0](LICENSE).
 
 ## Contributing
 
-Contributions are welcome! Please see the[contributing guide](https://silverstarscsdocs.readthedocs.io/en/latest/contribute.html) for details on our writing style guide and how to build
-the docs locally to test your changes.
+Contributions are welcome! Please see the[contributing guide](https://silverstarscsdocs.readthedocs.io/en/latest/contribute.html) for details on our writing style guide and how to build the docs locally to test your changes.

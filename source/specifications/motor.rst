@@ -1,9 +1,8 @@
-=====
 Motor
 =====
 
 Table of Contents
-=================
+-----------------
 
-.. toctree:: 
-  :maxdepth: 4
+.. toctree::
+    :maxdepth: 4

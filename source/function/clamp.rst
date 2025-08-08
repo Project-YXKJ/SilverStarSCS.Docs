@@ -1,26 +1,21 @@
-.. _thread_clamp:
-
 Thread clamp
 ============
 
-Features
---------
-
-Thread clamp at seam start
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+At seam start
+-------------
 
 Switch on at position set by :option:`D07`, switch off at position set by :option:`D08`.
 
 Action only during the first stitch, reset after thread trim.
 
-Thread clamp at turning back
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+At turning back
+---------------
 
 Switch on during turning back, the Max. permissible time is set by :option:`T15` to
 protect from damage.
 
-Thread clamp at sewing foot lifting
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+At sewing foot lifting
+----------------------
 
 Switch on during foot lifting, the Max. permissible time is set by :option:`T15` to
 protect from damage.

@@ -1,5 +1,3 @@
-.. _control_other:
-
 Control, other
 ==============
 

@@ -1,9 +1,19 @@
-.. _hand_wheel:
-
 Electric Handwheel
 ==================
 
-This function is only effective when the machine stops.
+This function can only be used when the motor is stopped.
+
+Handwheel Rotation by button
+----------------------------
+
+The handwheel can be set in motion by pressing a button. Select the input port used for
+this function.
+
+When the key is pressed **briefly**, i.e. release immediately , the handwheel rotates by
+the steps set using parameter :option:`O83`.
+
+When the button is **held down**, the handwheel rotates continuously until the key is
+released. The handwheel rotates at the speed set using parameter :option:`O84`.
 
 Quick reference
 ---------------

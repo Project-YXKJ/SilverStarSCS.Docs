@@ -1,38 +1,55 @@
-.. _sewing_foot_lift:
-
 Sewing foot lift
 ================
 
-Features
---------
+**Sewing foot is lifted:**
 
-Foot is raised
-~~~~~~~~~~~~~~
+*In the seam*
 
-- **On the seam** : By pedal back(:term:`POSITION -1`) or automatically with A14 setted
-  to 1;
-- **After thread has been cut** : By pedal back(:term:`POSITION -1` or :term:`POSITION
-  -2`) or automatically with :option:`A15` setted to 1.
+- By half heelback, :term:`POSITION -1`
+- Automatically with :option:`A14` setted to 1
+- Press the key that has been allocated for the purpose
+
+*After thread trimming*
+
+- By heelback, :term:`POSITION -1` or :term:`POSITION -2`
+- Automatically with :option:`A15` setted to 1
+- Press the key that has been allocated for the purpose
+
+It is possible to prevent unintentional foot lifting before thread trimming when
+changing from pedal :term:`POSITION 0` to :term:`POSITION -2` by setting a switch-on
+delay using parameter :option:`T05`.
+
+**Sewing foot is lowered:**
+
+- Press pedal to :term:`POSITION 0`
+- Press pedal to :term:`POSITION 1`
+- Release the key that has been allocated for the purpose
 
 Holding force of the raised foot
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
-The foot lifting is raised by full activation, then it switches automatically to partial
-activation to reduce the load on the controller and the connected magnets.
+The sewing foot is lifted by full power. Then the system switches automatically to
+partial power in order to reduce the load for the control and the connected solenoid.
 
-The full activation period is set with :option:`T07` and holding force during partial
-activation is set with :option:`O05`.
+Set the duration of full power using parameter :option:`T07` and the partial holding
+power using parameter :option:`O05`.
+
+.. attention::
+
+    If the holding power is set too high, the solenoid and the control may be
+    permanently damaged. Please observe the permissible duty cycle (ED) of the solenoid,
+    and set the appropriate value.
 
 Timeout release
-~~~~~~~~~~~~~~~
+---------------
 
 In order to reduce heat generation, timed release can be set.
 
 if parameter :option:`O06` is set to 1, the maximum time the foot lifter can keep raised
 is determined by parameter :option:`O07`.
 
-Delay time
-~~~~~~~~~~
+Start delay
+-----------
 
 When the sewing foot is the raised, in order to ensure that the sewing material is
 pressed tightly before the machine starts running, a tiem lag will be inserted after
@@ -174,7 +191,7 @@ Parameter List
     -Max  10
     -Min  1
     -Unit  --
-    -Description  Duty cycle of foot during clamping without start bartack
+    -Description  Duty cycle of foot during clamping without start backtack
 
 .. option:: O54
 

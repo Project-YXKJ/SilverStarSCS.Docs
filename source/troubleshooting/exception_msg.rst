@@ -1,5 +1,3 @@
-.. _exception_msg:
-
 Warnings, error and information messages
 ========================================
 

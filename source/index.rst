@@ -40,7 +40,8 @@ Tutorials
 
 Tutorials walk through the steps needed to help you start for the first time, such as:
 
-- A :doc:`tutorial on how to interact with Docs <tutorials/how-to-interact-docs>`
+- A tutorial on :doc:`how to interact with Docs <tutorials/how-to-interact-docs>`
+- :doc:`tutorials/put_into_use`
 
 Explanations
 ------------

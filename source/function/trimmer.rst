@@ -1,22 +1,26 @@
-.. _thread_cutter:
+Thread_trimmer
+==============
 
-Thread cutter
-=============
+Thread trimming procedure:
 
-How it works?
--------------
-
-Thread cutting procedure:
-
-Thread cutting singnal is switched on when the angle value :option:`D03` has been
+Thread trimmer singnal is switched on when the angle value :option:`D03` has been
 reached, the switched off when the angle value :option:`D04` . If the position is not
-reached because of a mechanical error, the thread cutter signal is switched off after
+reached because of a mechanical error, the thread trimmer signal is switched off after
 500ms for protect the magnet from damage.
+
+Thread trimming in the lockstitch modes is performed at trimming speed.
+
+Activation of Short Trimmer
+---------------------------
+
+With sewing machines equipped with a short trimmer system, the required functional
+sequence can be activated using parameter :option:`A42`. The thread trimming function
+must be On.
 
 Quick reference
 ---------------
 
-This table summarizes which parameter should be used for thread cutter:
+This table summarizes which parameter should be used for thread trimmer:
 
 ====================================== ========== =============
 Parameter                              Authority  See also
@@ -73,63 +77,63 @@ Parameter List
     -Max  10
     -Min  0
     -Unit  stitches
-    -Description  When short thread cutter active,number of short length stitches before trim.
+    -Description  When short thread trimmer active,number of short length stitches before trim.
 
 .. option:: D03
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of thread cutter is activated.
+    -Description  Position when the magnet of thread trimmer is activated.
 
 .. option:: D04
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of thread cutter is deactivated.
+    -Description  Position when the magnet of thread trimmer is deactivated.
 
 .. option:: D17
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of movable knife(short thread cutter) is activated.
+    -Description  Position when the magnet of movable knife(short thread trimmer) is activated.
 
 .. option:: D18
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of movable knife(short thread cutter) is deactivated.
+    -Description  Position when the magnet of movable knife(short thread trimmer) is deactivated.
 
 .. option:: D19
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of the reverse(short thread cutter) is activated.
+    -Description  Position when the magnet of the reverse(short thread trimmer) is activated.
 
 .. option:: D20
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of the reverse(short thread cutter) is deactivated.
+    -Description  Position when the magnet of the reverse(short thread trimmer) is deactivated.
 
 .. option:: D21
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of zero stitch length(short thread cutter) is activated.
+    -Description  Position when the magnet of zero stitch length(short thread trimmer) is activated.
 
 .. option:: D22
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of zero stitch length(short thread cutter) is deactivated.
+    -Description  Position when the magnet of zero stitch length(short thread trimmer) is deactivated.
 
 .. option:: O38
 

@@ -1,5 +1,3 @@
-.. _tension:
-
 Thread tension
 ==============
 
@@ -11,21 +9,20 @@ when setting tha value of :option:`O75`. Over premissible power on time, the
 electromagnet may burn out, thus a electromagnet with a small value of :option:`O75` is
 protected form damage.
 
-How it works during thread cutting?
------------------------------------
+In parallel with trimmer
+------------------------
 
 Thread tension procedure:
 
 The thread tension power on when position is reached with :option:`D13` and power off
-when position is reached with :option:`D14` during thread cutting.
+when position is reached with :option:`D14` during thread trimming.
 
-Mode needle thread tension at sewing foot lift
-----------------------------------------------
+Modes when sewing foot is lifted
+--------------------------------
 
 When the foot is lifted, there are two cases: during sewing and after thread trimming,
-There are 4 options for the automatic mode of thread tension.
-
-The mode is set by parameter :option:`A27`:
+there are 4 options for the automatic mode of thread tension, the mode is set by
+parameter :option:`A27`:
 
 - 0 = tension is not lifted;
 - 1 = tension is lifted as the foot is lifted during sewing;
@@ -41,19 +38,18 @@ Automatic activate additional thread tension is associated with three situations
 - Bartack at seam begin
 - Bartack at seam end
 
-How automation rules work
-~~~~~~~~~~~~~~~~~~~~~~~~~
+**Function:**
 
 If the second sewing foot stroke is switched on, the additional thread tension is
 automatically activated, when the stroke has returned to the normal position, the
 additional thread tension has also returned to normal settings.
 
-During bartack at seam begin, the additional thread tension is automatically activated,
-when the bartack completes, the additional thread tension has also returned to normal
+During backtack at seam begin, the additional thread tension is automatically activated,
+when the backtack completes, the additional thread tension has also returned to normal
 settings.
 
-During bartack at seam end, the additional thread tension is automatically activated,
-when the bartack completes, the additional thread tension has also returned to normal
+During backtack at seam end, the additional thread tension is automatically activated,
+when the backtack completes, the additional thread tension has also returned to normal
 settings.
 
 The mode is set by parameter :option:`A28`, you can use the following table to quickly
@@ -124,9 +120,9 @@ Parameter List
       | Auto mode for additional thread tension:
       | 0 = Off;
       | 1 = Automatically activated when the second sewing foot stroke is switched on;
-      | 2 = Automatically activated during bartack at seam begin;
+      | 2 = Automatically activated during backtack at seam begin;
       | 3 = 1 & 2;
-      | 4 = Automatically activated during bartack at seam end;
+      | 4 = Automatically activated during backtack at seam end;
       | 5 = 1 & 4;
       | 6 = 2 & 4;
       | 7 = 1 & 2 & 4.

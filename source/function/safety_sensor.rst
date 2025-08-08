@@ -1,5 +1,3 @@
-.. _safety-sensor:
-
 Safety Sensor
 =============
 

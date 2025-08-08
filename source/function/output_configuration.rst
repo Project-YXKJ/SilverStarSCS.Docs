@@ -1,5 +1,3 @@
-.. _output_configuration:
-
 Output configuration
 ====================
 
@@ -23,7 +21,7 @@ Output Mode Code List
 Here is the output mode code list:
 
 - 0 = No function;
-- 1 = Thread cutter;
+- 1 = Thread trimmer;
 - 2 = Thread tension;
 - 3 = Thread clamp;
 - 4 = Reverse;
@@ -33,9 +31,9 @@ Here is the output mode code list:
 - 8 = Thread wiper(upper);
 - 9 = Second stitch length;
 - 10 = Needle cooling;
-- 11 = Additional cutter for short thread cutter machine;
+- 11 = Additional trimmer for short thread trimmer machine;
 - 12 = Seam center guide;
-- 13 = Zero stitch length for short thread cutter machine;
+- 13 = Zero stitch length for short thread trimmer machine;
 - 14 = Auto corner for 2-needle machine;
 - 15 = Puller；
 - 16 = Thread wiper(lower);

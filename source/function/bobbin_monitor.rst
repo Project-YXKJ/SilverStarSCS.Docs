@@ -1,5 +1,3 @@
-.. _bobbin_monitor:
-
 Bobbin stitch counter/monitor
 =============================
 

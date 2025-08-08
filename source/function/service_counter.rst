@@ -1,5 +1,3 @@
-.. _service_counter:
-
 Service counter
 ===============
 

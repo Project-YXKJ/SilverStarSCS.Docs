@@ -20,9 +20,9 @@ Table of Contents
 .. toctree::
     :maxdepth: 2
 
-    bartack
+    backtack
     clamp
-    thread_cutter
+    trimmer
     sewing_foot_lift
     second_stitch_length
     soft_start
@@ -32,7 +32,7 @@ Table of Contents
     motor
     tension
     stroke
-    safety-sensor
+    safety_sensor
     turn_back
     needle_cooling
     seam_center_guide

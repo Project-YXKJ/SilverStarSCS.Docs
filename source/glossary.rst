@@ -17,22 +17,22 @@ Glossary
         It's very important to make sure you set it correctly.
 
     POSITION 2
-      Press the pedal fully forwards, also called highspeed position
+      Press the pedal fully forward, e.g. run at max. speed
 
     POSITION 1
-      Press the pedal halfway forwards, also called lowspeed position
+      Press the pedal slightly forward, e.g. run at positioning speed
 
     POSITION 0
-      Pedal in reset position
+      Press pedal to neutral position
 
     POSITION -1
-      Press the pedal halfway back, also called feet position
+      Press the pedal half heelback, e.g. sewing foot lifting
 
     POSITION -2
-      Press the pedal fully back, also called trim position
+      Press the pedal full heelback, e.g. initiating the seam end
 
     time period t1
-      The duration of 100% duty cycle of the output port
+      The duration of full power (100% duty cycle) of the output port
 
     time period t2
       The duration of the non-100% duty cycle of the output port

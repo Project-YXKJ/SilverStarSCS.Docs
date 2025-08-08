@@ -1,5 +1,3 @@
-.. _turn_back:
-
 Turn back
 =========
 
@@ -33,7 +31,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Reversal after trim:
+      | Turn back:
       | 0 = Off;
       | 1 = On.
 
@@ -42,18 +40,18 @@ Parameter List
     -Max  1000
     -Min  50
     -Unit  spm
-    -Description  Turn back speed for lifting needlebar after trim.
+    -Description  Positioning speed of turn back
 
 .. option:: T12
 
     -Max  1000
     -Min  1
     -Unit  ms
-    -Description  Lag time, after which,needle reverse after trim.
+    -Description  Lag time, after which motor restarts and runs in reverse direction
 
 .. option:: O35
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Reversal position of the needle after trim.
+    -Description  Needle position after turn back

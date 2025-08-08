@@ -1,5 +1,3 @@
-.. _multitest:
-
 Multitest
 =========
 

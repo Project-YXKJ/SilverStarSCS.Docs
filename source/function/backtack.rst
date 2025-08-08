@@ -1,62 +1,76 @@
-.. _bartack:
+Backtack
+========
 
-Bartack
-=======
+The start backtack starts by pressing the pedal forward at the beginning of the seam.
+Start backtack are executed automatically at speed :option:`S03`. They cannot be
+interrupted. If softstart is running parallel, the respective lower speed is prevailing.
 
-Stitch in stitch
-----------------
+The end backtack in a seam with stitch counting starts by heelback at the end of
+counting. The stitch regulator is immediately enabled from machine standstill. After
+lowering the sewing foot, the switch-on point of the stitch regulator is delayed by the
+time :option:`T06` (start delay after switching off the sewing foot lift signal)，and
+machine start is delayed by the time :option:`T01` (start delay after switching on the
+stitch regulator).
+
+Stitch optimization
+-------------------
 
 .. important::
 
     Before adjustment, make sure that forward stitch length is the same with backward
-    stitch length use the reverse lever.
+    stitch length use the stitch regulator lever.
 
-The time it takes for reverse actuator actions, adjust parameter :option:`T01` as the
+The time it takes for stitch regulator action, adjust parameter :option:`T01` as the
 guide of following figure:
 
-.. figure:: ../_static/common/add-T01.svg
+.. figure:: ../_static/common/add_t01.excalidraw.svg
     :scale: 150 %
     :alt: Increase T01
 
     Increase T01
 
-.. figure:: ../_static/common/sub-T01.svg
+.. figure:: ../_static/common/sub_t01.excalidraw.svg
     :scale: 150 %
     :alt: Decrease T01
 
     Decrease T01
 
-The time it takes for reverse actuator releases, adjust parameter :option:`T02` as the
+The time it takes for stitch regulator release, adjust parameter :option:`T02` as the
 guide of following figure:
 
-.. figure:: ../_static/common/add-T02.svg
+.. figure:: ../_static/common/add_t02.excalidraw.svg
     :scale: 150 %
     :alt: Increase T02
 
     Increase T02
 
-.. figure:: ../_static/common/sub-T02.svg
+.. figure:: ../_static/common/sub_t02.excalidraw.svg
     :scale: 150 %
     :alt: Decrease T02
 
     Decrease T02
 
-SD Mode
--------
+Ornamental backtack
+-------------------
 
-SD mode is a special mode of start/end bartack, used to ensure the seam looks better.
+Function "Ornamental backtack" is used to ensure the seam looks better.
 
-When the SD mode is enabled, the motor will pause at the collagen turning point and wait
-for the time set by :option:`T11` to ensure that the reverse action in place, then the
-motor continue running.
+Difference from the standard start backtack:
 
-SD mode can be activated for start bartack or end bartack respectively, controlled by
-:option:`A20` and :option:`A22`.
+- The drive stops for stitch regulator switching
+- The stop time can be set
+
+When the function is enabled, the motor will stop at the turning point and wait for the
+time set by :option:`T11` to ensure that the stitch regulator action or release in
+place, then the motor continue running.
+
+Ornamental backtack can be enabled for start backtack or end backtack respectively,
+controlled by :option:`A20` and :option:`A22`.
 
 Quick reference
 ---------------
 
-This table summarizes which parameter should be used for bartack:
+This table summarizes which parameter should be used for backtack:
 
 ============================================== ========== =============
 Parameter                                      Authority  See also
@@ -89,14 +103,14 @@ Parameter List
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum speed in bartack at seam begin.
+    -Description  Maximum speed in backtack at seam begin.
 
 .. option:: S04
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum speed in bartack at seam end.
+    -Description  Maximum speed in backtack at seam end.
 
 .. option:: A20
 
@@ -104,7 +118,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Stop at direction change of start tacking in order to the bartack magnet reach the specified position:
+      | Stop at direction change of start tacking in order to the backtack magnet reach the specified position:
       | 0 = Off;
       | 1 = On.
 
@@ -114,7 +128,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Stop at direction change of end tacking in order to the bartack magnet reach the specified position:
+      | Stop at direction change of end tacking in order to the backtack magnet reach the specified position:
       | 0 = Off;
       | 1 = On.
 
@@ -137,7 +151,7 @@ Parameter List
     -Max  1000
     -Min  1
     -Unit  ms
-    -Description  Motor standby duration at direction change of bartack if SD mode is On.
+    -Description  Motor standby duration at direction change of backtack if SD mode is On.
 
 .. option:: A34
 
@@ -145,7 +159,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description  Reverse power on angle
-      | For better performance of start bartack:
+      | For better performance of start backtack:
       | 0 = Off;
       | 1 = On.
 
@@ -185,21 +199,21 @@ Parameter List
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum Speed of 1 stitch when bartack or W-sewing.
+    -Description  Maximum Speed of 1 stitch when backtack or W-sewing.
 
 .. option:: O13
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum Speed of 2 stitch when bartack or W-sewing.
+    -Description  Maximum Speed of 2 stitch when backtack or W-sewing.
 
 .. option:: O14
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum Speed of 3 stitch when bartack or W-sewing.
+    -Description  Maximum Speed of 3 stitch when backtack or W-sewing.
 
 .. option:: O41
 

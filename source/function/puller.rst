@@ -1,17 +1,15 @@
-.. _puller:
-
 Puller
 ======
 
 Automation rules
 ----------------
 
-Automation rules allow puller to automate actions while lifting or bartack.
+Automation rules allow puller to automate actions while lifting or backtack.
 
-How automation rules work:
+**Function:**
 
 - During lifting, raising of puller when lifting the sewing foot.
-- During bartack, raising of puller when sewing the start/end bartack.
+- During backtack, raising of puller when sewing the start/end backtack.
 - During backwards, raising of puller when reverse button pressed.
 - The puller is to be switched on via a button, if the puller is switched off, it is
   always up, if the button is pressed, the puller goes down.

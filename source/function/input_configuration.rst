@@ -1,5 +1,3 @@
-.. _input_configuration:
-
 Input configuration
 ===================
 
@@ -32,13 +30,13 @@ Input Mode Code List
 Here is the input mode code list:
 
 - 0 = No function;
-- 1 = Manual bartack;
+- 1 = Manual reverse;
 - 2 = Forward correction;
 - 3 = Backward correction;
 - 4 = Forward correction at stop, reverse at running;
 - 5 = Backward correction at stop, reverse at running;
 - 6 = Quick toggle stroke;
-- 7 = Enable/unable bartack at seam start/end;
+- 7 = Enable/disable backtack at seam start/end;
 - 8 = Second stitch length;
 - 9 = Additional thread tension;
 - 10 = Pause [1]_ ;

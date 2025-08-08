@@ -1,5 +1,3 @@
-.. _seam_center_guide:
-
 Seam center guide
 =================
 
@@ -12,15 +10,14 @@ Automatic lifting seam center guide is associated with three situations:
 - Bartack(start or end tack) and reverse
 - Stroke
 
-How automation rules work
-~~~~~~~~~~~~~~~~~~~~~~~~~
+**Function:**
 
 If the second sewing foot stroke is switched on, the seam center guide is automatically
 raise up, when the stroke has returned to the normal position, the seam center guide has
 also returned to normal settings.
 
-During the sewing of the bartack/reverse, the seam center guide is automatically raised
-up, when the bartack/reverse completes, the seam center guide has also returned to
+During the sewing of the backtack/reverse, the seam center guide is automatically raised
+up, when the backtack/reverse completes, the seam center guide has also returned to
 normal settings.
 
 If the second sewing foot stroke is switched on, the seam center guide is automatically
@@ -80,7 +77,7 @@ Parameter List
       | Auto mode for seam center guide:
       | 0 = Manual;
       | 1 = Automatically raise when foot lifting;
-      | 2 = Automatically raise when bartack/reverse;
+      | 2 = Automatically raise when backtack/reverse;
       | 3 = Both 1&2;
       | 4 = Automatically raise when 2nd stroke;
       | 5 = Both 1&4;

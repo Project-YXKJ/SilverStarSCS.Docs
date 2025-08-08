@@ -1,10 +1,14 @@
-.. _soft_start:
-
 Soft start
 ==========
 
-When beginning a new seam, within the number of soft start stitches :option:`O01`, speed
-is determined by the pedal and limited to the soft start speed :option:`S08`.
+**Function:**
+
+- At the beginning of a new seam
+- Speed pedal controlled and limited to :option:`S08`
+- Lower speed, compared to parallel start backtack speed
+- Suspension with pedal in position 0
+- Stitch counting can be set using :option:`O01`
+- Interruption by full heelback (position -2)
 
 Quick reference
 ---------------

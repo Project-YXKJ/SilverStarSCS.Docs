@@ -1,22 +1,45 @@
-.. _motor:
-
 Motor
 =====
 
-Holding force when idle
------------------------
+Direction of Motor Rotation
+---------------------------
+
+.. important::
+
+    If the motor is installed differently, such as direct drive or connected using a
+    belt or gear, make sure that the value set for parameter :option:`O67` is consistent
+    with the direction of rotation.
+
+Look at the motor shaft, setting values:
+
+- 0 = Counterclockwise motor rotation
+- 1 = Clockwise motor rotation
+
+Synchronization signal source
+-----------------------------
+
+.. important::
+
+    If the settings are incorrect, the motor may not stop.
+
+Some are called upper needle position signals. For direct drive, this signal is built
+into the motor; for those using belts or gear, a separately installed sensor is
+generally used.
+
+Holding force at Standstill
+---------------------------
 
 Enable this function by set :option:`A54` to 1.
 
-This function prevents unwanted wandering of the needle when the machine has stopped.
-The effect can be checked by turning the hand wheel.
+This function prevents unintentional "wandering" of the needle at standstill. The effect
+can be checked by turning the hand wheel.
 
-While the function is in effect, the motor will maintain a certain force to *lock* in
-the current position. However, the *lock* here does not mean *standing still*, if the
+While the function is in effect, the motor will maintain a certain force to lock in the
+current position. However, the "lock" here does not mean "completely still", if the
 parameters are set improperly, or the motor is in a position where the external force is
-too large/small, the needle bar may vibrate up and down.
+too large/small, the needle may vibrate up and down.
 
-Holding force takes effect when idle:
+Holding force takes effect at standstill:
 
 - for a stop in the seam
 - after the end of the seam
@@ -31,8 +54,23 @@ Not equal to 0
     holding force only take effect for a certain period of time when stop, and then the
     motor is released. At this time, the parameter value represents the effective time.
 
-The effect can be set by parameter :option:`I46`, the higher the value set the stronger
+The effect can be set by parameter :option:`I46`, The higher the set value, the stronger
 the holding force.
+
+Starting/Braking Characteristics
+--------------------------------
+
+The drive acceleration/deceleration dynamics can be adapted to the sewing machine
+characteristic (light/heavy).
+
+- :option:`I01` = acceleration
+- :option:`I02` = deceleration
+
+The following applies to all setting values: the lower setting value, the stronger
+reaction!
+
+With a low parameter value on a light machine, the characteristic may appear coarse. In
+this case, one should try to optimize the settings.
 
 Quick reference
 ---------------

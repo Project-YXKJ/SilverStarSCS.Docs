@@ -1,42 +1,49 @@
-.. _stroke:
-
 Stroke adjustment
 =================
 
 Depending on the equipment, the machine has can be used to sew two different storke
 heights, and it can be activated with a press of button.
 
-Features
---------
+Speed Limitation via adjusting wheel
+------------------------------------
 
-Speed limit using stroke adjustment wheel
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If a component is installed in the stroke adjustment wheel, the system will
+automatically limit the speed when adjusting the wheel. There are two types of
+components used for speed limiting:
 
-If a sensor is installed in the stroke adjustment wheel, the system will automatically
-limit the speed when adjusting the wheel. There are two sensor type for speed limiting:
-
-Switch type
+Switch
     Gear speed limiter, if 2 switches are installed, it will have four gears.
 
-Potentiometer type
-    The speed can be adjusted continuously, there is no speed limit before a certain
-    height, and then as the stroke height continues to increase, the speed limit becomes
-    linearly smaller and smaller.
+Potentiometer
+    The speed can be continuously adjusted, and there is no speed limit until a certain
+    stroke height is reached. As the stroke height continues to increase, the maximum
+    seam speed will linearly decrease.
 
-Automation rules
-----------------
+    Set maximum speed using parameter :option:`S10`
 
-The following rules apply to the stroke height:
+    Set minimum speed using parameter :option:`S14`
 
-Speed limit during quick stroke adjustment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Set sample value of upper break point using parameter :option:`O21`, stroke level up
+    to which full speed is to be maintained
+
+    Set sample value of upper break point using parameter :option:`O22`, stroke level
+    from which minimum speed is to be effective
+
+    .. figure:: ../_static/common/speed_limit_potentiometer.excalidraw.svg
+        :scale: 100 %
+        :alt: speed_limit_potentiometer
+
+        Correspondence between sampling value parameters and speed parameters
+
+Speed Limitation during quick stroke adjustment
+-----------------------------------------------
 
 If parameter :option:`A35` set to 1, when 2nd sewing foot stroke is activated, the speed
 is reduced down to the desired value of 2nd sewing foot stroke which set by
 :option:`S15`.
 
 Number of stitches 2nd stroke off
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 
 if :option:`A32` is not 0, when switching to 2nd sewing foot stroke, after sewing N
 stitches set by :option:`A32` , the second sewing foot stroke is automatically

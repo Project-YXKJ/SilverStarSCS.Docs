@@ -1,5 +1,3 @@
-.. _assemble:
-
 Assemble
 ========
 
@@ -44,8 +42,7 @@ Parameter List
     -Min  1
     -Unit  --
     -Description
-      | When pedal at :term:`POSITION -1`
-        which function is activated:
+      | When pedal at :term:`POSITION -1` which function is activated:
       | 1 = Sewing foot lift;
       | 2 = Thread trim.
 

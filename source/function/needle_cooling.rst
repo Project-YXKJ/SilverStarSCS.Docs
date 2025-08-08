@@ -1,13 +1,10 @@
-.. _needle_cooling:
-
 Needle cooling
 ==============
 
 Needle cooling can assist in cooling the needle to avoid damage to the sewing material
 and breakage of the upper thread.
 
-How it works?
--------------
+**Functions:**
 
 Above the speed set by :option:`S18`, the needle cooling start;
 

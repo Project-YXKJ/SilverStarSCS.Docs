@@ -1,5 +1,3 @@
-.. _daily_piece_counter:
-
 Daily piece counter
 ===================
 

@@ -1,19 +1,11 @@
-.. _second_stitch_length:
-
 Second stitch length
 ====================
 
-Depending on the equipment, the machine has can be used to sew two different stitch
-lengths, and it can be activated with a press of button.
+Connect a button and configure its corresponding input port for stitch length switching,
+allowing you to quickly switch between two stitch lengths.
 
-Automation rules
-----------------
-
-Automation removes the need to perform manual, repetitive tasks by setting some params.
-The following rules apply to the second stitch length:
-
-Speed limit when long stitch length activated
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Speed Limitation when long stitch length activated
+--------------------------------------------------
 
 If parameter :option:`O33` set to 1, the speed is reduced down to parameter
 :option:`S17` when long stitch length activated.
@@ -29,7 +21,7 @@ Parameter                      Authority  See also
 Stitch Length                  Operator   :option:`A46`
 Max. Speed Long Stitch Length  Operator   :option:`S17`
 Status of Second Stitch Length Technician :option:`A25`
-Stitch length during bartack   Technician :option:`A50`
+Stitch length during backtack  Technician :option:`A50`
 Speed limitation stitch length Technician :option:`O33`
 Time(t1)                       Developer  :option:`O78`
 Duty cycle(t2)                 Developer  :option:`O79`

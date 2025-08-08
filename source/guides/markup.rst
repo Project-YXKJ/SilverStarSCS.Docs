@@ -1,5 +1,3 @@
-.. _markup:
-
 reStructuredText markup
 =======================
 

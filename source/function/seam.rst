@@ -1,40 +1,45 @@
-.. _seam:
-
 Seam
 ====
 
-Basic concepts
---------------
-
 Seam
-    A *seam*, usually is divided into three parts: start bartack, middle sewing, end
-    bartack and thread cutting.
+    A *seam*, usually is divided into three parts: start backtack, middle sewing, end
+    backtack and thread cutting.
 
     A seam starts from stepping on pedal :term:`POSITION 1` for the first time, and ends
     when stepping on :term:`POSITION -2`.
+
+    - Free seam
+    - Stitch Counting seam
+    - W seam
 
 Program
     A *sewing program*, contains at least one seam. Let's call it *Seam-01* , *Seam-02*
     ... *Seam-n* , program controls them sewing automatically, when *Seam-n* is
     finished, program end.
 
-Fixed stitches program
+Program with Free seam
 ----------------------
 
-Fixed stitch sewing is a sewing program that allows users to freely program. Up to 25
-seam segments can be programmed, each with a maximum of 99 stitches.
+Program with Free seam is a special sewing program, it has only one seam section, and
+there is no needle limit in the middle section.
+
+Program with Stitch counting seam
+---------------------------------
+
+Program with Stitch counting seam is a sewing program that contains up to 25 stitch
+counting seams, each segments can be programmed with a maximum of 99 stitches.
 
 The functions of the sewing program are divided into two areas: the global functions
 related to the sewing program and the local functions related to the seam segment.
 
-*Global functions:*
+*Global functions*
 
 - Soft start
 
-*Local functions:*
+*Local functions*
 
 - Number of stitches
-- Start/end bartack
+- Start/end backtack
 - Thread clamp
 - Thread trim
 - Needle position when sewing stops
@@ -49,6 +54,19 @@ After any seam section ends, if you step on the pedal :term:`POSITION -2`, the w
 program will be ended. If the thread trimming has not been executed at this time, the
 thread trimming will be executed and return to the first section, otherwise program will
 be directly returned to the first section.
+
+Program with W seam
+-------------------
+
+Program with W seam is a special sewing program, it has only one seam section, and there
+is no start/end tacking, the program will automatic complete when pedal 1 is stepped on.
+
+The segments is programmed as E, range 1~15. The stitches of first segment is defined as
+A, the stitches of second segment is defined as B, the stitches of other segments are
+defined as C(forward) and D(backward).
+
+When the program is finished, the pedal must be step back to 0 position and then be step
+forward to start the next sewing.
 
 Correction(Needle up/down)
 --------------------------
@@ -75,8 +93,8 @@ E.g, current position is 40°, :option:`D01` is 70°, :option:`D02` is 200°, if
 200° => 200° => 200° ...`` ; if :option:`A01` is 1, when you press the button, the
 motion trace is ``Position 40° => 70° => 70° => 70° ...`` .
 
-Working angle range of manual reverse button
---------------------------------------------
+Working Limitation of manual reverse button
+-------------------------------------------
 
 For some machine types, if the machine sews in reverse suddenly at certain position, the
 needle may break, parameters :option:`D11` and :option:`D12` are to avoid this
@@ -90,28 +108,28 @@ Quick reference
 
 This table summarizes which parameter should be used for seam:
 
-============================================================ ========== =============
-Parameter                                                    Authority  See also
-============================================================ ========== =============
-Speed in W-Sewing                                            Operator   :option:`S05`
-Speed in Program Sewing                                      Operator   :option:`S06`
-Needle Position                                              Operator   :option:`A01`
-Auto Sewing for Program Sewing                               Operator   :option:`A02`
-Correction mode                                              Operator   :option:`A03`
-Block the :term:`Quick Keys`                                 Developer  :option:`A07`
-Mode After Start Bartack in Programmed Sewing                Operator   :option:`A16`
-Auto End bartack and Trim when Programmed Sewing is finished Operator   :option:`A17`
-Correction Mode                                              Operator   :option:`A30`
-Manual Revserse SW.                                          Operator   :option:`A31`
-Upper Needle Position                                        Technician :option:`D01`
-Lower Needle Position                                        Technician :option:`D02`
-Lower Limit of Manual Revserse SW. Working angle range       Operator   :option:`D11`
-Upper Limit of Manual Revserse SW. Working angle range       Operator   :option:`D12`
-Correction: Upper Position                                   Operator   :option:`D15`
-Correction: Lower Position                                   Operator   :option:`D16`
-Sewing mode                                                  Operator   :option:`D18`
-Correction Timming                                           Operator   :option:`O69`
-============================================================ ========== =============
+============================================================= ========== =============
+Parameter                                                     Authority  See also
+============================================================= ========== =============
+Speed in W-Sewing                                             Operator   :option:`S05`
+Speed in Program Sewing                                       Operator   :option:`S06`
+Needle Position                                               Operator   :option:`A01`
+Auto Sewing for Program Sewing                                Operator   :option:`A02`
+Correction mode                                               Operator   :option:`A03`
+Block the :term:`Quick Keys`                                  Developer  :option:`A07`
+Mode After Start Bartack in Programmed Sewing                 Operator   :option:`A16`
+Auto End backtack and Trim when Programmed Sewing is finished Operator   :option:`A17`
+Correction Mode                                               Operator   :option:`A30`
+Manual Revserse SW.                                           Operator   :option:`A31`
+Upper Needle Position                                         Technician :option:`D01`
+Lower Needle Position                                         Technician :option:`D02`
+Lower Limit of Manual Revserse SW. Working angle range        Operator   :option:`D11`
+Upper Limit of Manual Revserse SW. Working angle range        Operator   :option:`D12`
+Correction: Upper Position                                    Operator   :option:`D15`
+Correction: Lower Position                                    Operator   :option:`D16`
+Sewing mode                                                   Operator   :option:`D18`
+Correction Timming                                            Operator   :option:`O69`
+============================================================= ========== =============
 
 Parameter List
 --------------

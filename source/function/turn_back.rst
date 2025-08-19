@@ -40,18 +40,18 @@ Parameter List
     -Max  1000
     -Min  50
     -Unit  spm
-    -Description  Positioning speed of turn back
+    -Description  Positioning speed of turn back.
 
 .. option:: T12
 
     -Max  1000
     -Min  1
     -Unit  ms
-    -Description  Lag time, after which motor restarts and runs in reverse direction
+    -Description  Lag time, after which motor restarts and runs in reverse direction.
 
 .. option:: O35
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Needle position after turn back
+    -Description  Needle position after turn back.

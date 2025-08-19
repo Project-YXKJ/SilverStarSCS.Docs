@@ -34,7 +34,7 @@ Parameter List
     -Max  9999
     -Min  1
     -Unit  ms
-    -Description  Interval time for sending IoT data
+    -Description  Interval time for sending IoT data.
 
 .. option:: A49
 
@@ -109,7 +109,7 @@ Parameter List
     -Max  1
     -Min  0
     -Unit  --
-    -Description  Set to 1,the :term:`MACHINE ZERO` will be reset after power cycle
+    -Description  Set to 1,the :term:`MACHINE ZERO` will be reset after power cycle.
 
 .. option:: O66
 
@@ -143,11 +143,11 @@ Parameter List
     -Max  460
     -Min  400
     -Unit  V
-    -Description  Maximum bus voltage
+    -Description  Maximum bus voltage.
 
 .. option:: I45
 
     -Max  300
     -Min  260
     -Unit  V
-    -Description  Maximum AC voltage
+    -Description  Maximum AC voltage.

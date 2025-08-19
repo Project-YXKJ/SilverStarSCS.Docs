@@ -31,9 +31,9 @@ Here is the output mode code list:
 - 8 = Thread wiper(upper);
 - 9 = Second stitch length;
 - 10 = Needle cooling;
-- 11 = Additional trimmer for short thread trimmer machine;
+- 11 = Additional knife for short trimmer;
 - 12 = Seam center guide;
-- 13 = Zero stitch length for short thread trimmer machine;
+- 13 = Zero stitch length for short trimmer;
 - 14 = Auto corner for 2-needle machine;
 - 15 = Puller；
 - 16 = Thread wiper(lower);
@@ -59,7 +59,7 @@ Let's take an example:
 2. In the parameter list you will find :option:`A71`, which controls the mode of
    Output-01:
 
-       Mode Output-01 -- A 71
+       A71 = Mode Output-01
 
 3. See the section :ref:`output_mode_code_list`, *15* is code of puller, then change
    :option:`A71` to 15:
@@ -98,67 +98,67 @@ Parameter List
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-01
+    -Description  Function definition of Output-01.
 
 .. option:: A72
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-02
+    -Description  Function definition of Output-02.
 
 .. option:: A73
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-03
+    -Description  Function definition of Output-03.
 
 .. option:: A74
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-04
+    -Description  Function definition of Output-04.
 
 .. option:: A75
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-05
+    -Description  Function definition of Output-05.
 
 .. option:: A76
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-06
+    -Description  Function definition of Output-06.
 
 .. option:: A77
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-07
+    -Description  Function definition of Output-07.
 
 .. option:: A78
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-08
+    -Description  Function definition of Output-08.
 
 .. option:: A79
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-09
+    -Description  Function definition of Output-09.
 
 .. option:: A80
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-10
+    -Description  Function definition of Output-10.

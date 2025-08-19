@@ -7,7 +7,8 @@ requires-python = ">=3.11"
 
 [dependency-groups]
 dev = [
-    "docstrfmt"
+    "docstrfmt",
+    "doc8"
 ]
 docs = [
     "furo",
@@ -16,3 +17,6 @@ docs = [
     "sphinx-tabs",
     "sphinx-design", 
 ]
+
+[tool.doc8]
+max-line-length=80

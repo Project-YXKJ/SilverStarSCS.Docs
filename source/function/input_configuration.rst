@@ -36,20 +36,20 @@ Here is the input mode code list:
 - 4 = Forward correction at stop, reverse at running;
 - 5 = Backward correction at stop, reverse at running;
 - 6 = Quick toggle stroke;
-- 7 = Enable/disable backtack at seam start/end;
+- 7 = Toggle start/end backtack on or off temporarily;
 - 8 = Second stitch length;
 - 9 = Additional thread tension;
 - 10 = Pause [1]_ ;
 - 11 = Thread a needle [2]_ ;
-- 12 = Toggle seam center guide raise up/down;
+- 12 = Toggle seam center guide raised or lowered;
 - 13 = Tilt switch;
 - 14 = Up thread broken sensor;
 - 15 = Eye protection sensor;
 - 16 = Slide monitoring sensor;
-- 17 = Toggle sewing foot lifter raise up/down [3]_ ;
+- 17 = Toggle sewing foot lifter raised or lowered [3]_ ;
 - 18 = lifting sewing foot via the knee switch;
 - 19 = Lubricating oil level sensor(Digital type);
-- 20 = Toggle puller raise up/down;
+- 20 = Toggle puller raised or lowered;
 - 21 = Reset bobbin counter;
 - 22 = Simulate electronic handwheel rotation(forwards);
 - 23 = Simulate electronic handwheel rotation(backwards);
@@ -102,7 +102,7 @@ Let's take an example:
 1. You want use the sixth key of the keypad to control the puller;
 2. In parameter list, you find :option:`A41`, which controls the function:
 
-       Mode Keypad-Key6 -- A 41
+       A41 = Mode Keypad-Key6
 
 3. See the section :ref:`input_mode_code_list`, *20* is code of puller function, then
    change :option:`A41` to 20:
@@ -148,116 +148,116 @@ Parameter List
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key1
+    -Description  Function definition of Keypad-Key1.
 
 .. option:: A37
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key2
+    -Description  Function definition of Keypad-Key2.
 
 .. option:: A38
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key3
+    -Description  Function definition of Keypad-Key3.
 
 .. option:: A39
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key4
+    -Description  Function definition of Keypad-Key4.
 
 .. option:: A40
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key5
+    -Description  Function definition of Keypad-Key5.
 
 .. option:: A41
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key6
+    -Description  Function definition of Keypad-Key6.
 
 .. option:: A68
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key7
+    -Description  Function definition of Keypad-Key7.
 
 .. option:: A04
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-01
+    -Description  Function definition of Input-01.
 
 .. option:: A05
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-02
+    -Description  Function definition of Input-02.
 
 .. option:: A81
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-03
+    -Description  Function definition of Input-03.
 
 .. option:: A82
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-04
+    -Description  Function definition of Input-04.
 
 .. option:: A83
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-05
+    -Description  Function definition of Input-05.
 
 .. option:: A84
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-06
+    -Description  Function definition of Input-06.
 
 .. option:: A85
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-07
+    -Description  Function definition of Input-07.
 
 .. option:: A86
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-08
+    -Description  Function definition of Input-08.
 
 .. option:: A87
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-09
+    -Description  Function definition of Input-09.
 
 .. option:: A88
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-10
+    -Description  Function definition of Input-10.

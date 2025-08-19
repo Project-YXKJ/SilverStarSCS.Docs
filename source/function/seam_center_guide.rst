@@ -1,44 +1,40 @@
 Seam center guide
 =================
 
-Automation rules
-----------------
+**Functions:**
 
-Automatic lifting seam center guide is associated with three situations:
+Automatic lifting seam center guide is associated with three cases:
 
 - Sew Foot
-- Bartack(start or end tack) and reverse
+- Start/End backtack and reverse
 - Stroke
 
-**Function:**
+When the sewing foot is lifted, the seam center guide is automatically rised; when the
+foot is lowered, the seam center guide is also lowered.
 
-If the second sewing foot stroke is switched on, the seam center guide is automatically
-raise up, when the stroke has returned to the normal position, the seam center guide has
-also returned to normal settings.
+During the sewing the start/end backtack and reverse, the seam center guide is
+automatically raised, once the start/end backtack is complete, or the reverse is turned
+off, the seam center guide is also lowered.
 
-During the sewing of the backtack/reverse, the seam center guide is automatically raised
-up, when the backtack/reverse completes, the seam center guide has also returned to
-normal settings.
-
-If the second sewing foot stroke is switched on, the seam center guide is automatically
-raised up, when the stroke has returned to the normal position, the seam center guide
-has also returned to normal settings.
+When the second stroke height is activated, the seam center is automatically rised, when
+the stroke returns to its normal position, the seam center guide also lowers
+accordingly.
 
 The mode is set by parameter :option:`A51`, you can use the following table to quickly
 check the parameter values ​​you need to set:
 
-===== ==== =============== ======
-Value Foot Bartack/reverse Stroke
-===== ==== =============== ======
-0     Off  Off             Off
-1     On   Off             Off
-2     Off  On              Off
-3     On   On              Off
-4     Off  Off             On
-5     On   Off             On
-6     Off  On              On
-7     On   On              On
-===== ==== =============== ======
+===== ==== ================ ======
+Value Foot Backtack/reverse Stroke
+===== ==== ================ ======
+0     Off  Off              Off
+1     On   Off              Off
+2     Off  On               Off
+3     On   On               Off
+4     Off  Off              On
+5     On   Off              On
+6     Off  On               On
+7     On   On               On
+===== ==== ================ ======
 
 Quick reference
 ---------------
@@ -50,9 +46,9 @@ Parameter                       Authority  See also
 =============================== ========== =============
 Seam Center Guide               Operator   :option:`A47`
 Auto Mode for Seam Center Guide Technician :option:`A51`
-Status of Seam Center Guide     Developer  :option:`A33`
-Time(t1)                        Developer  :option:`O89`
-Duty cycle(t2)                  Developer  :option:`O90`
+Status(Read Only)               Developer  :option:`A33`
+Full power duration             Developer  :option:`O89`
+Duty cycle after full power     Developer  :option:`O90`
 =============================== ========== =============
 
 Parameter List
@@ -89,19 +85,18 @@ Parameter List
     -Max  1
     -Min  0
     -Unit  --
-    -Description  Status of the seam center guide solenoid(read only)
+    -Description  Status of the seam center guide solenoid, read only.
 
 .. option:: O89
 
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Seam Center Guide: activation duration of in :term:`time period t1`
-                  (100% duty cycle).
+    -Description  Seam Center Guide: full power duration, :term:`time period t1` .
 
 .. option:: O90
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Seam Center Guide: duty cycle[%] in :term:`time period t2`.
+    -Description  Seam Center Guide: duty cycle after full power in :term:`time period t2` .

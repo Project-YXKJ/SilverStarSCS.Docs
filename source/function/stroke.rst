@@ -54,26 +54,26 @@ Quick reference
 
 This table summarizes which parameter should be used for stroke:
 
-================================= ========== =============
-Parameter                         Authority  See also
-================================= ========== =============
-Stroke                            Operator   :option:`A45`
-Max. Speed Stroke Whell Mark 1    Technician :option:`S09`
-Max. Speed for Small Stroke       Technician :option:`S10`
-Max. Speed Stroke Whell Mark 2    Technician :option:`S11`
-Max. Speed Stroke Whell Mark 3    Technician :option:`S12`
-Max. Speed Stroke Whell Mark 4    Technician :option:`S13`
-Max. Speed for High Stroke        Technician :option:`S14`
-Max. Speed for Elevated Stroke    Technician :option:`S15`
-Number of Stitches 2nd Stroke Off Technician :option:`A32`
-Status of Stroke                  Developer  :option:`A24`
-Auto Speed Limit                  Operator   :option:`A35`
-Min. Stroke Border                Technician :option:`O21`
-Max. Stroke Point                 Technician :option:`O22`
-Time(t1)                          Developer  :option:`O76`
-Duty cycle(t2)                    Developer  :option:`O77`
-The Stroke Height Sensor Type     Developer  :option:`O85`
-================================= ========== =============
+========================================= ========== =============
+Parameter                                 Authority  See also
+========================================= ========== =============
+Stroke                                    Operator   :option:`A45`
+Sewing speed for stroke level 1           Technician :option:`S09`
+Sewing speed for low Stroke               Technician :option:`S10`
+Sewing speed for stroke level 2           Technician :option:`S11`
+Sewing speed for stroke level 3           Technician :option:`S12`
+Sewing speed for stroke level 4           Technician :option:`S13`
+Sewing speed for high Stroke              Technician :option:`S14`
+Sewing speed when 2nd Stroke is activated Technician :option:`S15`
+Number of Stitches 2nd Stroke Off         Technician :option:`A32`
+Status(Read Only)                         Developer  :option:`A24`
+Auto Speed Limit                          Operator   :option:`A35`
+Sample value of upper speed break point   Technician :option:`O21`
+Sample value of lower speed break point   Technician :option:`O22`
+Full power duration                       Developer  :option:`O76`
+Duty cycle after full power               Developer  :option:`O77`
+The Stroke Height Sensor Type             Developer  :option:`O85`
+========================================= ========== =============
 
 Parameter List
 --------------
@@ -84,71 +84,65 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Stroke height function:
-      | 0 = Off
-      | 1 = On
+      | Sewing foot stroke:
+      | 0 = Off;
+      | 1 = On.
 
 .. option:: S09
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is switch: Limit speed when turn adjusting
-                  wheel to mark 1 position.
+    -Description  The stroke height knob type is switch: Limit speed when turn adjusting wheel to mark 1 position.
 
 .. option:: S10
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is potentiometer: Limit speed for the small
-                  stork height.
+    -Description  The stroke height knob type is potentiometer: Limit speed for the low stork height.
 
 .. option:: S11
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is switch: Limit speed when turun adjusting
-                  wheel to mark 2 position.
+    -Description  The stroke height knob type is switch: Limit speed when turun adjusting wheel to mark 2 position.
 
 .. option:: S12
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is switch:Limit speed when turun adjusting
-                  wheel to mark 3 position.
+    -Description  The stroke height knob type is switch:Limit speed when turun adjusting wheel to mark 3 position.
 
 .. option:: S13
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is switch: Limit speed when turun adjusting
-                  wheel to mark 4 position.
+    -Description  The stroke height knob type is switch: Limit speed when turun adjusting wheel to mark 4 position.
 
 .. option:: S14
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is potentiometer:Limit speed for the high
-                  stork height.
+    -Description  The stroke height knob type is potentiometer:Limit speed for the high stork height.
 
 .. option:: S15
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Limit speed for the elevated sewing foot storke.
+    -Description  LLimit speed for the maximum stroke height.
 
 .. option:: A24
 
     -Max  1
     -Min  0
     -Unit  --
-    -Description  Status of stroke height solenoid(read only).
+    -Description  Status of stroke height solenoid, read only.
 
 .. option:: A32
 
@@ -156,8 +150,9 @@ Parameter List
     -Min  0
     -Unit  stitches
     -Description
+      | Number of stitches for automatic switch off the stroke:
       | 0 = Manually switch;
-      | Not 0 = Number of stitches after which the second stroke height is automatically deactivated.
+      | Other = number of stitches after which the second sewing foot stroke is automatically switch off.
 
 .. option:: A35
 
@@ -165,38 +160,37 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | If the second stroke is activated, speed reduced down to Parameter S15:
-      | 0 = Off
-      | 1 = On
+      | Speed limit during the second sewing foot stroke:
+      | 0 = Off;
+      | 1 = On, if the second stroke is activated, speed reduced down to Parameter :option:`S15` .
 
 .. option:: O21
 
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  The sensor value at the boundary position of the minimum stroke,
-                  the speed is reduced down as continue to increase stroke height.
+    -Description  Sample value of upper break point, stroke level up to which full speed is to be maintained.
 
 .. option:: O22
 
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  Sensor value at position of maximum stroke.
+    -Description  Sample value of upper break point, stroke level from which minimum speed is to be effective.
 
 .. option:: O76
 
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Stroke height: activation duration of in :term:`time period t1` (100% duty cycle).
+    -Description  Stroke height: full power duration, :term:`time period t1` .
 
 .. option:: O77
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Stroke height: duty cycle[%] in :term:`time period t2`.
+    -Description  Stroke height: duty cycle after full power in :term:`time period t2` .
 
 .. option:: O85
 
@@ -204,6 +198,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-       | 0 = Off;
-       | 1 = Switch;
-       | 2 = Potentiometer.
+      | Type of stroke adjustment sensor:
+      | 0 = No;
+      | 1 = Switch;
+      | 2 = Potentiometer.

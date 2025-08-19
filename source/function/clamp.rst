@@ -1,41 +1,44 @@
 Thread clamp
 ============
 
-At seam start
--------------
+**Functions:**
 
-Switch on at position set by :option:`D07`, switch off at position set by :option:`D08`.
+The timing of the electronic clamp's action is determined by parameter :option:`O29` and
+is divided into three cases:
 
-Action only during the first stitch, reset after thread trim.
+- At seam start
 
-At turning back
----------------
+  Switch on at position set by :option:`D07`, switch off at position set by
+  :option:`D08`.
 
-Switch on during turning back, the Max. permissible time is set by :option:`T15` to
-protect from damage.
+  Action only during the first stitch, reset after thread trim.
 
-At sewing foot lifting
-----------------------
+- At turning back
 
-Switch on during foot lifting, the Max. permissible time is set by :option:`T15` to
-protect from damage.
+  Switch on during turning back, the Max. permissible time is set by :option:`T15` to
+  protect from damage.
+
+- At sewing foot lifting
+
+  Switch on during foot lifting, the Max. permissible time is set by :option:`T15` to
+  protect from damage.
 
 Quick reference
 ---------------
 
 This table summarizes which parameter should be used for clamp:
 
-========================= ========== =============
-Parameter                 Authority  See also
-========================= ========== =============
-Thread clamp              Operator   :option:`A10`
-Action Time of Clamp      Technician :option:`T15`
-Auto Mode for Clamp       Technician :option:`A29`
-Start Clamp Position      Technician :option:`D07`
-Stop Clamp Position       Technician :option:`D08`
-PrePressure duiring Clamp Technician :option:`O42`
-Duty cycle(t2)            Developer  :option:`O48`
-========================= ========== =============
+============================ ========== =============
+Parameter                    Authority  See also
+============================ ========== =============
+Thread clamp                 Operator   :option:`A10`
+Upper limit Switch-on period Technician :option:`T15`
+Thread clamp option          Technician :option:`A29`
+Switch-on angle              Technician :option:`D07`
+Switch-off angle             Technician :option:`D08`
+PrePressure duiring Clamp    Technician :option:`O42`
+Duty cycle after full power  Developer  :option:`O48`
+============================ ========== =============
 
 Parameter List
 --------------
@@ -55,7 +58,7 @@ Parameter List
     -Max  1000
     -Min  1
     -Unit  ms
-    -Description  Action time of clamp when lifting the foot or lifting the needlebar after trim.
+    -Description  This parameter value determines the maximum switch on time of thread clamp during reversal and sewing foot lifting.
 
 .. option:: A29
 
@@ -63,24 +66,25 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | 0 = actions when start sewing;
-      | 1 = actions when start sewing and lifting the needle after trim;
-      | 2 = actions when start sewing and lifting the foot;
-      | 3 = both 1&2.
+      | Thread clamp option:
+      | 0 = At seam start only;
+      | 1 = At seam start and during reversal;
+      | 2 = At seam start and during sewing foot lift;
+      | 3 = At seam start and during reversal and sewing foot lift.
 
 .. option:: D07
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of clamp is activated.
+    -Description  Switch-on angle for thread clamp at seam start.
 
 .. option:: D08
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of clamp is deactivated.
+    -Description  Switch-off angle for thread clamp at seam start.
 
 .. option:: O42
 
@@ -97,4 +101,4 @@ Parameter List
     -Max  100
     -Min  0
     -Unit  %
-    -Description  Clamp:duty cycle[%] in :term:`time period t2`.
+    -Description  Thread clamp: duty cycle after full power in :term:`time period t2` .

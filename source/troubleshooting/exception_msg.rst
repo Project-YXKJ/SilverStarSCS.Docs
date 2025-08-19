@@ -169,7 +169,7 @@ Error message list
 .. exception:: ExcCode112
 
     The motor synchronization signal cannot be detected for a long time after
-    step on the pedal.
+    press the pedal.
 
     .. method:: solution()
 

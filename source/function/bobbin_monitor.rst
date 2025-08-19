@@ -17,7 +17,8 @@ Following steps:
 4. Set :option:`A12` to 1, enable the counter.
 5. Refer to the beginning of this chapter `Bobbin Remaining Amount`_, as the sewing, the
    remaining amount is counted down, when it reaches 0, the machine will stop, and the
-   controller will throw a warning. A reset is needed if you want continue.
+   controller will throw a warning. If you want to continue, you need to perform a reset
+   operation.
 
 How it works?
 ~~~~~~~~~~~~~

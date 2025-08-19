@@ -44,7 +44,7 @@ Parameter List
     -Description
       | When pedal at :term:`POSITION -1` which function is activated:
       | 1 = Sewing foot lift;
-      | 2 = Thread trim.
+      | 2 = Thread trimmer.
 
 .. option:: O03
 
@@ -59,7 +59,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Choice between an native and standing operation pedal:
+      | Select the pedal type:
       | 0 = Native;
       | 1 = Standing Operation Pedal.
 
@@ -69,17 +69,16 @@ Parameter List
     -Min  1
     -Unit  --
     -Description
-      | Choose where :term:`MACHINE ID`
-        is stored:
+      | Choose where :term:`MACHINE ID` is stored:
       | 1 = Stored in the controller;
-      | 2 = Stored in the machine head
+      | 2 = Stored in the machine head.
 
 .. option:: O56
 
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  ADC value by step forwards the pedal to the end position, value > O57
+    -Description  ADC value by press the pedal forward to the end position, value > O57
 
 .. option:: O57
 
@@ -114,7 +113,7 @@ Parameter List
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  ADC value by step forwards the pedal to the end position,value < O60.
+    -Description  ADC value by press the pedal backward to the end position, value < O60.
 
 .. option:: O62
 
@@ -129,6 +128,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
+      | The relation of pedal input and speed:
       | 0 = linear;
       | 1 = 2 lines;
       | 2 = Curve 1: start slowly, end fast;
@@ -142,7 +142,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Type of the keypad:
+      | Select :term:`Keypad` Type:
       | 0 = none；
       | 1 = 6 keys;
       | 2 = 7 keys;

@@ -1,6 +1,8 @@
 Safety Sensor
 =============
 
+Tilt safety/Finger protection/Hook cover protection.
+
 Tilt safaty switch
 ------------------
 

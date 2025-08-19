@@ -32,21 +32,21 @@ Parameter List
     -Max  60
     -Min  1
     -Unit  s
-    -Description  Running time of an endurance cycle, unit:second.
+    -Description  Running time of an endurance cycle.
 
 .. option:: O24
 
     -Max  60
     -Min  1
     -Unit  s
-    -Description  Standby time of an endurance cycle, unit:second.
+    -Description  Standby time of an endurance cycle.
 
 .. option:: O25
 
     -Max  720
     -Min  1
     -Unit  h
-    -Description  Total endurance time, unit:hour.
+    -Description  Total endurance time.
 
 .. option:: O26
 

@@ -3,10 +3,10 @@ Seam
 
 Seam
     A *seam*, usually is divided into three parts: start backtack, middle sewing, end
-    backtack and thread cutting.
+    backtack and thread trimming.
 
-    A seam starts from stepping on pedal :term:`POSITION 1` for the first time, and ends
-    when stepping on :term:`POSITION -2`.
+    A seam starts from pedal forward for the first time, and ends when pedal full
+    heelback(position -2), i.e. thread trimming marks the end.
 
     - Free seam
     - Stitch Counting seam
@@ -15,7 +15,7 @@ Seam
 Program
     A *sewing program*, contains at least one seam. Let's call it *Seam-01* , *Seam-02*
     ... *Seam-n* , program controls them sewing automatically, when *Seam-n* is
-    finished, program end.
+    finished, program end. After that, you can restart the loop.
 
 Program with Free seam
 ----------------------
@@ -27,46 +27,46 @@ Program with Stitch counting seam
 ---------------------------------
 
 Program with Stitch counting seam is a sewing program that contains up to 25 stitch
-counting seams, each segments can be programmed with a maximum of 99 stitches.
+counting seams, each section can be programmed with a maximum of 99 stitches.
 
 The functions of the sewing program are divided into two areas: the global functions
-related to the sewing program and the local functions related to the seam segment.
+related to the sewing program and the local functions related to the seam section.
 
-*Global functions*
+**Global functions**
 
 - Soft start
 
-*Local functions*
+**Local functions**
 
 - Number of stitches
-- Start/end backtack
+- Start/End backtack
 - Thread clamp
-- Thread trim
+- Thread trimmer
 - Needle position when sewing stops
-- Automatic elevation of sewing foot when sewing stops
-- Automatic elevation of sewing foot after thread trim(seam end)
+- Automatic sewing foot lift when sewing stops
+- Automatic sewing foot lift after thread trim(seam end)
 
-The seam segment whose stitch number is equal to 0 is considered as the end of the
-program. If the stitch number of the next segment is 0, the program will return to the
-first segment.
+The seam section with zero stitches in the middle section is considered as the end of
+the program. When the program reaches such a seam, it returns to the first section.
 
-After any seam section ends, if you step on the pedal :term:`POSITION -2`, the whole
-program will be ended. If the thread trimming has not been executed at this time, the
-thread trimming will be executed and return to the first section, otherwise program will
-be directly returned to the first section.
+After any seam section ends, if you press the pedal full heelback(position -2), the
+whole program will be ended. If the thread trimming has not been executed at this time,
+the thread trimming will be executed and return to the first section, otherwise program
+will be directly returned to the first section.
 
 Program with W seam
 -------------------
 
 Program with W seam is a special sewing program, it has only one seam section, and there
-is no start/end tacking, the program will automatic complete when pedal 1 is stepped on.
+is no start/end backtack, the program will automatic complete when step the pedal
+forward.
 
-The segments is programmed as E, range 1~15. The stitches of first segment is defined as
-A, the stitches of second segment is defined as B, the stitches of other segments are
-defined as C(forward) and D(backward).
+The total number of sections is defined as E, range 1~15. The number of stitches in the
+first section is defined as A, the second section is defined as B, the third section is
+defined as C, and the remaining sections is D.
 
-When the program is finished, the pedal must be step back to 0 position and then be step
-forward to start the next sewing.
+When the program is finished, the pedal must be step back to position 0(neutral) and
+then be step forward to start the next sewing.
 
 Correction(Needle up/down)
 --------------------------
@@ -108,45 +108,53 @@ Quick reference
 
 This table summarizes which parameter should be used for seam:
 
-============================================================= ========== =============
-Parameter                                                     Authority  See also
-============================================================= ========== =============
-Speed in W-Sewing                                             Operator   :option:`S05`
-Speed in Program Sewing                                       Operator   :option:`S06`
-Needle Position                                               Operator   :option:`A01`
-Auto Sewing for Program Sewing                                Operator   :option:`A02`
-Correction mode                                               Operator   :option:`A03`
-Block the :term:`Quick Keys`                                  Developer  :option:`A07`
-Mode After Start Bartack in Programmed Sewing                 Operator   :option:`A16`
-Auto End backtack and Trim when Programmed Sewing is finished Operator   :option:`A17`
-Correction Mode                                               Operator   :option:`A30`
-Manual Revserse SW.                                           Operator   :option:`A31`
-Upper Needle Position                                         Technician :option:`D01`
-Lower Needle Position                                         Technician :option:`D02`
-Lower Limit of Manual Revserse SW. Working angle range        Operator   :option:`D11`
-Upper Limit of Manual Revserse SW. Working angle range        Operator   :option:`D12`
-Correction: Upper Position                                    Operator   :option:`D15`
-Correction: Lower Position                                    Operator   :option:`D16`
-Sewing mode                                                   Operator   :option:`D18`
-Correction Timming                                            Operator   :option:`O69`
-============================================================= ========== =============
+========================================================== ========== =============
+Parameter                                                  Authority  See also
+========================================================== ========== =============
+Speed of Free seam                                         Operator   :option:`S01`
+Speed of W seam                                            Operator   :option:`S05`
+Speed of Stitch counting seam                              Operator   :option:`S06`
+Needle Position when sewing stop                           Operator   :option:`A01`
+Middle section can be interrupted for Stitch counting seam Operator   :option:`A02`
+Stop position of Correction                                Operator   :option:`A03`
+Block the :term:`Quick Keys`                               Developer  :option:`A07`
+Auto initiate the seam middle for Stitch counting seam     Operator   :option:`A16`
+Auto initiate the seam end for Stitch counting seam        Operator   :option:`A17`
+Correction Mode                                            Operator   :option:`A30`
+Manual Revserse SW.                                        Operator   :option:`A31`
+Upper Needle Position                                      Technician :option:`D01`
+Lower Needle Position                                      Technician :option:`D02`
+Lower Limit of Manual Revserse SW. Working angle range     Operator   :option:`D11`
+Upper Limit of Manual Revserse SW. Working angle range     Operator   :option:`D12`
+Correction: Upper Position                                 Operator   :option:`D15`
+Correction: Lower Position                                 Operator   :option:`D16`
+Sewing mode                                                Operator   :option:`D18`
+Correction Timming                                         Operator   :option:`O69`
+========================================================== ========== =============
 
 Parameter List
 --------------
+
+.. option:: S01
+
+    -Max  4500
+    -Min  50
+    -Unit  spm
+    -Description  Maximum speed of free seam.
 
 .. option:: S05
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum speed in W-Sewing
+    -Description  Maximum speed of W seam.
 
 .. option:: S06
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum speed in programmed stitches sewing
+    -Description  Maximum speed of stitch counting seam.
 
 .. option:: A01
 
@@ -155,8 +163,8 @@ Parameter List
     -Unit  --
     -Description
       | Postion of the needle when sewing stop:
-      | 0 = in the material;
-      | 1 = upper needle position.
+      | 0 = In the material;
+      | 1 = Upper needle position.
 
 .. option:: A02
 
@@ -164,6 +172,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
+      | Middle section can be interrupted for stitch counting seam:
       | 0 = The middle speed of the sewing is controlled by the pedal;
       | 1 = The sewing is performed automatically.
 
@@ -173,8 +182,9 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
+      | Stop position of correction:
       | 0 = Half stitch;
-      | 1 = One stitch
+      | 1 = One stitch.
 
 .. option:: A07
 
@@ -182,10 +192,9 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Whether to block the :term:`Quick Keys`. It is used to prevent unwanted triggering when the
-        sewing material is too thick. The unit digit of the parameter value indicates the block status:
-      | 0 = Not Blocked;
-      | 1 = Blocked.
+      | Whether to block the Quick Keys on the machine head when the fabric is too thick, to prevent accidental key presses. The units digit of the parameter value indicates the blocking status:
+      | 0 = Unblock;
+      | 1 = Block.
 
 .. option:: A16
 
@@ -193,9 +202,9 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | After start tacking is finished in programmed sewing:
-      | 0 = machine stops and must restart with the pedal;
-      | 1 = sewing continues after end.
+      | Auto sewing the middle section when the start backtack is complete for stitch counting seam:
+      | 0 = The machine stops, and continues when you press the pedal;
+      | 1 = Continuous.
 
 .. option:: A17
 
@@ -203,9 +212,9 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Whether end tacking and trim is automatically activated at seam end im programmed seam:
-      | 0 = continue by pedal;
-      | 1 = automatic.
+      | Auto initiating the seam end when the middle section is complete for stitch counting seam:
+      | 0 = The machine stops, and continues when you press the pedal;
+      | 1 = Continuous.
 
 .. option:: A30
 
@@ -213,8 +222,9 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | 0 = single correction;
-      | 1 = continuous correction.
+      | Correction mode:
+      | 0 = Press the button to correction once;
+      | 1 = Correction and continue until the button is released.
 
 .. option:: A31
 
@@ -222,6 +232,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
+      | Manual revserse switch:
       | 0 = Normal;
       | 1 = Reverse at stop.
 
@@ -230,30 +241,28 @@ Parameter List
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Needle in the upper position.
+    -Description  Holding position of the needle outside of the material.
 
 .. option:: D02
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Needle in the lower position.
+    -Description  Lower needle position at a sewing stop during the seam.
 
 .. option:: D11
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  If the needle position is less than this angle, the manual reverse
-                  sewing button isn't working.
+    -Description  If the needle position is less than this angle, the manual reverse sewing button isn't working.
 
 .. option:: D12
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  If the needle position is greater than this angle, the manual reverse
-                  sewing button isn't working.
+    -Description  If the needle position is greater than this angle, the manual reverse sewing button isn't working.
 
 .. option:: D15
 
@@ -274,7 +283,7 @@ Parameter List
     -Max  3
     -Min  1
     -Unit  --
-    -Description  Sewing mode(read only).
+    -Description  Sewing mode, read only.
 
 .. option:: O69
 
@@ -283,5 +292,5 @@ Parameter List
     -Unit  --
     -Description
       | Choose when you can correction:
-      | 0 = Unavailable after trim;
-      | 1 = Available during machine stop.
+      | 0 = Correction is unavailable after thread trimming;
+      | 1 = No limit.

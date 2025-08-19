@@ -25,8 +25,8 @@ Parameter                     Authority  See also
 Needle Cooling                Operator   :option:`A48`
 Cool Speed                    Technician :option:`S18`
 Needle Cooling Follow Up Time Technician :option:`T16`
-Time(t1)                      Developer  :option:`O93`
-Duty cycle(t2)                Developer  :option:`O94`
+Full power duration           Developer  :option:`O93`
+Duty cycle after full power   Developer  :option:`O94`
 ============================= ========== =============
 
 Parameter List
@@ -54,19 +54,18 @@ Parameter List
     -Max  10
     -Min  0
     -Unit  s
-    -Description  Lag time, after which,needle cooling is deactivaed when speed
-                  lower than cool speed.
+    -Description  Lag time, after which,needle cooling is deactivaed when speed lower than cool speed.
 
 .. option:: O93
 
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Needle cooling: activation duration of in :term:`time period t1` (100% duty cycle).
+    -Description  Needle cooling: full power duration, :term:`time period t1` .
 
 .. option:: O94
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Needle cooling: duty cycle[%] in :term:`time period t2`.
+    -Description  Needle cooling: duty cycle after full power in :term:`time period t2` .

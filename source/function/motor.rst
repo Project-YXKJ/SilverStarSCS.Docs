@@ -80,7 +80,6 @@ This table summarizes which parameter should be used for motor:
 ==================================================== ========== =============
 Parameter                                            Authority  See also
 ==================================================== ========== =============
-Max. Speed                                           Technician :option:`S01`
 Min. Speed                                           Technician :option:`S02`
 Auto Upper Position When Power-on                    Technician :option:`A18`
 Holding Force                                        Technician :option:`A54`
@@ -144,19 +143,12 @@ Divisor of Kd(CPC-h)                                 Developer  :option:`I55`
 Parameter List
 --------------
 
-.. option:: S01
-
-    -Max  4500
-    -Min  50
-    -Unit  spm
-    -Description  Maximum speed by press the pedal to the end position.
-
 .. option:: S02
 
     -Max  1000
     -Min  50
     -Unit  spm
-    -Description  Minimum sewing speed, it is also the needle position up-down speed
+    -Description  Minimum sewing speed, it is also speed when correction(needle up/down).
 
 .. option:: A18
 
@@ -194,16 +186,14 @@ Parameter List
     -Max  720
     -Min  1
     -Unit  --
-    -Description  When the position error is large than the parameters, the motor will
-                  start to adjust the position.
+    -Description  When the position error is large than the parameters, the motor will start to adjust the position.
 
 .. option:: A57
 
     -Max  720
     -Min  1
     -Unit  --
-    -Description  When the position error is small than the parameters,the motor will
-                  standby.
+    -Description  When the position error is small than the parameters, the motor will standby.
 
 .. option:: A66
 
@@ -212,7 +202,7 @@ Parameter List
     -Unit  --
     -Description
       | 0 = The motor holds always;
-      | Not 0 = The holding force turns off after the time set by this parameter.
+      | Other = The holding force turns off after the time set by this parameter.
 
 .. option:: O04
 
@@ -228,8 +218,7 @@ Parameter List
     -Max  5
     -Min  0
     -Unit  --
-    -Description  Speed scaling allows the machine to run at lower speed than the set.
-                  For every 1 increase in the parameter value, it decreases by 1/10
+    -Description  Speed scaling allows the machine to run at lower speed than the set. For every 1 increase in the parameter value, it decreases by 1/10.
 
 .. option:: O37
 
@@ -237,7 +226,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | In Simple mode, no seam program,no trim,no position, etc, except the motor can run:
+      | In Simple mode, no seam program, no trim, no position, etc, except the motor can run:
       | 0 = Off;
       | 1 = On.
 
@@ -247,205 +236,205 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
+      | Look at the motor shaft, setting values:
       | 0 = Counterclockwise;
-      | 1 = Clockwise, viewing the motor from handwheel
+      | 1 = Clockwise.
 
 .. option:: I01
 
     -Max  500
     -Min  150
     -Unit  ms
-    -Description  The time for accelerating from 0rpm to 4500rpm
+    -Description  The time for accelerating from 0rpm to 4500 rpm.
 
 .. option:: I02
 
     -Max  500
     -Min  150
     -Unit  ms
-    -Description  The time for deaccelerating from 4500rpm to 0rpm
+    -Description  The time for deaccelerating from 4500 rpm to 0 rpm.
 
 .. option:: I03
 
     -Max  4096
     -Min  0
     -Unit  --
-    -Description  The offset of electrical angle
+    -Description  The offset of electrical angle.
 
 .. option:: I04
 
     -Max  4096
     -Min  1
     -Unit  --
-    -Description  The number of pulses output by motor encoder corresponding to one
-                  rotation of the machine
+    -Description  The number of pulses output by motor encoder corresponding to one rotation of the machine.
 
 .. option:: I05
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Kp in Closed-loop Speed Control-trimming
+    -Description  Kp in Closed-loop Speed Control-trimming.
 
 .. option:: I06
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Divisor of Kp in Closed-loop Speed Control-trimming
+    -Description  Divisor of Kp in Closed-loop Speed Control-trimming.
 
 .. option:: I07
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Ki in Closed-loop Speed Control-trimming
+    -Description  Ki in Closed-loop Speed Control-trimming.
 
 .. option:: I08
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Divisor of Ki in Closed-loop Speed Control-trimming
+    -Description  Divisor of Ki in Closed-loop Speed Control-trimming.
 
 .. option:: I09
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Kp in Closed-loop Speed Control
+    -Description  Kp in Closed-loop Speed Control.
 
 .. option:: I10
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Divisor of Kp in Closed-loop Speed Control
+    -Description  Divisor of Kp in Closed-loop Speed Control.
 
 .. option:: I11
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Ki in Closed-loop Speed Control
+    -Description  Ki in Closed-loop Speed Control.
 
 .. option:: I12
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Divisor of Ki in Closed-loop Speed Control
+    -Description  Divisor of Ki in Closed-loop Speed Control.
 
 .. option:: I13
 
     -Max  20
     -Min  1
     -Unit  --
-    -Description  Upper Output limit in Closed-loop Speed Control
+    -Description  Upper Output limit in Closed-loop Speed Control.
 
 .. option:: I14
 
     -Max  500
     -Min  0
     -Unit  --
-    -Description  Feedforward in Closed-loop Speed Control
+    -Description  Feedforward in Closed-loop Speed Control.
 
 .. option:: I15
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Kp in Closed-loop Current Control-d axis
+    -Description  Kp in Closed-loop Current Control-d axis.
 
 .. option:: I16
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Divisor of Kp in Closed-loop Current Control-d axis
+    -Description  Divisor of Kp in Closed-loop Current Control-d axis.
 
 .. option:: I17
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Ki in Closed-loop Current Control-d axis
+    -Description  Ki in Closed-loop Current Control-d axis.
 
 .. option:: I18
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Divisor of Ki in Closed-loop Current Control-d axis
+    -Description  Divisor of Ki in Closed-loop Current Control-d axis.
 
 .. option:: I19
 
     -Max  3276
     -Min  0
     -Unit  --
-    -Description  Upper Output limit in Closed-loop Current Control-d axis
+    -Description  Upper Output limit in Closed-loop Current Control-d axis.
 
 .. option:: I20
 
     -Max  3276
     -Min  0
     -Unit  --
-    -Description  Lower Output limit in Closed-loop Current Control-d axis
+    -Description  Lower Output limit in Closed-loop Current Control-d axis.
 
 .. option:: I21
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Kp in Closed-loop Current Control-q axis
+    -Description  Kp in Closed-loop Current Control-q axis.
 
 .. option:: I22
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Divisor of Kp in Closed-loop Current Control-q axis
+    -Description  Divisor of Kp in Closed-loop Current Control-q axis.
 
 .. option:: I23
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Ki in Closed-loop Current Control-q axis
+    -Description  Ki in Closed-loop Current Control-q axis.
 
 .. option:: I24
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Divisor of Ki in Closed-loop Current Control-q axis
+    -Description  Divisor of Ki in Closed-loop Current Control-q axis.
 
 .. option:: I25
 
     -Max  3276
     -Min  0
     -Unit  --
-    -Description  Upper Output limit in Closed-loop Current Control-q axis
+    -Description  Upper Output limit in Closed-loop Current Control-q axis.
 
 .. option:: I26
 
     -Max  3276
     -Min  0
     -Unit  --
-    -Description  Lower Output limit in Closed-loop Current Control-q axis
+    -Description  Lower Output limit in Closed-loop Current Control-q axis.
 
 .. option:: I27
 
     -Max  9999
     -Min  1
     -Unit  --
-    -Description  Lines Per Revolution of the motor encoder
+    -Description  Lines Per Revolution of the motor encoder.
 
 .. option:: I28
 
     -Max  9999
     -Min  0
     -Unit  ms
-    -Description  The maxmum time of stop routine
+    -Description  The maxmum time of stop routine.
 
 .. option:: I30
 
@@ -469,56 +458,56 @@ Parameter List
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  The distance of brake Position-Speed process
+    -Description  The distance of brake Position-Speed process.
 
 .. option:: I38
 
     -Max  500
     -Min  1
     -Unit  spm
-    -Description  The initial speed of brake Position-Speed process
+    -Description  The initial speed of brake Position-Speed process.
 
 .. option:: I39
 
     -Max  100
     -Min  0
     -Unit  spm
-    -Description  The terminal speed of brake Position-Speed process
+    -Description  The terminal speed of brake Position-Speed process.
 
 .. option:: I40
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Kp in Closed-loop Position Control-stop
+    -Description  Kp in Closed-loop Position Control-stop.
 
 .. option:: I41
 
     -Max  99
     -Min  1
     -Unit  --
-    -Description  Divisor of Kp in Closed-loop Position Control-stop
+    -Description  Divisor of Kp in Closed-loop Position Control-stop.
 
 .. option:: I42
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Kd in Closed-loop Position Control-stop
+    -Description  Kd in Closed-loop Position Control-stop.
 
 .. option:: I43
 
     -Max  99
     -Min  1
     -Unit  --
-    -Description  Divisor of Kd in Closed-loop Position Control-stop
+    -Description  Divisor of Kd in Closed-loop Position Control-stop.
 
 .. option:: I46
 
     -Max  40
     -Min  1
     -Unit  0.1A
-    -Description  Maximum current during the motor holding
+    -Description  Maximum current during the motor holding.
 
 .. option:: I47
 
@@ -549,39 +538,39 @@ Parameter List
     -Max  500
     -Min  0
     -Unit  --
-    -Description  Upper Output limit in Closed-loop Position Control-holding
+    -Description  Upper Output limit in Closed-loop Position Control-holding.
 
 .. option:: I51
 
     -Max  100
     -Min  0
     -Unit  --
-    -Description  Lower Output limit in Closed-loop Position Control-holding
+    -Description  Lower Output limit in Closed-loop Position Control-holding.
 
 .. option:: I52
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Kp in Closed-loop Position Control-holding
+    -Description  Kp in Closed-loop Position Control-holding.
 
 .. option:: I53
 
     -Max  99
     -Min  1
     -Unit  --
-    -Description  Divisor of Kp in Closed-loop Position Control-holidng
+    -Description  Divisor of Kp in Closed-loop Position Control-holidng.
 
 .. option:: I54
 
     -Max  9999
     -Min  0
     -Unit  --
-    -Description  Kd in Closed-loop Position Control-holding
+    -Description  Kd in Closed-loop Position Control-holding.
 
 .. option:: I55
 
     -Max  99
     -Min  1
     -Unit  --
-    -Description  Divisor of Kd in Closed-loop Position Control-holidng
+    -Description  Divisor of Kd in Closed-loop Position Control-holidng.

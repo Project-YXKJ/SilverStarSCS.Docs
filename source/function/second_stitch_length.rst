@@ -15,17 +15,17 @@ Quick reference
 
 This table summarizes which parameter should be used for second stitch length:
 
-============================== ========== =============
-Parameter                      Authority  See also
-============================== ========== =============
-Stitch Length                  Operator   :option:`A46`
-Max. Speed Long Stitch Length  Operator   :option:`S17`
-Status of Second Stitch Length Technician :option:`A25`
-Stitch length during backtack  Technician :option:`A50`
-Speed limitation stitch length Technician :option:`O33`
-Time(t1)                       Developer  :option:`O78`
-Duty cycle(t2)                 Developer  :option:`O79`
-============================== ========== =============
+====================================== ========== =============
+Parameter                              Authority  See also
+====================================== ========== =============
+Second Stitch Length                   Operator   :option:`A46`
+Sewing speed during long stitch length Operator   :option:`S17`
+Status(Read Only)                      Technician :option:`A25`
+Stitch length during backtack          Technician :option:`A50`
+Speed limit during long stitch length  Technician :option:`O33`
+Full power duration                    Developer  :option:`O78`
+Duty cycle after full power            Developer  :option:`O79`
+====================================== ========== =============
 
 Parameter List
 --------------
@@ -36,7 +36,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Short/Long stitch length:
+      | Second Stitch Length:
       | 0 = Off;
       | 1 = On.
 
@@ -45,14 +45,14 @@ Parameter List
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Limiting speed if long stitch length is activated
+    -Description  Sewing speed if long stitch length is activated.
 
 .. option:: A25
 
     -Max  1
     -Min  0
     -Unit  --
-    -Description  Status of the second stitch length solenoid(read only)
+    -Description  Status of the second stitch length, read only.
 
 .. option:: A50
 
@@ -60,7 +60,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Choose whether to switch short stitch length automatically:
+      | When sewing start or end backtack, automatically switch to small stitch length:
       | 0 = Off;
       | 1 = On.
 
@@ -70,7 +70,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | The speed is limited during using long stitch length:
+      | Speed limit during long stitch length:
       | 0 = Off;
       | 1 = On.
 
@@ -79,12 +79,11 @@ Parameter List
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Second stitch length: activation duration of in :term:`time period t1`
-                  (100% duty cycle).
+    -Description  Second stitch length:  full power duration, :term:`time period t1` .
 
 .. option:: O79
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Second stitch length: duty cycle[%] in :term:`time period t2`.
+    -Description  Second stitch length: duty cycle after full power in :term:`time period t2`.

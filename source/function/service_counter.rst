@@ -15,7 +15,8 @@ Following steps:
 3. Set :option:`A60` to 1, enable the counter.
 4. Refer to the beginning of this chapter `Service Remaining Amount`_, as the sewing,
    the remaining amount is counted down, when it reaches 0, the machine will stop, and
-   the controller will throw a warning. A reset is needed if you want continue.
+   the controller will throw a warning. If you want to continue, you need to perform a
+   reset operation.
 
 How it works?
 ~~~~~~~~~~~~~

@@ -3,17 +3,17 @@ Sewing foot lift
 
 **Sewing foot is lifted:**
 
-*In the seam*
+- In the seam
 
-- By half heelback, :term:`POSITION -1`
-- Automatically with :option:`A14` setted to 1
-- Press the key that has been allocated for the purpose
+  - By half heelback, :term:`POSITION -1`
+  - Automatically with :option:`A14` setted to 1
+  - Press the key that has been allocated for the purpose
 
-*After thread trimming*
+- After thread trimming
 
-- By heelback, :term:`POSITION -1` or :term:`POSITION -2`
-- Automatically with :option:`A15` setted to 1
-- Press the key that has been allocated for the purpose
+  - By heelback, :term:`POSITION -1` or :term:`POSITION -2`
+  - Automatically with :option:`A15` setted to 1
+  - Press the key that has been allocated for the purpose
 
 It is possible to prevent unintentional foot lifting before thread trimming when
 changing from pedal :term:`POSITION 0` to :term:`POSITION -2` by setting a switch-on
@@ -40,8 +40,8 @@ power using parameter :option:`O05`.
     permanently damaged. Please observe the permissible duty cycle (ED) of the solenoid,
     and set the appropriate value.
 
-Timeout release
----------------
+Scheduled Switch Off
+--------------------
 
 In order to reduce heat generation, timed release can be set.
 
@@ -60,25 +60,25 @@ Quick reference
 
 This table summarizes which parameter should be used for sewing foot:
 
-============================================================= ========== =============
-Parameter                                                     Authority  See also
-============================================================= ========== =============
-Sewing foot lift                                              Operator   :option:`A09`
-Debouncing of Lifting Foot                                    Technician :option:`T05`
-Foot Drop Time                                                Technician :option:`T06`
-Delay Time Before Auto Foot                                   Technician :option:`T10`
-Sewing Foot Lift at Sewing Stop                               Technician :option:`A14`
-Sewing Foot Lift after Trim/at Seam End                       Technician :option:`A15`
-Auto Power-off Foot                                           Technician :option:`O06`
-Foot Max. Lifting Time                                        Technician :option:`O07`
-Soft Foot Falling                                             Technician :option:`O39`
-Time(t1)                                                      Developer  :option:`T07`
-Duty cycle(t2)                                                Developer  :option:`O05`
-Effect of Soft Foot Falling                                   Technician :option:`O40`
-Effect of PrePressure duiring Clamping(Without Start Bartack) Technician :option:`O53`
-Effect of PrePressure duiring Clamping(Soft Start)            Technician :option:`O54`
-Effect of PrePressure duiring Clamping                        Technician :option:`O55`
-============================================================= ========== =============
+============================================================== ========== =============
+Parameter                                                      Authority  See also
+============================================================== ========== =============
+Sewing foot lift                                               Operator   :option:`A09`
+Switch-on delay                                                Technician :option:`T05`
+Start delay Time                                               Technician :option:`T06`
+Switch-on delay for Auto Foot                                  Technician :option:`T10`
+Foot lift at sewing stop                                       Technician :option:`A14`
+Foot lift after trim                                           Technician :option:`A15`
+Scheduled switch off                                           Technician :option:`O06`
+Upper limit Switch-on period                                   Technician :option:`O07`
+Soft Foot Falling                                              Technician :option:`O39`
+Full power duration                                            Developer  :option:`T07`
+Duty cycle after full power                                    Developer  :option:`O05`
+Effect of Soft Foot Falling                                    Technician :option:`O40`
+Effect of PrePressure duiring Clamping(Without Start Backtack) Technician :option:`O53`
+Effect of PrePressure duiring Clamping(Soft Start)             Technician :option:`O54`
+Effect of PrePressure duiring Clamping                         Technician :option:`O55`
+============================================================== ========== =============
 
 Parameter List
 --------------
@@ -98,24 +98,21 @@ Parameter List
     -Max  500
     -Min  1
     -Unit  ms
-    -Description  To avoid unexpected foot lifting when step backwards for trim, the tim
-                  is less and the sensitivity is higher.
+    -Description  Switch-on delay with pedal in position –1 (half heelback), to avoid unexpected foot lifting when step backwards for trim.
 
 .. option:: T06
 
     -Max  500
     -Min  1
     -Unit  ms
-    -Description  Lag time,make sure the foot has pressed the material, after which, sewing
-                  can start.
+    -Description  Start delay after switching off the sewing foot lift signal, make sure the foot has pressed the material, after which, sewing can start.
 
 .. option:: T10
 
     -Max  500
     -Min  1
     -Unit  ms
-    -Description  Lag time,after which,sewing foot is automatically activated
-                  if the function is On.
+    -Description  When the automatic foot function is turned on, the delay time for switch on the foot.
 
 .. option:: A14
 
@@ -143,7 +140,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Whether the magnet of foot automatic power-off after the set time:
+      | Sewing Foot scheduled switch off:
       | 0 = Off;
       | 1 = On.
 
@@ -152,7 +149,7 @@ Parameter List
     -Max  30
     -Min  5
     -Unit  s
-    -Description  If Auto Power-off Foot is turned on, this parameter sets the power-off time.
+    -Description  Set the foot hold time for the scheduled switch off.
 
 .. option:: O39
 
@@ -169,15 +166,14 @@ Parameter List
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Foot lifter:activation duration of in :term:`time period t1`
-                  (100% duty cycle).
+    -Description  Sewing foot lifter: full power duration, :term:`time period t1` .
 
 .. option:: O05
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Foot: duty cycle[%] in :term:`time period t2`
+    -Description  Sewing foot lifter: duty cycle after full power in :term:`time period t2` .
 
 .. option:: O40
 
@@ -191,18 +187,18 @@ Parameter List
     -Max  10
     -Min  1
     -Unit  --
-    -Description  Duty cycle of foot during clamping without start backtack
+    -Description  Duty cycle of foot during clamping without start backtack.
 
 .. option:: O54
 
     -Max  10
     -Min  1
     -Unit  --
-    -Description  Duty cycle of foot during clamping with soft start
+    -Description  Duty cycle of foot during clamping with soft start.
 
 .. option:: O55
 
     -Max  10
     -Min  1
     -Unit  --
-    -Description  Duty cycle of foot during clamping
+    -Description  Duty cycle of foot during clamping.

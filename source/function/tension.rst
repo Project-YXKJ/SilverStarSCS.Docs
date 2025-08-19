@@ -32,11 +32,11 @@ parameter :option:`A27`:
 Automation rules for additional thread tension
 ----------------------------------------------
 
-Automatic activate additional thread tension is associated with three situations:
+Automatic activate additional thread tension is associated with three cases:
 
 - Stroke
-- Bartack at seam begin
-- Bartack at seam end
+- Backtack at seam begin
+- Backtack at seam end
 
 **Function:**
 
@@ -55,39 +55,39 @@ settings.
 The mode is set by parameter :option:`A28`, you can use the following table to quickly
 check the parameter values ​​you need to set:
 
-===== ====== ===================== ===================
-Value Stroke Bartack at seam begin Bartack at seam end
-===== ====== ===================== ===================
-0     Off    Off                   Off
-1     On     Off                   Off
-2     Off    On                    Off
-3     On     On                    Off
-4     Off    Off                   On
-5     On     Off                   On
-6     Off    On                    On
-7     On     On                    On
-===== ====== ===================== ===================
+===== ====== ====================== ====================
+Value Stroke Backtack at seam begin Backtack at seam end
+===== ====== ====================== ====================
+0     Off    Off                    Off
+1     On     Off                    Off
+2     Off    On                     Off
+3     On     On                     Off
+4     Off    Off                    On
+5     On     Off                    On
+6     Off    On                     On
+7     On     On                     On
+===== ====== ====================== ====================
 
 Quick reference
 ---------------
 
 This table summarizes which parameter should be used for tension:
 
-===================================== ========== =============
-Parameter                             Authority  See also
-===================================== ========== =============
-Status of Additional Thread Tension   Developer  :option:`A26`
-Auto mode for tension at foot lifting Technician :option:`A27`
-Auto Additional Thread Tension        Technician :option:`A28`
-Start Tension Position                Technician :option:`D13`
-Stop Tension Position                 Technician :option:`D14`
-Time(t1)                              Developer  :option:`O49`
-Duty cycle(t2)                        Developer  :option:`O50`
-Tension Max. Lifting Time             Developer  :option:`O75`
-Time(t1)                              Developer  :option:`O86`
-Duty cycle(t2)                        Developer  :option:`O87`
-Addition tension solenoid work mode   Developer  :option:`O88`
-===================================== ========== =============
+==================================================== ========== =============
+Parameter                                            Authority  See also
+==================================================== ========== =============
+Status of Additional Thread Tension(Read Only)       Developer  :option:`A26`
+Auto mode for tension at foot lifting                Technician :option:`A27`
+Auto Additional Thread Tension                       Technician :option:`A28`
+Switch-on angle                                      Technician :option:`D13`
+Switch-off angle                                     Technician :option:`D14`
+Full power duration(Main thread tension)             Developer  :option:`O49`
+Duty cycle after full power(Main thread tension)     Developer  :option:`O50`
+Upper limit Switch-on period                         Developer  :option:`O75`
+Full power duration(Addition thread tension)         Developer  :option:`O86`
+Duty cycle after full power(Addition thread tension) Developer  :option:`O87`
+Addition tension solenoid work mode                  Developer  :option:`O88`
+==================================================== ========== =============
 
 Parameter List
 --------------
@@ -97,7 +97,7 @@ Parameter List
     -Max  1
     -Min  0
     -Unit  --
-    -Description  Status of the additional tension solenoid(read only).
+    -Description  Status of the additional tension solenoid, read only.
 
 .. option:: A27
 
@@ -132,28 +132,28 @@ Parameter List
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of tenison is activated during trimming.
+    -Description  Switch-on angle for thread tension during trimming.
 
 .. option:: D14
 
     -Max  359
     -Min  0
     -Unit  1°
-    -Description  Position when the magnet of tension is deactivated during trimming.
+    -Description  Switch-off angle for thread tension during trimming.
 
 .. option:: O49
 
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Tension:activation duration of in :term:`time period t1` (100% duty cycle).
+    -Description  Main thread tension: full power duration, :term:`time period t1` .
 
 .. option:: O50
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Tension:duty cycle[%] in :term:`time period t2`.
+    -Description  Main thread tension: duty cycle after full power in :term:`time period t2` .
 
 .. option:: O75
 
@@ -169,14 +169,14 @@ Parameter List
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Additional Tension:activation duration of in :term:`time period t1` (100% duty cycle).
+    -Description  Additional thread tension: full power duration, :term:`time period t1` .
 
 .. option:: O87
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Additional Tension:duty cycle[%] in :term:`time period t2`.
+    -Description  Additional thread tension: duty cycle after full power in :term:`time period t2` .
 
 .. option:: O88
 
@@ -184,5 +184,5 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | 0 = solenoid on,tension off;
-      | 1 = solenoid on,tension on.
+      | 0 = When additional thread tension is switch on, the tension device is lifted;
+      | 1 = When additional thread tension is switch off, the tension device is lifted;

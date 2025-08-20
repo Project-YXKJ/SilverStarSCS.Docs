@@ -21,7 +21,7 @@ Following steps:
    operation.
 
 How it works?
-~~~~~~~~~~~~~
+-------------
 
 Here is a formula:
 

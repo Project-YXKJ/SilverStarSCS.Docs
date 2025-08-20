@@ -24,7 +24,11 @@ Synchronization signal source
 
 Some are called upper needle position signals. For direct drive, this signal is built
 into the motor; for those using belts or gear, a separately installed sensor is
-generally used.
+generally used. Please ensure that the setting value of parameter :option:`O04` matches
+the actual situation.
+
+- 0 = External
+- 1 = Integrated inside the motor
 
 Holding force at Standstill
 ---------------------------
@@ -47,12 +51,14 @@ Holding force takes effect at standstill:
 The maximum time the holding force can keep takes effect is determined by parameter
 :option:`A66` :
 
-Equal to 0
-    Holding force take effect always when stopped.
+- Equal to 0
 
-Not equal to 0
-    holding force only take effect for a certain period of time when stop, and then the
-    motor is released. At this time, the parameter value represents the effective time.
+  Holding force take effect always when stopped.
+
+- Not equal to 0
+
+  Holding force only take effect for a certain period of time when stop, and then the
+  motor is released. At this time, the parameter value represents the effective time.
 
 The effect can be set by parameter :option:`I46`, The higher the set value, the stronger
 the holding force.
@@ -69,7 +75,7 @@ characteristic (light/heavy).
 The following applies to all setting values: the lower setting value, the stronger
 reaction!
 
-With a low parameter value on a light machine, the characteristic may appear coarse. In
+With a low parameter value on a heavy machine, the characteristic may appear coarse. In
 this case, one should try to optimize the settings.
 
 Quick reference
@@ -210,8 +216,8 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | 0 = Extern;
-      | 1 = Motor.
+      | 0 = External;
+      | 1 = Integrated inside the motor
 
 .. option:: O36
 

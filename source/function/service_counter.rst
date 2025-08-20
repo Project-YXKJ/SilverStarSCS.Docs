@@ -19,7 +19,7 @@ Following steps:
    reset operation.
 
 How it works?
-~~~~~~~~~~~~~
+-------------
 
 .. math::
     :name: Service Remaining Amount

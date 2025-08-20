@@ -12,7 +12,7 @@ automatically limit the speed when adjusting the wheel. There are two types of
 components used for speed limiting:
 
 Switch
-    Gear speed limiter, if 2 switches are installed, it will have four gears.
+    Gear speed limiter, if two switches are installed, it will have four gears.
 
 Potentiometer
     The speed can be continuously adjusted, and there is no speed limit until a certain

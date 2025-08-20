@@ -55,9 +55,9 @@ Follow the steps:
 
 Let's take an example:
 
-1. You want set the mode of Output-01 to the puller;
+1. You want set the mode of *Output-01* to the puller;
 2. In the parameter list you will find :option:`A71`, which controls the mode of
-   Output-01:
+   *Output-01* :
 
        A71 = Mode Output-01
 

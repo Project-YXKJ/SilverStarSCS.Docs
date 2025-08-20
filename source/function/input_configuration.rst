@@ -99,8 +99,8 @@ Follow the steps:
 
 Let's take an example:
 
-1. You want use the sixth key of the keypad to control the puller;
-2. In parameter list, you find :option:`A41`, which controls the function:
+1. You want use *Keypad-Key6* to control the puller;
+2. In parameter list, you find :option:`A41`, which controls the mode of *Keypad-Key6* :
 
        A41 = Mode Keypad-Key6
 

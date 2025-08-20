@@ -1,7 +1,7 @@
 Sewing foot lift
 ================
 
-**Sewing foot is lifted:**
+**Sewing foot is lifted**
 
 - In the seam
 
@@ -19,7 +19,7 @@ It is possible to prevent unintentional foot lifting before thread trimming when
 changing from pedal :term:`POSITION 0` to :term:`POSITION -2` by setting a switch-on
 delay using parameter :option:`T05`.
 
-**Sewing foot is lowered:**
+**Sewing foot is lowered**
 
 - Press pedal to :term:`POSITION 0`
 - Press pedal to :term:`POSITION 1`

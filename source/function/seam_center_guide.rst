@@ -23,18 +23,18 @@ accordingly.
 The mode is set by parameter :option:`A51`, you can use the following table to quickly
 check the parameter values ​​you need to set:
 
-===== ==== ================ ======
-Value Foot Backtack/reverse Stroke
-===== ==== ================ ======
-0     Off  Off              Off
-1     On   Off              Off
-2     Off  On               Off
-3     On   On               Off
-4     Off  Off              On
-5     On   Off              On
-6     Off  On               On
-7     On   On               On
-===== ==== ================ ======
+===== ==== ==================== ======
+Value Foot Backtack and reverse Stroke
+===== ==== ==================== ======
+0     Off  Off                  Off
+1     On   Off                  Off
+2     Off  On                   Off
+3     On   On                   Off
+4     Off  Off                  On
+5     On   Off                  On
+6     Off  On                   On
+7     On   On                   On
+===== ==== ==================== ======
 
 Quick reference
 ---------------

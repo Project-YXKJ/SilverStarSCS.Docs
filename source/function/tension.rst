@@ -38,8 +38,6 @@ Automatic activate additional thread tension is associated with three cases:
 - Backtack at seam begin
 - Backtack at seam end
 
-**Function:**
-
 If the second sewing foot stroke is switched on, the additional thread tension is
 automatically activated, when the stroke has returned to the normal position, the
 additional thread tension has also returned to normal settings.

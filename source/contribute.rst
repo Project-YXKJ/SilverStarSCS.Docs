@@ -197,6 +197,12 @@ Conventions and mechanics
     In body text, write numbers one through nine as words. For other numbers or numbers
     in tables, use numerals.
 
+Chinese Copywriting Guidelines
+------------------------------
+
+Refer to `this repository
+<https://github.com/sparanoid/chinese-copywriting-guidelines>`_ .
+
 .. _contributors:
 
 Contributions

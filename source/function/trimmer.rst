@@ -21,25 +21,26 @@ Quick reference
 
 This table summarizes which parameter should be used for thread trimmer:
 
-======================================================== ========== =============
-Parameter                                                Authority  See also
-======================================================== ========== =============
-Thread trimmer                                           Operator   :option:`A06`
-Thread trimming speed                                    Technician :option:`S07`
-Short Trimmer                                            Technician :option:`A42`
-Short Trimmer Stitches                                   Technician :option:`A67`
-Switch-on angle for Thread trimmer                       Technician :option:`D03`
-Switch-off angle for Thread trimmer                      Technician :option:`D04`
-Switch-on angle for Movable Knife of Short Trimmer       Technician :option:`D17`
-Switch-off angle for Movable Knife of Short Trimmer      Technician :option:`D18`
-Switch-on angle for Reverse of Short Trimmer             Technician :option:`D19`
-Switch-off angle for Reverse of Short Trimmer            Technician :option:`D20`
-Switch-on angle for Zero stitch length of Short Trimmer  Technician :option:`D21`
-Switch-off angle for Zero stitch length of Short Trimmer Technician :option:`D22`
-Pedal Reset After Trim                                   Technician :option:`O38`
-Full power duration                                      Developer  :option:`O95`
-Duty cycle after full power                              Developer  :option:`O96`
-======================================================== ========== =============
+========================================================== ========== =============
+Parameter                                                  Authority  See also
+========================================================== ========== =============
+Thread trimmer                                             Operator   :option:`A06`
+Thread trimming speed                                      Technician :option:`S07`
+Short Trimmer                                              Technician :option:`A42`
+Short Trimmer Stitches                                     Technician :option:`A67`
+Switch-on angle for Thread trimmer                         Technician :option:`D03`
+Switch-off angle for Thread trimmer                        Technician :option:`D04`
+Switch-on angle for Movable Knife of Short Trimmer         Technician :option:`D17`
+Switch-off angle for Movable Knife of Short Trimmer        Technician :option:`D18`
+Switch-on angle for Reverse of Short Trimmer               Technician :option:`D19`
+Switch-off angle for Reverse of Short Trimmer              Technician :option:`D20`
+Switch-on angle for Zero stitch length of Short Trimmer    Technician :option:`D21`
+Switch-off angle for Zero stitch length of Short Trimmer   Technician :option:`D22`
+Pedal Reset After Trim                                     Technician :option:`O38`
+Zero stitch length of short trimmer: Full power duration   Developer  :option:`O95`
+Zero stitch length of short trimmer: Duty cycle after full Developer  :option:`O96`
+power
+========================================================== ========== =============
 
 Parameter List
 --------------

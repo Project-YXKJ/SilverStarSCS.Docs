@@ -19,6 +19,11 @@ Potentiometer
     stroke height is reached. As the stroke height continues to increase, the maximum
     seam speed will linearly decrease.
 
+    .. important::
+
+        Ensure that the larger the stroke level, the smaller the potentiometer sampling
+        value.
+
     Set maximum speed using parameter :option:`S10`
 
     Set minimum speed using parameter :option:`S14`

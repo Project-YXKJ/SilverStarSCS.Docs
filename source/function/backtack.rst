@@ -2,15 +2,17 @@ Start/End backtack
 ==================
 
 The start backtack starts by pressing the pedal forward at the beginning of the seam.
+
 Start backtack are executed automatically at speed :option:`S03`. They cannot be
 interrupted. If softstart is running parallel, the respective lower speed is prevailing.
 
-The end backtack in a seam with stitch counting starts by heelback at the end of
-counting. The stitch regulator is immediately enabled from machine standstill. After
-lowering the sewing foot, the switch-on point of the stitch regulator is delayed by the
-time :option:`T06` (start delay after switching off the sewing foot lift signal)，and
-machine start is delayed by the time :option:`T01` (start delay after switching on the
-stitch regulator).
+The end backtack starts when pedal full heelback(position -2) at the middle of the seam.
+
+The stitch regulator is immediately enabled from machine standstill. After lowering the
+sewing foot, the switch-on point of the stitch regulator is delayed by the time
+:option:`T06` (start delay after switching off the sewing foot lift signal)，and machine
+start is delayed by the time :option:`T01` (start delay after switching on the stitch
+regulator).
 
 Stitch optimization
 -------------------

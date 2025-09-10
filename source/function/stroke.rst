@@ -7,14 +7,21 @@ heights, and it can be activated with a press of button.
 Speed Limitation via adjusting wheel
 ------------------------------------
 
-If a component is installed in the stroke adjustment wheel, the system will
-automatically limit the speed when adjusting the wheel. There are two types of
-components used for speed limiting:
+If additional components are installed within the stroke adjustment wheel, the system
+will automatically limit speed when adjusting the wheel. Parameter :option:`O85` is used
+to set the component type. If set to 0, no speed limit applies when adjusting stroke
+using the wheel.
+
+There are two types of components used for speed limiting:
 
 Switch
+    Set :option:`O85` to 1.
+
     Gear speed limiter, if two switches are installed, it will have four gears.
 
 Potentiometer
+    Set :option:`O85` to 2.
+
     The speed can be continuously adjusted, and there is no speed limit until a certain
     stroke height is reached. As the stroke height continues to increase, the maximum
     seam speed will linearly decrease.

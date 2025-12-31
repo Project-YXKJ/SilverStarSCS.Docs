@@ -78,6 +78,25 @@ reaction!
 With a low parameter value on a heavy machine, the characteristic may appear coarse. In
 this case, one should try to optimize the settings.
 
+Braking Mode
+------------
+
+The braking mode dictates the deceleration rate and the smoothness at the target position, 
+which is determined by parameter :option:`I30`.
+
+The system initiates the braking sequence when the carriage/needle reaches a specific distance 
+from the target position, defined by parameter :option:`I37`.
+
+- 0: Creep Mode (Slow-down Mode)
+  
+  Requires a longer braking distance. While the average speed during deceleration is lower than in Position Mode, 
+  the overall motion profile is significantly smoother.
+
+- 1: Position Mode
+  
+  Requires a shorter braking distance and maintains a higher average speed during the deceleration phase. 
+  However, it may result in mechanical oscillation or overshoot at the target position.
+
 Quick reference
 ---------------
 
@@ -125,7 +144,7 @@ Upper Output limit(CCC-q)                            Developer  :option:`I25`
 Lower Output limit(CCC-q)                            Developer  :option:`I26`
 Encoder Resolution                                   Developer  :option:`I27`
 Stop Routine Max. Time                               Developer  :option:`I28`
-Stop mode                                            Developer  :option:`I30`
+Brake Mode                                           Developer  :option:`I30`
 MACHINE ZERO Offset                                  Developer  :option:`I33`
 Distance(Brake P-S process)                          Developer  :option:`I37`
 Initial Speed(Brake P-S process)                     Developer  :option:`I38`
@@ -448,9 +467,9 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Select the mode of reaching the target position:
-      | 0 = Speed mode;
-      | 1 = Position mode.
+      | Braking Mode Selection
+      | 0 = Creep Mode (Slow-down Mode);
+      | 1 = Position Mode.
 
 .. option:: I33
 

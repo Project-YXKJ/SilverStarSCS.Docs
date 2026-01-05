@@ -85,28 +85,28 @@ Parameter List
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  ADC value of the border between :term:`POSITION 2` and :term:`POSITION 1`, O56 < value < O58
+    -Description  ADC value of the border between :term:`POSITION 2` and :term:`POSITION 1`, O58 < value < O56
 
 .. option:: O58
 
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  ADC value of the border between :term:`POSITION 1` and :term:`POSITION 0`, O57 < value < O59
+    -Description  ADC value of the border between :term:`POSITION 1` and :term:`POSITION 0`, O59 < value < O57
 
 .. option:: O59
 
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  ADC value of the border between :term:`POSITION 0` and :term:`POSITION -1`, O58 < value < O60
+    -Description  ADC value of the border between :term:`POSITION 0` and :term:`POSITION -1`, O60 < value < O58
 
 .. option:: O60
 
     -Max  4095
     -Min  0
     -Unit  --
-    -Description  ADC value of the border between :term:`POSITION -1` and :term:`POSITION -2`, O59 < value < O61
+    -Description  ADC value of the border between :term:`POSITION -1` and :term:`POSITION -2`, O61 < value < O59
 
 .. option:: O61
 

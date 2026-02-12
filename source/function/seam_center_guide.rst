@@ -46,7 +46,7 @@ Parameter                       Authority  See also
 =============================== ========== =============
 Seam Center Guide               Operator   :option:`A47`
 Auto Mode for Seam Center Guide Technician :option:`A51`
-Status(Read Only)               Developer  :option:`A33`
+Seam Center Guide Status        Developer  :option:`A33`
 Full power duration             Developer  :option:`O89`
 Duty cycle after full power     Developer  :option:`O90`
 =============================== ========== =============
@@ -85,18 +85,18 @@ Parameter List
     -Max  1
     -Min  0
     -Unit  --
-    -Description  Status of the seam center guide solenoid, read only.
+    -Description  Status of whether the seam center guide is activated, read only.
 
 .. option:: O89
 
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Seam Center Guide: full power duration, :term:`time period t1` .
+    -Description  Seam Center Guide: Activation duration in :term:`time period t1` (100% duty cycle).
 
 .. option:: O90
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Seam Center Guide: duty cycle after full power in :term:`time period t2` .
+    -Description  Seam Center Guide: Duty cycle [%] in :term:`time period t2` .

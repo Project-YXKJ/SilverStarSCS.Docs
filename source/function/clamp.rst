@@ -28,17 +28,17 @@ Quick reference
 
 This table summarizes which parameter should be used for clamp:
 
-============================ ========== =============
-Parameter                    Authority  See also
-============================ ========== =============
-Thread clamp                 Operator   :option:`A10`
-Upper limit Switch-on period Technician :option:`T15`
-Thread clamp option          Technician :option:`A29`
-Switch-on angle              Technician :option:`D07`
-Switch-off angle             Technician :option:`D08`
-PrePressure duiring Clamp    Technician :option:`O42`
-Duty cycle after full power  Developer  :option:`O48`
-============================ ========== =============
+=========================== ========== =============
+Parameter                   Authority  See also
+=========================== ========== =============
+Thread Clamp                Operator   :option:`A10`
+Thread Clamp Limit Time     Technician :option:`T15`
+Thread Clamp option         Technician :option:`A29`
+Switch-on angle             Technician :option:`D07`
+Switch-off angle            Technician :option:`D08`
+PrePressure duiring Clamp   Technician :option:`O42`
+Duty cycle after full power Developer  :option:`O48`
+=========================== ========== =============
 
 Parameter List
 --------------
@@ -58,7 +58,7 @@ Parameter List
     -Max  1000
     -Min  1
     -Unit  ms
-    -Description  This parameter value determines the maximum switch on time of thread clamp during reversal and sewing foot lifting.
+    -Description  Switch-on duration for the thread clamp during foot lift or needle bar positioning.
 
 .. option:: A29
 
@@ -68,9 +68,9 @@ Parameter List
     -Description
       | Thread clamp option:
       | 0 = At seam start only;
-      | 1 = At seam start and during reversal;
+      | 1 = At seam start and during turn back;
       | 2 = At seam start and during sewing foot lift;
-      | 3 = At seam start and during reversal and sewing foot lift.
+      | 3 = At seam start, during turn back and sewing foot lift.
 
 .. option:: D07
 
@@ -101,4 +101,4 @@ Parameter List
     -Max  100
     -Min  0
     -Unit  %
-    -Description  Thread clamp: duty cycle after full power in :term:`time period t2` .
+    -Description  Thread clamp: Duty cycle [%] in :term:`time period t2` .

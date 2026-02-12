@@ -108,29 +108,29 @@ Quick reference
 
 This table summarizes which parameter should be used for seam:
 
-========================================================== ========== =============
-Parameter                                                  Authority  See also
-========================================================== ========== =============
-Speed of Free seam                                         Operator   :option:`S01`
-Speed of W seam                                            Operator   :option:`S05`
-Speed of Stitch counting seam                              Operator   :option:`S06`
-Needle Position when sewing stop                           Operator   :option:`A01`
-Middle section can be interrupted for Stitch counting seam Operator   :option:`A02`
-Stop position of Correction                                Operator   :option:`A03`
-Block the :term:`Quick Keys`                               Developer  :option:`A07`
-Auto initiate the seam middle for Stitch counting seam     Operator   :option:`A16`
-Auto initiate the seam end for Stitch counting seam        Operator   :option:`A17`
-Correction Mode                                            Operator   :option:`A30`
-Manual Revserse SW.                                        Operator   :option:`A31`
-Upper Needle Position                                      Technician :option:`D01`
-Lower Needle Position                                      Technician :option:`D02`
-Lower Limit of Manual Revserse SW. Working angle range     Operator   :option:`D11`
-Upper Limit of Manual Revserse SW. Working angle range     Operator   :option:`D12`
-Correction: Upper Position                                 Operator   :option:`D15`
-Correction: Lower Position                                 Operator   :option:`D16`
-Sewing mode                                                Operator   :option:`D18`
-Correction Timming                                         Operator   :option:`O69`
-========================================================== ========== =============
+====================================================== ========== =============
+Parameter                                              Authority  See also
+====================================================== ========== =============
+Free Seam Speed                                        Operator   :option:`S01`
+W-Seam Speed                                           Operator   :option:`S05`
+Stitch Counting Seam Speed                             Operator   :option:`S06`
+Needle Position when sewing stop                       Operator   :option:`A01`
+Auto Run for Stitch Counting Seam                      Operator   :option:`A02`
+Correction: Half or Full stitch                        Operator   :option:`A03`
+Block the :term:`Quick Keys`                           Developer  :option:`A07`
+Auto Mode After Start Backtack (Stitch Counting)       Operator   :option:`A16`
+Auto seam end (Stitch counting)                        Operator   :option:`A17`
+Correction Mode                                        Operator   :option:`A30`
+Manual Reverse with Stop                               Operator   :option:`A31`
+Upper Needle Position                                  Technician :option:`D01`
+Lower Needle Position                                  Technician :option:`D02`
+Lower Limit of Manual Revserse SW. Working angle range Operator   :option:`D11`
+Upper Limit of Manual Revserse SW. Working angle range Operator   :option:`D12`
+Correction: Upper Position                             Operator   :option:`D15`
+Correction: Lower Position                             Operator   :option:`D16`
+Sewing mode                                            Operator   :option:`D18`
+Correction Timming                                     Operator   :option:`O69`
+====================================================== ========== =============
 
 Parameter List
 --------------
@@ -140,21 +140,21 @@ Parameter List
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum speed of free seam.
+    -Description  Maximum sewing speed in Free Seam mode.
 
 .. option:: S05
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum speed of W seam.
+    -Description  Maximum sewing speed in W-Sewing mode.
 
 .. option:: S06
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum speed of stitch counting seam.
+    -Description  Maximum speed in Stitch Counting Seam mode.
 
 .. option:: A01
 
@@ -162,9 +162,9 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Postion of the needle when sewing stop:
-      | 0 = In the material;
-      | 1 = Upper needle position.
+      | Needle position when sewing stop:
+      | 0 = Down position, in the material;
+      | 1 = Up position.
 
 .. option:: A02
 
@@ -183,8 +183,8 @@ Parameter List
     -Unit  --
     -Description
       | Stop position of correction:
-      | 0 = Half stitch;
-      | 1 = One stitch.
+      | 0 = Half stitch, alternating between Up and Down position;
+      | 1 = Full stitch, Motor runs one complete stitch cycle.
 
 .. option:: A07
 
@@ -202,9 +202,9 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Auto sewing the middle section when the start backtack is complete for stitch counting seam:
-      | 0 = The machine stops, and continues when you press the pedal;
-      | 1 = Continuous.
+      | Machine behavior after start backtack in a stitch counting seam:
+      | 0 = Stop and wait for pedal;
+      | 1 = Continue automatically.
 
 .. option:: A17
 
@@ -212,9 +212,9 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Auto initiating the seam end when the middle section is complete for stitch counting seam:
-      | 0 = The machine stops, and continues when you press the pedal;
-      | 1 = Continuous.
+      | How to initiate the seam end when the middle section is complete in a stitch counting seam:
+      | 0 = Stop and wait for pedal;
+      | 1 = Continue automatically.
 
 .. option:: A30
 
@@ -232,9 +232,9 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Manual revserse switch:
+      | Manual Reverse with Stop:
       | 0 = Normal;
-      | 1 = Reverse at stop.
+      | 1 = Machine stops to switch to reverse when the button is pressed, then resumes automatically.
 
 .. option:: D01
 

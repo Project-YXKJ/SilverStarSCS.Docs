@@ -32,7 +32,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Soft start when a new seam start:
+      | Reduced sewing speed for the first few stitches at the start of the seam:
       | 0 = Off;
       | 1 = On.
 
@@ -41,7 +41,7 @@ Parameter List
     -Max  1000
     -Min  50
     -Unit  spm
-    -Description  Speed for soft start.
+    -Description  Sewing speed during the soft start.
 
 .. option:: O01
 

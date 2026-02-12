@@ -14,7 +14,7 @@ This table summarizes which parameter should be used for assemble:
 ============================================================== ========= =============
 Parameter                                                      Authority See also
 ============================================================== ========= =============
-Function :term:`POSITION -1`                                   Developer :option:`A19`
+Pedal :term:`POSITION -1` Function                             Developer :option:`A19`
 :term:`MACHINE ID`                                             Developer :option:`O03`
 Pedal Type                                                     Developer :option:`O08`
 :term:`MACHINE ID` Storage Location                            Developer :option:`O30`
@@ -42,7 +42,7 @@ Parameter List
     -Min  1
     -Unit  --
     -Description
-      | When pedal at :term:`POSITION -1` which function is activated:
+      | Action performed when the pedal is at half heel-back position:
       | 1 = Sewing foot lift;
       | 2 = Thread trimmer.
 

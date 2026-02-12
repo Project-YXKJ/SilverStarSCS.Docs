@@ -5,14 +5,22 @@ Input ports allow you to connect devices that send data to controller. These dev
 include buttons, optoelectronics, potentiometers, proximity sensor, and more. There are
 two main categories of input ports: analog and digital.
 
-Each input port is flexible. In most cases, you can freely configure the mode of each
-port according to your actual wiring.
+- Digital Ports: For binary signals (on/off).
+- Analog Ports: For continuous variable signals (e.g., potentiometer stroke).
+
+**All input ports are flexible.** You can assign the desired functions to any available
+port using a unified function code table. However, the allocation is subject to hardware
+compatibility: the physical properties of the port must match the required function
+type.
 
 .. attention::
 
-    Make sure that two input ports are not configured for the same mode.
+    Ensure that no two input ports are assigned to the same function. Redundant
+    configurations may lead to logic conflicts.
 
-    Depending on the model, some mode may not be available.
+    Function assignment is restricted by hardware capability. For instance, an analog
+    input function cannot be assigned to a digital input port, despite sharing the same
+    function code list.
 
 Keypad
 ------
@@ -27,7 +35,7 @@ ports. It is neither analog nor digital. Usually, it can only be configured as t
 Input Mode Code List
 --------------------
 
-Here is the input mode code list:
+The following table lists the available function codes for input port configuration.
 
 - 0 = No function;
 - 1 = Manual reverse;
@@ -99,10 +107,10 @@ Follow the steps:
 
 Let's take an example:
 
-1. You want use *Keypad-Key6* to control the puller;
-2. In parameter list, you find :option:`A41`, which controls the mode of *Keypad-Key6* :
+1. You want use *Keypad-06* to control the puller;
+2. In parameter list, you find :option:`A41`, which controls the mode of *Keypad-06* :
 
-       A41 = Mode Keypad-Key6
+       A41 = Mode Keypad-06
 
 3. See the section :ref:`input_mode_code_list`, *20* is code of puller function, then
    change :option:`A41` to 20:
@@ -118,27 +126,27 @@ Quick reference
 
 This table summarizes which parameter should be used for input configuration:
 
-================ ========== =============
-Parameter        Authority  See also
-================ ========== =============
-Mode Keypad-Key1 Technician :option:`A36`
-Mode Keypad-Key2 Technician :option:`A37`
-Mode Keypad-Key3 Technician :option:`A38`
-Mode Keypad-Key4 Technician :option:`A39`
-Mode Keypad-Key5 Technician :option:`A40`
-Mode Keypad-Key6 Technician :option:`A41`
-Mode Keypad-Key7 Technician :option:`A68`
-Mode Input-01    Technician :option:`A04`
-Mode Input-02    Technician :option:`A05`
-Mode Input-03    Technician :option:`A81`
-Mode Input-04    Technician :option:`A82`
-Mode Input-05    Technician :option:`A83`
-Mode Input-06    Technician :option:`A84`
-Mode Input-07    Technician :option:`A85`
-Mode Input-08    Technician :option:`A86`
-Mode Input-09    Technician :option:`A87`
-Mode Input-10    Technician :option:`A88`
-================ ========== =============
+============== ========== =============
+Parameter      Authority  See also
+============== ========== =============
+Mode Keypad-01 Technician :option:`A36`
+Mode Keypad-02 Technician :option:`A37`
+Mode Keypad-03 Technician :option:`A38`
+Mode Keypad-04 Technician :option:`A39`
+Mode Keypad-05 Technician :option:`A40`
+Mode Keypad-06 Technician :option:`A41`
+Mode Keypad-07 Technician :option:`A68`
+Mode Input-01  Technician :option:`A04`
+Mode Input-02  Technician :option:`A05`
+Mode Input-03  Technician :option:`A81`
+Mode Input-04  Technician :option:`A82`
+Mode Input-05  Technician :option:`A83`
+Mode Input-06  Technician :option:`A84`
+Mode Input-07  Technician :option:`A85`
+Mode Input-08  Technician :option:`A86`
+Mode Input-09  Technician :option:`A87`
+Mode Input-10  Technician :option:`A88`
+============== ========== =============
 
 Parameter List
 --------------
@@ -148,116 +156,116 @@ Parameter List
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key1.
+    -Description  Functional assignment for Keypad-01.
 
 .. option:: A37
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key2.
+    -Description  Functional assignment for Keypad-02.
 
 .. option:: A38
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key3.
+    -Description  Functional assignment for Keypad-03.
 
 .. option:: A39
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key4.
+    -Description  Functional assignment for Keypad-04.
 
 .. option:: A40
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key5.
+    -Description  Functional assignment for Keypad-05.
 
 .. option:: A41
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key6.
+    -Description  Functional assignment for Keypad-06.
 
 .. option:: A68
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Keypad-Key7.
+    -Description  Functional assignment for Keypad-07.
 
 .. option:: A04
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-01.
+    -Description  Functional assignment for Input-01.
 
 .. option:: A05
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-02.
+    -Description  Functional assignment for Input-02.
 
 .. option:: A81
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-03.
+    -Description  Functional assignment for Input-03.
 
 .. option:: A82
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-04.
+    -Description  Functional assignment for Input-04.
 
 .. option:: A83
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-05.
+    -Description  Functional assignment for Input-05.
 
 .. option:: A84
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-06.
+    -Description  Functional assignment for Input-06.
 
 .. option:: A85
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-07.
+    -Description  Functional assignment for Input-07.
 
 .. option:: A86
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-08.
+    -Description  Functional assignment for Input-08.
 
 .. option:: A87
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-09.
+    -Description  Functional assignment for Input-09.
 
 .. option:: A88
 
     -Max  199
     -Min  0
     -Unit  --
-    -Description  Function definition of Input-10.
+    -Description  Functional assignment for Input-10.

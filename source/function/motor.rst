@@ -81,21 +81,22 @@ this case, one should try to optimize the settings.
 Braking Mode
 ------------
 
-The braking mode dictates the deceleration rate and the smoothness at the target position, 
-which is determined by parameter :option:`I30`.
+The braking mode dictates the deceleration rate and the smoothness at the target
+position, which is determined by parameter :option:`I30`.
 
-The system initiates the braking sequence when the carriage/needle reaches a specific distance 
-from the target position, defined by parameter :option:`I37`.
+The system initiates the braking sequence when the carriage/needle reaches a specific
+distance from the target position, defined by parameter :option:`I37`.
 
 - 0: Creep Mode (Slow-down Mode)
-  
-  Requires a longer braking distance. While the average speed during deceleration is lower than in Position Mode, 
-  the overall motion profile is significantly smoother.
+
+  Requires a longer braking distance. While the average speed during deceleration is
+  lower than in Position Mode, the overall motion profile is significantly smoother.
 
 - 1: Position Mode
-  
-  Requires a shorter braking distance and maintains a higher average speed during the deceleration phase. 
-  However, it may result in mechanical oscillation or overshoot at the target position.
+
+  Requires a shorter braking distance and maintains a higher average speed during the
+  deceleration phase. However, it may result in mechanical oscillation or overshoot at
+  the target position.
 
 Quick reference
 ---------------
@@ -106,7 +107,7 @@ This table summarizes which parameter should be used for motor:
 Parameter                                            Authority  See also
 ==================================================== ========== =============
 Min. Speed                                           Technician :option:`S02`
-Auto Upper Position When Power-on                    Technician :option:`A18`
+Auto Needle Up at Power-on                           Technician :option:`A18`
 Holding Force                                        Technician :option:`A54`
 Step Angle(CPC-h)                                    Developer  :option:`A55`
 Position Error Threshold takes effect(CPC-h)         Developer  :option:`A56`
@@ -173,7 +174,7 @@ Parameter List
     -Max  1000
     -Min  50
     -Unit  spm
-    -Description  Minimum sewing speed, it is also speed when correction(needle up/down).
+    -Description  Sewing speed at Pedal :term:`POSITION 1`; also used as the single stitch speed.
 
 .. option:: A18
 
@@ -181,7 +182,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Needle position is automatically moved to upper position after power-on:
+      | Needle automatically moves to the upper position after power-on:
       | 0 = Off;
       | 1 = On.
 

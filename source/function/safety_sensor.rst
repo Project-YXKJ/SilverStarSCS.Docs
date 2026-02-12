@@ -11,13 +11,13 @@ Quick reference
 
 This table summarizes which parameter should be used for tilt safaty switch:
 
-================================ ========== =============
-Parameter                        Authority  See also
-================================ ========== =============
-Debouncing of Tilt safaty Switch Technician :option:`T09`
-Warning: Tilt safety switch      Technician :option:`O31`
-Sensor Polarity(Tilt Safety)     Technician :option:`O32`
-================================ ========== =============
+============================ ========== =============
+Parameter                    Authority  See also
+============================ ========== =============
+Tilt Switch Debounce         Technician :option:`T09`
+Warning: Tilt safety switch  Technician :option:`O31`
+Sensor Polarity(Tilt Safety) Technician :option:`O32`
+============================ ========== =============
 
 Eye protection
 --------------
@@ -74,7 +74,7 @@ This table summarizes which parameter should be used for upper thread breaking:
 Parameter                              Authority  See also
 ====================================== ========== =============
 Warning: Upper Thread Break            Technician :option:`A53`
-Debouncing of Upper Thread Break       Technician :option:`T13`
+Upper Thread Monitor Debounce          Technician :option:`T13`
 Sensor Polarity(Upper Thread Breaking) Technician :option:`O92`
 ====================================== ========== =============
 
@@ -86,8 +86,7 @@ Parameter List
     -Max  1000
     -Min  1
     -Unit  ms
-    -Description  The time is less and the sensitivity is higher, a perfect debounce
-                  time can prevent false alarm.
+    -Description  Delay for the signal evaluation of the tilt switch input.
 
 .. option:: O31
 
@@ -162,8 +161,7 @@ Parameter List
     -Max  1000
     -Min  1
     -Unit  ms
-    -Description  The time is less and the sensitivity is higher, a perfect debounce
-      time can prevent false alarm.
+    -Description  Delay for the signal evaluation of the upper thread monitor.
 
 .. option:: O92
 

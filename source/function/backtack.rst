@@ -55,7 +55,7 @@ The time it takes for stitch regulator release into position, adjust parameter
 Ornamental backtack
 -------------------
 
-Function "Ornamental backtack" is used to ensure the seam looks better.
+Function "Ornamental backtack" is used to ensure perfectly overlapping stitches.
 
 Difference from the standard start backtack:
 
@@ -101,12 +101,12 @@ Parameter                                                  Authority  See also
 ========================================================== ========== =============
 Start Backtack Speed                                       Operator   :option:`S03`
 End Backtack Speed                                         Operator   :option:`S04`
-Start Ornamental backtack                                  Operator   :option:`A20`
-End Ornamental backtack                                    Operator   :option:`A22`
-Time to move into position                                 Technician :option:`T01`
-Time to release into position                              Technician :option:`T02`
-Ornamental backtack stop time                              Technician :option:`T11`
-Maintain Speed after Start Backtack                        Technician :option:`A34`
+Start Ornamental Backtack (SD)                             Operator   :option:`A20`
+End Ornamental Backtack (SD)                               Operator   :option:`A22`
+Switching time: Forward to Reverse                         Technician :option:`T01`
+Switching time: Forward to Reverse                         Technician :option:`T02`
+Ornamental Backtack (SD) Delay                             Technician :option:`T11`
+Speed hold after start backtack                            Technician :option:`A34`
 Switch-on angle                                            Technician :option:`D05`
 Switch-off angle                                           Technician :option:`D06`
 Scheduled Switch Off                                       Technician :option:`O10`
@@ -127,14 +127,14 @@ Parameter List
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum speed in backtack at seam begin.
+    -Description  Maximum speed for backtack at the seam start.
 
 .. option:: S04
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Maximum speed in backtack at seam end.
+    -Description  Maximum speed for backtack at the seam end.
 
 .. option:: A20
 
@@ -142,7 +142,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Start ornamental backtack:
+      | Motor stops at direction change to ensure perfectly overlapping stitches:
       | 0 = Off;
       | 1 = On.
 
@@ -152,7 +152,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | End ornamental backtack:
+      | Motor stops at direction change during end backtack to ensure overlapping stitches:
       | 0 = Off;
       | 1 = On.
 
@@ -161,21 +161,21 @@ Parameter List
     -Max  200
     -Min  1
     -Unit  ms
-    -Description  Time required for the stitch regulator to move into position.
+    -Description  Time required for the reverse feed mechanism to complete the transition from forward to reverse feed upon solenoid switch-on.
 
 .. option:: T02
 
     -Max  200
     -Min  1
     -Unit  ms
-    -Description  Time required for the stitch regulator to release into position.
+    -Description  Time required for the reverse feed mechanism to restore from reverse to forward feed upon solenoid switch-off.
 
 .. option:: T11
 
     -Max  1000
     -Min  1
     -Unit  ms
-    -Description  Waiting time, when ornamental backtack is enabled, the motor stops at the sewing direction change point and waits for the stitch regulator action to be completed.
+    -Description  Stop time at direction change of the individual backtack sections to reach the specified stitch lengths.
 
 .. option:: A34
 
@@ -183,7 +183,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | After start backtack, it is possible to delay the activation of the pedal, in order to maintain the speed at the end of backtack:
+      | Maintains constant speed after start backtack for better seam quality, delay the activation of the pedal:
       | 0 = Off;
       | 1 = On.
 
@@ -251,11 +251,11 @@ Parameter List
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Stitch regulator: full power duration, :term:`time period t1` .
+    -Description  Stitch regulator: Activation duration in :term:`time period t1` (100% duty cycle).
 
 .. option:: O09
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Stitch regulator: duty cycle after full power in :term:`time period t2` .
+    -Description  Stitch regulator: Duty cycle [%] in :term:`time period t2` .

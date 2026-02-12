@@ -4,21 +4,24 @@ Output configuration
 Output ports allow the controller to to drive components on the machine. These
 components mainly include various types of electromagnets and solenoid valves.
 
-Each output port is flexible. In most cases, you can freely configure the mode of each
-port according to your actual wiring.
+**All output ports are flexible.** Each output function can be assigned to any available
+port using the unified function code table.
 
 .. attention::
 
-    Make sure that two output ports are not configured for the same mode.
+    Ensure that each output function is assigned to only one port. Configuring multiple
+    output ports for the same function is not permitted and may cause hardware damage or
+    logic conflicts.
 
-    Depending on the model, some mode may not be available.
+    The availability of certain output functions depends strictly on the machine head
+    type and the installed mechanical components.
 
 .. _output_mode_code_list:
 
 Output Mode Code List
 ---------------------
 
-Here is the output mode code list:
+The following table lists the available function codes for output port configuration.
 
 - 0 = No function;
 - 1 = Thread trimmer;
@@ -98,67 +101,67 @@ Parameter List
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-01.
+    -Description  Functional assignment for Output-01.
 
 .. option:: A72
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-02.
+    -Description  Functional assignment for Output-02.
 
 .. option:: A73
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-03.
+    -Description  Functional assignment for Output-03.
 
 .. option:: A74
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-04.
+    -Description  Functional assignment for Output-04.
 
 .. option:: A75
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-05.
+    -Description  Functional assignment for Output-05.
 
 .. option:: A76
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-06.
+    -Description  Functional assignment for Output-06.
 
 .. option:: A77
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-07.
+    -Description  Functional assignment for Output-07.
 
 .. option:: A78
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-08.
+    -Description  Functional assignment for Output-08.
 
 .. option:: A79
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-09.
+    -Description  Functional assignment for Output-09.
 
 .. option:: A80
 
     -Max  99
     -Min  0
     -Unit  --
-    -Description  Function definition of Output-10.
+    -Description  Functional assignment for Output-10.

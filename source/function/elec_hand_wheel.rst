@@ -23,7 +23,7 @@ This table summarizes which parameter should be used for electric handwheel:
 ==================================== ========== =============
 Parameter                            Authority  See also
 ==================================== ========== =============
-Elec-Handwheel                       Operator   :option:`A23`
+Electronic Handwheel                 Operator   :option:`A23`
 Rotation Direction of Elec-Handwheel Technician :option:`A43`
 Elec-Handwheel Step                  Technician :option:`O83`
 Elec-Handwheel Speed                 Technician :option:`O84`
@@ -38,7 +38,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Electronic handwheel:
+      | Function switch for the electronic handwheel:
       | 0 = Off;
       | 1 = On.
 

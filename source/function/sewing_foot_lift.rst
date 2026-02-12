@@ -65,9 +65,9 @@ Parameter                                                      Authority  See al
 ============================================================== ========== =============
 Sewing foot lift                                               Operator   :option:`A09`
 Switch-on delay                                                Technician :option:`T05`
-Start delay Time                                               Technician :option:`T06`
+Sewing Foot Drop Time                                          Technician :option:`T06`
 Switch-on delay for Auto Foot                                  Technician :option:`T10`
-Foot lift at sewing stop                                       Technician :option:`A14`
+Foot Lift at Stop in Seam                                      Technician :option:`A14`
 Foot lift after trim                                           Technician :option:`A15`
 Scheduled switch off                                           Technician :option:`O06`
 Upper limit Switch-on period                                   Technician :option:`O07`
@@ -105,14 +105,14 @@ Parameter List
     -Max  500
     -Min  1
     -Unit  ms
-    -Description  Start delay after switching off the sewing foot lift signal, make sure the foot has pressed the material, after which, sewing can start.
+    -Description  Delay after switch-off of the sewing foot lift before sewing starts, make sure the foot has pressed the material.
 
 .. option:: T10
 
     -Max  500
     -Min  1
     -Unit  ms
-    -Description  When the automatic foot function is turned on, the delay time for switch on the foot.
+    -Description  Delay after machine stop before the sewing foot lift is automatically activated.
 
 .. option:: A14
 
@@ -120,7 +120,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Automatic lifting sewing foot when stop in the middle of seam:
+      | Automatic foot lifting when stopping in the middle of a seam:
       | 0 = Off;
       | 1 = On.
 
@@ -130,7 +130,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Automatic lifting sewing foot after trim or at seam end:
+      | Automatic foot lifting after thread trimming or at the seam end:
       | 0 = Off;
       | 1 = On.
 
@@ -166,14 +166,14 @@ Parameter List
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Sewing foot lifter: full power duration, :term:`time period t1` .
+    -Description  Sewing foot lifter: Activation duration in :term:`time period t1` (100% duty cycle).
 
 .. option:: O05
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Sewing foot lifter: duty cycle after full power in :term:`time period t2` .
+    -Description  Sewing foot lifter: duty cycle [%] in the :term:`time period t2` .
 
 .. option:: O40
 

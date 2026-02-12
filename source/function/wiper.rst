@@ -22,13 +22,13 @@ Quick reference
 
 This table summarizes which parameter should be used for wiper:
 
-================================= ========== =============
-Parameter                         Authority  See also
-================================= ========== =============
-Thread wiper                      Operator   :option:`A08`
-Switch-on delay for thread wiper  Technician :option:`T03`
-Switch-on period for thread wiper Technician :option:`T04`
-================================= ========== =============
+============ ========== =============
+Parameter    Authority  See also
+============ ========== =============
+Thread wiper Operator   :option:`A08`
+Wiper Delay  Technician :option:`T03`
+Wiper Time   Technician :option:`T04`
+============ ========== =============
 
 Parameter List
 --------------
@@ -49,11 +49,11 @@ Parameter List
     -Max  200
     -Min  1
     -Unit  ms
-    -Description  Switch on delay time for thread wiper after trim.
+    -Description  Delay time between thread trimming and wiper activation.
 
 .. option:: T04
 
     -Max  200
     -Min  1
     -Unit  ms
-    -Description  Switch on period for thread wiper.
+    -Description  Switch-on duration for the wiper.

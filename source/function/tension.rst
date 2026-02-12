@@ -74,9 +74,9 @@ This table summarizes which parameter should be used for tension:
 ==================================================== ========== =============
 Parameter                                            Authority  See also
 ==================================================== ========== =============
-Status of Additional Thread Tension(Read Only)       Developer  :option:`A26`
-Auto mode for tension at foot lifting                Technician :option:`A27`
-Auto Additional Thread Tension                       Technician :option:`A28`
+Additional Tension Status                            Developer  :option:`A26`
+Tension Release Option at Foot Lift                  Technician :option:`A27`
+Additional Tension Auto Mode                         Technician :option:`A28`
 Switch-on angle                                      Technician :option:`D13`
 Switch-off angle                                     Technician :option:`D14`
 Full power duration(Main thread tension)             Developer  :option:`O49`
@@ -95,7 +95,7 @@ Parameter List
     -Max  1
     -Min  0
     -Unit  --
-    -Description  Status of the additional tension solenoid, read only.
+    -Description  Whether the additional thread tension is activated, read only.
 
 .. option:: A27
 
@@ -103,11 +103,11 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Mode for lifting the tension during active sewing foot lift:
-      | 0 = tension is not lifted;
-      | 1 = tension is lifted as the foot is lifted during sewing;
-      | 2 = tension is lifted after trim;
-      | 3 = tension is lifted as the foot is lifted during sewing and after trim.
+      | Mode for tension release when sewing foot is lifted:
+      | 0 = No release;
+      | 1 = Release during sewing only;
+      | 2 = Release after trimming only;
+      | 3 = Release both during sewing and after trimming.
 
 .. option:: A28
 
@@ -117,13 +117,13 @@ Parameter List
     -Description
       | Auto mode for additional thread tension:
       | 0 = Off;
-      | 1 = Automatically activated when the second sewing foot stroke is switched on;
-      | 2 = Automatically activated during backtack at seam begin;
-      | 3 = 1 & 2;
-      | 4 = Automatically activated during backtack at seam end;
-      | 5 = 1 & 4;
-      | 6 = 2 & 4;
-      | 7 = 1 & 2 & 4.
+      | 1 = Active during quick stroke adjustment;
+      | 2 = Active during start backtack;
+      | 3 = 1 + 2;
+      | 4 = Active during end backtack;
+      | 5 = 1 + 4;
+      | 6 = 2 + 4;
+      | 7 = 1 + 2 + 4.
 
 .. option:: D13
 
@@ -144,14 +144,14 @@ Parameter List
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Main thread tension: full power duration, :term:`time period t1` .
+    -Description  Main thread tension: Activation duration in :term:`time period t1` (100% duty cycle).
 
 .. option:: O50
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Main thread tension: duty cycle after full power in :term:`time period t2` .
+    -Description  Main thread tension: Duty cycle [%] in :term:`time period t2` .
 
 .. option:: O75
 
@@ -167,14 +167,14 @@ Parameter List
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Additional thread tension: full power duration, :term:`time period t1` .
+    -Description  Additional thread tension: Activation duration in :term:`time period t1` (100% duty cycle).
 
 .. option:: O87
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Additional thread tension: duty cycle after full power in :term:`time period t2` .
+    -Description  Additional thread tension: Duty cycle [%] in :term:`time period t2` .
 
 .. option:: O88
 

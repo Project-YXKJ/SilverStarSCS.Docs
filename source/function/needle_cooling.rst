@@ -23,8 +23,8 @@ This table summarizes which parameter should be used for needle cooling:
 Parameter                     Authority  See also
 ============================= ========== =============
 Needle Cooling                Operator   :option:`A48`
-Cool Speed                    Technician :option:`S18`
-Needle Cooling Follow Up Time Technician :option:`T16`
+Needle Cooling Speed          Technician :option:`S18`
+Needle Cooling Follow-on Time Technician :option:`T16`
 Full power duration           Developer  :option:`O93`
 Duty cycle after full power   Developer  :option:`O94`
 ============================= ========== =============
@@ -47,25 +47,25 @@ Parameter List
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Above this speed,the needle cooling is activated.
+    -Description  The needle cooling is activated when sewing speed exceeds this value.
 
 .. option:: T16
 
     -Max  10
     -Min  0
     -Unit  s
-    -Description  Lag time, after which,needle cooling is deactivaed when speed lower than cool speed.
+    -Description  Switch-off delay for the needle cooling after the sewing speed drops below the threshold.
 
 .. option:: O93
 
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Needle cooling: full power duration, :term:`time period t1` .
+    -Description  Needle cooling: Activation duration in :term:`time period t1` (100% duty cycle).
 
 .. option:: O94
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Needle cooling: duty cycle after full power in :term:`time period t2` .
+    -Description  Needle cooling: Duty cycle [%] in :term:`time period t2` .

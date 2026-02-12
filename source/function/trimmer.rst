@@ -60,7 +60,7 @@ Parameter List
     -Max  1000
     -Min  50
     -Unit  spm
-    -Description  Thread trimming speed.
+    -Description  TMachine speed during the thread trimming.
 
 .. option:: A42
 
@@ -150,11 +150,11 @@ Parameter List
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Zero stitch length of short trimmer: full power duration, :term:`time period t1` .
+    -Description  Zero stitch length of short trimmer: Activation duration in :term:`time period t1` (100% duty cycle).
 
 .. option:: O96
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Zero stitch length of short trimmer: duty cycle after full power in :term:`time period t2` .
+    -Description  Zero stitch length of short trimmer: Duty cycle [%] in :term:`time period t2` .

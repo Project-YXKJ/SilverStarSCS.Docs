@@ -22,9 +22,9 @@ Switch
 Potentiometer
     Set :option:`O85` to 2.
 
-    The speed can be continuously adjusted, and there is no speed limit until a certain
-    stroke height is reached. As the stroke height continues to increase, the maximum
-    seam speed will linearly decrease.
+    The sew speed is continuously adjustable, The system maintains the full programmed
+    speed until a certain stroke height is reached As the stroke height continues to
+    increase, the maximum sewing speed will decrease linearly.
 
     .. important::
 
@@ -54,8 +54,8 @@ If parameter :option:`A35` set to 1, when 2nd sewing foot stroke is activated, t
 is reduced down to the desired value of 2nd sewing foot stroke which set by
 :option:`S15`.
 
-Number of stitches 2nd stroke off
----------------------------------
+Quick Stroke Auto-Reset Stitches
+--------------------------------
 
 if :option:`A32` is not 0, when switching to 2nd sewing foot stroke, after sewing N
 stitches set by :option:`A32` , the second sewing foot stroke is automatically
@@ -66,26 +66,26 @@ Quick reference
 
 This table summarizes which parameter should be used for stroke:
 
-========================================= ========== =============
-Parameter                                 Authority  See also
-========================================= ========== =============
-Stroke                                    Operator   :option:`A45`
-Sewing speed for stroke level 1           Technician :option:`S09`
-Sewing speed for low Stroke               Technician :option:`S10`
-Sewing speed for stroke level 2           Technician :option:`S11`
-Sewing speed for stroke level 3           Technician :option:`S12`
-Sewing speed for stroke level 4           Technician :option:`S13`
-Sewing speed for high Stroke              Technician :option:`S14`
-Sewing speed when 2nd Stroke is activated Technician :option:`S15`
-Number of Stitches 2nd Stroke Off         Technician :option:`A32`
-Status(Read Only)                         Developer  :option:`A24`
-Auto Speed Limit                          Operator   :option:`A35`
-Sample value of upper speed break point   Technician :option:`O21`
-Sample value of lower speed break point   Technician :option:`O22`
-Full power duration                       Developer  :option:`O76`
-Duty cycle after full power               Developer  :option:`O77`
-The Stroke Height Sensor Type             Developer  :option:`O85`
-========================================= ========== =============
+======================================== ========== =============
+Parameter                                Authority  See also
+======================================== ========== =============
+Stroke                                   Operator   :option:`A45`
+Stroke Limit Level 1                     Technician :option:`S09`
+Linear Limit Start                       Technician :option:`S10`
+Stroke Limit Level 2                     Technician :option:`S11`
+Stroke Limit Level 3                     Technician :option:`S12`
+Stroke Limit Level 1                     Technician :option:`S13`
+Linear Limit End                         Technician :option:`S14`
+Max. Stroke Speed Limit                  Technician :option:`S15`
+Quick Stroke Auto-Reset Stitches         Technician :option:`A32`
+Quick Stroke Adjustment Status           Developer  :option:`A24`
+Quick stroke adjustment auto speed limit Operator   :option:`A35`
+Sample value of upper speed break point  Technician :option:`O21`
+Sample value of lower speed break point  Technician :option:`O22`
+Full power duration                      Developer  :option:`O76`
+Duty cycle after full power              Developer  :option:`O77`
+The Stroke Height Sensor Type            Developer  :option:`O85`
+======================================== ========== =============
 
 Parameter List
 --------------
@@ -105,56 +105,56 @@ Parameter List
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is switch: Limit speed when turn adjusting wheel to mark 1 position.
+    -Description  Switch Type: Speed limit for stroke height level 1.
 
 .. option:: S10
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is potentiometer: Limit speed for the low stork height.
+    -Description  Potentiometer Type: Limit speed at the start of linear reduction.
 
 .. option:: S11
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is switch: Limit speed when turun adjusting wheel to mark 2 position.
+    -Description  Switch Type: Speed limit for stroke height level 2.
 
 .. option:: S12
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is switch:Limit speed when turun adjusting wheel to mark 3 position.
+    -Description  Switch Type: Speed limit for stroke height level 3.
 
 .. option:: S13
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is switch: Limit speed when turun adjusting wheel to mark 4 position.
+    -Description  Switch Type: Speed limit for stroke height level 4.
 
 .. option:: S14
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  The stroke height knob type is potentiometer:Limit speed for the high stork height.
+    -Description  Potentiometer Type: Limit speed at the end of linear reduction.
 
 .. option:: S15
 
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  LLimit speed for the maximum stroke height.
+    -Description  Safety speed limit at the maximum stroke height.
 
 .. option:: A24
 
     -Max  1
     -Min  0
     -Unit  --
-    -Description  Status of stroke height solenoid, read only.
+    -Description  Activation status of the Quick Stroke Adjustment, read only.
 
 .. option:: A32
 
@@ -162,9 +162,9 @@ Parameter List
     -Min  0
     -Unit  stitches
     -Description
-      | Number of stitches for automatic switch off the stroke:
-      | 0 = Manually switch;
-      | Other = number of stitches after which the second sewing foot stroke is automatically switch off.
+      | Number of stitches for automatic switch off the 2nd stroke:
+      | 0 = Manual;
+      | Not 0 = Number of stitches after which quick stroke adjustment is automatically deactivated.
 
 .. option:: A35
 
@@ -172,7 +172,7 @@ Parameter List
     -Min  0
     -Unit  --
     -Description
-      | Speed limit during the second sewing foot stroke:
+      | Limits maximum speed automatically during quick stroke adjustment:
       | 0 = Off;
       | 1 = On, if the second stroke is activated, speed reduced down to Parameter :option:`S15` .
 
@@ -195,14 +195,14 @@ Parameter List
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Stroke height: full power duration, :term:`time period t1` .
+    -Description  Stroke height: Activation duration in :term:`time period t1` (100% duty cycle).
 
 .. option:: O77
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Stroke height: duty cycle after full power in :term:`time period t2` .
+    -Description  Stroke height: Duty cycle [%] in :term:`time period t2` .
 
 .. option:: O85
 

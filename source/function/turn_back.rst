@@ -40,14 +40,14 @@ Parameter List
     -Max  1000
     -Min  50
     -Unit  spm
-    -Description  Positioning speed of turn back.
+    -Description  Speed for lifting the needle bar by turning back after trimming.
 
 .. option:: T12
 
     -Max  1000
     -Min  1
     -Unit  ms
-    -Description  Lag time, after which motor restarts and runs in reverse direction.
+    -Description  Delay after completion of thread trimming before turn back starts.
 
 .. option:: O35
 

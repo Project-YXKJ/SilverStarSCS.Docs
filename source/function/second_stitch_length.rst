@@ -15,17 +15,17 @@ Quick reference
 
 This table summarizes which parameter should be used for second stitch length:
 
-====================================== ========== =============
-Parameter                              Authority  See also
-====================================== ========== =============
-Second Stitch Length                   Operator   :option:`A46`
-Sewing speed during long stitch length Operator   :option:`S17`
-Status(Read Only)                      Technician :option:`A25`
-Stitch length during backtack          Technician :option:`A50`
-Speed limit during long stitch length  Technician :option:`O33`
-Full power duration                    Developer  :option:`O78`
-Duty cycle after full power            Developer  :option:`O79`
-====================================== ========== =============
+===================================== ========== =============
+Parameter                             Authority  See also
+===================================== ========== =============
+Second Stitch Length                  Operator   :option:`A46`
+Long Stitch Speed Limit               Operator   :option:`S17`
+Stitch Length Switching Status        Technician :option:`A25`
+Stitch length during backtack         Technician :option:`A50`
+Speed limit during long stitch length Technician :option:`O33`
+Full power duration                   Developer  :option:`O78`
+Duty cycle after full power           Developer  :option:`O79`
+===================================== ========== =============
 
 Parameter List
 --------------
@@ -45,14 +45,14 @@ Parameter List
     -Max  4500
     -Min  50
     -Unit  spm
-    -Description  Sewing speed if long stitch length is activated.
+    -Description  Speed limit when using long stitch length.
 
 .. option:: A25
 
     -Max  1
     -Min  0
     -Unit  --
-    -Description  Status of the second stitch length, read only.
+    -Description  Whether the stitch length switching is activated, read only.
 
 .. option:: A50
 
@@ -79,7 +79,7 @@ Parameter List
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Second stitch length:  full power duration, :term:`time period t1` .
+    -Description  Second stitch length:  Activation duration in :term:`time period t1` (100% duty cycle).
 
 .. option:: O79
 

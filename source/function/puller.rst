@@ -71,11 +71,11 @@ Parameter List
     -Max  999
     -Min  1
     -Unit  ms
-    -Description  Puller lifter: full power duration, :term:`time period t1` .
+    -Description  Puller lifter: Activation duration in :term:`time period t1` (100% duty cycle).
 
 .. option:: O98
 
     -Max  100
     -Min  1
     -Unit  %
-    -Description  Puller lifter: duty cycle after full power in :term:`time period t2` .
+    -Description  Puller lifter: Duty cycle [%] in :term:`time period t2` .

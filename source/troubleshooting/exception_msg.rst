@@ -63,30 +63,32 @@ Warning messages
 
 The code of the warning message is always less than 100.
 
-=============== ====================== ===========================
-Code            Messages               Remedial action
-=============== ====================== ===========================
-:exc:`ExcCode1` pedal                  :meth:`ExcCode1.solution()`
-:exc:`ExcCode2` tilt switch            :meth:`ExcCode2.solution()`
-:exc:`ExcCode3` shortkeys              :meth:`ExcCode3.solution()`
-:exc:`ExcCode4` shortkeys              :meth:`ExcCode4.solution()`
-:exc:`ExcCode5` bobbin counter/monitor :meth:`ExcCode5.solution()`
-:exc:`ExcCode6` upper thread breaking  :meth:`ExcCode6.solution()`
-:exc:`ExcCode7` service counter        :meth:`ExcCode7.solution()`
-:exc:`ExcCode8` eye protection         :meth:`ExcCode8.solution()`
-:exc:`ExcCode9` slide monitoring       :meth:`ExcCode9.solution()`
-=============== ====================== ===========================
+================= ====================== =============================
+Code              Messages               Remedial action
+================= ====================== =============================
+:exc:`ExcCode001` pedal                  :meth:`ExcCode001.solution()`
+:exc:`ExcCode002` tilt switch            :meth:`ExcCode002.solution()`
+:exc:`ExcCode003` shortkeys              :meth:`ExcCode003.solution()`
+:exc:`ExcCode004` shortkeys              :meth:`ExcCode004.solution()`
+:exc:`ExcCode005` bobbin counter/monitor :meth:`ExcCode005.solution()`
+:exc:`ExcCode006` upper thread breaking  :meth:`ExcCode006.solution()`
+:exc:`ExcCode007` service counter        :meth:`ExcCode007.solution()`
+:exc:`ExcCode008` eye protection         :meth:`ExcCode008.solution()`
+:exc:`ExcCode009` slide monitoring       :meth:`ExcCode009.solution()`
+:exc:`ExcCode010` slide monitoring       :meth:`ExcCode010.solution()`
+================= ====================== =============================
 
 Information messages
 ~~~~~~~~~~~~~~~~~~~~
 
 The code of the information message is always less than 100.
 
-================ ========= ============================
-Code             Messages  Remedial action
-================ ========= ============================
-:exc:`ExcCode50` oil level :meth:`ExcCode50.solution()`
-================ ========= ============================
+================= ========= =============================
+Code              Messages  Remedial action
+================= ========= =============================
+:exc:`ExcCode051` oil level :meth:`ExcCode051.solution()`
+:exc:`ExcCode051` oil level :meth:`ExcCode052.solution()`
+================= ========= =============================
 
 Error message list
 ------------------
@@ -384,7 +386,7 @@ Error message list
 Warning message list
 --------------------
 
-.. exception:: ExcCode1
+.. exception:: ExcCode001
 
     Pedal warning
 
@@ -394,7 +396,7 @@ Warning message list
        The pedal type must be set correctly when using standing pedal;
        Replace the pedal.
 
-.. exception:: ExcCode2
+.. exception:: ExcCode002
 
     Tilt switch warning
 
@@ -403,7 +405,7 @@ Warning message list
        The warning will be cleared when the machine is back to the normal position;
        Check the tipping sensor on the machine
 
-.. exception:: ExcCode3
+.. exception:: ExcCode003
 
     Shortkey warning
 
@@ -411,7 +413,7 @@ Warning message list
 
        The short key must be released when switching on
 
-.. exception:: ExcCode4
+.. exception:: ExcCode004
 
     Shortkey warning
 
@@ -419,15 +421,15 @@ Warning message list
 
        The short key must be released when switching on
 
-.. exception:: ExcCode5
+.. exception:: ExcCode005
 
-    Bobbin counter warning
+    Empty bobbin
 
     .. method:: solution()
 
-       Replace the bobbin, press back key to clear warning
+       Replace the bobbin, press reset key to clear warning
 
-.. exception:: ExcCode6
+.. exception:: ExcCode006
 
     Upper thread breaking warning
 
@@ -436,7 +438,7 @@ Warning message list
        The upper thread is broken;
        Check the sensor of upper thread.
 
-.. exception:: ExcCode7
+.. exception:: ExcCode007
 
     Service counter warning
 
@@ -444,7 +446,7 @@ Warning message list
 
        Make a service maintenance, press back key to clear warning
 
-.. exception:: ExcCode8
+.. exception:: ExcCode008
 
     Eye protection monitoring
 
@@ -453,7 +455,7 @@ Warning message list
        Put eye protection cover plate back in place;
        Check the sensor of eye protection.
 
-.. exception:: ExcCode9
+.. exception:: ExcCode009
 
     Slide monitoring
 
@@ -462,10 +464,18 @@ Warning message list
        Close the hook cover plate;
        Check the sensor of slide monitoring;
 
+.. exception:: ExcCode010
+
+    Empty bobbin
+
+    .. method:: solution()
+
+       Not enough thread available
+
 Information message list
 ------------------------
 
-.. exception:: ExcCode50
+.. exception:: ExcCode051
 
     Oil level is below the minimum level marking
 
@@ -476,3 +486,11 @@ Information message list
     .. versionchanged:: 90A0-v1.08.05
 
        Previously, the code of this exception was *10* and belonged to *warning* group.
+
+.. exception:: ExcCode052
+
+    Empty bobbin
+
+    .. method:: solution()
+
+       Please insert a full bobbin and reset the counter

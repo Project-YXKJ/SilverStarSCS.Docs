@@ -31,7 +31,7 @@ The following table lists the available function codes for output port configura
 - 5 = Sewing foot lifter;
 - 6 = Stroke;
 - 7 = Additional thread tension;
-- 8 = Thread wiper(upper);
+- 8 = Thread wiper (Upper);
 - 9 = Second stitch length;
 - 10 = Needle cooling;
 - 11 = Additional knife for short trimmer;
@@ -39,7 +39,8 @@ The following table lists the available function codes for output port configura
 - 13 = Zero stitch length for short trimmer;
 - 14 = Auto corner for 2-needle machine;
 - 15 = Puller；
-- 16 = Thread wiper(lower);
+- 16 = Thread wiper (Lower);
+- 17 = Cleaning sensor (RTM);
 
 How to setup the function of output ports?
 ------------------------------------------

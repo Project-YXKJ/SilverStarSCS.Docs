@@ -70,13 +70,12 @@ Quick reference
 
 This table summarizes which parameter should be used for upper thread breaking:
 
-====================================== ========== =============
-Parameter                              Authority  See also
-====================================== ========== =============
-Warning: Upper Thread Break            Technician :option:`A53`
-Upper Thread Monitor Debounce          Technician :option:`T13`
-Sensor Polarity(Upper Thread Breaking) Technician :option:`O92`
-====================================== ========== =============
+=========================== ========== =============
+Parameter                   Authority  See also
+=========================== ========== =============
+Warning: Upper Thread Break Technician :option:`A53`
+Delay stitches              Technician :option:`O92`
+=========================== ========== =============
 
 Parameter List
 --------------
@@ -156,19 +155,9 @@ Parameter List
       | 0 = Off;
       | 1 = On.
 
-.. option:: T13
-
-    -Max  1000
-    -Min  1
-    -Unit  ms
-    -Description  Delay for the signal evaluation of the upper thread monitor.
-
 .. option:: O92
 
     -Max  1
     -Min  0
     -Unit  --
-    -Description
-      | Sensor polarity used for upper thread breaking:
-      | 0 = Normal open;
-      | 1 = Normal closed.
+    -Description  Sets the sensitivity by defining how many pulses must be missed before a upper thread monitor warning is triggered
